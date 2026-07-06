@@ -13,7 +13,7 @@ NL query ─▶ interpret + classify (Pydantic AI)  ─▶ capability gate (reje
         ─▶ narrate (2nd agent) ─▶ JSON response  ─▶ UI (React + ECharts)
 ```
 
-A small React UI (the optional "demo" deliverable) renders the spec and lets you click any data
+A React UI renders the spec and lets you click any data
 point to open its source trail. The agent's output is **frontend-agnostic** — the contract is
 documented under [API](#api) and [Data models](#data-models).
 
@@ -21,7 +21,25 @@ documented under [API](#api) and [Data models](#data-models).
 - **How to run** → [Quick start](#quick-start)
 - **Example queries with real JSON outputs** → [`examples/`](examples/)
 - **Design decisions & trade-offs** → [Design decisions](#design-decisions--trade-offs)
-- **AI tools / validation / integrity** → [Integrity note](#integrity-note-ai-tool-use)
+- **AI tools / validation** → [Development notes](#development-notes-ai-tool-use)
+
+---
+
+## Screenshots
+
+A natural-language question in, a cited chart out. Each panel below is rendered from a **real
+saved response** in [`examples/`](examples/) — the query, chart, trial count, summary, and
+citation count are all actual output (no mock data).
+
+| Time trend (`line`) | Distribution (`bar`) |
+|---|---|
+| ![Trials per year](docs/screenshots/line-how-has-the-number-of-trials-for.png) | ![Trials by phase](docs/screenshots/bar-how-are-diabetes-trials-distribu.png) |
+| **Comparison (`grouped_bar`)** | **Correlation (`scatter`)** |
+| ![Metformin vs semaglutide](docs/screenshots/grouped_bar-compare-the-number-of-metformin-.png) | ![Enrollment vs duration](docs/screenshots/scatter-is-there-a-relationship-between-.png) |
+
+**Relationship (`network`)** — sponsor↔drug graph, every edge citable back to its trials:
+
+![Sponsor–drug network](docs/screenshots/network-show-a-network-of-sponsors-and-d.png)
 
 ---
 
@@ -207,12 +225,19 @@ extracts filters; it never picks a chart type or invents data.
 | `relationship` | network      | *Show a network of sponsors and drugs for Alzheimer's trials.* |
 | `correlation`  | scatter      | *Is there a relationship between enrollment size and trial duration for diabetes trials?* |
 
-This spans the visualization breadth the assignment calls for — **bar, line/time-series, scatter,
+This covers a broad visualization vocabulary — **bar, line/time-series, scatter,
 and network** — plus grouped bar for comparisons. Adding a type = one enum value + one aggregation.
+
+**Exact vs. sampled counts.** Bar/line/comparison buckets carry **exact** per-bucket totals (fetched
+via the API's `countTotal`), so they are accurate regardless of the fetch cap. Network edge weights
+and scatter points are **sample-based** — computed over the capped fetch (`max_records`), not
+server-side totals — so when the cap is hit the response sets `bucket_set_complete: false` and a
+`data_caveat` saying so. Comparison `total_records` is the **deduplicated** population (one OR-query),
+not a sum of per-entity totals, so a trial studying two compared entities is counted once.
 
 ---
 
-## Deep citations (bonus: source traceability)
+## Deep citations (source traceability)
 
 Every data point — each bar, line vertex, grouped column, scatter point, and network node/edge —
 carries the exact list of NCT IDs that produced it, **plus a dimension-aware `excerpt`**: the
@@ -443,7 +468,7 @@ path fans out fetches concurrently).
 
 ## Production readiness & future work
 
-This is a take-home; below is what I'd add to run it as a real service. Focused on the **backend and
+Below is what I'd add to run this as a production service. Focused on the **backend and
 database**, roughly in priority order. Deliberately out of scope here so nothing is advertised that isn't
 actually wired up.
 
@@ -583,9 +608,7 @@ Langfuse traces to root-cause a failing/surprising query.
 
 ---
 
-## Integrity note (AI tool use)
-
-Per the assignment's integrity note:
+## Development notes (AI tool use)
 
 - **Tools used.** Built with the assistance of AI coding tools (Claude Code). Key dependencies:
   FastAPI, Pydantic AI, SQLAlchemy, httpx, structlog (backend); React, Vite, Apache ECharts, Tailwind

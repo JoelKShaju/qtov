@@ -104,6 +104,19 @@ def test_build_params_maps_phase_filter():
     assert "AREA[Phase]PHASE3" in params["filter.advanced"]
 
 
+def test_build_params_projects_fields_for_search_but_not_count():
+    spec = QuerySpec(query_type=QueryType.DISTRIBUTION, condition="diabetes")
+    # A record search restricts the payload to the leaves normalize_study reads.
+    search = build_params(spec, page_size=50)
+    assert "fields" in search
+    fields = search["fields"].split(",")
+    assert "protocolSection.identificationModule.nctId" in fields
+    assert "protocolSection.contactsLocationsModule.locations.country" in fields
+    # A count query pulls no records, so it omits the projection.
+    count = build_params(spec, page_size=1, project=False)
+    assert "fields" not in count
+
+
 def test_intervention_type_token_allowlists():
     assert intervention_type_token("Drug") == "DRUG"
     assert intervention_type_token("dietary supplement") == "DIETARY_SUPPLEMENT"

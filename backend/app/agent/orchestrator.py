@@ -257,12 +257,22 @@ async def _run_scatter(
     points = build_scatter_points(records)
     viz = build_scatter_visualization(spec, points, total, filters_summary(spec))
     viz.metadata.sampled = len(records)
-    # Be explicit when the plotted points are a subsample of the eligible trials.
+    # A scatter is one point per trial with no exact per-bucket counts, so it is inherently
+    # sample-based whenever the fetch cap is hit — flag that the cloud is a subset of the
+    # population, not all matching trials.
+    if len(records) < total:
+        viz.metadata.bucket_set_complete = False
+        viz.metadata.data_caveat = _join_caveat(
+            viz.metadata.data_caveat,
+            f"Points are drawn from a capped sample of {len(records)} of {total} matching trials.",
+        )
+    # And be explicit when the plotted points are themselves a subsample of the eligible sample.
     plottable = plottable_count(records)
     if plottable > len(points):
-        viz.metadata.data_caveat = (
-            f"Showing a representative random sample of {len(points)} of {plottable} trials "
-            "that report both enrollment and duration."
+        viz.metadata.data_caveat = _join_caveat(
+            viz.metadata.data_caveat,
+            f"Showing a representative random sample of {len(points)} of {plottable} sampled "
+            "trials that report both enrollment and duration.",
         )
     citations = citations_from_points(points, _by_nct(records))
     return viz, citations, total, records
@@ -357,6 +367,15 @@ async def _run_relationship(
     network = build_network(records)
     viz = build_network_visualization(spec, network, total, filters_summary(spec))
     viz.metadata.sampled = len(records)
+    # Edge weights are shared-trial counts over the fetched sample, not the full population —
+    # when the fetch cap is hit, say so rather than implying the weights are exhaustive.
+    if len(records) < total:
+        viz.metadata.bucket_set_complete = False
+        viz.metadata.data_caveat = _join_caveat(
+            viz.metadata.data_caveat,
+            f"Network reflects a capped sample of {len(records)} of {total} matching trials; "
+            "edge weights are sample counts, not population totals.",
+        )
     citations = citations_from_links(network["links"], _by_nct(records))
     return viz, citations, total, records
 
@@ -384,6 +403,28 @@ def _ordered_comparison_labels(
         for label, bucket in buckets.items():
             freq[label] = freq.get(label, 0) + bucket.value
     return sorted(labels, key=lambda label: freq[label], reverse=True)[:_MAX_COMPARISON_BUCKETS]
+
+
+async def _comparison_population(
+    client: ClinicalTrialsClient, base: QuerySpec, dim: str, entities: list[str]
+) -> int:
+    """Deduplicated total trials across the compared entities.
+
+    Summing per-entity totals double-counts any trial that studies two of them (e.g. a
+    head-to-head metformin-vs-semaglutide trial). Instead we OR the entities into a single
+    Essie expression on the comparison dimension and count once — each entity parenthesized so
+    multi-word terms (e.g. "breast cancer") stay grouped. Falls back to the summed per-entity
+    totals (an upper bound) if the union query errors.
+    """
+    union_expr = " OR ".join(f"({e})" for e in entities)
+    union_spec = base.model_copy(update={dim: union_expr})
+    try:
+        return await client.count(union_spec)
+    except Exception:  # noqa: BLE001 - fall back to a summed upper bound on any upstream failure
+        totals = await _bounded_gather(
+            [partial(client.count, base.model_copy(update={dim: e})) for e in entities]
+        )
+        return sum(t for t in totals if isinstance(t, int))
 
 
 async def _run_comparison(
@@ -440,8 +481,7 @@ async def _run_comparison(
             sample = per_entity[entity].get(label)
             exact[(entity, label)] = int(sample.value) if sample else 0
             approx.append((entity, label))
-    totals = await _bounded_gather([partial(client.count, sub_specs[e]) for e in entities])
-    total = sum(totals)
+    total = await _comparison_population(client, base, dim, entities)
 
     series: list[dict[str, Any]] = []
     comp_buckets: list[Bucket] = []

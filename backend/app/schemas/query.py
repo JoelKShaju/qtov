@@ -74,7 +74,7 @@ class QueryRequest(BaseModel):
     Beyond the required `query`, every field is an OPTIONAL structured filter. When
     provided it is authoritative — it overrides whatever the LLM infers from the prose
     (see `apply_request_overrides`). `drug_name` and `trial_phase` are accepted as
-    aliases for `intervention`/`phase` to match the assignment's vocabulary.
+    aliases for `intervention`/`phase` as friendlier client-facing vocabulary.
     """
 
     model_config = {"populate_by_name": True}

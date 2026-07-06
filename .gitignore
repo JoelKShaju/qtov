@@ -17,7 +17,7 @@ frontend/.vite/
 backend/.env
 frontend/.env
 
-# Take-home materials (assignment brief, JD, screenshots, plan)
+# Local working notes (not part of the project)
 context/
 
 # OS

@@ -118,7 +118,10 @@ async def test_comparison_by_country_keeps_entities_distinct(api, app):
         if "AREA[Phase]" in adv:
             phase = "PHASE2" if "PHASE2" in adv else "PHASE3"
             return Response(200, json={"totalCount": counts[(entity, phase)], "studies": []})
-        if p.get("pageSize") == "1":  # per-entity grand total
+        if p.get("pageSize") == "1":  # a count query
+            locn = p.get("query.locn", "")
+            if " OR " in locn:  # deduplicated union population (both entities OR'd into one query)
+                return Response(200, json={"totalCount": 33, "studies": []})  # < 30+7: 4 overlap
             return Response(200, json={"totalCount": sum(v for (e, _), v in counts.items() if e == entity), "studies": []})
         return Response(200, json={"totalCount": 999, "studies": [_study()]})  # sample
 
@@ -139,7 +142,9 @@ async def test_comparison_by_country_keeps_entities_distinct(api, app):
     # Each entity's per-phase value is exactly its own — not swapped.
     assert rows["Phase 2"]["United States"] == 10 and rows["Phase 2"]["China"] == 3
     assert rows["Phase 3"]["United States"] == 20 and rows["Phase 3"]["China"] == 4
-    assert body["visualization"]["metadata"]["total_records"] == 37  # 30 + 7
+    # Deduplicated population from the single OR union count — NOT 30+7=37, which would
+    # double-count trials running in both countries.
+    assert body["visualization"]["metadata"]["total_records"] == 33
     # the dimension's filter must NOT leak into the chart subtitle
     assert "country=" not in body["visualization"]["metadata"]["filters_applied"]
 
@@ -383,3 +388,80 @@ async def test_time_trend_counts_reconcile_with_total(api, app):
     assert resp.status_code == 200, resp.text
     viz = resp.json()["visualization"]
     assert sum(p["y"] for p in viz["data"]) == viz["metadata"]["total_records"] == total
+
+
+def _network_study(nct: str, sponsor: str = "Pfizer", drug: str = "Metformin") -> dict:
+    return {
+        "protocolSection": {
+            "identificationModule": {"nctId": nct, "briefTitle": "T"},
+            "sponsorCollaboratorsModule": {"leadSponsor": {"name": sponsor}},
+            "armsInterventionsModule": {"interventions": [{"type": "DRUG", "name": drug}]},
+        }
+    }
+
+
+def _scatter_study(nct: str, enroll: int = 100) -> dict:
+    return {
+        "protocolSection": {
+            "identificationModule": {"nctId": nct, "briefTitle": "T"},
+            "statusModule": {
+                "startDateStruct": {"date": "2019-01"},
+                "completionDateStruct": {"date": "2021-01"},
+            },
+            "designModule": {"enrollmentInfo": {"count": enroll}, "phases": ["PHASE2"]},
+        }
+    }
+
+
+@respx.mock
+async def test_relationship_flags_sampled_network(api, app):
+    # Edge weights are computed over the fetched sample; when the population exceeds the sample,
+    # the response must say so (bucket_set_complete False + an "edge weights" caveat).
+    async def fake(_request):
+        return QuerySpec(query_type=QueryType.RELATIONSHIP, condition="alzheimer")
+
+    app.dependency_overrides[get_interpreter] = lambda: fake
+    respx.get(url__startswith=settings.clinicaltrials_base_url).mock(
+        return_value=Response(200, json={"totalCount": 500, "studies": [_network_study("NCT1")]})
+    )
+    resp = await api.post("/api/query", json={"query": "sponsor-drug network for alzheimer"})
+    assert resp.status_code == 200, resp.text
+    meta = resp.json()["visualization"]["metadata"]
+    assert meta["sampled"] == 1 and meta["total_records"] == 500
+    assert meta["bucket_set_complete"] is False
+    assert meta["data_caveat"] and "edge weights" in meta["data_caveat"]
+
+
+@respx.mock
+async def test_relationship_no_caveat_when_fully_sampled(api, app):
+    # When the whole population is fetched (sample == total), no sampling caveat.
+    async def fake(_request):
+        return QuerySpec(query_type=QueryType.RELATIONSHIP, condition="alzheimer")
+
+    app.dependency_overrides[get_interpreter] = lambda: fake
+    respx.get(url__startswith=settings.clinicaltrials_base_url).mock(
+        return_value=Response(200, json={"totalCount": 1, "studies": [_network_study("NCT1")]})
+    )
+    resp = await api.post("/api/query", json={"query": "sponsor-drug network for alzheimer"})
+    assert resp.status_code == 200, resp.text
+    meta = resp.json()["visualization"]["metadata"]
+    assert meta["bucket_set_complete"] is True
+    assert meta["data_caveat"] is None
+
+
+@respx.mock
+async def test_correlation_flags_sampled_scatter(api, app):
+    # A scatter over a capped fetch of a larger population must flag that its points are a sample.
+    async def fake(_request):
+        return QuerySpec(query_type=QueryType.CORRELATION, condition="diabetes")
+
+    app.dependency_overrides[get_interpreter] = lambda: fake
+    respx.get(url__startswith=settings.clinicaltrials_base_url).mock(
+        return_value=Response(200, json={"totalCount": 500, "studies": [_scatter_study("NCT1")]})
+    )
+    resp = await api.post("/api/query", json={"query": "enrollment vs duration for diabetes"})
+    assert resp.status_code == 200, resp.text
+    meta = resp.json()["visualization"]["metadata"]
+    assert meta["sampled"] == 1 and meta["total_records"] == 500
+    assert meta["bucket_set_complete"] is False
+    assert meta["data_caveat"] and "capped sample" in meta["data_caveat"]

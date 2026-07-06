@@ -54,6 +54,29 @@ INTERVENTION_TYPES = frozenset(
 )
 
 
+# The exact set of study fields `normalize_study` reads. Passing this as the API's `fields`
+# projection means the upstream returns only these leaves instead of the full study payload —
+# smaller responses, less parsing. Keep in sync with `normalize_study`.
+STUDY_FIELDS = (
+    "protocolSection.identificationModule.nctId",
+    "protocolSection.identificationModule.briefTitle",
+    "protocolSection.statusModule.overallStatus",
+    "protocolSection.statusModule.startDateStruct",
+    "protocolSection.statusModule.completionDateStruct",
+    "protocolSection.statusModule.primaryCompletionDateStruct",
+    "protocolSection.designModule.studyType",
+    "protocolSection.designModule.phases",
+    "protocolSection.designModule.enrollmentInfo",
+    "protocolSection.conditionsModule.conditions",
+    # Only the leaves we read — skips each location's facility/geo/contact bloat and the
+    # interventions' descriptions/arm labels.
+    "protocolSection.armsInterventionsModule.interventions.type",
+    "protocolSection.armsInterventionsModule.interventions.name",
+    "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+    "protocolSection.contactsLocationsModule.locations.country",
+)
+
+
 def intervention_type_token(value: str) -> str | None:
     """Normalize free-text intervention type to a valid enum token, or None if unrecognized."""
     token = "_".join(value.strip().upper().split())
@@ -164,13 +187,25 @@ def normalize_study(study: dict[str, Any]) -> TrialRecord | None:
     )
 
 
-def build_params(spec: QuerySpec, page_size: int, page_token: str | None = None) -> dict[str, Any]:
-    """Translate a QuerySpec into ClinicalTrials.gov v2 query/filter parameters."""
+def build_params(
+    spec: QuerySpec,
+    page_size: int,
+    page_token: str | None = None,
+    *,
+    project: bool = True,
+) -> dict[str, Any]:
+    """Translate a QuerySpec into ClinicalTrials.gov v2 query/filter parameters.
+
+    `project=True` restricts the response to `STUDY_FIELDS` (the leaves we normalize). A count
+    query passes `project=False` since it reads only `totalCount` and pulls no records.
+    """
     params: dict[str, Any] = {
         "format": "json",
         "pageSize": page_size,
         "countTotal": "true",
     }
+    if project:
+        params["fields"] = ",".join(STUDY_FIELDS)
     if spec.condition:
         params["query.cond"] = spec.condition
     if spec.intervention:
@@ -306,7 +341,7 @@ class ClinicalTrialsClient:
         client = self._client or httpx.AsyncClient(timeout=self._timeout)
         owns = self._client is None
         try:
-            params = build_params(spec, page_size=1)
+            params = build_params(spec, page_size=1, project=False)
             if extra_advanced:
                 existing = params.get("filter.advanced")
                 params["filter.advanced"] = (

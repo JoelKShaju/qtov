@@ -1,7 +1,7 @@
 """Build the source trail: map each data point (bucket / edge / point) back to trials.
 
 Beyond the list of NCT IDs, each `TrialRef` carries an `excerpt` — the exact field/value
-from that trial's API record that supports the datum it backs (the assignment's bonus). The
+from that trial's API record that supports the datum it backs. The
 excerpt is dimension-aware: a phase bucket quotes the trial's phases, a year bucket quotes its
 start date, and so on, so a reader can verify *why* a trial was counted under a given bucket.
 """
