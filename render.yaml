@@ -1,0 +1,59 @@
+# Render Blueprint — one-click deploy of the full stack (see DEPLOY.md for the walkthrough).
+#   Render dashboard → New → Blueprint → connect this repo. Render reads this file and creates:
+#     • qtov-db   — managed Postgres
+#     • qtov-api  — FastAPI backend (Docker), the agent + REST API
+#     • qtov-web  — the React/Vite frontend (static site)
+#
+# After the first deploy, set OPENAI_API_KEY on qtov-api (it's a secret, not in this file) and
+# put a hard spending cap on that key in the OpenAI dashboard. If Render assigns different
+# subdomains than the qtov-api / qtov-web guesses below (they're globally unique, so a name may
+# be taken), update CORS_ORIGINS and VITE_API_BASE to the real URLs and redeploy. See DEPLOY.md.
+
+databases:
+  - name: qtov-db
+    databaseName: qtov
+    plan: free # NOTE: Render's free Postgres expires ~30 days after creation; upgrade to persist.
+
+services:
+  # ---- Backend: agent + REST API (Docker) ----
+  - type: web
+    name: qtov-api
+    runtime: docker
+    plan: free # free web services cold-start after ~15 min idle (~30s first request)
+    rootDir: backend
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    dockerCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /api/health
+    envVars:
+      - key: DATABASE_URL # internal connection string; config.py coerces it to the asyncpg scheme
+        fromDatabase:
+          name: qtov-db
+          property: connectionString
+      - key: OPENAI_API_KEY # secret — set in the dashboard, then cap its spend in OpenAI
+        sync: false
+      - key: OPENAI_MODEL
+        value: gpt-4o-mini
+      - key: RATE_LIMIT_ENABLED
+        value: "true"
+      - key: RATE_LIMIT_PER_MINUTE
+        value: "8"
+      - key: CORS_ORIGINS # must match the frontend's real URL
+        value: https://qtov-web.onrender.com
+      - key: LOG_JSON
+        value: "true"
+
+  # ---- Frontend: React/Vite SPA (static site) ----
+  - type: web
+    name: qtov-web
+    runtime: static
+    rootDir: frontend
+    buildCommand: npm install && npm run build
+    staticPublishPath: ./dist
+    envVars:
+      - key: VITE_API_BASE # baked into the build; must match the backend's real URL + /api
+        value: https://qtov-api.onrender.com/api
+    routes:
+      - type: rewrite # SPA + /<event_id> permalinks resolve to index.html
+        source: /*
+        destination: /index.html

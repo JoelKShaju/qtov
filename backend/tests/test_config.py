@@ -17,3 +17,23 @@ def test_classifier_chain_overrides_only_the_classifier():
     )
     assert s.classifier_model_list == ["gpt-4o", "gpt-4o-mini"]
     assert s.summarizer_model_list == ["gpt-4o"]  # still follows openai_model
+
+
+def test_database_url_coerced_to_asyncpg_scheme():
+    # Managed hosts hand out postgres:// or postgresql://; the async engine needs asyncpg.
+    assert Settings(database_url="postgres://u:p@h:5432/db").database_url == (
+        "postgresql+asyncpg://u:p@h:5432/db"
+    )
+    assert Settings(database_url="postgresql://u:p@h/db").database_url == (
+        "postgresql+asyncpg://u:p@h/db"
+    )
+    # Already-correct scheme is left alone.
+    assert Settings(database_url="postgresql+asyncpg://u:p@h/db").database_url == (
+        "postgresql+asyncpg://u:p@h/db"
+    )
+
+
+def test_database_url_strips_sslmode_param_asyncpg_rejects():
+    assert Settings(database_url="postgresql://u:p@h/db?sslmode=require").database_url == (
+        "postgresql+asyncpg://u:p@h/db"
+    )

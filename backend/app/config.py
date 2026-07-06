@@ -5,6 +5,7 @@ from __future__ import annotations
 import os
 from functools import lru_cache
 
+from pydantic import field_validator
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 from .agent.llm import OpenAIModel
@@ -38,6 +39,25 @@ class Settings(BaseSettings):
     # --- Database ---
     database_url: str = "postgresql+asyncpg://postgres:postgres@localhost:5432/qtov"
 
+    @field_validator("database_url")
+    @classmethod
+    def _async_db_url(cls, v: str) -> str:
+        """Coerce a plain Postgres URL to the asyncpg driver SQLAlchemy needs.
+
+        Managed hosts (Render, Heroku, etc.) hand out `postgres://` or `postgresql://`; the
+        async engine requires the `postgresql+asyncpg://` scheme. Also drop a `sslmode` query
+        param, which asyncpg rejects (it's a libpq/psycopg option).
+        """
+        if v.startswith("postgres://"):
+            v = "postgresql://" + v[len("postgres://") :]
+        if v.startswith("postgresql://"):
+            v = "postgresql+asyncpg://" + v[len("postgresql://") :]
+        if "sslmode=" in v:
+            base, _, query = v.partition("?")
+            kept = "&".join(p for p in query.split("&") if not p.startswith("sslmode="))
+            v = f"{base}?{kept}" if kept else base
+        return v
+
     # --- ClinicalTrials.gov API ---
     clinicaltrials_base_url: str = "https://clinicaltrials.gov/api/v2/studies"
     max_records: int = 1000  # safety cap on records pulled per query
@@ -63,6 +83,11 @@ class Settings(BaseSettings):
 
     # --- API ---
     cors_origins: str = "*"
+
+    # --- Rate limiting (per-IP, in-memory; for a public demo's LLM budget) ---
+    # Off by default so local/dev/tests are unaffected; enable in a hosted deployment.
+    rate_limit_enabled: bool = False
+    rate_limit_per_minute: int = 10
 
     def apply_runtime_env(self) -> None:
         """Export keys that downstream SDKs read directly from the environment."""

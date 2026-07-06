@@ -43,6 +43,16 @@ citation count are all actual output (no mock data).
 
 ---
 
+## Deploy
+
+A [`render.yaml`](render.yaml) blueprint provisions the whole stack on [Render](https://render.com)
+in one step — managed Postgres, the FastAPI backend (Docker), and the React frontend (static site).
+Per-IP rate limiting on `POST /api/query` (`RATE_LIMIT_ENABLED`) protects the LLM budget on a public
+URL. Full walkthrough — including the OpenAI spend cap and free-tier caveats — in
+[**DEPLOY.md**](DEPLOY.md).
+
+---
+
 ## Quick start
 
 Requires Docker. You need an **OpenAI API key** for live query interpretation (this project's key

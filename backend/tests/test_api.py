@@ -465,3 +465,26 @@ async def test_correlation_flags_sampled_scatter(api, app):
     assert meta["sampled"] == 1 and meta["total_records"] == 500
     assert meta["bucket_set_complete"] is False
     assert meta["data_caveat"] and "capped sample" in meta["data_caveat"]
+
+
+@respx.mock
+async def test_rate_limit_returns_429_when_enabled(api, app):
+    # With the limiter on and a budget of 1/min, the second query in the window is rejected.
+    from app.config import settings as app_settings
+    from app.ratelimit import limiter
+
+    respx.get(url__startswith=settings.clinicaltrials_base_url).mock(
+        return_value=Response(200, json={"totalCount": 1, "studies": [SAMPLE_STUDY]})
+    )
+    limiter.reset()
+    app_settings.rate_limit_enabled = True
+    app_settings.rate_limit_per_minute = 1
+    try:
+        first = await api.post("/api/query", json={"query": "diabetes trials per year"})
+        second = await api.post("/api/query", json={"query": "diabetes trials per year"})
+        assert first.status_code == 200, first.text
+        assert second.status_code == 429
+        assert "Rate limit" in second.json()["detail"]
+    finally:
+        app_settings.rate_limit_enabled = False
+        limiter.reset()

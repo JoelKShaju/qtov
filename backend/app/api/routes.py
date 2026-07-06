@@ -9,6 +9,7 @@ from fastapi import APIRouter, Depends, HTTPException
 from ..agent.orchestrator import run_query
 from ..clients.clinicaltrials import ClinicalTrialsClient
 from ..db.repositories import Repository
+from ..ratelimit import rate_limit
 from ..schemas.query import QueryRequest
 from ..schemas.visualization import QueryResponse
 from .deps import (
@@ -28,7 +29,7 @@ async def health() -> dict[str, str]:
     return {"status": "ok", "service": "qtov-backend", "version": "0.1.0"}
 
 
-@router.post("/query", response_model=QueryResponse)
+@router.post("/query", response_model=QueryResponse, dependencies=[Depends(rate_limit)])
 async def post_query(
     request: QueryRequest,
     interpret_fn: InterpretFn = Depends(get_interpreter),
