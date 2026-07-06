@@ -17,6 +17,10 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
+# MCP server (app/mcp_server.py): exposes the query agent as MCP tools over stdio.
+mcp = [
+    "mcp>=1.2",
+]
 dev = [
     "pytest>=8.2",
     "pytest-asyncio>=0.23",

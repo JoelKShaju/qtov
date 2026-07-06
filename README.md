@@ -170,6 +170,26 @@ Upstream/agent failures surface as `502 {error:"upstream_error"}` and `503 {erro
 A ready-to-import **Postman/Insomnia collection** (v2.1) lives at
 [`scripts/qtov.postman_collection.json`](scripts/qtov.postman_collection.json).
 
+### MCP server
+
+The agent is also exposed over the **Model Context Protocol** so any MCP client (Claude Code,
+Claude Desktop, other agents) can call it as a tool. The server
+([`backend/app/mcp_server.py`](backend/app/mcp_server.py)) is a thin stdio wrapper over the same
+`POST /api/query` contract the UI uses:
+
+- **`query_clinical_trials`** — NL question + optional authoritative filters → compact result:
+  summary, interpretation, chart data, per-data-point citations (capped source refs), and a
+  shareable permalink. Unsupported queries return `supported: false` **with the list of query
+  types to rephrase into**, so a calling model can self-correct.
+- **`get_saved_result`** — fetch a previously saved result by `event_id`.
+
+```bash
+make mcp        # run over stdio (the API must be up first: `make up` or `make dev`)
+```
+
+Claude Code picks it up automatically from the repo-root [`.mcp.json`](.mcp.json). Configure via
+`QTOV_API_URL` / `QTOV_UI_URL` env vars (defaults target the local stack).
+
 ---
 
 ## Supported query types & visualization coverage

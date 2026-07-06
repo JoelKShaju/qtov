@@ -5,14 +5,14 @@ COMPOSE := docker compose -f docker-compose.yml -f docker-compose.observability.
 # Base app only (no overlay) — used by host-dev helpers like `make db`.
 COMPOSE_BASE := docker compose
 
-.PHONY: help install ensure-env db backend frontend dev up watch down logs test lint seed evals
+.PHONY: help install ensure-env db backend frontend dev up watch down logs test lint seed evals mcp
 
 help:  ## Show available commands
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | \
 		awk 'BEGIN{FS=":.*?## "}{printf "  \033[36m%-12s\033[0m %s\n", $$1, $$2}'
 
 install:  ## Install backend (uv) + frontend (npm) dependencies
-	cd backend && uv sync --extra dev
+	cd backend && uv sync --extra dev --extra mcp
 	cd frontend && npm install
 
 db:  ## Start only Postgres (for host development)
@@ -68,3 +68,6 @@ seed:  ## Warm the trial cache by sending the demo queries (stack must be up)
 
 evals:  ## Run the agent classification eval (needs OPENAI_API_KEY)
 	cd backend && uv run python evals/run_evals.py
+
+mcp:  ## Run the MCP server over stdio (backend API must be up — see app/mcp_server.py)
+	cd backend && uv run --extra mcp python -m app.mcp_server

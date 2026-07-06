@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "qtov": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "backend",
+        "run",
+        "--extra",
+        "mcp",
+        "python",
+        "-m",
+        "app.mcp_server"
+      ]
+    }
+  }
+}
