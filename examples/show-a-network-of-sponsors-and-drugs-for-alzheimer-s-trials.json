@@ -1,0 +1,1220 @@
+{
+  "event_id": "78075072d1cd45db93fa79368cc6e3c7",
+  "query": "Show a network of sponsors and drugs for Alzheimer's trials.",
+  "interpretation": {
+    "query_type": "relationship",
+    "parameters": {
+      "condition": "Alzheimer's disease",
+      "intervention": null,
+      "intervention_type": null,
+      "study_type": null,
+      "sponsor": null,
+      "country": null,
+      "status": null,
+      "start_year": null,
+      "end_year": null,
+      "group_by": null,
+      "comparison_entities": null,
+      "comparison_dimension": null
+    },
+    "reasoning": "",
+    "confidence": 1.0,
+    "alternatives": []
+  },
+  "visualization": {
+    "type": "network",
+    "title": "Sponsor\u2013drug network",
+    "data": {
+      "nodes": [
+        {
+          "id": "sponsor:Chang Gung Memorial Hospital",
+          "name": "Chang Gung Memorial Hospital",
+          "category": "Sponsor",
+          "value": 5,
+          "nct_ids": [
+            "NCT01238458",
+            "NCT01600469",
+            "NCT02103673",
+            "NCT04248270",
+            "NCT04309253"
+          ]
+        },
+        {
+          "id": "sponsor:Xiangya Hospital of Central South University",
+          "name": "Xiangya Hospital of Central South University",
+          "category": "Sponsor",
+          "value": 1,
+          "nct_ids": [
+            "NCT05969054"
+          ]
+        },
+        {
+          "id": "sponsor:TrueBinding, Inc.",
+          "name": "TrueBinding, Inc.",
+          "category": "Sponsor",
+          "value": 1,
+          "nct_ids": [
+            "NCT05476783"
+          ]
+        },
+        {
+          "id": "sponsor:Wyeth is now a wholly owned subsidiary of Pfizer",
+          "name": "Wyeth is now a wholly owned subsidiary of Pfizer",
+          "category": "Sponsor",
+          "value": 4,
+          "nct_ids": [
+            "NCT00480467",
+            "NCT00481520",
+            "NCT00547560",
+            "NCT00726115"
+          ]
+        },
+        {
+          "id": "sponsor:Pfizer",
+          "name": "Pfizer",
+          "category": "Sponsor",
+          "value": 6,
+          "nct_ids": [
+            "NCT00498602",
+            "NCT00667810",
+            "NCT00916617",
+            "NCT00939783",
+            "NCT00959192",
+            "NCT01369225"
+          ]
+        },
+        {
+          "id": "sponsor:Bristol-Myers Squibb",
+          "name": "Bristol-Myers Squibb",
+          "category": "Sponsor",
+          "value": 4,
+          "nct_ids": [
+            "NCT00810147",
+            "NCT01042314",
+            "NCT06937229",
+            "NCT06947941"
+          ]
+        },
+        {
+          "id": "sponsor:Johnson & Johnson Pharmaceutical Research & Development, L.L.C.",
+          "name": "Johnson & Johnson Pharmaceutical Research & Development, L.L.C.",
+          "category": "Sponsor",
+          "value": 5,
+          "nct_ids": [
+            "NCT00034762",
+            "NCT00082602",
+            "NCT00253188",
+            "NCT00253201",
+            "NCT00261573"
+          ]
+        },
+        {
+          "id": "sponsor:Avid Radiopharmaceuticals",
+          "name": "Avid Radiopharmaceuticals",
+          "category": "Sponsor",
+          "value": 6,
+          "nct_ids": [
+            "NCT00855868",
+            "NCT01565382",
+            "NCT02278354",
+            "NCT02336360",
+            "NCT02795780",
+            "NCT03467477"
+          ]
+        },
+        {
+          "id": "sponsor:AlzeCure Pharma",
+          "name": "AlzeCure Pharma",
+          "category": "Sponsor",
+          "value": 2,
+          "nct_ids": [
+            "NCT05077501",
+            "NCT05783830"
+          ]
+        },
+        {
+          "id": "sponsor:University of Rochester",
+          "name": "University of Rochester",
+          "category": "Sponsor",
+          "value": 2,
+          "nct_ids": [
+            "NCT06630390",
+            "NCT07217912"
+          ]
+        },
+        {
+          "id": "sponsor:Cognition Therapeutics",
+          "name": "Cognition Therapeutics",
+          "category": "Sponsor",
+          "value": 2,
+          "nct_ids": [
+            "NCT02907567",
+            "NCT03507790"
+          ]
+        },
+        {
+          "id": "sponsor:Medivation, Inc.",
+          "name": "Medivation, Inc.",
+          "category": "Sponsor",
+          "value": 2,
+          "nct_ids": [
+            "NCT00829374",
+            "NCT00829816"
+          ]
+        },
+        {
+          "id": "sponsor:Eisai Co., Ltd.",
+          "name": "Eisai Co., Ltd.",
+          "category": "Sponsor",
+          "value": 3,
+          "nct_ids": [
+            "NCT01539031",
+            "NCT02162251",
+            "NCT02162264"
+          ]
+        },
+        {
+          "id": "sponsor:Allyx Therapeutics",
+          "name": "Allyx Therapeutics",
+          "category": "Sponsor",
+          "value": 2,
+          "nct_ids": [
+            "NCT05804383",
+            "NCT05817643"
+          ]
+        },
+        {
+          "id": "sponsor:Regeneration Biomedical, Inc.",
+          "name": "Regeneration Biomedical, Inc.",
+          "category": "Sponsor",
+          "value": 2,
+          "nct_ids": [
+            "NCT07205601",
+            "NCT07373067"
+          ]
+        },
+        {
+          "id": "sponsor:Alnylam Pharmaceuticals",
+          "name": "Alnylam Pharmaceuticals",
+          "category": "Sponsor",
+          "value": 2,
+          "nct_ids": [
+            "NCT02292186",
+            "NCT02319005"
+          ]
+        },
+        {
+          "id": "drug:DAOIB",
+          "name": "DAOIB",
+          "category": "Drug",
+          "value": 1,
+          "nct_ids": [
+            "NCT02103673"
+          ]
+        },
+        {
+          "id": "drug:DAOI-B",
+          "name": "DAOI-B",
+          "category": "Drug",
+          "value": 1,
+          "nct_ids": [
+            "NCT01600469"
+          ]
+        },
+        {
+          "id": "drug:18F-PM-PBB3",
+          "name": "18F-PM-PBB3",
+          "category": "Drug",
+          "value": 1,
+          "nct_ids": [
+            "NCT04248270"
+          ]
+        },
+        {
+          "id": "drug:Levetiracetam 250mg",
+          "name": "Levetiracetam 250mg",
+          "category": "Drug",
+          "value": 1,
+          "nct_ids": [
+            "NCT05969054"
+          ]
+        },
+        {
+          "id": "drug:Lacosamide 100 mg",
+          "name": "Lacosamide 100 mg",
+          "category": "Drug",
+          "value": 1,
+          "nct_ids": [
+            "NCT05969054"
+          ]
+        },
+        {
+          "id": "drug:TB006",
+          "name": "TB006",
+          "category": "Drug",
+          "value": 1,
+          "nct_ids": [
+            "NCT05476783"
+          ]
+        },
+        {
+          "id": "drug:AV45",
+          "name": "AV45",
+          "category": "Drug",
+          "value": 1,
+          "nct_ids": [
+            "NCT04309253"
+          ]
+        },
+        {
+          "id": "drug:Dimebon",
+          "name": "Dimebon",
+          "category": "Drug",
+          "value": 3,
+          "nct_ids": [
+            "NCT00829374",
+            "NCT00829816",
+            "NCT00939783"
+          ]
+        },
+        {
+          "id": "drug:KarX-EC",
+          "name": "KarX-EC",
+          "category": "Drug",
+          "value": 2,
+          "nct_ids": [
+            "NCT06937229",
+            "NCT06947941"
+          ]
+        },
+        {
+          "id": "drug:KarXT",
+          "name": "KarXT",
+          "category": "Drug",
+          "value": 2,
+          "nct_ids": [
+            "NCT06937229",
+            "NCT06947941"
+          ]
+        },
+        {
+          "id": "drug:Flortaucipir F18",
+          "name": "Flortaucipir F18",
+          "category": "Drug",
+          "value": 4,
+          "nct_ids": [
+            "NCT02278354",
+            "NCT02336360",
+            "NCT02795780",
+            "NCT03467477"
+          ]
+        },
+        {
+          "id": "drug:florbetapir F 18",
+          "name": "florbetapir F 18",
+          "category": "Drug",
+          "value": 2,
+          "nct_ids": [
+            "NCT00855868",
+            "NCT01565382"
+          ]
+        },
+        {
+          "id": "drug:ACD856",
+          "name": "ACD856",
+          "category": "Drug",
+          "value": 2,
+          "nct_ids": [
+            "NCT05077501",
+            "NCT05783830"
+          ]
+        },
+        {
+          "id": "drug:Daridorexant 50 mg",
+          "name": "Daridorexant 50 mg",
+          "category": "Drug",
+          "value": 3,
+          "nct_ids": [
+            "NCT06630390",
+            "NCT07213349",
+            "NCT07217912"
+          ]
+        },
+        {
+          "id": "drug:SAM-531",
+          "name": "SAM-531",
+          "category": "Drug",
+          "value": 2,
+          "nct_ids": [
+            "NCT00481520",
+            "NCT00726115"
+          ]
+        },
+        {
+          "id": "drug:CT1812",
+          "name": "CT1812",
+          "category": "Drug",
+          "value": 2,
+          "nct_ids": [
+            "NCT02907567",
+            "NCT03507790"
+          ]
+        },
+        {
+          "id": "drug:BMS-708163",
+          "name": "BMS-708163",
+          "category": "Drug",
+          "value": 2,
+          "nct_ids": [
+            "NCT00810147",
+            "NCT01042314"
+          ]
+        },
+        {
+          "id": "drug:Donepezil Hydrochloride",
+          "name": "Donepezil Hydrochloride",
+          "category": "Drug",
+          "value": 3,
+          "nct_ids": [
+            "NCT02162251",
+            "NCT02162264",
+            "NCT03073876"
+          ]
+        },
+        {
+          "id": "drug:galantamine hydrobromide",
+          "name": "galantamine hydrobromide",
+          "category": "Drug",
+          "value": 3,
+          "nct_ids": [
+            "NCT00253188",
+            "NCT00253201",
+            "NCT00261573"
+          ]
+        },
+        {
+          "id": "drug:BMS-984923",
+          "name": "BMS-984923",
+          "category": "Drug",
+          "value": 2,
+          "nct_ids": [
+            "NCT05804383",
+            "NCT05817643"
+          ]
+        },
+        {
+          "id": "drug:RB-ADSC",
+          "name": "RB-ADSC",
+          "category": "Drug",
+          "value": 2,
+          "nct_ids": [
+            "NCT07205601",
+            "NCT07373067"
+          ]
+        },
+        {
+          "id": "drug:bapineuzumab",
+          "name": "bapineuzumab",
+          "category": "Drug",
+          "value": 2,
+          "nct_ids": [
+            "NCT00667810",
+            "NCT00916617"
+          ]
+        },
+        {
+          "id": "drug:Revusiran (ALN-TTRSC)",
+          "name": "Revusiran (ALN-TTRSC)",
+          "category": "Drug",
+          "value": 2,
+          "nct_ids": [
+            "NCT02292186",
+            "NCT02319005"
+          ]
+        },
+        {
+          "id": "drug:ACC-001",
+          "name": "ACC-001",
+          "category": "Drug",
+          "value": 2,
+          "nct_ids": [
+            "NCT00498602",
+            "NCT00959192"
+          ]
+        }
+      ],
+      "links": [
+        {
+          "source": "sponsor:Avid Radiopharmaceuticals",
+          "target": "drug:Flortaucipir F18",
+          "value": 4,
+          "nct_ids": [
+            "NCT02278354",
+            "NCT02336360",
+            "NCT02795780",
+            "NCT03467477"
+          ]
+        },
+        {
+          "source": "sponsor:Johnson & Johnson Pharmaceutical Research & Development, L.L.C.",
+          "target": "drug:galantamine hydrobromide",
+          "value": 3,
+          "nct_ids": [
+            "NCT00253188",
+            "NCT00253201",
+            "NCT00261573"
+          ]
+        },
+        {
+          "source": "sponsor:Bristol-Myers Squibb",
+          "target": "drug:KarX-EC",
+          "value": 2,
+          "nct_ids": [
+            "NCT06937229",
+            "NCT06947941"
+          ]
+        },
+        {
+          "source": "sponsor:Bristol-Myers Squibb",
+          "target": "drug:KarXT",
+          "value": 2,
+          "nct_ids": [
+            "NCT06937229",
+            "NCT06947941"
+          ]
+        },
+        {
+          "source": "sponsor:Avid Radiopharmaceuticals",
+          "target": "drug:florbetapir F 18",
+          "value": 2,
+          "nct_ids": [
+            "NCT00855868",
+            "NCT01565382"
+          ]
+        },
+        {
+          "source": "sponsor:AlzeCure Pharma",
+          "target": "drug:ACD856",
+          "value": 2,
+          "nct_ids": [
+            "NCT05077501",
+            "NCT05783830"
+          ]
+        },
+        {
+          "source": "sponsor:University of Rochester",
+          "target": "drug:Daridorexant 50 mg",
+          "value": 2,
+          "nct_ids": [
+            "NCT06630390",
+            "NCT07217912"
+          ]
+        },
+        {
+          "source": "sponsor:Wyeth is now a wholly owned subsidiary of Pfizer",
+          "target": "drug:SAM-531",
+          "value": 2,
+          "nct_ids": [
+            "NCT00481520",
+            "NCT00726115"
+          ]
+        },
+        {
+          "source": "sponsor:Cognition Therapeutics",
+          "target": "drug:CT1812",
+          "value": 2,
+          "nct_ids": [
+            "NCT02907567",
+            "NCT03507790"
+          ]
+        },
+        {
+          "source": "sponsor:Bristol-Myers Squibb",
+          "target": "drug:BMS-708163",
+          "value": 2,
+          "nct_ids": [
+            "NCT00810147",
+            "NCT01042314"
+          ]
+        },
+        {
+          "source": "sponsor:Medivation, Inc.",
+          "target": "drug:Dimebon",
+          "value": 2,
+          "nct_ids": [
+            "NCT00829374",
+            "NCT00829816"
+          ]
+        },
+        {
+          "source": "sponsor:Allyx Therapeutics",
+          "target": "drug:BMS-984923",
+          "value": 2,
+          "nct_ids": [
+            "NCT05804383",
+            "NCT05817643"
+          ]
+        },
+        {
+          "source": "sponsor:Eisai Co., Ltd.",
+          "target": "drug:Donepezil Hydrochloride",
+          "value": 2,
+          "nct_ids": [
+            "NCT02162251",
+            "NCT02162264"
+          ]
+        },
+        {
+          "source": "sponsor:Regeneration Biomedical, Inc.",
+          "target": "drug:RB-ADSC",
+          "value": 2,
+          "nct_ids": [
+            "NCT07205601",
+            "NCT07373067"
+          ]
+        },
+        {
+          "source": "sponsor:Pfizer",
+          "target": "drug:bapineuzumab",
+          "value": 2,
+          "nct_ids": [
+            "NCT00667810",
+            "NCT00916617"
+          ]
+        },
+        {
+          "source": "sponsor:Alnylam Pharmaceuticals",
+          "target": "drug:Revusiran (ALN-TTRSC)",
+          "value": 2,
+          "nct_ids": [
+            "NCT02292186",
+            "NCT02319005"
+          ]
+        },
+        {
+          "source": "sponsor:Pfizer",
+          "target": "drug:ACC-001",
+          "value": 2,
+          "nct_ids": [
+            "NCT00498602",
+            "NCT00959192"
+          ]
+        },
+        {
+          "source": "sponsor:Chang Gung Memorial Hospital",
+          "target": "drug:DAOIB",
+          "value": 1,
+          "nct_ids": [
+            "NCT02103673"
+          ]
+        },
+        {
+          "source": "sponsor:Chang Gung Memorial Hospital",
+          "target": "drug:DAOI-B",
+          "value": 1,
+          "nct_ids": [
+            "NCT01600469"
+          ]
+        },
+        {
+          "source": "sponsor:Chang Gung Memorial Hospital",
+          "target": "drug:18F-PM-PBB3",
+          "value": 1,
+          "nct_ids": [
+            "NCT04248270"
+          ]
+        },
+        {
+          "source": "sponsor:Xiangya Hospital of Central South University",
+          "target": "drug:Levetiracetam 250mg",
+          "value": 1,
+          "nct_ids": [
+            "NCT05969054"
+          ]
+        },
+        {
+          "source": "sponsor:Xiangya Hospital of Central South University",
+          "target": "drug:Lacosamide 100 mg",
+          "value": 1,
+          "nct_ids": [
+            "NCT05969054"
+          ]
+        },
+        {
+          "source": "sponsor:TrueBinding, Inc.",
+          "target": "drug:TB006",
+          "value": 1,
+          "nct_ids": [
+            "NCT05476783"
+          ]
+        },
+        {
+          "source": "sponsor:Chang Gung Memorial Hospital",
+          "target": "drug:AV45",
+          "value": 1,
+          "nct_ids": [
+            "NCT04309253"
+          ]
+        },
+        {
+          "source": "sponsor:Pfizer",
+          "target": "drug:Dimebon",
+          "value": 1,
+          "nct_ids": [
+            "NCT00939783"
+          ]
+        }
+      ],
+      "categories": [
+        {
+          "name": "Sponsor"
+        },
+        {
+          "name": "Drug"
+        }
+      ]
+    },
+    "encoding": {
+      "x": null,
+      "y": null,
+      "color": {
+        "field": "category",
+        "type": "nominal"
+      }
+    },
+    "metadata": {
+      "total_records": 4163,
+      "sampled": 600,
+      "bucket_set_complete": true,
+      "data_caveat": null,
+      "filters_applied": "condition=Alzheimer's disease",
+      "source": "ClinicalTrials.gov",
+      "timestamp": "2026-06-26T02:29:51.357300+00:00",
+      "chart_config": {
+        "x_label": "",
+        "y_label": "",
+        "x_axis_rotation": 0,
+        "time_format": null
+      }
+    }
+  },
+  "citations": [
+    {
+      "bucket": "Avid Radiopharmaceuticals \u2192 Flortaucipir F18",
+      "value": 4.0,
+      "nct_ids": [
+        "NCT02278354",
+        "NCT02336360",
+        "NCT02795780",
+        "NCT03467477"
+      ],
+      "trials": [
+        {
+          "nct_id": "NCT02278354",
+          "title": "Tau Imaging in Professional Fighters",
+          "url": "https://clinicaltrials.gov/study/NCT02278354",
+          "excerpt": "Sponsor: Avid Radiopharmaceuticals \u00b7 interventions: Flortaucipir F18, Brain PET scan"
+        },
+        {
+          "nct_id": "NCT02336360",
+          "title": "Augmenting Flortaucipir Dosimetry Estimates",
+          "url": "https://clinicaltrials.gov/study/NCT02336360",
+          "excerpt": "Sponsor: Avid Radiopharmaceuticals \u00b7 interventions: Flortaucipir F18"
+        },
+        {
+          "nct_id": "NCT02795780",
+          "title": "Follow up 18F-AV-1451 Scan in Confirmatory Cohort Subjects From Study 18F-AV-1451-A05",
+          "url": "https://clinicaltrials.gov/study/NCT02795780",
+          "excerpt": "Sponsor: Avid Radiopharmaceuticals \u00b7 interventions: Flortaucipir F18, PET Scan"
+        },
+        {
+          "nct_id": "NCT03467477",
+          "title": "Tau Screening Study in Subjects With Early Symptomatic AD",
+          "url": "https://clinicaltrials.gov/study/NCT03467477",
+          "excerpt": "Sponsor: Avid Radiopharmaceuticals \u00b7 interventions: Flortaucipir F18, Brain PET Scan"
+        }
+      ]
+    },
+    {
+      "bucket": "Johnson & Johnson Pharmaceutical Research & Development, L.L.C. \u2192 galantamine hydrobromide",
+      "value": 3.0,
+      "nct_ids": [
+        "NCT00253188",
+        "NCT00253201",
+        "NCT00261573"
+      ],
+      "trials": [
+        {
+          "nct_id": "NCT00253188",
+          "title": "A Study of the Safety and Effectiveness of Two Doses of Galantamine Versus Placebo in the Treatment of Patients With Alzheimer's Disease",
+          "url": "https://clinicaltrials.gov/study/NCT00253188",
+          "excerpt": "Sponsor: Johnson & Johnson Pharmaceutical Research & Development, L.L.C. \u00b7 interventions: galantamine hydrobromide"
+        },
+        {
+          "nct_id": "NCT00253201",
+          "title": "A Study of the Safety and Effectiveness of Two Doses of Galantamine Versus Placebo in the Treatment of Patients With Alzheimer's Disease",
+          "url": "https://clinicaltrials.gov/study/NCT00253201",
+          "excerpt": "Sponsor: Johnson & Johnson Pharmaceutical Research & Development, L.L.C. \u00b7 interventions: galantamine hydrobromide"
+        },
+        {
+          "nct_id": "NCT00261573",
+          "title": "A Study of the Safety and Effectiveness of Galantamine Versus Placebo in the Treatment of Patients With Vascular Dementia or Mixed Dementia",
+          "url": "https://clinicaltrials.gov/study/NCT00261573",
+          "excerpt": "Sponsor: Johnson & Johnson Pharmaceutical Research & Development, L.L.C. \u00b7 interventions: galantamine hydrobromide"
+        }
+      ]
+    },
+    {
+      "bucket": "Bristol-Myers Squibb \u2192 KarX-EC",
+      "value": 2.0,
+      "nct_ids": [
+        "NCT06937229",
+        "NCT06947941"
+      ],
+      "trials": [
+        {
+          "nct_id": "NCT06937229",
+          "title": "A Study to Evaluate the Long-term Efficacy and Safety of KarXT + KarX-EC for Agitation in Alzheimer's Disease (ADAGIO-3)",
+          "url": "https://clinicaltrials.gov/study/NCT06937229",
+          "excerpt": "Sponsor: Bristol-Myers Squibb \u00b7 interventions: KarXT, KarX-EC"
+        },
+        {
+          "nct_id": "NCT06947941",
+          "title": "A Study to Evaluate Safety and Efficacy of KarXT + KarX-EC as a Treatment for Psychosis Associated With Alzheimer's Disease (ADEPT-5)",
+          "url": "https://clinicaltrials.gov/study/NCT06947941",
+          "excerpt": "Sponsor: Bristol-Myers Squibb \u00b7 interventions: KarXT, KarX-EC, KarXT + KarX-EC Arm Matching Placebo"
+        }
+      ]
+    },
+    {
+      "bucket": "Bristol-Myers Squibb \u2192 KarXT",
+      "value": 2.0,
+      "nct_ids": [
+        "NCT06937229",
+        "NCT06947941"
+      ],
+      "trials": [
+        {
+          "nct_id": "NCT06937229",
+          "title": "A Study to Evaluate the Long-term Efficacy and Safety of KarXT + KarX-EC for Agitation in Alzheimer's Disease (ADAGIO-3)",
+          "url": "https://clinicaltrials.gov/study/NCT06937229",
+          "excerpt": "Sponsor: Bristol-Myers Squibb \u00b7 interventions: KarXT, KarX-EC"
+        },
+        {
+          "nct_id": "NCT06947941",
+          "title": "A Study to Evaluate Safety and Efficacy of KarXT + KarX-EC as a Treatment for Psychosis Associated With Alzheimer's Disease (ADEPT-5)",
+          "url": "https://clinicaltrials.gov/study/NCT06947941",
+          "excerpt": "Sponsor: Bristol-Myers Squibb \u00b7 interventions: KarXT, KarX-EC, KarXT + KarX-EC Arm Matching Placebo"
+        }
+      ]
+    },
+    {
+      "bucket": "Avid Radiopharmaceuticals \u2192 florbetapir F 18",
+      "value": 2.0,
+      "nct_ids": [
+        "NCT00855868",
+        "NCT01565382"
+      ],
+      "trials": [
+        {
+          "nct_id": "NCT00855868",
+          "title": "Ability Of ([18F]-AV-45) PET Scan to Distinguish Alzheimer's Disease Subjects From Cognitively Normal Individuals",
+          "url": "https://clinicaltrials.gov/study/NCT00855868",
+          "excerpt": "Sponsor: Avid Radiopharmaceuticals \u00b7 interventions: florbetapir F 18, [11C]-PIB"
+        },
+        {
+          "nct_id": "NCT01565382",
+          "title": "Evaluation of Inter-reader Reliability Using Images From Subjects With Alzheimer's Disease (AD) or Mild Cognitive Impairment (MCI)",
+          "url": "https://clinicaltrials.gov/study/NCT01565382",
+          "excerpt": "Sponsor: Avid Radiopharmaceuticals \u00b7 interventions: florbetapir F 18"
+        }
+      ]
+    },
+    {
+      "bucket": "AlzeCure Pharma \u2192 ACD856",
+      "value": 2.0,
+      "nct_ids": [
+        "NCT05077501",
+        "NCT05783830"
+      ],
+      "trials": [
+        {
+          "nct_id": "NCT05077501",
+          "title": "Study to Evaluate the Safety, Tolerability, Pharmacokinetics and Pharmacodynamics of Multiple Ascending Doses of ACD856",
+          "url": "https://clinicaltrials.gov/study/NCT05077501",
+          "excerpt": "Sponsor: AlzeCure Pharma \u00b7 interventions: ACD856, Placebo"
+        },
+        {
+          "nct_id": "NCT05783830",
+          "title": "Study Evaluating the Pharmacokinetics of a Single Microdose of ACD856",
+          "url": "https://clinicaltrials.gov/study/NCT05783830",
+          "excerpt": "Sponsor: AlzeCure Pharma \u00b7 interventions: ACD856"
+        }
+      ]
+    },
+    {
+      "bucket": "University of Rochester \u2192 Daridorexant 50 mg",
+      "value": 2.0,
+      "nct_ids": [
+        "NCT06630390",
+        "NCT07217912"
+      ],
+      "trials": [
+        {
+          "nct_id": "NCT06630390",
+          "title": "Daridorexant to Prevent Delirium After Heart Surgery",
+          "url": "https://clinicaltrials.gov/study/NCT06630390",
+          "excerpt": "Sponsor: University of Rochester \u00b7 interventions: Daridorexant 50 mg, Placebo"
+        },
+        {
+          "nct_id": "NCT07217912",
+          "title": "Daridorexant to Prevent Post-cardiotomy Delirium",
+          "url": "https://clinicaltrials.gov/study/NCT07217912",
+          "excerpt": "Sponsor: University of Rochester \u00b7 interventions: Daridorexant 50 mg, Placebo"
+        }
+      ]
+    },
+    {
+      "bucket": "Wyeth is now a wholly owned subsidiary of Pfizer \u2192 SAM-531",
+      "value": 2.0,
+      "nct_ids": [
+        "NCT00481520",
+        "NCT00726115"
+      ],
+      "trials": [
+        {
+          "nct_id": "NCT00481520",
+          "title": "Study Evaluating the Safety,Tolerability, PK and PD of SAM-531 in the Subjects With Mild to Moderate Alzheimer's Disease",
+          "url": "https://clinicaltrials.gov/study/NCT00481520",
+          "excerpt": "Sponsor: Wyeth is now a wholly owned subsidiary of Pfizer \u00b7 interventions: SAM-531, placebo"
+        },
+        {
+          "nct_id": "NCT00726115",
+          "title": "Study Evaluating Safety, Tolerability and Pharmacokinetics of Single and Multiple Dose of SAM-531",
+          "url": "https://clinicaltrials.gov/study/NCT00726115",
+          "excerpt": "Sponsor: Wyeth is now a wholly owned subsidiary of Pfizer \u00b7 interventions: SAM-531, placebo"
+        }
+      ]
+    },
+    {
+      "bucket": "Cognition Therapeutics \u2192 CT1812",
+      "value": 2.0,
+      "nct_ids": [
+        "NCT02907567",
+        "NCT03507790"
+      ],
+      "trials": [
+        {
+          "nct_id": "NCT02907567",
+          "title": "Clinical Trial of CT1812 in Mild to Moderate Alzheimer's Disease",
+          "url": "https://clinicaltrials.gov/study/NCT02907567",
+          "excerpt": "Sponsor: Cognition Therapeutics \u00b7 interventions: CT1812, Placebo"
+        },
+        {
+          "nct_id": "NCT03507790",
+          "title": "A Study to Evaluate the Safety and Efficacy of CT1812 in Subjects With Mild to Moderate Alzheimer's Disease.",
+          "url": "https://clinicaltrials.gov/study/NCT03507790",
+          "excerpt": "Sponsor: Cognition Therapeutics \u00b7 interventions: CT1812, Placebo"
+        }
+      ]
+    },
+    {
+      "bucket": "Bristol-Myers Squibb \u2192 BMS-708163",
+      "value": 2.0,
+      "nct_ids": [
+        "NCT00810147",
+        "NCT01042314"
+      ],
+      "trials": [
+        {
+          "nct_id": "NCT00810147",
+          "title": "A Phase II, Multicenter, Double Blind, Placebo-Controlled Safety, Tolerability Study of BMS-708163 in Patients With Mild to Moderate Alzheimer's Disease",
+          "url": "https://clinicaltrials.gov/study/NCT00810147",
+          "excerpt": "Sponsor: Bristol-Myers Squibb \u00b7 interventions: BMS-708163, BMS-708163, BMS-708163, BMS-708163, Placebo"
+        },
+        {
+          "nct_id": "NCT01042314",
+          "title": "Drug-Drug Interaction Study With Aricept\u00ae (Donepezil)",
+          "url": "https://clinicaltrials.gov/study/NCT01042314",
+          "excerpt": "Sponsor: Bristol-Myers Squibb \u00b7 interventions: Donepezil, BMS-708163"
+        }
+      ]
+    },
+    {
+      "bucket": "Medivation, Inc. \u2192 Dimebon",
+      "value": 2.0,
+      "nct_ids": [
+        "NCT00829374",
+        "NCT00829816"
+      ],
+      "trials": [
+        {
+          "nct_id": "NCT00829374",
+          "title": "Safety and Efficacy Study Evaluating Dimebon in Patients With Mild to Moderate Alzheimer's Disease on Donepezil",
+          "url": "https://clinicaltrials.gov/study/NCT00829374",
+          "excerpt": "Sponsor: Medivation, Inc. \u00b7 interventions: Dimebon, Dimebon, Placebo comparator"
+        },
+        {
+          "nct_id": "NCT00829816",
+          "title": "Safety and Tolerability of Dimebon in Patients on Memantine, and Memantine Plus Donepezil",
+          "url": "https://clinicaltrials.gov/study/NCT00829816",
+          "excerpt": "Sponsor: Medivation, Inc. \u00b7 interventions: Dimebon, Placebo"
+        }
+      ]
+    },
+    {
+      "bucket": "Allyx Therapeutics \u2192 BMS-984923",
+      "value": 2.0,
+      "nct_ids": [
+        "NCT05804383",
+        "NCT05817643"
+      ],
+      "trials": [
+        {
+          "nct_id": "NCT05804383",
+          "title": "A Multiple Ascending Dose Study in Healthy Volunteers and Patients With Alzheimer's Disease",
+          "url": "https://clinicaltrials.gov/study/NCT05804383",
+          "excerpt": "Sponsor: Allyx Therapeutics \u00b7 interventions: BMS-984923, Placebo"
+        },
+        {
+          "nct_id": "NCT05817643",
+          "title": "Food Effect Study of BMS-984923 in Healthy Older Adult Volunteers",
+          "url": "https://clinicaltrials.gov/study/NCT05817643",
+          "excerpt": "Sponsor: Allyx Therapeutics \u00b7 interventions: BMS-984923"
+        }
+      ]
+    },
+    {
+      "bucket": "Eisai Co., Ltd. \u2192 Donepezil Hydrochloride",
+      "value": 2.0,
+      "nct_ids": [
+        "NCT02162251",
+        "NCT02162264"
+      ],
+      "trials": [
+        {
+          "nct_id": "NCT02162251",
+          "title": "Post-marketing Surveillance of Donepezil Hydrochloride Investigation of the Safety and Effectiveness of Combination Therapy of Donepezil Hydrochloride and Memantine Hydrochloride in Patients With Alzheimer's Disease",
+          "url": "https://clinicaltrials.gov/study/NCT02162251",
+          "excerpt": "Sponsor: Eisai Co., Ltd. \u00b7 interventions: Donepezil Hydrochloride"
+        },
+        {
+          "nct_id": "NCT02162264",
+          "title": "Post-marketing Surveillance of Donepezil Hydrochloride -Investigation of the Factors That Affect Aricept Medication Persistence Rate and the Safety and Efficacy in Patients With Alzheimer's Disease in Clinical Practice",
+          "url": "https://clinicaltrials.gov/study/NCT02162264",
+          "excerpt": "Sponsor: Eisai Co., Ltd. \u00b7 interventions: Donepezil Hydrochloride"
+        }
+      ]
+    },
+    {
+      "bucket": "Regeneration Biomedical, Inc. \u2192 RB-ADSC",
+      "value": 2.0,
+      "nct_ids": [
+        "NCT07205601",
+        "NCT07373067"
+      ],
+      "trials": [
+        {
+          "nct_id": "NCT07205601",
+          "title": "Study of Intracerebroventricular Injections of Autologous Adipose-Derived Stem Cells (RB-ADSCs) in Participants With Mild-Moderate Alzheimer's Disease",
+          "url": "https://clinicaltrials.gov/study/NCT07205601",
+          "excerpt": "Sponsor: Regeneration Biomedical, Inc. \u00b7 interventions: RB-ADSC, Placebo"
+        },
+        {
+          "nct_id": "NCT07373067",
+          "title": "Repeat Intracerebroventricular Injections of RB-ADSC in Subjects Previously Treated in RBI Protocol RB-ADSC-02",
+          "url": "https://clinicaltrials.gov/study/NCT07373067",
+          "excerpt": "Sponsor: Regeneration Biomedical, Inc. \u00b7 interventions: RB-ADSC"
+        }
+      ]
+    },
+    {
+      "bucket": "Pfizer \u2192 bapineuzumab",
+      "value": 2.0,
+      "nct_ids": [
+        "NCT00667810",
+        "NCT00916617"
+      ],
+      "trials": [
+        {
+          "nct_id": "NCT00667810",
+          "title": "Study Evaluating The Efficacy And Safety Of Bapineuzumab In Alzheimer Disease Patients",
+          "url": "https://clinicaltrials.gov/study/NCT00667810",
+          "excerpt": "Sponsor: Pfizer \u00b7 interventions: bapineuzumab, bapineuzumab, placebo"
+        },
+        {
+          "nct_id": "NCT00916617",
+          "title": "Study Evaluating The Long-Term Safety And Efficacy Of Subcutaneous Bapineuzumab",
+          "url": "https://clinicaltrials.gov/study/NCT00916617",
+          "excerpt": "Sponsor: Pfizer \u00b7 interventions: bapineuzumab"
+        }
+      ]
+    },
+    {
+      "bucket": "Alnylam Pharmaceuticals \u2192 Revusiran (ALN-TTRSC)",
+      "value": 2.0,
+      "nct_ids": [
+        "NCT02292186",
+        "NCT02319005"
+      ],
+      "trials": [
+        {
+          "nct_id": "NCT02292186",
+          "title": "A Extension Study to Evaluate Revusiran (ALN-TTRSC) in Patients With Transthyretin (TTR) Cardiac Amyloidosis",
+          "url": "https://clinicaltrials.gov/study/NCT02292186",
+          "excerpt": "Sponsor: Alnylam Pharmaceuticals \u00b7 interventions: Revusiran (ALN-TTRSC)"
+        },
+        {
+          "nct_id": "NCT02319005",
+          "title": "ENDEAVOUR: Phase 3 Multicenter Study of Revusiran (ALN-TTRSC) in Patients With Transthyretin (TTR) Mediated Familial Amyloidotic Cardiomyopathy (FAC)",
+          "url": "https://clinicaltrials.gov/study/NCT02319005",
+          "excerpt": "Sponsor: Alnylam Pharmaceuticals \u00b7 interventions: Revusiran (ALN-TTRSC), Sterile Normal Saline (0.9% NaCl)"
+        }
+      ]
+    },
+    {
+      "bucket": "Pfizer \u2192 ACC-001",
+      "value": 2.0,
+      "nct_ids": [
+        "NCT00498602",
+        "NCT00959192"
+      ],
+      "trials": [
+        {
+          "nct_id": "NCT00498602",
+          "title": "Study Evaluating ACC-001 In Subjects With Mild To Moderate Alzheimer's Disease",
+          "url": "https://clinicaltrials.gov/study/NCT00498602",
+          "excerpt": "Sponsor: Pfizer \u00b7 interventions: ACC-001 + QS-21, QS-21, Diluent: Phosphate Buffered Saline, ACC-001"
+        },
+        {
+          "nct_id": "NCT00959192",
+          "title": "Safety, Tolerability, And Immunogenicity Study Of ACC-001 In Japanese Subjects With Mild To Moderate Alzheimer's Disease",
+          "url": "https://clinicaltrials.gov/study/NCT00959192",
+          "excerpt": "Sponsor: Pfizer \u00b7 interventions: ACC-001, QS-21, QS-21"
+        }
+      ]
+    },
+    {
+      "bucket": "Chang Gung Memorial Hospital \u2192 DAOIB",
+      "value": 1.0,
+      "nct_ids": [
+        "NCT02103673"
+      ],
+      "trials": [
+        {
+          "nct_id": "NCT02103673",
+          "title": "DAOIB for the Treatment of Cognitive Function and Behavioral and Psychological Symptoms of Dementia",
+          "url": "https://clinicaltrials.gov/study/NCT02103673",
+          "excerpt": "Sponsor: Chang Gung Memorial Hospital \u00b7 interventions: DAOIB, Placebo"
+        }
+      ]
+    },
+    {
+      "bucket": "Chang Gung Memorial Hospital \u2192 DAOI-B",
+      "value": 1.0,
+      "nct_ids": [
+        "NCT01600469"
+      ],
+      "trials": [
+        {
+          "nct_id": "NCT01600469",
+          "title": "NMDA-enhancing Agent for Treatment of Mild Cognitive Impairment and Mild Alzheimer's Disease",
+          "url": "https://clinicaltrials.gov/study/NCT01600469",
+          "excerpt": "Sponsor: Chang Gung Memorial Hospital \u00b7 interventions: DAOI-B, Placebo"
+        }
+      ]
+    },
+    {
+      "bucket": "Chang Gung Memorial Hospital \u2192 18F-PM-PBB3",
+      "value": 1.0,
+      "nct_ids": [
+        "NCT04248270"
+      ],
+      "trials": [
+        {
+          "nct_id": "NCT04248270",
+          "title": "A Noval Tau Tracer in Young Onset Dementia",
+          "url": "https://clinicaltrials.gov/study/NCT04248270",
+          "excerpt": "Sponsor: Chang Gung Memorial Hospital \u00b7 interventions: 18F-PM-PBB3"
+        }
+      ]
+    },
+    {
+      "bucket": "Xiangya Hospital of Central South University \u2192 Levetiracetam 250mg",
+      "value": 1.0,
+      "nct_ids": [
+        "NCT05969054"
+      ],
+      "trials": [
+        {
+          "nct_id": "NCT05969054",
+          "title": "Improvement Effect of Lacosamide and Levetiracetam on Cognitive in Alzheimer's Disease Patients With Epilepsy",
+          "url": "https://clinicaltrials.gov/study/NCT05969054",
+          "excerpt": "Sponsor: Xiangya Hospital of Central South University \u00b7 interventions: Lacosamide 100 mg, Levetiracetam 250mg"
+        }
+      ]
+    },
+    {
+      "bucket": "Xiangya Hospital of Central South University \u2192 Lacosamide 100 mg",
+      "value": 1.0,
+      "nct_ids": [
+        "NCT05969054"
+      ],
+      "trials": [
+        {
+          "nct_id": "NCT05969054",
+          "title": "Improvement Effect of Lacosamide and Levetiracetam on Cognitive in Alzheimer's Disease Patients With Epilepsy",
+          "url": "https://clinicaltrials.gov/study/NCT05969054",
+          "excerpt": "Sponsor: Xiangya Hospital of Central South University \u00b7 interventions: Lacosamide 100 mg, Levetiracetam 250mg"
+        }
+      ]
+    },
+    {
+      "bucket": "TrueBinding, Inc. \u2192 TB006",
+      "value": 1.0,
+      "nct_ids": [
+        "NCT05476783"
+      ],
+      "trials": [
+        {
+          "nct_id": "NCT05476783",
+          "title": "A Long Term Extension Study to Assess the Safety of TB006 in Participants With Alzheimer's Disease",
+          "url": "https://clinicaltrials.gov/study/NCT05476783",
+          "excerpt": "Sponsor: TrueBinding, Inc. \u00b7 interventions: TB006"
+        }
+      ]
+    },
+    {
+      "bucket": "Chang Gung Memorial Hospital \u2192 AV45",
+      "value": 1.0,
+      "nct_ids": [
+        "NCT04309253"
+      ],
+      "trials": [
+        {
+          "nct_id": "NCT04309253",
+          "title": "The Influence of Vascular Burden, Amyloid Plaque and Tau Protein in Patients With Vascular Cognitive Impairment and Dementia With Tauopathy",
+          "url": "https://clinicaltrials.gov/study/NCT04309253",
+          "excerpt": "Sponsor: Chang Gung Memorial Hospital \u00b7 interventions: PMPBB3, AV45"
+        }
+      ]
+    },
+    {
+      "bucket": "Pfizer \u2192 Dimebon",
+      "value": 1.0,
+      "nct_ids": [
+        "NCT00939783"
+      ],
+      "trials": [
+        {
+          "nct_id": "NCT00939783",
+          "title": "An Extension To The B1451027 Protocol To Evaluate The Long Term Safety And Tolerability Of Dimebon In Patients With Alzheimer's Disease",
+          "url": "https://clinicaltrials.gov/study/NCT00939783",
+          "excerpt": "Sponsor: Pfizer \u00b7 interventions: Dimebon"
+        }
+      ]
+    }
+  ],
+  "summary": "The sponsor-drug network chart for Alzheimer's trials highlights the relationships between various sponsors and their respective drug trials. Notably, Pfizer leads with 6 trials (NCT00498602, NCT00667810, NCT00916617, NCT00939783, NCT00959192, NCT01369225), alongside Avid Radiopharmaceuticals, which also has 6 trials (NCT00855868, NCT01565382, NCT02278354, NCT02336360, NCT02795780, NCT03467477). Other prominent sponsors include Johnson & Johnson and Chang Gung Memorial Hospital, each contributing to 5 trials. The chart reveals a diverse engagement from multiple sponsors, with some, like Xiangya Hospital and TrueBinding, involved in only 1 trial each.",
+  "trace_id": "5"
+}

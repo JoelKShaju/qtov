@@ -1,0 +1,4168 @@
+{
+  "event_id": "0598d1517a164a859bd49002d0fa33af",
+  "query": "Compare the number of metformin vs semaglutide trials per year since 2018.",
+  "interpretation": {
+    "query_type": "comparison",
+    "parameters": {
+      "condition": null,
+      "intervention": null,
+      "intervention_type": null,
+      "study_type": null,
+      "sponsor": null,
+      "country": null,
+      "status": null,
+      "start_year": 2018,
+      "end_year": null,
+      "group_by": "year",
+      "comparison_entities": [
+        "metformin",
+        "semaglutide"
+      ],
+      "comparison_dimension": "intervention"
+    },
+    "reasoning": "This comparison focuses on the number of trials for both interventions over the specified years.",
+    "confidence": 0.7,
+    "alternatives": [
+      {
+        "query_type": "time_trend",
+        "chart": "line"
+      }
+    ]
+  },
+  "visualization": {
+    "type": "grouped_bar",
+    "title": "Comparison of Trials for Metformin vs. Semaglutide per Year Since 2018",
+    "data": [
+      {
+        "bucket": "2018",
+        "metformin": 124,
+        "semaglutide": 21
+      },
+      {
+        "bucket": "2019",
+        "metformin": 149,
+        "semaglutide": 41
+      },
+      {
+        "bucket": "2020",
+        "metformin": 97,
+        "semaglutide": 23
+      },
+      {
+        "bucket": "2021",
+        "metformin": 124,
+        "semaglutide": 49
+      },
+      {
+        "bucket": "2022",
+        "metformin": 138,
+        "semaglutide": 68
+      },
+      {
+        "bucket": "2023",
+        "metformin": 138,
+        "semaglutide": 88
+      },
+      {
+        "bucket": "2024",
+        "metformin": 154,
+        "semaglutide": 0
+      },
+      {
+        "bucket": "2025",
+        "metformin": 152,
+        "semaglutide": 125
+      },
+      {
+        "bucket": "2026",
+        "metformin": 72,
+        "semaglutide": 105
+      },
+      {
+        "bucket": "2027",
+        "metformin": 0,
+        "semaglutide": 3
+      },
+      {
+        "bucket": "2028",
+        "metformin": 0,
+        "semaglutide": 1
+      }
+    ],
+    "encoding": {
+      "x": {
+        "field": "bucket",
+        "type": "temporal"
+      },
+      "y": {
+        "field": "value",
+        "type": "quantitative"
+      },
+      "color": {
+        "field": "series",
+        "type": "nominal"
+      }
+    },
+    "metadata": {
+      "total_records": 1791,
+      "sampled": 1200,
+      "bucket_set_complete": true,
+      "data_caveat": null,
+      "filters_applied": "years=2018-MAX",
+      "source": "ClinicalTrials.gov",
+      "timestamp": "2026-06-26T02:30:06.993462+00:00",
+      "chart_config": {
+        "x_label": "Year",
+        "y_label": "Number of trials",
+        "x_axis_rotation": 35,
+        "time_format": null
+      }
+    }
+  },
+  "citations": [
+    {
+      "bucket": "metformin \u00b7 2018",
+      "value": 124.0,
+      "nct_ids": [
+        "NCT03596450",
+        "NCT03684642",
+        "NCT03674385",
+        "NCT03467971",
+        "NCT03568630",
+        "NCT03700801",
+        "NCT03757923",
+        "NCT03629639",
+        "NCT04170959",
+        "NCT03359681",
+        "NCT03429543",
+        "NCT03445702",
+        "NCT05292573",
+        "NCT03490019",
+        "NCT03029702",
+        "NCT03756623",
+        "NCT04654676",
+        "NCT03424005",
+        "NCT03229057",
+        "NCT03639545",
+        "NCT03583385",
+        "NCT03359590",
+        "NCT03514108",
+        "NCT03681197",
+        "NCT03629054",
+        "NCT03618472",
+        "NCT03465345",
+        "NCT03525028",
+        "NCT03604419",
+        "NCT03566810",
+        "NCT03714594",
+        "NCT03690778",
+        "NCT03451006",
+        "NCT03451734",
+        "NCT03393208",
+        "NCT04549415",
+        "NCT03577184",
+        "NCT03685357",
+        "NCT03796975",
+        "NCT05343767",
+        "NCT03225209",
+        "NCT03685409",
+        "NCT06611904",
+        "NCT03917758",
+        "NCT04017221",
+        "NCT05549583",
+        "NCT03098654",
+        "NCT04879511",
+        "NCT03511118",
+        "NCT03507413",
+        "NCT03770052",
+        "NCT03335423",
+        "NCT04010942",
+        "NCT02689843",
+        "NCT03495102",
+        "NCT03349684",
+        "NCT04907708",
+        "NCT06473662",
+        "NCT03603912"
+      ],
+      "trials": [
+        {
+          "nct_id": "NCT03596450",
+          "title": "Long Term Comparative Effectiveness of Once Weekly Semaglutide Versus Standard of Care in a Real World Adult US Population With Type 2 Diabetes - a Randomized Pragmatic Trial",
+          "url": "https://clinicaltrials.gov/study/NCT03596450",
+          "excerpt": "Start date: 2018-07-13"
+        },
+        {
+          "nct_id": "NCT03684642",
+          "title": "Efficacy and Safety of Efpeglenatide Versus Dulaglutide in Patients With Type 2 Diabetes Mellitus Inadequately Controlled With Metformin",
+          "url": "https://clinicaltrials.gov/study/NCT03684642",
+          "excerpt": "Start date: 2018-09-26"
+        },
+        {
+          "nct_id": "NCT03674385",
+          "title": "Efficacy of Vit E in PCOS Resistant to Clomiphene Citrate",
+          "url": "https://clinicaltrials.gov/study/NCT03674385",
+          "excerpt": "Start date: 2018-07-19"
+        },
+        {
+          "nct_id": "NCT03467971",
+          "title": "A Study to Assess the Food Effect on Bioavailability of Metformin/Gliclazide in Healthy Participants",
+          "url": "https://clinicaltrials.gov/study/NCT03467971",
+          "excerpt": "Start date: 2018-03-06"
+        },
+        {
+          "nct_id": "NCT03568630",
+          "title": "Blood Markers of Early Pancreas Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT03568630",
+          "excerpt": "Start date: 2018-07-26"
+        },
+        {
+          "nct_id": "NCT03700801",
+          "title": "Study of Efficacy, Weight Control, and Safety in Newly-diagnosed Type 2 Diabetes With Different Antidiabetic Therapy",
+          "url": "https://clinicaltrials.gov/study/NCT03700801",
+          "excerpt": "Start date: 2018-10-01"
+        },
+        {
+          "nct_id": "NCT03757923",
+          "title": "Comparison of Metformin and Pioglitazone in Regulating Menstrual Irregularities and Hyperandrogenism",
+          "url": "https://clinicaltrials.gov/study/NCT03757923",
+          "excerpt": "Start date: 2018-06-18"
+        },
+        {
+          "nct_id": "NCT03629639",
+          "title": "Metformin for Treatment of Psoriasis Combined With Disorders of Glucose and Lipid Metabolism",
+          "url": "https://clinicaltrials.gov/study/NCT03629639",
+          "excerpt": "Start date: 2018-09-01"
+        },
+        {
+          "nct_id": "NCT04170959",
+          "title": "The Addition of Metformin to Definitive Radiotherapy in Patients With Stage III NSCLC",
+          "url": "https://clinicaltrials.gov/study/NCT04170959",
+          "excerpt": "Start date: 2018-07-30"
+        },
+        {
+          "nct_id": "NCT03359681",
+          "title": "Metformin Treatment for Colon Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT03359681",
+          "excerpt": "Start date: 2018-07-10"
+        },
+        {
+          "nct_id": "NCT03429543",
+          "title": "Diabetes Study of Linagliptin and Empagliflozin in Children and Adolescents (DINAMO)TM",
+          "url": "https://clinicaltrials.gov/study/NCT03429543",
+          "excerpt": "Start date: 2018-03-20"
+        },
+        {
+          "nct_id": "NCT03445702",
+          "title": "Metformin Gastrointestinal Intolerance: Measurement of Mitochondrial Complex I",
+          "url": "https://clinicaltrials.gov/study/NCT03445702",
+          "excerpt": "Start date: 2018-10-15"
+        },
+        {
+          "nct_id": "NCT05292573",
+          "title": "Longitudinal Follow-up in Women With Endometrial Hyperplasia Without Atypia",
+          "url": "https://clinicaltrials.gov/study/NCT05292573",
+          "excerpt": "Start date: 2018-08-01"
+        },
+        {
+          "nct_id": "NCT03490019",
+          "title": "Treatment of Bardet-Biedl-Syndrome With Metformin for Evaluation of a Possible Visual Improvement",
+          "url": "https://clinicaltrials.gov/study/NCT03490019",
+          "excerpt": "Start date: 2018-04-01"
+        },
+        {
+          "nct_id": "NCT03029702",
+          "title": "Metabolic Analysis for Treatment Choice in Gestational Diabetes Mellitus",
+          "url": "https://clinicaltrials.gov/study/NCT03029702",
+          "excerpt": "Start date: 2018-02-28"
+        },
+        {
+          "nct_id": "NCT03756623",
+          "title": "Effect of Metformin and Probiotics on Gut Microbiome in Healthy Subjects",
+          "url": "https://clinicaltrials.gov/study/NCT03756623",
+          "excerpt": "Start date: 2018-06-01"
+        },
+        {
+          "nct_id": "NCT04654676",
+          "title": "DPP4 Inhibitor on Glycemic Variability",
+          "url": "https://clinicaltrials.gov/study/NCT04654676",
+          "excerpt": "Start date: 2018-09-15"
+        },
+        {
+          "nct_id": "NCT03424005",
+          "title": "A Study Evaluating the Efficacy and Safety of Multiple Treatment Combinations in Patients With Metastatic or Locally Advanced Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT03424005",
+          "excerpt": "Start date: 2018-03-30"
+        },
+        {
+          "nct_id": "NCT03229057",
+          "title": "Comparing the Effects of Oral Contraceptive Pills Versus Metformin",
+          "url": "https://clinicaltrials.gov/study/NCT03229057",
+          "excerpt": "Start date: 2018-01-15"
+        },
+        {
+          "nct_id": "NCT03639545",
+          "title": "The Effects of Empagliflozin on Arterial Wall Characteristics",
+          "url": "https://clinicaltrials.gov/study/NCT03639545",
+          "excerpt": "Start date: 2018-03-01"
+        },
+        {
+          "nct_id": "NCT03583385",
+          "title": "Glucophage\u00ae Extended Release (XR) 750 Milligram (mg) Indonesia Bioequivalence (BE) Study",
+          "url": "https://clinicaltrials.gov/study/NCT03583385",
+          "excerpt": "Start date: 2018-08-16"
+        },
+        {
+          "nct_id": "NCT03359590",
+          "title": "Sitagliptin and the Risk for Hypoglycaemia in Type 2 Diabetes Patients",
+          "url": "https://clinicaltrials.gov/study/NCT03359590",
+          "excerpt": "Start date: 2018-03-21"
+        },
+        {
+          "nct_id": "NCT03514108",
+          "title": "DANHEART (H-HeFT and Met-HeFT)",
+          "url": "https://clinicaltrials.gov/study/NCT03514108",
+          "excerpt": "Start date: 2018-03-01"
+        },
+        {
+          "nct_id": "NCT03681197",
+          "title": "Metformin Use and Clinical Pregnancy Rate in Women With Unexplained Infertility",
+          "url": "https://clinicaltrials.gov/study/NCT03681197",
+          "excerpt": "Start date: 2018-06-15"
+        },
+        {
+          "nct_id": "NCT03629054",
+          "title": "This Study in Healthy People Tests Whether Taking a Low Strength of Empagliflozin, Linagliptin, and Metformin Together in 1 Pill is the Same as Taking Them in Separate Pills",
+          "url": "https://clinicaltrials.gov/study/NCT03629054",
+          "excerpt": "Start date: 2018-08-27"
+        }
+      ]
+    },
+    {
+      "bucket": "semaglutide \u00b7 2018",
+      "value": 21.0,
+      "nct_ids": [
+        "NCT03466567",
+        "NCT03596450",
+        "NCT03548935",
+        "NCT03631186",
+        "NCT03611582",
+        "NCT03648281",
+        "NCT03724981",
+        "NCT03598621",
+        "NCT03574597",
+        "NCT03457012",
+        "NCT03600480",
+        "NCT03638778",
+        "NCT03611322",
+        "NCT03292315",
+        "NCT03707990",
+        "NCT03498001",
+        "NCT03574584",
+        "NCT03552757",
+        "NCT03693430",
+        "NCT03548987"
+      ],
+      "trials": [
+        {
+          "nct_id": "NCT03466567",
+          "title": "A Trial Investigating the Effect of Probenecid and Ciclosporin on the Concentrations of SNAC in Healthy Subjects",
+          "url": "https://clinicaltrials.gov/study/NCT03466567",
+          "excerpt": "Start date: 2018-03-15"
+        },
+        {
+          "nct_id": "NCT03596450",
+          "title": "Long Term Comparative Effectiveness of Once Weekly Semaglutide Versus Standard of Care in a Real World Adult US Population With Type 2 Diabetes - a Randomized Pragmatic Trial",
+          "url": "https://clinicaltrials.gov/study/NCT03596450",
+          "excerpt": "Start date: 2018-07-13"
+        },
+        {
+          "nct_id": "NCT03548935",
+          "title": "STEP 1: Research Study Investigating How Well Semaglutide Works in People Suffering From Overweight or Obesity",
+          "url": "https://clinicaltrials.gov/study/NCT03548935",
+          "excerpt": "Start date: 2018-06-04"
+        },
+        {
+          "nct_id": "NCT03631186",
+          "title": "A Research Study Looking at How Semaglutide Works in People With Type 2 Diabetes in Switzerland, as Part of Local Clinical Practice (SURE SWITZERLAND)",
+          "url": "https://clinicaltrials.gov/study/NCT03631186",
+          "excerpt": "Start date: 2018-09-12"
+        },
+        {
+          "nct_id": "NCT03611582",
+          "title": "Research Study to Look at How Well Semaglutide is at Lowering Weight When Taken Together With an Intensive Lifestyle Program",
+          "url": "https://clinicaltrials.gov/study/NCT03611582",
+          "excerpt": "Start date: 2018-08-01"
+        },
+        {
+          "nct_id": "NCT03648281",
+          "title": "A Research Study Looking at How Semaglutide Works in People With Type 2 Diabetes in Denmark and Sweden, as Part of Local Clinical Practice (SURE DENMARK/SWEDEN)",
+          "url": "https://clinicaltrials.gov/study/NCT03648281",
+          "excerpt": "Start date: 2018-08-24"
+        },
+        {
+          "nct_id": "NCT03724981",
+          "title": "A Study Comparing the Dulaglutide Pen and the Semaglutide Pen",
+          "url": "https://clinicaltrials.gov/study/NCT03724981",
+          "excerpt": "Start date: 2018-10-18"
+        },
+        {
+          "nct_id": "NCT03598621",
+          "title": "A Research Study to Look at Similarity Between Semaglutide Versions in Different Injection Tools",
+          "url": "https://clinicaltrials.gov/study/NCT03598621",
+          "excerpt": "Start date: 2018-07-23"
+        },
+        {
+          "nct_id": "NCT03574597",
+          "title": "Semaglutide Effects on Heart Disease and Stroke in Patients With Overweight or Obesity",
+          "url": "https://clinicaltrials.gov/study/NCT03574597",
+          "excerpt": "Start date: 2018-10-24"
+        },
+        {
+          "nct_id": "NCT03457012",
+          "title": "A Research Study Looking at How Semaglutide Works in People With Type 2 Diabetes in Canada, as Part of Local Clinical Practice",
+          "url": "https://clinicaltrials.gov/study/NCT03457012",
+          "excerpt": "Start date: 2018-03-29"
+        },
+        {
+          "nct_id": "NCT03600480",
+          "title": "A Research Study of How NNC0174-0833 Taken With Semaglutide Works in People Who Are Overweight or Obese",
+          "url": "https://clinicaltrials.gov/study/NCT03600480",
+          "excerpt": "Start date: 2018-07-25"
+        },
+        {
+          "nct_id": "NCT03638778",
+          "title": "Research Study Comparing Different Tablets With the Study Medicine Semaglutide in Healthy Men",
+          "url": "https://clinicaltrials.gov/study/NCT03638778",
+          "excerpt": "Start date: 2018-08-17"
+        },
+        {
+          "nct_id": "NCT03611322",
+          "title": "A Trial to Compare Blood Concentration Levels of Semaglutide Following Subcutaneous Injections of Semaglutide 1 mg by 2 Different Devices (the DV3372 Device and by the PDS290 Semaglutide Pen-injector)",
+          "url": "https://clinicaltrials.gov/study/NCT03611322",
+          "excerpt": "Start date: 2018-08-08"
+        },
+        {
+          "nct_id": "NCT03292315",
+          "title": "Once Weekly GLP-1 in Persons With Spinal Cord Injury",
+          "url": "https://clinicaltrials.gov/study/NCT03292315",
+          "excerpt": "Start date: 2018-10-16"
+        },
+        {
+          "nct_id": "NCT03707990",
+          "title": "A Research Study of NNC0165-1875 Alone or Together With Semaglutide in People Who Are Overweight or Obese",
+          "url": "https://clinicaltrials.gov/study/NCT03707990",
+          "excerpt": "Start date: 2018-10-15"
+        },
+        {
+          "nct_id": "NCT03498001",
+          "title": "Effects of GLP-1 Agonists on CArdiac Steatosis Evaluated by Magnetic Resonance Imaging",
+          "url": "https://clinicaltrials.gov/study/NCT03498001",
+          "excerpt": "Start date: 2018-04-16"
+        },
+        {
+          "nct_id": "NCT03574584",
+          "title": "A Research Study of NNC0165-1562 and Semaglutide in People Who Are Overweight or Obese",
+          "url": "https://clinicaltrials.gov/study/NCT03574584",
+          "excerpt": "Start date: 2018-06-18"
+        },
+        {
+          "nct_id": "NCT03552757",
+          "title": "Research Study Investigating How Well Semaglutide Works in People With Type 2 Diabetes Suffering From Overweight or Obesity",
+          "url": "https://clinicaltrials.gov/study/NCT03552757",
+          "excerpt": "Start date: 2018-06-04"
+        },
+        {
+          "nct_id": "NCT03693430",
+          "title": "Two-year Research Study Investigating How Well Semaglutide Works in People Suffering From Overweight or Obesity",
+          "url": "https://clinicaltrials.gov/study/NCT03693430",
+          "excerpt": "Start date: 2018-10-05"
+        },
+        {
+          "nct_id": "NCT03548987",
+          "title": "Research Study Investigating How Well Semaglutide Works in People Suffering From Overweight or Obesity",
+          "url": "https://clinicaltrials.gov/study/NCT03548987",
+          "excerpt": "Start date: 2018-06-04"
+        }
+      ]
+    },
+    {
+      "bucket": "metformin \u00b7 2019",
+      "value": 149.0,
+      "nct_ids": [
+        "NCT03826641",
+        "NCT04295031",
+        "NCT04039503",
+        "NCT03798080",
+        "NCT03982381",
+        "NCT04120259",
+        "NCT04272359",
+        "NCT03842267",
+        "NCT05004948",
+        "NCT04027023",
+        "NCT04143282",
+        "NCT04145687",
+        "NCT03056274",
+        "NCT03874000",
+        "NCT03956290",
+        "NCT03765359",
+        "NCT04170439",
+        "NCT05125575",
+        "NCT03829020",
+        "NCT03713801",
+        "NCT03863405",
+        "NCT04088851",
+        "NCT03379909",
+        "NCT04047940",
+        "NCT04001725",
+        "NCT05353686",
+        "NCT04161404",
+        "NCT03996538",
+        "NCT04093752",
+        "NCT03921242",
+        "NCT03987919",
+        "NCT03813316",
+        "NCT03898037",
+        "NCT03764605",
+        "NCT04156750",
+        "NCT03861767",
+        "NCT04377321",
+        "NCT06084156",
+        "NCT04485845",
+        "NCT04141163",
+        "NCT03994744",
+        "NCT04177303",
+        "NCT03670043",
+        "NCT03880825",
+        "NCT03856632",
+        "NCT03737240",
+        "NCT03970434",
+        "NCT04521049",
+        "NCT04029480",
+        "NCT03717194",
+        "NCT03945656",
+        "NCT04192292",
+        "NCT03772964",
+        "NCT03794336",
+        "NCT04047537",
+        "NCT03826602",
+        "NCT03733132",
+        "NCT04070794",
+        "NCT04065581",
+        "NCT04064073",
+        "NCT03862716",
+        "NCT03864705",
+        "NCT03851432",
+        "NCT04113889",
+        "NCT03107884",
+        "NCT03927170",
+        "NCT03452267",
+        "NCT04155164",
+        "NCT03958591",
+        "NCT03980990",
+        "NCT04029272",
+        "NCT04089813",
+        "NCT04559308",
+        "NCT02978547",
+        "NCT03850886"
+      ],
+      "trials": [
+        {
+          "nct_id": "NCT03826641",
+          "title": "A Study to Evaluate the Pharmacokinetics, Safety and Tolerability of HCP1801 in Healthy Subjects",
+          "url": "https://clinicaltrials.gov/study/NCT03826641",
+          "excerpt": "Start date: 2019-02-01"
+        },
+        {
+          "nct_id": "NCT04295031",
+          "title": "Metformin in Older Adults With Type 2 Diabetes (AMEMET)",
+          "url": "https://clinicaltrials.gov/study/NCT04295031",
+          "excerpt": "Start date: 2019-10-09"
+        },
+        {
+          "nct_id": "NCT04039503",
+          "title": "A Study of Tirzepatide (LY3298176) Versus Placebo in Participants With Type 2 Diabetes Inadequately Controlled on Insulin Glargine With or Without Metformin",
+          "url": "https://clinicaltrials.gov/study/NCT04039503",
+          "excerpt": "Start date: 2019-08-30"
+        },
+        {
+          "nct_id": "NCT03798080",
+          "title": "Comparison of the Efficacy and Safety of Insulin Glargine/Lixisenatide Fixed Ratio Combination to Insulin Glargine in Patients With Type 2 Diabetes Insufficiently Controlled on Basal Insulin",
+          "url": "https://clinicaltrials.gov/study/NCT03798080",
+          "excerpt": "Start date: 2019-02-19"
+        },
+        {
+          "nct_id": "NCT03982381",
+          "title": "SGLT2 Inhibitor or Metformin as Standard Treatment of Early Stage Type 2 Diabetes",
+          "url": "https://clinicaltrials.gov/study/NCT03982381",
+          "excerpt": "Start date: 2019-09-05"
+        },
+        {
+          "nct_id": "NCT04120259",
+          "title": "Effect of Apple Cider Vinegar and Metformin Combination vs Metformin Alone in Type 2 Diabetics",
+          "url": "https://clinicaltrials.gov/study/NCT04120259",
+          "excerpt": "Start date: 2019-04-22"
+        },
+        {
+          "nct_id": "NCT04272359",
+          "title": "Substitution of Sulfonylureas With New Generation of Hypoglycemic Drugs for the Treatment of Type 2 Diabetes Mellitus",
+          "url": "https://clinicaltrials.gov/study/NCT04272359",
+          "excerpt": "Start date: 2019-05-06"
+        },
+        {
+          "nct_id": "NCT03842267",
+          "title": "A Study to Evaluate the Efficacy and Safety of Gemigliptin in Type 2 Diabetes Who Have Inadequate GlycemIc Control With Dapagliflozin and Metformin (SOLUTION Study)",
+          "url": "https://clinicaltrials.gov/study/NCT03842267",
+          "excerpt": "Start date: 2019-05-13"
+        },
+        {
+          "nct_id": "NCT05004948",
+          "title": "Exercise Intervention Combined With Metformin in the Treatment of Type 2 Diabetes",
+          "url": "https://clinicaltrials.gov/study/NCT05004948",
+          "excerpt": "Start date: 2019-01-01"
+        },
+        {
+          "nct_id": "NCT04027023",
+          "title": "Evaluation of the Impact of Intensive Short-Term Drug Therapy in Patients With Type 2 Diabetes Mellitus",
+          "url": "https://clinicaltrials.gov/study/NCT04027023",
+          "excerpt": "Start date: 2019-10-30"
+        },
+        {
+          "nct_id": "NCT04143282",
+          "title": "Evaluation of the Effect of Metformin on Metastatic Breast Cancer as Adjuvant Treatment",
+          "url": "https://clinicaltrials.gov/study/NCT04143282",
+          "excerpt": "Start date: 2019-10-20"
+        },
+        {
+          "nct_id": "NCT04145687",
+          "title": "Metformin In Prevention of Lupus Nephritis",
+          "url": "https://clinicaltrials.gov/study/NCT04145687",
+          "excerpt": "Start date: 2019-11"
+        },
+        {
+          "nct_id": "NCT03056274",
+          "title": "Metformin in Intrahepatic Cholestasis of Pregnancy",
+          "url": "https://clinicaltrials.gov/study/NCT03056274",
+          "excerpt": "Start date: 2019-01"
+        },
+        {
+          "nct_id": "NCT03874000",
+          "title": "Sintilimab Combined With Metformin in First-Line Chemotherapy Refractory Advanced NSCLC Patients",
+          "url": "https://clinicaltrials.gov/study/NCT03874000",
+          "excerpt": "Start date: 2019-03-08"
+        },
+        {
+          "nct_id": "NCT03956290",
+          "title": "Time Restricted EATing (TREAT) Pilot Study",
+          "url": "https://clinicaltrials.gov/study/NCT03956290",
+          "excerpt": "Start date: 2019-07-01"
+        },
+        {
+          "nct_id": "NCT03765359",
+          "title": "Metformin Use to Improve Pregnancy Outcome in Women With Type 1 Diabetes.",
+          "url": "https://clinicaltrials.gov/study/NCT03765359",
+          "excerpt": "Start date: 2019-08-05"
+        },
+        {
+          "nct_id": "NCT04170439",
+          "title": "Added Value of N Acetyle Cysteine to Clomiphene Citrate in PCO",
+          "url": "https://clinicaltrials.gov/study/NCT04170439",
+          "excerpt": "Start date: 2019-11-20"
+        },
+        {
+          "nct_id": "NCT05125575",
+          "title": "Fed Bioequivalence Study of 2 Metformin 1000 mg Prolonged Release Tablets in 28 Healthy Male and Female Volunteers",
+          "url": "https://clinicaltrials.gov/study/NCT05125575",
+          "excerpt": "Start date: 2019-01-11"
+        },
+        {
+          "nct_id": "NCT03829020",
+          "title": "Metformin, Nelfinavir, and Bortezomib in Treating Patients With Relapsed and/or Refractory Multiple Myeloma",
+          "url": "https://clinicaltrials.gov/study/NCT03829020",
+          "excerpt": "Start date: 2019-04-17"
+        },
+        {
+          "nct_id": "NCT03713801",
+          "title": "Impact of Metformin on Immunity",
+          "url": "https://clinicaltrials.gov/study/NCT03713801",
+          "excerpt": "Start date: 2019-01-14"
+        },
+        {
+          "nct_id": "NCT03863405",
+          "title": "Metformin Use in Rheumatoid Arthritis",
+          "url": "https://clinicaltrials.gov/study/NCT03863405",
+          "excerpt": "Start date: 2019-01-09"
+        },
+        {
+          "nct_id": "NCT04088851",
+          "title": "\"Hepatic Substrate Flux Rates in Type 2 Diabetes\"",
+          "url": "https://clinicaltrials.gov/study/NCT04088851",
+          "excerpt": "Start date: 2019-09-11"
+        },
+        {
+          "nct_id": "NCT03379909",
+          "title": "Phase II Study of Oral Metformin for Intravesical Treatment of Non-muscle-invasive Bladder Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT03379909",
+          "excerpt": "Start date: 2019-09-01"
+        },
+        {
+          "nct_id": "NCT04047940",
+          "title": "A Study of LY900020 in Healthy Chinese Participants",
+          "url": "https://clinicaltrials.gov/study/NCT04047940",
+          "excerpt": "Start date: 2019-11-29"
+        },
+        {
+          "nct_id": "NCT04001725",
+          "title": "Efficacy of metfOrmin in PrevenTIng Glucocorticoid-induced Diabetes in Patients With Brain Metastases",
+          "url": "https://clinicaltrials.gov/study/NCT04001725",
+          "excerpt": "Start date: 2019-10-15"
+        }
+      ]
+    },
+    {
+      "bucket": "semaglutide \u00b7 2019",
+      "value": 41.0,
+      "nct_ids": [
+        "NCT04189848",
+        "NCT03919929",
+        "NCT03819153",
+        "NCT04074161",
+        "NCT03929679",
+        "NCT04097600",
+        "NCT03987074",
+        "NCT03789578",
+        "NCT04083820",
+        "NCT03987919",
+        "NCT04007107",
+        "NCT04012255",
+        "NCT03899402",
+        "NCT04152915",
+        "NCT03985384",
+        "NCT04094415",
+        "NCT04061200",
+        "NCT04143945",
+        "NCT03876015",
+        "NCT04019197",
+        "NCT04067999",
+        "NCT04102189",
+        "NCT03989232",
+        "NCT03987451",
+        "NCT03951753",
+        "NCT03811574",
+        "NCT04383197",
+        "NCT04263415",
+        "NCT04016974",
+        "NCT04109508",
+        "NCT04109547",
+        "NCT03811561",
+        "NCT03914326",
+        "NCT03659682",
+        "NCT04017832",
+        "NCT04187300",
+        "NCT04032197",
+        "NCT03842202",
+        "NCT04126603"
+      ],
+      "trials": [
+        {
+          "nct_id": "NCT04189848",
+          "title": "Comparison of Injection Site Pain Experience for Semaglutide and Dulaglutide sc",
+          "url": "https://clinicaltrials.gov/study/NCT04189848",
+          "excerpt": "Start date: 2019-12-03"
+        },
+        {
+          "nct_id": "NCT03919929",
+          "title": "Treating PCOS With Semaglutide vs Active Lifestyle Intervention",
+          "url": "https://clinicaltrials.gov/study/NCT03919929",
+          "excerpt": "Start date: 2019-05-03"
+        },
+        {
+          "nct_id": "NCT03819153",
+          "title": "A Research Study to See How Semaglutide Works Compared to Placebo in People With Type 2 Diabetes and Chronic Kidney Disease",
+          "url": "https://clinicaltrials.gov/study/NCT03819153",
+          "excerpt": "Start date: 2019-06-17"
+        },
+        {
+          "nct_id": "NCT04074161",
+          "title": "Research Study to Investigate How Well Semaglutide Works Compared to Liraglutide in People Living With Overweight or Obesity",
+          "url": "https://clinicaltrials.gov/study/NCT04074161",
+          "excerpt": "Start date: 2019-09-11"
+        },
+        {
+          "nct_id": "NCT03929679",
+          "title": "A Research Study Looking at How Semaglutide Works in People With Type 2 Diabetes in The Netherlands, as Part of Local Clinical Practice (SURE NETHERLANDS)",
+          "url": "https://clinicaltrials.gov/study/NCT03929679",
+          "excerpt": "Start date: 2019-05-28"
+        },
+        {
+          "nct_id": "NCT04097600",
+          "title": "A Research Study Comparing Active Drug in the Blood in Healthy Participants Following Dosing of the Current and a New Formulation (D) Semaglutide Tablets",
+          "url": "https://clinicaltrials.gov/study/NCT04097600",
+          "excerpt": "Start date: 2019-09-30"
+        },
+        {
+          "nct_id": "NCT03987074",
+          "title": "Safety, Tolerability, and Efficacy of Monotherapy and Combination Regimens in Participants With Nonalcoholic Steatohepatitis (NASH)",
+          "url": "https://clinicaltrials.gov/study/NCT03987074",
+          "excerpt": "Start date: 2019-07-29"
+        },
+        {
+          "nct_id": "NCT03789578",
+          "title": "A Research Study to Look at How Insulin 287 and Semaglutide Work in the Body of People With Type 2 Diabetes When Taken Alone or Together",
+          "url": "https://clinicaltrials.gov/study/NCT03789578",
+          "excerpt": "Start date: 2019-01-17"
+        },
+        {
+          "nct_id": "NCT04083820",
+          "title": "A Research Study Looking at How Semaglutide Works in People With Type 2 Diabetes in France, as Part of Local Clinical Practice (SURE FRANCE)",
+          "url": "https://clinicaltrials.gov/study/NCT04083820",
+          "excerpt": "Start date: 2019-09-16"
+        },
+        {
+          "nct_id": "NCT03987919",
+          "title": "A Study of Tirzepatide (LY3298176) Versus Semaglutide Once Weekly as Add-on Therapy to Metformin in Participants With Type 2 Diabetes",
+          "url": "https://clinicaltrials.gov/study/NCT03987919",
+          "excerpt": "Start date: 2019-07-30"
+        },
+        {
+          "nct_id": "NCT04007107",
+          "title": "A Study Comparing the Injection Site Pain Experience After the Injection of 2 Different Solutions of Semaglutide With 2 Different Injection Pens, a Compound for the Treatment of Type 2 Diabetes and Obesity",
+          "url": "https://clinicaltrials.gov/study/NCT04007107",
+          "excerpt": "Start date: 2019-06-27"
+        },
+        {
+          "nct_id": "NCT04012255",
+          "title": "A Research Study to Compare Two Forms of Semaglutide in Two Different Pen-injectors in People With Overweight or Obesity",
+          "url": "https://clinicaltrials.gov/study/NCT04012255",
+          "excerpt": "Start date: 2019-07-15"
+        },
+        {
+          "nct_id": "NCT03899402",
+          "title": "Triple Therapy in T1DM",
+          "url": "https://clinicaltrials.gov/study/NCT03899402",
+          "excerpt": "Start date: 2019-05-01"
+        },
+        {
+          "nct_id": "NCT04152915",
+          "title": "A Research Study Looking at Similarity Between Once-weekly Semaglutide Versions for Different Injection Pens",
+          "url": "https://clinicaltrials.gov/study/NCT04152915",
+          "excerpt": "Start date: 2019-11-25"
+        },
+        {
+          "nct_id": "NCT03985384",
+          "title": "Semaglutide Treatment On Coronary Progression",
+          "url": "https://clinicaltrials.gov/study/NCT03985384",
+          "excerpt": "Start date: 2019-04-30"
+        },
+        {
+          "nct_id": "NCT04094415",
+          "title": "A Research Study Looking at How Semaglutide Works in People With Type 2 Diabetes in Italy, as Part of Local Clinical Practice",
+          "url": "https://clinicaltrials.gov/study/NCT04094415",
+          "excerpt": "Start date: 2019-10-28"
+        },
+        {
+          "nct_id": "NCT04061200",
+          "title": "Renal Effects of Treatment With Empagliflozin Alone or in Combination With Semaglutide in Patients With Type 2 Diabetes and Albuminuria",
+          "url": "https://clinicaltrials.gov/study/NCT04061200",
+          "excerpt": "Start date: 2019-11-01"
+        },
+        {
+          "nct_id": "NCT04143945",
+          "title": "A Study Comparing the Injection Site Pain Experience After the Injection of Semaglutide B and Semaglutide D With 2 Different Injection Pens, a Compound for the Treatment of Type 2 Diabetes and Obesity",
+          "url": "https://clinicaltrials.gov/study/NCT04143945",
+          "excerpt": "Start date: 2019-10-28"
+        },
+        {
+          "nct_id": "NCT03876015",
+          "title": "A Research Study Looking at How Semaglutide Works in People With Type 2 Diabetes in United Kingdom, as Part of Local Clinical Practice (SURE UK)",
+          "url": "https://clinicaltrials.gov/study/NCT03876015",
+          "excerpt": "Start date: 2019-05-01"
+        },
+        {
+          "nct_id": "NCT04019197",
+          "title": "Effects of Semaglutide in HIV-Associated Lipohypertrophy",
+          "url": "https://clinicaltrials.gov/study/NCT04019197",
+          "excerpt": "Start date: 2019-05-16"
+        },
+        {
+          "nct_id": "NCT04067999",
+          "title": "A Research Study Looking at How Semaglutide Works in People With Type 2 Diabetes in Spain, as Part of Local Clinical Practice",
+          "url": "https://clinicaltrials.gov/study/NCT04067999",
+          "excerpt": "Start date: 2019-08-05"
+        },
+        {
+          "nct_id": "NCT04102189",
+          "title": "A Research Study on How Well Semaglutide Works in Adolescents With Overweight or Obesity",
+          "url": "https://clinicaltrials.gov/study/NCT04102189",
+          "excerpt": "Start date: 2019-10-07"
+        },
+        {
+          "nct_id": "NCT03989232",
+          "title": "A Research Study to Compare Two Doses of Semaglutide Taken Once Weekly in People With Type 2 Diabetes",
+          "url": "https://clinicaltrials.gov/study/NCT03989232",
+          "excerpt": "Start date: 2019-06-19"
+        },
+        {
+          "nct_id": "NCT03987451",
+          "title": "A Research Study on How Semaglutide Works in People With Fatty Liver Disease and Liver Damage",
+          "url": "https://clinicaltrials.gov/study/NCT03987451",
+          "excerpt": "Start date: 2019-06-18"
+        },
+        {
+          "nct_id": "NCT03951753",
+          "title": "A Study of Tirzepatide in Participants With Type 2 Diabetes Mellitus (T2DM)",
+          "url": "https://clinicaltrials.gov/study/NCT03951753",
+          "excerpt": "Start date: 2019-06-28"
+        }
+      ]
+    },
+    {
+      "bucket": "metformin \u00b7 2020",
+      "value": 97.0,
+      "nct_ids": [
+        "NCT04373967",
+        "NCT04634500",
+        "NCT03877783",
+        "NCT04416269",
+        "NCT05840068",
+        "NCT05526690",
+        "NCT03950505",
+        "NCT04766008",
+        "NCT04893148",
+        "NCT04639492",
+        "NCT04271189",
+        "NCT05921942",
+        "NCT04356742",
+        "NCT05035849",
+        "NCT04414540",
+        "NCT04545736",
+        "NCT04671953",
+        "NCT04284722",
+        "NCT04962841",
+        "NCT04625985",
+        "NCT04220021",
+        "NCT04055012",
+        "NCT04204044",
+        "NCT04146155",
+        "NCT04593459",
+        "NCT04335526",
+        "NCT04114682",
+        "NCT04196868",
+        "NCT04615351",
+        "NCT04033107",
+        "NCT04653779",
+        "NCT05663736",
+        "NCT06217887",
+        "NCT04537923",
+        "NCT04287387",
+        "NCT04465877",
+        "NCT04375657",
+        "NCT04780854",
+        "NCT04596631",
+        "NCT04631289",
+        "NCT05821543",
+        "NCT04383041",
+        "NCT04300790",
+        "NCT04451837",
+        "NCT06884683",
+        "NCT04278404",
+        "NCT04665570",
+        "NCT04275713",
+        "NCT03499704"
+      ],
+      "trials": [
+        {
+          "nct_id": "NCT04373967",
+          "title": "Study to Assess the Efficacy and Safety of Liraglutide in the Treatment of Type 2 Diabetes",
+          "url": "https://clinicaltrials.gov/study/NCT04373967",
+          "excerpt": "Start date: 2020-04-29"
+        },
+        {
+          "nct_id": "NCT04634500",
+          "title": "The Efficacy and Safety of DWP16001 in Combination With Metformin in Patients With Type 2 Diabetes.",
+          "url": "https://clinicaltrials.gov/study/NCT04634500",
+          "excerpt": "Start date: 2020-11-18"
+        },
+        {
+          "nct_id": "NCT03877783",
+          "title": "DEMAND - Multifactorial Study to Reduce Dementia in People With Type 2 Diabetes",
+          "url": "https://clinicaltrials.gov/study/NCT03877783",
+          "excerpt": "Start date: 2020-10-19"
+        },
+        {
+          "nct_id": "NCT04416269",
+          "title": "Oral Anti Diabetic Agents in the Hospital",
+          "url": "https://clinicaltrials.gov/study/NCT04416269",
+          "excerpt": "Start date: 2020-08-07"
+        },
+        {
+          "nct_id": "NCT05840068",
+          "title": "IGF Level in Breast Cancer Patients Treated With Metformin",
+          "url": "https://clinicaltrials.gov/study/NCT05840068",
+          "excerpt": "Start date: 2020-06-01"
+        },
+        {
+          "nct_id": "NCT05526690",
+          "title": "Study to Evaluate the Effect of CIN-107 on the Pharmacokinetics of the MATE Substrate, Metformin, in Healthy Subjects",
+          "url": "https://clinicaltrials.gov/study/NCT05526690",
+          "excerpt": "Start date: 2020-10-28"
+        },
+        {
+          "nct_id": "NCT03950505",
+          "title": "To Evaluate the Effect of Nesinaact on Non-alcoholic Steatohepatitis Through MRI and Liver Fibroscan in Patients With Type 2 Diabetes",
+          "url": "https://clinicaltrials.gov/study/NCT03950505",
+          "excerpt": "Start date: 2020-05-29"
+        },
+        {
+          "nct_id": "NCT04766008",
+          "title": "Metformin in Diabetic Patients Undergoing Coronary Angiography",
+          "url": "https://clinicaltrials.gov/study/NCT04766008",
+          "excerpt": "Start date: 2020-01-15"
+        },
+        {
+          "nct_id": "NCT04893148",
+          "title": "Efficacy and Safety of iGlarLixi Versus Insulin Glargine Plus Dulaglutide in Patients With Type 2 Diabetes",
+          "url": "https://clinicaltrials.gov/study/NCT04893148",
+          "excerpt": "Start date: 2020-05-26"
+        },
+        {
+          "nct_id": "NCT04639492",
+          "title": "Postbiotic MBS and Metformin Combination in Patients With T2DM",
+          "url": "https://clinicaltrials.gov/study/NCT04639492",
+          "excerpt": "Start date: 2020-11-02"
+        },
+        {
+          "nct_id": "NCT04271189",
+          "title": "Managing DIabetes Remission After Combined Therapy in EarLy Stage of DiabetEs",
+          "url": "https://clinicaltrials.gov/study/NCT04271189",
+          "excerpt": "Start date: 2020-09-01"
+        },
+        {
+          "nct_id": "NCT05921942",
+          "title": "The Impact of Metformin Administration on the Clinical Outcome of Stage IV Colon Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT05921942",
+          "excerpt": "Start date: 2020-04-15"
+        },
+        {
+          "nct_id": "NCT04356742",
+          "title": "Efficacy and Safety of Dapagliflozin When Added to Ongoing Metformin and Evogliptin Combination Therapy in Patients With Type 2 Diabetes Who Have Inadequate Glycemic Control",
+          "url": "https://clinicaltrials.gov/study/NCT04356742",
+          "excerpt": "Start date: 2020-05-26"
+        },
+        {
+          "nct_id": "NCT05035849",
+          "title": "Comparison of the FGM Profiles in Patients of Type 2 Diabetes Treated With Sitagliptin and Acarbose",
+          "url": "https://clinicaltrials.gov/study/NCT05035849",
+          "excerpt": "Start date: 2020-01-30"
+        },
+        {
+          "nct_id": "NCT04414540",
+          "title": "Combining Pembrolizumab and Metformin in Metastatic Head and Neck Cancer Patients",
+          "url": "https://clinicaltrials.gov/study/NCT04414540",
+          "excerpt": "Start date: 2020-08-31"
+        },
+        {
+          "nct_id": "NCT04545736",
+          "title": "Oral Metformin for Treatment of ABCA4 Retinopathy",
+          "url": "https://clinicaltrials.gov/study/NCT04545736",
+          "excerpt": "Start date: 2020-11-23"
+        },
+        {
+          "nct_id": "NCT04671953",
+          "title": "Effect of BMS-986165 on the Blood Levels of Metformin",
+          "url": "https://clinicaltrials.gov/study/NCT04671953",
+          "excerpt": "Start date: 2020-12-18"
+        },
+        {
+          "nct_id": "NCT04284722",
+          "title": "Perioperative Continuation of Metformin Therapy in Patients With Typ 2 Diabetes Mellitus Undergoing Non-cardiac Surgery",
+          "url": "https://clinicaltrials.gov/study/NCT04284722",
+          "excerpt": "Start date: 2020-02"
+        },
+        {
+          "nct_id": "NCT04962841",
+          "title": "Nutraceuticals and Drug Treatment in Frail Older Adults",
+          "url": "https://clinicaltrials.gov/study/NCT04962841",
+          "excerpt": "Start date: 2020-04-01"
+        },
+        {
+          "nct_id": "NCT04625985",
+          "title": "Metformin Glycinate, Treatment of Patients With COVID-19 and Severe Acute Respiratory Syndrome Secondary to SARS-CoV-2.",
+          "url": "https://clinicaltrials.gov/study/NCT04625985",
+          "excerpt": "Start date: 2020-07-14"
+        },
+        {
+          "nct_id": "NCT04220021",
+          "title": "Safety and Therapeutic Potential of the FDA-approved Drug Metformin for C9orf72 ALS/FTD",
+          "url": "https://clinicaltrials.gov/study/NCT04220021",
+          "excerpt": "Start date: 2020-01-10"
+        },
+        {
+          "nct_id": "NCT04055012",
+          "title": "Effects of Metformin on Low Back Pain",
+          "url": "https://clinicaltrials.gov/study/NCT04055012",
+          "excerpt": "Start date: 2020-01-07"
+        },
+        {
+          "nct_id": "NCT04204044",
+          "title": "Comparison of Myoinositol and Metformin in PCO",
+          "url": "https://clinicaltrials.gov/study/NCT04204044",
+          "excerpt": "Start date: 2020-11-01"
+        },
+        {
+          "nct_id": "NCT04146155",
+          "title": "Efficacy and Safety of Liraglutide in Type 2 Diabetes With Lower Extremity Arterial Disease",
+          "url": "https://clinicaltrials.gov/study/NCT04146155",
+          "excerpt": "Start date: 2020-05-01"
+        },
+        {
+          "nct_id": "NCT04593459",
+          "title": "Probiotic Intervention in PCOS",
+          "url": "https://clinicaltrials.gov/study/NCT04593459",
+          "excerpt": "Start date: 2020-11-03"
+        }
+      ]
+    },
+    {
+      "bucket": "semaglutide \u00b7 2020",
+      "value": 23.0,
+      "nct_ids": [
+        "NCT04524832",
+        "NCT04447859",
+        "NCT04513704",
+        "NCT04259801",
+        "NCT04601740",
+        "NCT04238962",
+        "NCT06489457",
+        "NCT04251156",
+        "NCT04287179",
+        "NCT04228354",
+        "NCT04596631",
+        "NCT04560998",
+        "NCT04451837",
+        "NCT04469855",
+        "NCT04537624",
+        "NCT04261933",
+        "NCT04175665",
+        "NCT04537637",
+        "NCT04601753",
+        "NCT04559815",
+        "NCT05503927"
+      ],
+      "trials": [
+        {
+          "nct_id": "NCT04524832",
+          "title": "Research Study Comparing New Tablets of Semaglutide in New Doses, in Healthy People",
+          "url": "https://clinicaltrials.gov/study/NCT04524832",
+          "excerpt": "Start date: 2020-09-29"
+        },
+        {
+          "nct_id": "NCT04447859",
+          "title": "16-week Flexible vs. 8-week Semaglutide Titration",
+          "url": "https://clinicaltrials.gov/study/NCT04447859",
+          "excerpt": "Start date: 2020-02-23"
+        },
+        {
+          "nct_id": "NCT04513704",
+          "title": "A Clinical Trial Comparing Semaglutide in Healthy People Who Eat and Take the Medicine at Different Times",
+          "url": "https://clinicaltrials.gov/study/NCT04513704",
+          "excerpt": "Start date: 2020-08-28"
+        },
+        {
+          "nct_id": "NCT04259801",
+          "title": "First Research Study to Look at How Two Medicines, NNC0480-0389 and Semaglutide, Work Together in Healthy People, in People With High Body Weight and in People With Diabetes",
+          "url": "https://clinicaltrials.gov/study/NCT04259801",
+          "excerpt": "Start date: 2020-02-17"
+        },
+        {
+          "nct_id": "NCT04601740",
+          "title": "A Research Study Looking at How Oral Semaglutide Works in People With Type 2 Diabetes in The Netherlands, as Part of Local Clinical Practice",
+          "url": "https://clinicaltrials.gov/study/NCT04601740",
+          "excerpt": "Start date: 2020-11-17"
+        },
+        {
+          "nct_id": "NCT04238962",
+          "title": "A Research Study to Compare Two Different Forms of Once-weekly Semaglutide in Two Different Injection Pens",
+          "url": "https://clinicaltrials.gov/study/NCT04238962",
+          "excerpt": "Start date: 2020-02-03"
+        },
+        {
+          "nct_id": "NCT06489457",
+          "title": "The Effects of Semaglutide vs Testosterone Replacement Therapy on Functional Hypogonadism and Sperm Quality in Men With Type 2 Diabetes Mellitus and Obesity",
+          "url": "https://clinicaltrials.gov/study/NCT06489457",
+          "excerpt": "Start date: 2020-09-20"
+        },
+        {
+          "nct_id": "NCT04251156",
+          "title": "Research Study of How Well Semaglutide Works in People Living With Overweight or Obesity.",
+          "url": "https://clinicaltrials.gov/study/NCT04251156",
+          "excerpt": "Start date: 2020-12-08"
+        },
+        {
+          "nct_id": "NCT04287179",
+          "title": "SUSTAIN SWITCH: A Research Study to Compare Two Dose Schedules of Semaglutide Taken Once Weekly in People With Type 2 Diabetes",
+          "url": "https://clinicaltrials.gov/study/NCT04287179",
+          "excerpt": "Start date: 2020-03-09"
+        },
+        {
+          "nct_id": "NCT04228354",
+          "title": "A Research Study Looking at the Comparability (Bioequivalence) of Two Versions of Semaglutide",
+          "url": "https://clinicaltrials.gov/study/NCT04228354",
+          "excerpt": "Start date: 2020-01-29"
+        },
+        {
+          "nct_id": "NCT04596631",
+          "title": "A Research Study to Compare a New Medicine Oral Semaglutide to a Dummy Medicine in Children and Teenagers With Type 2 Diabetes",
+          "url": "https://clinicaltrials.gov/study/NCT04596631",
+          "excerpt": "Start date: 2020-11-02"
+        },
+        {
+          "nct_id": "NCT04560998",
+          "title": "A Research Study to Compare a Medicine Called Semaglutide Against Placebo in People With Peripheral Arterial Disease and Type 2 Diabetes",
+          "url": "https://clinicaltrials.gov/study/NCT04560998",
+          "excerpt": "Start date: 2020-10-01"
+        },
+        {
+          "nct_id": "NCT04451837",
+          "title": "Semaglutide and Dapagliflozin in Diabetic Patients With Different Pathophysiology",
+          "url": "https://clinicaltrials.gov/study/NCT04451837",
+          "excerpt": "Start date: 2020-09-10"
+        },
+        {
+          "nct_id": "NCT04469855",
+          "title": "Post-Marketing Surveillance (Special Use-results Surveillance) on Long-term Use With Ozempic\u00ae",
+          "url": "https://clinicaltrials.gov/study/NCT04469855",
+          "excerpt": "Start date: 2020-07-27"
+        },
+        {
+          "nct_id": "NCT04537624",
+          "title": "A Research Study Looking at How Oral Semaglutide Works in People With Type 2 Diabetes in Switzerland, as Part of Local Clinical Practice",
+          "url": "https://clinicaltrials.gov/study/NCT04537624",
+          "excerpt": "Start date: 2020-08-24"
+        },
+        {
+          "nct_id": "NCT04261933",
+          "title": "A Research Study Looking at How Semaglutide Works in People With Type 2 Diabetes in Germany, as Part of Local Clinical Practice (SURE GERMANY)",
+          "url": "https://clinicaltrials.gov/study/NCT04261933",
+          "excerpt": "Start date: 2020-02-13"
+        },
+        {
+          "nct_id": "NCT04175665",
+          "title": "Real-world Health Outcomes in Canadian Patients Using Semaglutide",
+          "url": "https://clinicaltrials.gov/study/NCT04175665",
+          "excerpt": "Start date: 2020-01-06"
+        },
+        {
+          "nct_id": "NCT04537637",
+          "title": "A Research Study Looking at How Oral Semaglutide Works in People With Type 2 Diabetes in Denmark, as Part of Local Clinical Practice",
+          "url": "https://clinicaltrials.gov/study/NCT04537637",
+          "excerpt": "Start date: 2020-08-28"
+        },
+        {
+          "nct_id": "NCT04601753",
+          "title": "A Research Study Looking at How Oral Semaglutide Works in People With Type 2 Diabetes in Sweden, as Part of Local Clinical Practice",
+          "url": "https://clinicaltrials.gov/study/NCT04601753",
+          "excerpt": "Start date: 2020-11-12"
+        },
+        {
+          "nct_id": "NCT04559815",
+          "title": "A Research Study Looking at How Oral Semaglutide Works in People With Type 2 Diabetes in Canada, as Part of Local Clinical Practice",
+          "url": "https://clinicaltrials.gov/study/NCT04559815",
+          "excerpt": "Start date: 2020-10-21"
+        },
+        {
+          "nct_id": "NCT05503927",
+          "title": "A Study to Evaluate the Safety of Exposure to Wegovy During Pregnancy",
+          "url": "https://clinicaltrials.gov/study/NCT05503927",
+          "excerpt": "Start date: 2020-02-01"
+        }
+      ]
+    },
+    {
+      "bucket": "metformin \u00b7 2021",
+      "value": 124.0,
+      "nct_ids": [
+        "NCT04885712",
+        "NCT04741945",
+        "NCT04649502",
+        "NCT05445791",
+        "NCT05164523",
+        "NCT04267809",
+        "NCT04973891",
+        "NCT04817215",
+        "NCT04625946",
+        "NCT06603480",
+        "NCT05167513",
+        "NCT04583462",
+        "NCT04882332",
+        "NCT05120505",
+        "NCT05064488",
+        "NCT05035082",
+        "NCT04943692",
+        "NCT04862390",
+        "NCT04621669",
+        "NCT05108350",
+        "NCT02497638",
+        "NCT04018105",
+        "NCT04892186",
+        "NCT04767841",
+        "NCT04865835",
+        "NCT04750135",
+        "NCT04578652",
+        "NCT05554679",
+        "NCT05054842",
+        "NCT04530747",
+        "NCT04792749",
+        "NCT04604678",
+        "NCT04867252",
+        "NCT05151146",
+        "NCT07303127",
+        "NCT04796428",
+        "NCT05200793",
+        "NCT04969627",
+        "NCT05081583",
+        "NCT04409795",
+        "NCT05182970",
+        "NCT04626323",
+        "NCT04807348",
+        "NCT04468243",
+        "NCT04617275",
+        "NCT03708549",
+        "NCT04866667",
+        "NCT07627048",
+        "NCT04672031",
+        "NCT05124730",
+        "NCT04930744",
+        "NCT04841668",
+        "NCT04758000",
+        "NCT05041907",
+        "NCT04762966",
+        "NCT04221750",
+        "NCT04626089",
+        "NCT04738799",
+        "NCT05638893",
+        "NCT04098666",
+        "NCT04925063",
+        "NCT04407650",
+        "NCT06092060",
+        "NCT04947020",
+        "NCT04856007",
+        "NCT04754334",
+        "NCT04053621",
+        "NCT05041673"
+      ],
+      "trials": [
+        {
+          "nct_id": "NCT04885712",
+          "title": "A Study to Evaluate the Efficacy and Safety of Pioglitazone 15mg or 30mg Add-on in Patients With Type 2 Diabetes Mellitus Inadequately Controlled With Metformin and Dapagliflozin",
+          "url": "https://clinicaltrials.gov/study/NCT04885712",
+          "excerpt": "Start date: 2021-05-28"
+        },
+        {
+          "nct_id": "NCT04741945",
+          "title": "Repurposing Metformin As a Leukemia-preventive Drug in CCUS and LR-MDS",
+          "url": "https://clinicaltrials.gov/study/NCT04741945",
+          "excerpt": "Start date: 2021-12-13"
+        },
+        {
+          "nct_id": "NCT04649502",
+          "title": "Metformin for the Treatment of Hidradenitis Suppurativa (HS)",
+          "url": "https://clinicaltrials.gov/study/NCT04649502",
+          "excerpt": "Start date: 2021-01-25"
+        },
+        {
+          "nct_id": "NCT05445791",
+          "title": "Metformin Plus Tyrosine Kinase Inhibitors for Treatment of Patients With Non-small Cell Lung Cancer With EGFR Mutations",
+          "url": "https://clinicaltrials.gov/study/NCT05445791",
+          "excerpt": "Start date: 2021-07-15"
+        },
+        {
+          "nct_id": "NCT05164523",
+          "title": "The Effect of SGLT2 Inhibitors on Heart Rate Variability and BDNF Levels in Patients With Type 2 Diabetes",
+          "url": "https://clinicaltrials.gov/study/NCT05164523",
+          "excerpt": "Start date: 2021-03-01"
+        },
+        {
+          "nct_id": "NCT04267809",
+          "title": "Modulate Cellular Stress in the Immune Cells to Reduce Rate of Symptomatic Viral Infection",
+          "url": "https://clinicaltrials.gov/study/NCT04267809",
+          "excerpt": "Start date: 2021-10-22"
+        },
+        {
+          "nct_id": "NCT04973891",
+          "title": "CANA/Met in Non-diabetic Women With PCOS",
+          "url": "https://clinicaltrials.gov/study/NCT04973891",
+          "excerpt": "Start date: 2021-04-07"
+        },
+        {
+          "nct_id": "NCT04817215",
+          "title": "Phase 3 Study to Evaluate the Efficacy and Safety of ORMD-0801 in Subjects With Type 2 Diabetes Mellitus",
+          "url": "https://clinicaltrials.gov/study/NCT04817215",
+          "excerpt": "Start date: 2021-10"
+        },
+        {
+          "nct_id": "NCT04625946",
+          "title": "Metformin as an Adjunctive Therapy to Catheter Ablation in Atrial Fibrillation",
+          "url": "https://clinicaltrials.gov/study/NCT04625946",
+          "excerpt": "Start date: 2021-01-19"
+        },
+        {
+          "nct_id": "NCT06603480",
+          "title": "Effects of Exercise and Metformin on Methylglyoxal Levels in Prediabetic Individuals",
+          "url": "https://clinicaltrials.gov/study/NCT06603480",
+          "excerpt": "Start date: 2021-04-08"
+        },
+        {
+          "nct_id": "NCT05167513",
+          "title": "Monitoring Parameters Beyond Glycemic Control: Impact of Sitagliptin on Quality of Life in Type 2 Diabetes Patients",
+          "url": "https://clinicaltrials.gov/study/NCT05167513",
+          "excerpt": "Start date: 2021-01-01"
+        },
+        {
+          "nct_id": "NCT04583462",
+          "title": "Impact of Metformin on Peripheral Arterial Calcification in Type 1 Diabetes",
+          "url": "https://clinicaltrials.gov/study/NCT04583462",
+          "excerpt": "Start date: 2021-06-02"
+        },
+        {
+          "nct_id": "NCT04882332",
+          "title": "Metformin Usage Index and Vitamin B12 Status in Egyptian Type 2 Diabetic Patients",
+          "url": "https://clinicaltrials.gov/study/NCT04882332",
+          "excerpt": "Start date: 2021-05-05"
+        },
+        {
+          "nct_id": "NCT05120505",
+          "title": "Metformin in Children With Fragile X Syndrome",
+          "url": "https://clinicaltrials.gov/study/NCT05120505",
+          "excerpt": "Start date: 2021-12-29"
+        },
+        {
+          "nct_id": "NCT05064488",
+          "title": "Drug-Drug Interaction Study of Evobrutinib and Transporter Substrates",
+          "url": "https://clinicaltrials.gov/study/NCT05064488",
+          "excerpt": "Start date: 2021-10-04"
+        },
+        {
+          "nct_id": "NCT05035082",
+          "title": "A Research Study Comparing RYBELSUS\u00ae to Other Blood Sugar Lowering Tablets in People Living in America With Type 2 Diabetes (REALYSE)",
+          "url": "https://clinicaltrials.gov/study/NCT05035082",
+          "excerpt": "Start date: 2021-09-01"
+        },
+        {
+          "nct_id": "NCT04943692",
+          "title": "Efficacy and Safety of Metformin Glycinate Compared to Metformin Hydrochloride on the Progression of Type 2 Diabetes",
+          "url": "https://clinicaltrials.gov/study/NCT04943692",
+          "excerpt": "Start date: 2021-08"
+        },
+        {
+          "nct_id": "NCT04862390",
+          "title": "Incidence of Hypoglycemia in Pregnant Ladies With or Without Gestational Diabetes Fasting Ramadan",
+          "url": "https://clinicaltrials.gov/study/NCT04862390",
+          "excerpt": "Start date: 2021-03-28"
+        },
+        {
+          "nct_id": "NCT04621669",
+          "title": "Drug-durg Interaction of SHR3680 With Digoxin, Rosuvastatin Calcium and Metformin Hydrochloride",
+          "url": "https://clinicaltrials.gov/study/NCT04621669",
+          "excerpt": "Start date: 2021-01-08"
+        },
+        {
+          "nct_id": "NCT05108350",
+          "title": "A Study to Assess the Bioequivalence of Fixed Dose Combination of HR20033 Relative to Co-administration of the Individual Components in Healthy Chinese Subjects",
+          "url": "https://clinicaltrials.gov/study/NCT05108350",
+          "excerpt": "Start date: 2021-11-09"
+        },
+        {
+          "nct_id": "NCT02497638",
+          "title": "LIpitor and biGuanide to Androgen Delay Trial",
+          "url": "https://clinicaltrials.gov/study/NCT02497638",
+          "excerpt": "Start date: 2021-12"
+        },
+        {
+          "nct_id": "NCT04018105",
+          "title": "Influence of Preprandial Metformin Administration on Carbohydrate Absorption",
+          "url": "https://clinicaltrials.gov/study/NCT04018105",
+          "excerpt": "Start date: 2021-07-28"
+        },
+        {
+          "nct_id": "NCT04892186",
+          "title": "Effects of Myo-inositol in Women With Polycystic Ovary Syndrome",
+          "url": "https://clinicaltrials.gov/study/NCT04892186",
+          "excerpt": "Start date: 2021-03-26"
+        },
+        {
+          "nct_id": "NCT04767841",
+          "title": "The AMPK Modulator Metformin as a Novel Adjunct to Conventional Therapy in Patients With Knee Osteoarthritis",
+          "url": "https://clinicaltrials.gov/study/NCT04767841",
+          "excerpt": "Start date: 2021-02-16"
+        },
+        {
+          "nct_id": "NCT04865835",
+          "title": "A Clinical Trial Study to Determine the Effect of an Investigational Drug (SEP-363856) Has on the Way That the Drug Metformin Travels Through the Body in People With Schizophrenia.",
+          "url": "https://clinicaltrials.gov/study/NCT04865835",
+          "excerpt": "Start date: 2021-05-12"
+        }
+      ]
+    },
+    {
+      "bucket": "semaglutide \u00b7 2021",
+      "value": 49.0,
+      "nct_ids": [
+        "NCT05119179",
+        "NCT05132088",
+        "NCT04216589",
+        "NCT05035082",
+        "NCT04944992",
+        "NCT04969939",
+        "NCT04971785",
+        "NCT04466345",
+        "NCT04639414",
+        "NCT05013229",
+        "NCT04990024",
+        "NCT04822181",
+        "NCT05035095",
+        "NCT04624672",
+        "NCT05040971",
+        "NCT05606471",
+        "NCT04982575",
+        "NCT04538352",
+        "NCT05144984",
+        "NCT04817644",
+        "NCT05064735",
+        "NCT04862923",
+        "NCT04779697",
+        "NCT05071417",
+        "NCT04572165",
+        "NCT05577728",
+        "NCT05153564",
+        "NCT04741074",
+        "NCT05046873",
+        "NCT04615871",
+        "NCT04777396",
+        "NCT05016882",
+        "NCT04865744",
+        "NCT04916470",
+        "NCT04878393",
+        "NCT04940078",
+        "NCT04878406",
+        "NCT04702516",
+        "NCT05129891",
+        "NCT05857085",
+        "NCT05161429",
+        "NCT04865770",
+        "NCT05173714",
+        "NCT04892199",
+        "NCT04707469",
+        "NCT05040087"
+      ],
+      "trials": [
+        {
+          "nct_id": "NCT05119179",
+          "title": "Pharmacogenetics of the Response to GLP-1 in Mexican-Americans With Prediabetes",
+          "url": "https://clinicaltrials.gov/study/NCT05119179",
+          "excerpt": "Start date: 2021-11-22"
+        },
+        {
+          "nct_id": "NCT05132088",
+          "title": "Research Study to Investigate How Well Semaglutide Tablets Taken Once Daily Work in East Asian People Who Are Overweight or Living With Obesity",
+          "url": "https://clinicaltrials.gov/study/NCT05132088",
+          "excerpt": "Start date: 2021-11-16"
+        },
+        {
+          "nct_id": "NCT04216589",
+          "title": "Study of Semaglutide for Non-Alcoholic Fatty Liver Disease (NAFLD), a Metabolic Syndrome With Insulin Resistance, Increased Hepatic Lipids, and Increased Cardiovascular Disease Risk (The SLIM LIVER Study)",
+          "url": "https://clinicaltrials.gov/study/NCT04216589",
+          "excerpt": "Start date: 2021-02-19"
+        },
+        {
+          "nct_id": "NCT05035082",
+          "title": "A Research Study Comparing RYBELSUS\u00ae to Other Blood Sugar Lowering Tablets in People Living in America With Type 2 Diabetes (REALYSE)",
+          "url": "https://clinicaltrials.gov/study/NCT05035082",
+          "excerpt": "Start date: 2021-09-01"
+        },
+        {
+          "nct_id": "NCT04944992",
+          "title": "A Study of Efinopegdutide (MK-6024) in Participants With Nonalcoholic Fatty Liver Disease (NAFLD) (MK-6024-001)",
+          "url": "https://clinicaltrials.gov/study/NCT04944992",
+          "excerpt": "Start date: 2021-08-04"
+        },
+        {
+          "nct_id": "NCT04969939",
+          "title": "A Research Study to Investigate How Well NNC0165-1875 in Combination With Semaglutide Works in People With Obesity",
+          "url": "https://clinicaltrials.gov/study/NCT04969939",
+          "excerpt": "Start date: 2021-07-15"
+        },
+        {
+          "nct_id": "NCT04971785",
+          "title": "Study of Semaglutide, and Cilofexor/Firsocostat, Alone and in Combination, in Adults With Cirrhosis Due to Nonalcoholic Steatohepatitis (NASH)",
+          "url": "https://clinicaltrials.gov/study/NCT04971785",
+          "excerpt": "Start date: 2021-08-09"
+        },
+        {
+          "nct_id": "NCT04466345",
+          "title": "Semaglutide for the Treatment of Cognitive Dysfunction in Major Depressive Disorder",
+          "url": "https://clinicaltrials.gov/study/NCT04466345",
+          "excerpt": "Start date: 2021-10-06"
+        },
+        {
+          "nct_id": "NCT04639414",
+          "title": "Combined Active Treatment in Type 2 Diabetes with NASH",
+          "url": "https://clinicaltrials.gov/study/NCT04639414",
+          "excerpt": "Start date: 2021-03-26"
+        },
+        {
+          "nct_id": "NCT05013229",
+          "title": "A Research Study to See How Well the New Weekly Medicine IcoSema, Which is a Combination of Insulin Icodec and Semaglutide, Controls Blood Sugar Level in People With Type 2 Diabetes Compared to Insulin Glargine Taken Daily With Insulin Aspart (COMBINE 3)",
+          "url": "https://clinicaltrials.gov/study/NCT05013229",
+          "excerpt": "Start date: 2021-11-30"
+        },
+        {
+          "nct_id": "NCT04990024",
+          "title": "The Effect of Different Diets on Arterial Stiffness in Obese Patients on Semaglutide",
+          "url": "https://clinicaltrials.gov/study/NCT04990024",
+          "excerpt": "Start date: 2021-07-01"
+        },
+        {
+          "nct_id": "NCT04822181",
+          "title": "Research Study on Whether Semaglutide Works in People With Non-alcoholic Steatohepatitis (NASH)",
+          "url": "https://clinicaltrials.gov/study/NCT04822181",
+          "excerpt": "Start date: 2021-04-01"
+        },
+        {
+          "nct_id": "NCT05035095",
+          "title": "Research Study to Investigate How Well Semaglutide Tablets Taken Once Daily Work in People Who Are Overweight or Living With Obesity (OASIS 1)",
+          "url": "https://clinicaltrials.gov/study/NCT05035095",
+          "excerpt": "Start date: 2021-09-13"
+        },
+        {
+          "nct_id": "NCT04624672",
+          "title": "Treatment of GLP-1 for Diabetic Bariatric Patients",
+          "url": "https://clinicaltrials.gov/study/NCT04624672",
+          "excerpt": "Start date: 2021-08-25"
+        },
+        {
+          "nct_id": "NCT05040971",
+          "title": "Research Study Looking at How Well Semaglutide Works in People Living With Obesity and Prediabetes",
+          "url": "https://clinicaltrials.gov/study/NCT05040971",
+          "excerpt": "Start date: 2021-09-06"
+        },
+        {
+          "nct_id": "NCT05606471",
+          "title": "Glucagon-like Peptide-1 Agonism With Very Low Calorie Diets",
+          "url": "https://clinicaltrials.gov/study/NCT05606471",
+          "excerpt": "Start date: 2021-09-15"
+        },
+        {
+          "nct_id": "NCT04982575",
+          "title": "Research Study to Look at How Well Cagrilintide Together With Semaglutide Works in People With Type 2 Diabetes",
+          "url": "https://clinicaltrials.gov/study/NCT04982575",
+          "excerpt": "Start date: 2021-08-02"
+        },
+        {
+          "nct_id": "NCT04538352",
+          "title": "Transition From Basal/Bolus to Once-weekly Subcutaneous Semaglutide and Basal Insulin in Patients With T2D",
+          "url": "https://clinicaltrials.gov/study/NCT04538352",
+          "excerpt": "Start date: 2021-01-18"
+        },
+        {
+          "nct_id": "NCT05144984",
+          "title": "A Research Study Looking at How Well a Combination of the Medicines Semaglutide and NNC0480-0389 Works in People With Type 2 Diabetes",
+          "url": "https://clinicaltrials.gov/study/NCT05144984",
+          "excerpt": "Start date: 2021-11-29"
+        },
+        {
+          "nct_id": "NCT04817644",
+          "title": "A Research Study to See How Much Semaglutide and SNAC is in the Milk of Healthy, Breastfeeding Women Taking Semaglutide Tablets",
+          "url": "https://clinicaltrials.gov/study/NCT04817644",
+          "excerpt": "Start date: 2021-09-10"
+        },
+        {
+          "nct_id": "NCT05064735",
+          "title": "Research Study Looking at How Well Semaglutide Works in People Suffering From Obesity and Knee Osteoarthritis",
+          "url": "https://clinicaltrials.gov/study/NCT05064735",
+          "excerpt": "Start date: 2021-10-01"
+        },
+        {
+          "nct_id": "NCT04862923",
+          "title": "A Research Study Looking at How Oral Semaglutide Works in People With Type 2 Diabetes in the United Kingdom, as Part of Local Clinical Practice",
+          "url": "https://clinicaltrials.gov/study/NCT04862923",
+          "excerpt": "Start date: 2021-05-12"
+        },
+        {
+          "nct_id": "NCT04779697",
+          "title": "GLP-1 Analogue Effects on Food Cues, Stress, Motivation for Highly Palatable Foods, and Weight",
+          "url": "https://clinicaltrials.gov/study/NCT04779697",
+          "excerpt": "Start date: 2021-02-01"
+        },
+        {
+          "nct_id": "NCT05071417",
+          "title": "Effect Of Semaglutide In Coronary Atheroma Plaque",
+          "url": "https://clinicaltrials.gov/study/NCT05071417",
+          "excerpt": "Start date: 2021-11"
+        },
+        {
+          "nct_id": "NCT04572165",
+          "title": "Epidemiological Assessment of the Risk for Pancreatic Cancer Associated With the Use of Semaglutide in Patients With Type 2 Diabetes - A Cohort Study Based on Nordic Registry Data",
+          "url": "https://clinicaltrials.gov/study/NCT04572165",
+          "excerpt": "Start date: 2021-01-26"
+        }
+      ]
+    },
+    {
+      "bucket": "metformin \u00b7 2022",
+      "value": 138.0,
+      "nct_ids": [
+        "NCT05852639",
+        "NCT05615467",
+        "NCT04994561",
+        "NCT02571608",
+        "NCT04477590",
+        "NCT05415644",
+        "NCT05158374",
+        "NCT05429554",
+        "NCT04530383",
+        "NCT05280496",
+        "NCT05261997",
+        "NCT05553704",
+        "NCT06073600",
+        "NCT05918068",
+        "NCT04899349",
+        "NCT06519786",
+        "NCT05262257",
+        "NCT05230758",
+        "NCT05369793",
+        "NCT07247656",
+        "NCT05536037",
+        "NCT05333003",
+        "NCT05386186",
+        "NCT05981742",
+        "NCT05689684",
+        "NCT04979130",
+        "NCT05316935",
+        "NCT05373680",
+        "NCT05351021",
+        "NCT05663749",
+        "NCT05147896",
+        "NCT05572060",
+        "NCT05412056",
+        "NCT05132439",
+        "NCT05615012",
+        "NCT05131828",
+        "NCT05505994",
+        "NCT05760677",
+        "NCT07076056",
+        "NCT04855513",
+        "NCT05349474",
+        "NCT05362799",
+        "NCT05243654",
+        "NCT05579977",
+        "NCT06124573",
+        "NCT05722951",
+        "NCT04741204",
+        "NCT05515978",
+        "NCT05326490",
+        "NCT05519813",
+        "NCT05296044",
+        "NCT04869917",
+        "NCT05394142",
+        "NCT05413369",
+        "NCT04500756",
+        "NCT05275608",
+        "NCT05463094",
+        "NCT05306028",
+        "NCT05629806",
+        "NCT05591235",
+        "NCT05367063",
+        "NCT07469254",
+        "NCT05422092",
+        "NCT05279768",
+        "NCT05236530",
+        "NCT05297045",
+        "NCT04826692",
+        "NCT04175964",
+        "NCT04742751",
+        "NCT05065372",
+        "NCT05414409",
+        "NCT05364164"
+      ],
+      "trials": [
+        {
+          "nct_id": "NCT05852639",
+          "title": "Fetal CPR at Term for Prediction of Adverse Neonatal Outcome in Pregnancies Complicated by GDM",
+          "url": "https://clinicaltrials.gov/study/NCT05852639",
+          "excerpt": "Start date: 2022-11-30"
+        },
+        {
+          "nct_id": "NCT05615467",
+          "title": "A Study of Effect of LY3556050 on Metformin in Healthy Participants",
+          "url": "https://clinicaltrials.gov/study/NCT05615467",
+          "excerpt": "Start date: 2022-11-15"
+        },
+        {
+          "nct_id": "NCT04994561",
+          "title": "VIAging Deceleration Trial Using Metformin, Dasatinib, Rapamycin and Nutritional Supplements",
+          "url": "https://clinicaltrials.gov/study/NCT04994561",
+          "excerpt": "Start date: 2022-06"
+        },
+        {
+          "nct_id": "NCT02571608",
+          "title": "Continuation of Metformin to Improve And Keep Peri-operative Glycemic Control",
+          "url": "https://clinicaltrials.gov/study/NCT02571608",
+          "excerpt": "Start date: 2022-01-01"
+        },
+        {
+          "nct_id": "NCT04477590",
+          "title": "Interactions of Medicine and Exercise With Meal Timing",
+          "url": "https://clinicaltrials.gov/study/NCT04477590",
+          "excerpt": "Start date: 2022-06-07"
+        },
+        {
+          "nct_id": "NCT05415644",
+          "title": "Study of the Bioequivalence and Food Effects of HRX0701 Tablets in Healthy Subjects",
+          "url": "https://clinicaltrials.gov/study/NCT05415644",
+          "excerpt": "Start date: 2022-07-05"
+        },
+        {
+          "nct_id": "NCT05158374",
+          "title": "Molecular Effects of Aspirin & Metformin on Colonic Epithelium",
+          "url": "https://clinicaltrials.gov/study/NCT05158374",
+          "excerpt": "Start date: 2022-08"
+        },
+        {
+          "nct_id": "NCT05429554",
+          "title": "The Effect of Metformin and DPP4 Inhibitors on Cognition and Cardiovascular Protection in Type 2 Diabetic Patients",
+          "url": "https://clinicaltrials.gov/study/NCT05429554",
+          "excerpt": "Start date: 2022-06"
+        },
+        {
+          "nct_id": "NCT04530383",
+          "title": "Metformin for People With CFRD on CFTR Modulator Therapy to Improve Ion Channel Function",
+          "url": "https://clinicaltrials.gov/study/NCT04530383",
+          "excerpt": "Start date: 2022-02-14"
+        },
+        {
+          "nct_id": "NCT05280496",
+          "title": "A Pragmatic Approach to Lower Diabetes Risk After Gestational Diabetes",
+          "url": "https://clinicaltrials.gov/study/NCT05280496",
+          "excerpt": "Start date: 2022-06-01"
+        },
+        {
+          "nct_id": "NCT05261997",
+          "title": "Endotherapy for Painless Chronic Pancreatitis",
+          "url": "https://clinicaltrials.gov/study/NCT05261997",
+          "excerpt": "Start date: 2022-03"
+        },
+        {
+          "nct_id": "NCT05553704",
+          "title": "Metformin in Patients With Ulcerative Colitis Treated With Mesalamine",
+          "url": "https://clinicaltrials.gov/study/NCT05553704",
+          "excerpt": "Start date: 2022-11-01"
+        },
+        {
+          "nct_id": "NCT06073600",
+          "title": "Bioequivalence Study to Compare Metformin / Vildagliptin Versus Galvumet\u00ae",
+          "url": "https://clinicaltrials.gov/study/NCT06073600",
+          "excerpt": "Start date: 2022-05-20"
+        },
+        {
+          "nct_id": "NCT05918068",
+          "title": "Pyridoxine Effect on the Blood Glucose Level in Type 2 Diabetic Patients",
+          "url": "https://clinicaltrials.gov/study/NCT05918068",
+          "excerpt": "Start date: 2022-11-01"
+        },
+        {
+          "nct_id": "NCT04899349",
+          "title": "Study of Safety and Efficacy of Dapagliflozin + Metformin XR Versus Metformin XR in Participants With HR+, HER2-, Advanced Breast Cancer While on Treatment With Alpelisib and Fulvestrant",
+          "url": "https://clinicaltrials.gov/study/NCT04899349",
+          "excerpt": "Start date: 2022-04-06"
+        },
+        {
+          "nct_id": "NCT06519786",
+          "title": "Safety and Efficacy of Metformin for Treatment of Cytopenia in Children and Adolescents With Fanconi Anemia",
+          "url": "https://clinicaltrials.gov/study/NCT06519786",
+          "excerpt": "Start date: 2022-10-05"
+        },
+        {
+          "nct_id": "NCT05262257",
+          "title": "Evaluation and Intervention of Cognitive Function in Patients With Diabetes Mellitus.",
+          "url": "https://clinicaltrials.gov/study/NCT05262257",
+          "excerpt": "Start date: 2022-04-01"
+        },
+        {
+          "nct_id": "NCT05230758",
+          "title": "Effect of Metformin on Behaviour and the Brain in Children Treated for a Brain Tumour",
+          "url": "https://clinicaltrials.gov/study/NCT05230758",
+          "excerpt": "Start date: 2022-07-01"
+        },
+        {
+          "nct_id": "NCT05369793",
+          "title": "Clinical Study Evaluating the Safety and Efficacy of Roflumilast in Type 2 Diabetic Patients With Diabetic Neuropathy",
+          "url": "https://clinicaltrials.gov/study/NCT05369793",
+          "excerpt": "Start date: 2022-08-01"
+        },
+        {
+          "nct_id": "NCT07247656",
+          "title": "The Efficacy and Safety of Empagliflozin - Linagliptin and Empagliflozin- Metformin Therapy in Reduction of Body Weight in Type 2 Diabetic Patients .",
+          "url": "https://clinicaltrials.gov/study/NCT07247656",
+          "excerpt": "Start date: 2022-12-01"
+        },
+        {
+          "nct_id": "NCT05536037",
+          "title": "Metformin for the Prevention of Oral Cancer in Patients With Oral Premalignant Lesions",
+          "url": "https://clinicaltrials.gov/study/NCT05536037",
+          "excerpt": "Start date: 2022-05-04"
+        },
+        {
+          "nct_id": "NCT05333003",
+          "title": "Semaglutide in Comorbid Schizophrenia Spectrum Disorder and Obesity",
+          "url": "https://clinicaltrials.gov/study/NCT05333003",
+          "excerpt": "Start date: 2022-05-25"
+        },
+        {
+          "nct_id": "NCT05386186",
+          "title": "The Effect of Glimepiride Compared With Sitagliptin as an add-on Therapy to Metformin in Severe Insulin Deficiency Diabetes",
+          "url": "https://clinicaltrials.gov/study/NCT05386186",
+          "excerpt": "Start date: 2022-01-01"
+        },
+        {
+          "nct_id": "NCT05981742",
+          "title": "Effects of Combined Metformin and Cabergoline in Comparison With Metformin Only Therapy on Ovarian and Hormonal Activities in Iraqi Patients With PCOS",
+          "url": "https://clinicaltrials.gov/study/NCT05981742",
+          "excerpt": "Start date: 2022-09-21"
+        },
+        {
+          "nct_id": "NCT05689684",
+          "title": "Arabinoxylan-oligosaccharides (AXOS) for the Management of Type-2 Diabetes",
+          "url": "https://clinicaltrials.gov/study/NCT05689684",
+          "excerpt": "Start date: 2022-11-07"
+        }
+      ]
+    },
+    {
+      "bucket": "semaglutide \u00b7 2022",
+      "value": 68.0,
+      "nct_ids": [
+        "NCT05230615",
+        "NCT05390892",
+        "NCT05227196",
+        "NCT05444153",
+        "NCT05087342",
+        "NCT04174755",
+        "NCT05236517",
+        "NCT05352815",
+        "NCT05316662",
+        "NCT05768945",
+        "NCT05443191",
+        "NCT05333003",
+        "NCT04979130",
+        "NCT05259033",
+        "NCT05147896",
+        "NCT07457424",
+        "NCT05520775",
+        "NCT05498610",
+        "NCT05567796",
+        "NCT04873050",
+        "NCT05073835",
+        "NCT05579977",
+        "NCT05303857",
+        "NCT04938388",
+        "NCT05136287",
+        "NCT07539584",
+        "NCT06820047",
+        "NCT04873245",
+        "NCT05443334",
+        "NCT05442450",
+        "NCT05205928",
+        "NCT05533632",
+        "NCT06118203",
+        "NCT05574439",
+        "NCT05616052",
+        "NCT05305794",
+        "NCT05078255",
+        "NCT04854083",
+        "NCT05193578",
+        "NCT05492305",
+        "NCT05429593",
+        "NCT05322200",
+        "NCT05486065",
+        "NCT05071898",
+        "NCT05371496",
+        "NCT05514535",
+        "NCT05232708",
+        "NCT05478252",
+        "NCT05473286",
+        "NCT05616013",
+        "NCT04998136",
+        "NCT05564117",
+        "NCT05254314",
+        "NCT05435677",
+        "NCT05548647",
+        "NCT05249881",
+        "NCT05356104",
+        "NCT05195944",
+        "NCT05230589",
+        "NCT05340868",
+        "NCT04885634",
+        "NCT04889183",
+        "NCT06301191",
+        "NCT05468632"
+      ],
+      "trials": [
+        {
+          "nct_id": "NCT05230615",
+          "title": "A Research Study Looking at How Oral Semaglutide Works in People With Type 2 Diabetes in Italy, as Part of Local Clinical Practice",
+          "url": "https://clinicaltrials.gov/study/NCT05230615",
+          "excerpt": "Start date: 2022-04-01"
+        },
+        {
+          "nct_id": "NCT05390892",
+          "title": "PREvention of CardIovascular and DiabEtic kidNey Disease in Type 2 Diabetes",
+          "url": "https://clinicaltrials.gov/study/NCT05390892",
+          "excerpt": "Start date: 2022-09-26"
+        },
+        {
+          "nct_id": "NCT05227196",
+          "title": "A Research Study Looking at the Comparability of 2 Different Forms of Oral Semaglutide in Healthy People",
+          "url": "https://clinicaltrials.gov/study/NCT05227196",
+          "excerpt": "Start date: 2022-02-04"
+        },
+        {
+          "nct_id": "NCT05444153",
+          "title": "Research Study to Compare Semaglutide Tablets With Empagliflozin Tablets Taken Once Daily in People With Type 2 Diabetes and Obesity",
+          "url": "https://clinicaltrials.gov/study/NCT05444153",
+          "excerpt": "Start date: 2022-10-06"
+        },
+        {
+          "nct_id": "NCT05087342",
+          "title": "Latino Semaglutide Study",
+          "url": "https://clinicaltrials.gov/study/NCT05087342",
+          "excerpt": "Start date: 2022-12-13"
+        },
+        {
+          "nct_id": "NCT04174755",
+          "title": "Semaglutide's Efficacy in Achieving Weight Loss for Those With HIV",
+          "url": "https://clinicaltrials.gov/study/NCT04174755",
+          "excerpt": "Start date: 2022-06-22"
+        },
+        {
+          "nct_id": "NCT05236517",
+          "title": "A Research Study Looking at How 50 mg Semaglutide Daily Affects Food Intake and Emptying of the Stomach in People With Obesity",
+          "url": "https://clinicaltrials.gov/study/NCT05236517",
+          "excerpt": "Start date: 2022-02-08"
+        },
+        {
+          "nct_id": "NCT05352815",
+          "title": "A Research Study to See How Well the New Weekly Medicine IcoSema, Which is a Combination of Insulin Icodec and Semaglutide, Controls Blood Sugar Level in People With Type 2 Diabetes Compared to Weekly Insulin Icodec",
+          "url": "https://clinicaltrials.gov/study/NCT05352815",
+          "excerpt": "Start date: 2022-06-01"
+        },
+        {
+          "nct_id": "NCT05316662",
+          "title": "A Research Study Looking at How Oral Semaglutide Works in People With Type 2 Diabetes in Mexico, as Part of Local Clinical Practice",
+          "url": "https://clinicaltrials.gov/study/NCT05316662",
+          "excerpt": "Start date: 2022-04-06"
+        },
+        {
+          "nct_id": "NCT05768945",
+          "title": "Data Analysis for Drug Repurposing for Effective Alzheimer's Medicines (DREAM)- Semaglutide v DPP4 Inhibitors",
+          "url": "https://clinicaltrials.gov/study/NCT05768945",
+          "excerpt": "Start date: 2022-11-30"
+        },
+        {
+          "nct_id": "NCT05443191",
+          "title": "A Research Study Looking at How Oral Semaglutide Works in People With Type 2 Diabetes in Finland, as Part of Local Clinical Practice",
+          "url": "https://clinicaltrials.gov/study/NCT05443191",
+          "excerpt": "Start date: 2022-10-20"
+        },
+        {
+          "nct_id": "NCT05333003",
+          "title": "Semaglutide in Comorbid Schizophrenia Spectrum Disorder and Obesity",
+          "url": "https://clinicaltrials.gov/study/NCT05333003",
+          "excerpt": "Start date: 2022-05-25"
+        },
+        {
+          "nct_id": "NCT04979130",
+          "title": "Comparing Semaglutide Versus Placebo on Intestinal Barrier Function in Type 2 Diabetes Mellitus (SIB)",
+          "url": "https://clinicaltrials.gov/study/NCT04979130",
+          "excerpt": "Start date: 2022-01-01"
+        },
+        {
+          "nct_id": "NCT05259033",
+          "title": "A Research Study to See How Well the New Weekly Medicine IcoSema, Which is a Combination of Insulin Icodec and Semaglutide, Controls Blood Sugar Level in People With Type 2 Diabetes Compared to Weekly Semaglutide (COMBINE 2)",
+          "url": "https://clinicaltrials.gov/study/NCT05259033",
+          "excerpt": "Start date: 2022-04-11"
+        },
+        {
+          "nct_id": "NCT05147896",
+          "title": "Semaglutide Anti-Atherosclerotic Mechanisms of Action Study in Type 2 Diabetes Patients",
+          "url": "https://clinicaltrials.gov/study/NCT05147896",
+          "excerpt": "Start date: 2022-05-01"
+        },
+        {
+          "nct_id": "NCT07457424",
+          "title": "Direct Measurement of Microstructure of Ingestive Behaviour After Initiation of GLP-1 Receptor Agonist Treatment at Maximum Dose (DIGRAT)",
+          "url": "https://clinicaltrials.gov/study/NCT07457424",
+          "excerpt": "Start date: 2022-02-17"
+        },
+        {
+          "nct_id": "NCT05520775",
+          "title": "Semaglutide for Alcohol Use Disorder",
+          "url": "https://clinicaltrials.gov/study/NCT05520775",
+          "excerpt": "Start date: 2022-09-02"
+        },
+        {
+          "nct_id": "NCT05498610",
+          "title": "A Research Study of How the Medicine NNC0480-0389 Taken With Semaglutide Works in the Body of Healthy Chinese Men",
+          "url": "https://clinicaltrials.gov/study/NCT05498610",
+          "excerpt": "Start date: 2022-08-11"
+        },
+        {
+          "nct_id": "NCT05567796",
+          "title": "A Research Study to See How Well CagriSema Helps People With Excess Body Weight Lose Weight",
+          "url": "https://clinicaltrials.gov/study/NCT05567796",
+          "excerpt": "Start date: 2022-11-01"
+        },
+        {
+          "nct_id": "NCT04873050",
+          "title": "Treatment to Regress to Normoglycemia in Women with a Recent History of GDM",
+          "url": "https://clinicaltrials.gov/study/NCT04873050",
+          "excerpt": "Start date: 2022-01-13"
+        },
+        {
+          "nct_id": "NCT05073835",
+          "title": "Semaglutide 2.4 mg in Patients With Poor Weight-loss",
+          "url": "https://clinicaltrials.gov/study/NCT05073835",
+          "excerpt": "Start date: 2022-11-01"
+        },
+        {
+          "nct_id": "NCT05579977",
+          "title": "Trial to Learn About the Study Medicine (PF-07081532) and Rybelsus in People With Type 2 Diabetes and Separately PF-07081532 in People With Obesity",
+          "url": "https://clinicaltrials.gov/study/NCT05579977",
+          "excerpt": "Start date: 2022-10-27"
+        },
+        {
+          "nct_id": "NCT05303857",
+          "title": "Analyse the Effect of Semaglutide on Vascular Structure and Function in Patients With Early Type 2 Diabetes",
+          "url": "https://clinicaltrials.gov/study/NCT05303857",
+          "excerpt": "Start date: 2022-03-03"
+        },
+        {
+          "nct_id": "NCT04938388",
+          "title": "Comparison of Oral Semaglutide w/ Placebo- Treatment for Latino Adults w/T2 Diabetes Receiving Enhanced Lifestyle Care",
+          "url": "https://clinicaltrials.gov/study/NCT04938388",
+          "excerpt": "Start date: 2022-01-29"
+        },
+        {
+          "nct_id": "NCT05136287",
+          "title": "SEMAGLUTIDE VERSUS GLP-1 RECEPTOR AGONISTS. EFFECTIVENESS , SAFETY AND QUALITY OF LIFE IN PATIENTS WITH DIABETES MELLITUS 2. OBSERVATIONAL, PROSPECTIVE AND MULTICENTER STUDY. SEVERAL STUDY.",
+          "url": "https://clinicaltrials.gov/study/NCT05136287",
+          "excerpt": "Start date: 2022-02-01"
+        }
+      ]
+    },
+    {
+      "bucket": "metformin \u00b7 2023",
+      "value": 138.0,
+      "nct_ids": [
+        "NCT05580523",
+        "NCT06128967",
+        "NCT05847244",
+        "NCT06252194",
+        "NCT05759897",
+        "NCT07003191",
+        "NCT06537843",
+        "NCT05781711",
+        "NCT05023967",
+        "NCT05815680",
+        "NCT05109169",
+        "NCT06357273",
+        "NCT05952349",
+        "NCT06370247",
+        "NCT05779644",
+        "NCT06010992",
+        "NCT06066060",
+        "NCT07437612",
+        "NCT07604870",
+        "NCT05932251",
+        "NCT05900466",
+        "NCT05823883",
+        "NCT06160414",
+        "NCT03816488",
+        "NCT02915198",
+        "NCT05688332",
+        "NCT05766540",
+        "NCT05694221",
+        "NCT06140108",
+        "NCT06335134",
+        "NCT05819853",
+        "NCT05680129",
+        "NCT05893849",
+        "NCT05760456",
+        "NCT05759312",
+        "NCT05703984",
+        "NCT06103747",
+        "NCT05759442",
+        "NCT05994586",
+        "NCT05232994",
+        "NCT06007014",
+        "NCT06215976",
+        "NCT05574387",
+        "NCT06135584",
+        "NCT05950516",
+        "NCT06049186",
+        "NCT07309094",
+        "NCT05013112",
+        "NCT06229795",
+        "NCT05655728",
+        "NCT05680805",
+        "NCT06430125",
+        "NCT05205317",
+        "NCT05942963",
+        "NCT05979038",
+        "NCT03989778",
+        "NCT06101147",
+        "NCT06083935",
+        "NCT03710343",
+        "NCT06065540",
+        "NCT05657613",
+        "NCT04194424",
+        "NCT06204107",
+        "NCT06109311",
+        "NCT06515652",
+        "NCT06766201",
+        "NCT06227832",
+        "NCT05762471",
+        "NCT05660083",
+        "NCT05768360",
+        "NCT05606913",
+        "NCT05838573",
+        "NCT06125873"
+      ],
+      "trials": [
+        {
+          "nct_id": "NCT05580523",
+          "title": "Aspirin Versus Metformin in Pregnancies at High Risk of Preterm Preeclampsia: a 3-arm Randomized Controlled Trial",
+          "url": "https://clinicaltrials.gov/study/NCT05580523",
+          "excerpt": "Start date: 2023-07-03"
+        },
+        {
+          "nct_id": "NCT06128967",
+          "title": "A Multicenter, Adaptive, Randomized, doublE-blinded, Placebo-controlled Study in Participants With Long COVID-19: The REVIVE Trial",
+          "url": "https://clinicaltrials.gov/study/NCT06128967",
+          "excerpt": "Start date: 2023-10-18"
+        },
+        {
+          "nct_id": "NCT05847244",
+          "title": "The Effect of Addition of Metformin In Obese Non- Diabetic Patients With Heart Failure With Preserved Ejection Fraction",
+          "url": "https://clinicaltrials.gov/study/NCT05847244",
+          "excerpt": "Start date: 2023-10-01"
+        },
+        {
+          "nct_id": "NCT06252194",
+          "title": "Comparative Study of Metformin Versus Doxycycline in Moderate to Severe Adult Acne Vulgaris Patients.",
+          "url": "https://clinicaltrials.gov/study/NCT06252194",
+          "excerpt": "Start date: 2023-03-05"
+        },
+        {
+          "nct_id": "NCT05759897",
+          "title": "A 16 Week Study of HRS-7535 in Adults With Type 2 Diabetes Mellitus",
+          "url": "https://clinicaltrials.gov/study/NCT05759897",
+          "excerpt": "Start date: 2023-02-28"
+        },
+        {
+          "nct_id": "NCT07003191",
+          "title": "Metformin Hydrochloride and Empagliflozin Tablets in the Treatment of Type 2 Diabetes",
+          "url": "https://clinicaltrials.gov/study/NCT07003191",
+          "excerpt": "Start date: 2023-08-02"
+        },
+        {
+          "nct_id": "NCT06537843",
+          "title": "Safety and Efficacy of Venetoclax, Cytarabine and Metformin (VenCM) for Relapsed-Refractory and Induction-Ineligible Acute Myeloid Leukemia",
+          "url": "https://clinicaltrials.gov/study/NCT06537843",
+          "excerpt": "Start date: 2023-12-01"
+        },
+        {
+          "nct_id": "NCT05781711",
+          "title": "Clinical Study to Evaluate the Possible Efficacy of Metformin in Patients With Parkinson's Disease",
+          "url": "https://clinicaltrials.gov/study/NCT05781711",
+          "excerpt": "Start date: 2023-01-06"
+        },
+        {
+          "nct_id": "NCT05023967",
+          "title": "Metformin and Nightly Fasting in Women With Early Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT05023967",
+          "excerpt": "Start date: 2023-04-04"
+        },
+        {
+          "nct_id": "NCT05815680",
+          "title": "A Study to Evaluate the Drug-drug Interactions (DDIs) of IBI362 With Metformin, Warfarin, Atorvastatin, Digoxin in Overweight or Obese Subjects",
+          "url": "https://clinicaltrials.gov/study/NCT05815680",
+          "excerpt": "Start date: 2023-04-06"
+        },
+        {
+          "nct_id": "NCT05109169",
+          "title": "METformin and FINGER Intervention to Prevent Cognitive Impairment and Disability in Older Adults at Risk for Dementia",
+          "url": "https://clinicaltrials.gov/study/NCT05109169",
+          "excerpt": "Start date: 2023-01-25"
+        },
+        {
+          "nct_id": "NCT06357273",
+          "title": "The Effect of White Tea Consumption on Obesity",
+          "url": "https://clinicaltrials.gov/study/NCT06357273",
+          "excerpt": "Start date: 2023-07-01"
+        },
+        {
+          "nct_id": "NCT05952349",
+          "title": "Effect of Metformin and Combination of Olive Oil Plus Nutritional Supplements on Inflammatory Markers IL-6 and IL-8 in PCOS.",
+          "url": "https://clinicaltrials.gov/study/NCT05952349",
+          "excerpt": "Start date: 2023-07-01"
+        },
+        {
+          "nct_id": "NCT06370247",
+          "title": "First-time Usage of SGLT2 Inhibitors in Type 2 Diabetic Patients Who Are Fasting During Ramadan: Safety and Efficacy",
+          "url": "https://clinicaltrials.gov/study/NCT06370247",
+          "excerpt": "Start date: 2023-04-25"
+        },
+        {
+          "nct_id": "NCT05779644",
+          "title": "Effects of GLP-1RA on Body Weight, Metabolism and Fat Distribution in Overweight/Obese Patients With Type 2 Diabetes Mellitus",
+          "url": "https://clinicaltrials.gov/study/NCT05779644",
+          "excerpt": "Start date: 2023-02-23"
+        },
+        {
+          "nct_id": "NCT06010992",
+          "title": "Nitazoxanide as Adjuvant Therapy in Type 2 Diabetes Mellitus",
+          "url": "https://clinicaltrials.gov/study/NCT06010992",
+          "excerpt": "Start date: 2023-10-01"
+        },
+        {
+          "nct_id": "NCT06066060",
+          "title": "A DDI Study of JMKX000623 and Metformin Hydrochloride",
+          "url": "https://clinicaltrials.gov/study/NCT06066060",
+          "excerpt": "Start date: 2023-09-17"
+        },
+        {
+          "nct_id": "NCT07437612",
+          "title": "Cryotherapy and Intracanal Medicaments for Postoperative Pain in Apical Periodontitis",
+          "url": "https://clinicaltrials.gov/study/NCT07437612",
+          "excerpt": "Start date: 2023-02-13"
+        },
+        {
+          "nct_id": "NCT07604870",
+          "title": "Krill Oil and Metformin in Women With PCOS and Metabolically Unhealthy Obesity",
+          "url": "https://clinicaltrials.gov/study/NCT07604870",
+          "excerpt": "Start date: 2023-03-01"
+        },
+        {
+          "nct_id": "NCT05932251",
+          "title": "Towards Precision Medicine for Diabetes in Pregnancy",
+          "url": "https://clinicaltrials.gov/study/NCT05932251",
+          "excerpt": "Start date: 2023-06-19"
+        },
+        {
+          "nct_id": "NCT05900466",
+          "title": "Metformin for Fibromyalgia Symptoms (INFORM Trial)",
+          "url": "https://clinicaltrials.gov/study/NCT05900466",
+          "excerpt": "Start date: 2023-04-01"
+        },
+        {
+          "nct_id": "NCT05823883",
+          "title": "This Study is to Compare and Evaluate the Safety and Pharmacokinetic Characteristics (PK) After Administration of DW6014 and Each Component in Healthy Adult Volunteers in Fed Condition.",
+          "url": "https://clinicaltrials.gov/study/NCT05823883",
+          "excerpt": "Start date: 2023-06"
+        },
+        {
+          "nct_id": "NCT06160414",
+          "title": "A Study to Investigate the Potential Drug Interactions Between ALXN2080 and Rosuvastatin and Metformin in Healthy Adult Participants",
+          "url": "https://clinicaltrials.gov/study/NCT06160414",
+          "excerpt": "Start date: 2023-04-12"
+        },
+        {
+          "nct_id": "NCT03816488",
+          "title": "Oral Peri-operative TIming of Metformin (or) Salsalate to Improve Non-cardiac Surgery Glucose Control",
+          "url": "https://clinicaltrials.gov/study/NCT03816488",
+          "excerpt": "Start date: 2023-12-01"
+        },
+        {
+          "nct_id": "NCT02915198",
+          "title": "Investigation of Metformin in Pre-Diabetes on Atherosclerotic Cardiovascular OuTcomes",
+          "url": "https://clinicaltrials.gov/study/NCT02915198",
+          "excerpt": "Start date: 2023-04-03"
+        }
+      ]
+    },
+    {
+      "bucket": "semaglutide \u00b7 2023",
+      "value": 88.0,
+      "nct_ids": [
+        "NCT05716724",
+        "NCT06298799",
+        "NCT06215196",
+        "NCT05502562",
+        "NCT05649137",
+        "NCT05822830",
+        "NCT05779644",
+        "NCT05394519",
+        "NCT06042153",
+        "NCT05501483",
+        "NCT06354101",
+        "NCT06097390",
+        "NCT06344247",
+        "NCT05669755",
+        "NCT05891496",
+        "NCT07043361",
+        "NCT05819853",
+        "NCT05920889",
+        "NCT05812183",
+        "NCT06827002",
+        "NCT06060392",
+        "NCT05671653",
+        "NCT05786521",
+        "NCT05813925",
+        "NCT06005012",
+        "NCT06974825",
+        "NCT05813912",
+        "NCT05877547",
+        "NCT05950516",
+        "NCT07309094",
+        "NCT05938712",
+        "NCT05813249",
+        "NCT05579249",
+        "NCT06065540",
+        "NCT05390307",
+        "NCT05891587",
+        "NCT05925959",
+        "NCT06131437",
+        "NCT05872022",
+        "NCT05895643",
+        "NCT05689099",
+        "NCT04972721",
+        "NCT05766709",
+        "NCT05537233",
+        "NCT05756764",
+        "NCT05984238",
+        "NCT05441267",
+        "NCT05996874",
+        "NCT06629688",
+        "NCT05630586",
+        "NCT06069622",
+        "NCT05702905",
+        "NCT06182618",
+        "NCT06333080",
+        "NCT05209165",
+        "NCT05788965",
+        "NCT05586802",
+        "NCT07272343",
+        "NCT05870462",
+        "NCT05990374",
+        "NCT06221696",
+        "NCT05569772",
+        "NCT05751226",
+        "NCT06041217",
+        "NCT06475586",
+        "NCT06015893",
+        "NCT05996848",
+        "NCT05819138",
+        "NCT05419726",
+        "NCT06118008",
+        "NCT05067621",
+        "NCT05726227",
+        "NCT06256549",
+        "NCT05646706",
+        "NCT05622045",
+        "NCT05784402",
+        "NCT06154486",
+        "NCT05755360",
+        "NCT06045221",
+        "NCT05700877"
+      ],
+      "trials": [
+        {
+          "nct_id": "NCT05716724",
+          "title": "O-SEMA-Fast: A Research Study to Understand How Oral Semaglutide Works in People With Type 2 Diabetes Who Plan to Fast During Ramadan in the United Arab Emirates, Saudi Arabia, and Kuwait",
+          "url": "https://clinicaltrials.gov/study/NCT05716724",
+          "excerpt": "Start date: 2023-01-25"
+        },
+        {
+          "nct_id": "NCT06298799",
+          "title": "GENETIC VARIABILITY TO GLP1 TREATMENT",
+          "url": "https://clinicaltrials.gov/study/NCT06298799",
+          "excerpt": "Start date: 2023-10-01"
+        },
+        {
+          "nct_id": "NCT06215196",
+          "title": "Effectiveness and Safety of Semaglutide Combined With Dietary Fiber (Soloways) in Adults With Overweight or Obesity",
+          "url": "https://clinicaltrials.gov/study/NCT06215196",
+          "excerpt": "Start date: 2023-04-14"
+        },
+        {
+          "nct_id": "NCT05502562",
+          "title": "A Research Study to Understand How Oral Semaglutide Works in People With Type 2 Diabetes in India",
+          "url": "https://clinicaltrials.gov/study/NCT05502562",
+          "excerpt": "Start date: 2023-02-24"
+        },
+        {
+          "nct_id": "NCT05649137",
+          "title": "A Research Study to See How Semaglutide Helps People With Excess Weight and Type 2 Diabetes Lose Weight",
+          "url": "https://clinicaltrials.gov/study/NCT05649137",
+          "excerpt": "Start date: 2023-01-04"
+        },
+        {
+          "nct_id": "NCT05822830",
+          "title": "A Study of Tirzepatide (LY3298176) in Participants With Obesity or Overweight With Weight Related Comorbidities",
+          "url": "https://clinicaltrials.gov/study/NCT05822830",
+          "excerpt": "Start date: 2023-04-21"
+        },
+        {
+          "nct_id": "NCT05779644",
+          "title": "Effects of GLP-1RA on Body Weight, Metabolism and Fat Distribution in Overweight/Obese Patients With Type 2 Diabetes Mellitus",
+          "url": "https://clinicaltrials.gov/study/NCT05779644",
+          "excerpt": "Start date: 2023-02-23"
+        },
+        {
+          "nct_id": "NCT05394519",
+          "title": "A Research Study to See How Well CagriSema Helps People With Type 2 Diabetes and Excess Body Weight Lose Weight",
+          "url": "https://clinicaltrials.gov/study/NCT05394519",
+          "excerpt": "Start date: 2023-02-01"
+        },
+        {
+          "nct_id": "NCT06042153",
+          "title": "DIALYSIS-TIR Study",
+          "url": "https://clinicaltrials.gov/study/NCT06042153",
+          "excerpt": "Start date: 2023-12-05"
+        },
+        {
+          "nct_id": "NCT05501483",
+          "title": "Adipose Tissue Heterogeneity and Its Link to Type 2 Diabetes",
+          "url": "https://clinicaltrials.gov/study/NCT05501483",
+          "excerpt": "Start date: 2023-02-08"
+        },
+        {
+          "nct_id": "NCT06354101",
+          "title": "The Purpose of This Registry Study is to Learn More About Metabolic Health: Approximately 15,000 Participants Who Are Overweight or Have Obesity With or Without Metabolic Diseases Are Expected to Participate in This Registry Study.",
+          "url": "https://clinicaltrials.gov/study/NCT06354101",
+          "excerpt": "Start date: 2023-07-01"
+        },
+        {
+          "nct_id": "NCT06097390",
+          "title": "A Research Study Looking at New Protein-based Tablets in Healthy Men - Oral Formulation III",
+          "url": "https://clinicaltrials.gov/study/NCT06097390",
+          "excerpt": "Start date: 2023-09-28"
+        },
+        {
+          "nct_id": "NCT06344247",
+          "title": "Comparison of the Efficacy and Safety of SGLT2i and GLP-1 Receptor Agonists in Obese Patients With Kidney Disease",
+          "url": "https://clinicaltrials.gov/study/NCT06344247",
+          "excerpt": "Start date: 2023-09-01"
+        },
+        {
+          "nct_id": "NCT05669755",
+          "title": "REDEFINE 3: A Research Study to See the Effects of CagriSema in People Living With Diseases in the Heart and Blood Vessels",
+          "url": "https://clinicaltrials.gov/study/NCT05669755",
+          "excerpt": "Start date: 2023-03-01"
+        },
+        {
+          "nct_id": "NCT05891496",
+          "title": "A Research Study Looking at the Effect of Semaglutide on the Immune System and Other Biological Processes in People With Alzheimer's Disease",
+          "url": "https://clinicaltrials.gov/study/NCT05891496",
+          "excerpt": "Start date: 2023-06-20"
+        },
+        {
+          "nct_id": "NCT07043361",
+          "title": "Efficacy of Semaglutide in Glycemic Control, Weight Loss, and Improving Lipidogram- Role of Baseline Vitamin D Levels",
+          "url": "https://clinicaltrials.gov/study/NCT07043361",
+          "excerpt": "Start date: 2023-12-18"
+        },
+        {
+          "nct_id": "NCT05819853",
+          "title": "Role of Semaglutide in Restoring Ovulation in Youth and Adults With Polycystic Ovary Syndrome",
+          "url": "https://clinicaltrials.gov/study/NCT05819853",
+          "excerpt": "Start date: 2023-11-03"
+        },
+        {
+          "nct_id": "NCT05920889",
+          "title": "Glucagon-like Peptide 1 Receptor Agonist in Acute Large Vessel Occlusion Stroke Treated by Reperfusion Therapies",
+          "url": "https://clinicaltrials.gov/study/NCT05920889",
+          "excerpt": "Start date: 2023-08-01"
+        },
+        {
+          "nct_id": "NCT05812183",
+          "title": "Gastric Sleeve-Induced Weight Loss on Shortness of Breath in Obesity",
+          "url": "https://clinicaltrials.gov/study/NCT05812183",
+          "excerpt": "Start date: 2023-07-09"
+        },
+        {
+          "nct_id": "NCT06827002",
+          "title": "Effect of Aqueous Extracts of Cissus Quadrangularis and Dichrostachys Glomerata on GLP-1 Concentration and DPP-4 Activity in Overweight and Obese Adults",
+          "url": "https://clinicaltrials.gov/study/NCT06827002",
+          "excerpt": "Start date: 2023-03-29"
+        },
+        {
+          "nct_id": "NCT06060392",
+          "title": "Effect of Oral Semaglutide on Liver Fat and Body Composition in Liver Transplant Recipients With Diabetes Mellitus",
+          "url": "https://clinicaltrials.gov/study/NCT06060392",
+          "excerpt": "Start date: 2023-10-30"
+        },
+        {
+          "nct_id": "NCT05671653",
+          "title": "A Study to Evaluate the Effect of the Experimental GLP-1 Drug PF-07081532 on Blood Levels of Common Birth Control Pills, and Drugs Omeprazole and Midazolam, and Effect of GLP-1 Drug Semaglutide on Midazolam Blood Levels in Healthy Adults With Weight in the Obesity Range",
+          "url": "https://clinicaltrials.gov/study/NCT05671653",
+          "excerpt": "Start date: 2023-01-19"
+        },
+        {
+          "nct_id": "NCT05786521",
+          "title": "Effect of GLP1 Receptor Agonists on Physical Function, Body Composition, and Markers of Aging in Older Adults",
+          "url": "https://clinicaltrials.gov/study/NCT05786521",
+          "excerpt": "Start date: 2023-04-01"
+        },
+        {
+          "nct_id": "NCT05813925",
+          "title": "A Research Study to See How Well CagriSema Helps People in East Asia With Excess Body Weight Lose Weight",
+          "url": "https://clinicaltrials.gov/study/NCT05813925",
+          "excerpt": "Start date: 2023-04-03"
+        },
+        {
+          "nct_id": "NCT06005012",
+          "title": "Semaglutide Treatment in the Real-world for Fibrosis Due to NAFLD in Obesity and T2DM",
+          "url": "https://clinicaltrials.gov/study/NCT06005012",
+          "excerpt": "Start date: 2023-07-25"
+        }
+      ]
+    },
+    {
+      "bucket": "metformin \u00b7 2024",
+      "value": 154.0,
+      "nct_ids": [
+        "NCT07541807",
+        "NCT06083675",
+        "NCT06318442",
+        "NCT06889454",
+        "NCT06325956",
+        "NCT04945148",
+        "NCT06243536",
+        "NCT06405971",
+        "NCT06246799",
+        "NCT06763328",
+        "NCT06528002",
+        "NCT06218342",
+        "NCT06460896",
+        "NCT06233201",
+        "NCT06244407",
+        "NCT06559722",
+        "NCT06682351",
+        "NCT06545526",
+        "NCT06071442",
+        "NCT06377696",
+        "NCT06233240",
+        "NCT06319560",
+        "NCT05878535",
+        "NCT06339086",
+        "NCT06691542",
+        "NCT06576375",
+        "NCT06449833",
+        "NCT06728982",
+        "NCT06000462",
+        "NCT06683235",
+        "NCT06483243",
+        "NCT06147050",
+        "NCT06534411",
+        "NCT06445946",
+        "NCT06353061",
+        "NCT06723691",
+        "NCT07303556",
+        "NCT06439758",
+        "NCT06030622",
+        "NCT06675994",
+        "NCT06772857",
+        "NCT06523595",
+        "NCT06666933",
+        "NCT06203275",
+        "NCT06881264",
+        "NCT06670209",
+        "NCT06327191",
+        "NCT06459310",
+        "NCT07387679",
+        "NCT06393348",
+        "NCT07172269",
+        "NCT06096259",
+        "NCT06033131",
+        "NCT06613854",
+        "NCT07472179",
+        "NCT07586969",
+        "NCT06479434",
+        "NCT06781775",
+        "NCT06222476",
+        "NCT07300293",
+        "NCT06192108",
+        "NCT06871761",
+        "NCT06415773",
+        "NCT06181422",
+        "NCT06838286",
+        "NCT07072221",
+        "NCT06875193",
+        "NCT05532813",
+        "NCT06526494",
+        "NCT06045351",
+        "NCT06257966",
+        "NCT05828303",
+        "NCT07513480",
+        "NCT06591169",
+        "NCT06480292",
+        "NCT06476730",
+        "NCT06161844",
+        "NCT06693934",
+        "NCT06727838",
+        "NCT06655220",
+        "NCT06297603",
+        "NCT06686043",
+        "NCT06492655"
+      ],
+      "trials": [
+        {
+          "nct_id": "NCT07541807",
+          "title": "Assessing Changes in Gadoxetate Metabolism by the Liver Using MRI",
+          "url": "https://clinicaltrials.gov/study/NCT07541807",
+          "excerpt": "Start date: 2024-12-02"
+        },
+        {
+          "nct_id": "NCT06083675",
+          "title": "Research Study to Compare Semaglutide Tablets With Empagliflozin or Metformin Tablets in People With Type 2 Diabetes",
+          "url": "https://clinicaltrials.gov/study/NCT06083675",
+          "excerpt": "Start date: 2024-01-26"
+        },
+        {
+          "nct_id": "NCT06318442",
+          "title": "The GAPSID Study - How GLP-1 Analogues Prevent Steroid-Induced Diabetes",
+          "url": "https://clinicaltrials.gov/study/NCT06318442",
+          "excerpt": "Start date: 2024-05-15"
+        },
+        {
+          "nct_id": "NCT06889454",
+          "title": "Cardiovascular and Endothelial Markers During OGTT Before and at Six and Twelve Months Post-treatment in Women With PCOS",
+          "url": "https://clinicaltrials.gov/study/NCT06889454",
+          "excerpt": "Start date: 2024-02-01"
+        },
+        {
+          "nct_id": "NCT06325956",
+          "title": "PCOS Immune Function Predicts Metformin Efficacy",
+          "url": "https://clinicaltrials.gov/study/NCT06325956",
+          "excerpt": "Start date: 2024-03-16"
+        },
+        {
+          "nct_id": "NCT04945148",
+          "title": "Oxidative Phosphorylation Targeting In Malignant Glioma Using Metformin Plus Radiotherapy Temozolomide",
+          "url": "https://clinicaltrials.gov/study/NCT04945148",
+          "excerpt": "Start date: 2024-05-10"
+        },
+        {
+          "nct_id": "NCT06243536",
+          "title": "The Effect of Semaglutide on Disordered Eating Behaviour in Type 2 Diabetic Patients",
+          "url": "https://clinicaltrials.gov/study/NCT06243536",
+          "excerpt": "Start date: 2024-02-01"
+        },
+        {
+          "nct_id": "NCT06405971",
+          "title": "Metformin in Patients With Unruptured Vertebrobasilar Dissecting Aneurysms (METTLE)",
+          "url": "https://clinicaltrials.gov/study/NCT06405971",
+          "excerpt": "Start date: 2024-06-01"
+        },
+        {
+          "nct_id": "NCT06246799",
+          "title": "Comparative Effectiveness of Two Initial Combination Therapies in Patients With Recent Onset Diabetes",
+          "url": "https://clinicaltrials.gov/study/NCT06246799",
+          "excerpt": "Start date: 2024-11-07"
+        },
+        {
+          "nct_id": "NCT06763328",
+          "title": "Metformin for the Treatment of Insulin Resistance in Women With Stage I-III Breast Cancer Completing Chemotherapy",
+          "url": "https://clinicaltrials.gov/study/NCT06763328",
+          "excerpt": "Start date: 2024-12-16"
+        },
+        {
+          "nct_id": "NCT06528002",
+          "title": "Hybrid Method Between Low-ratio Premixed Insulin and Short Acting Insulin in Fasting Type 2 Diabetic Patients in Ramadan",
+          "url": "https://clinicaltrials.gov/study/NCT06528002",
+          "excerpt": "Start date: 2024-03-01"
+        },
+        {
+          "nct_id": "NCT06218342",
+          "title": "Henagliflozin in Relieving Type 2 Diabetes With Non-alcoholic Fatty Liver Disease",
+          "url": "https://clinicaltrials.gov/study/NCT06218342",
+          "excerpt": "Start date: 2024-02-15"
+        },
+        {
+          "nct_id": "NCT06460896",
+          "title": "Analysis of the Influence of Gastric By-Pass on the Pharmacokinetics of Common Drugs",
+          "url": "https://clinicaltrials.gov/study/NCT06460896",
+          "excerpt": "Start date: 2024-09"
+        },
+        {
+          "nct_id": "NCT06233201",
+          "title": "Sitagliptin and Metformin Hydrochloride Tablets 50 mg/500 mg Relative to Originator",
+          "url": "https://clinicaltrials.gov/study/NCT06233201",
+          "excerpt": "Start date: 2024-06-04"
+        },
+        {
+          "nct_id": "NCT06244407",
+          "title": "The Bioequivalence Study of Fixed-dose Combination of Vildagliptin and Metformin HCI 50/1000 mg FCT Under Fed Conditions",
+          "url": "https://clinicaltrials.gov/study/NCT06244407",
+          "excerpt": "Start date: 2024-05-23"
+        },
+        {
+          "nct_id": "NCT06559722",
+          "title": "A Trial Investigating the Efficacy and Safety of Insulin Degludec/Liraglutide Injection in Subjects With Type 2 Diabetes",
+          "url": "https://clinicaltrials.gov/study/NCT06559722",
+          "excerpt": "Start date: 2024-08"
+        },
+        {
+          "nct_id": "NCT06682351",
+          "title": "Heterogeneity of Diabetes: Integrated Muli-Omics to Identify Physiologic Subphenotypes and Evaluate Targeted Prevention",
+          "url": "https://clinicaltrials.gov/study/NCT06682351",
+          "excerpt": "Start date: 2024-11"
+        },
+        {
+          "nct_id": "NCT06545526",
+          "title": "Chemopreventive Effect of Combination of Celecoxib and Metformin in Patients With Familial Adenomatous Polyposis",
+          "url": "https://clinicaltrials.gov/study/NCT06545526",
+          "excerpt": "Start date: 2024-08-13"
+        },
+        {
+          "nct_id": "NCT06071442",
+          "title": "Potential Drug Interaction Study Between Vemircopan and Rosuvastatin, Metformin, Levonorgestrel/Ethinyl Estradiol-containing Oral Contraceptives, and Carbamazepine",
+          "url": "https://clinicaltrials.gov/study/NCT06071442",
+          "excerpt": "Start date: 2024-01-17"
+        },
+        {
+          "nct_id": "NCT06377696",
+          "title": "Remote Cognitive Assessment and Wearable Device While Assessing the Impact of Metformin in Patients With History of Cranial Radiation Therapy",
+          "url": "https://clinicaltrials.gov/study/NCT06377696",
+          "excerpt": "Start date: 2024-05-31"
+        },
+        {
+          "nct_id": "NCT06233240",
+          "title": "Sitagliptin and Metformin Hydrochloride Tablets 50 mg/1000 mg Relative to Originator",
+          "url": "https://clinicaltrials.gov/study/NCT06233240",
+          "excerpt": "Start date: 2024-04-30"
+        },
+        {
+          "nct_id": "NCT06319560",
+          "title": "Hydroxychloroquine in Type 2 Diabetes During Pregnancy",
+          "url": "https://clinicaltrials.gov/study/NCT06319560",
+          "excerpt": "Start date: 2024-03-24"
+        },
+        {
+          "nct_id": "NCT05878535",
+          "title": "METFORMIN FOR ATRIAL FIBRILLATION",
+          "url": "https://clinicaltrials.gov/study/NCT05878535",
+          "excerpt": "Start date: 2024-06-01"
+        },
+        {
+          "nct_id": "NCT06339086",
+          "title": "Efficacy and Safety of Semaglutide Injection in Subjects With Type 2 Diabetes",
+          "url": "https://clinicaltrials.gov/study/NCT06339086",
+          "excerpt": "Start date: 2024-04"
+        },
+        {
+          "nct_id": "NCT06691542",
+          "title": "Efficacy and Safety of Platelet-rich Plasma, Metformin and Cryotherapy in Treatment of Non-genital Warts",
+          "url": "https://clinicaltrials.gov/study/NCT06691542",
+          "excerpt": "Start date: 2024-11-14"
+        }
+      ]
+    },
+    {
+      "bucket": "semaglutide \u00b7 2024",
+      "value": 0.0,
+      "nct_ids": [
+        "NCT06083675",
+        "NCT06318442",
+        "NCT06243536",
+        "NCT05780905",
+        "NCT06411210",
+        "NCT06449625",
+        "NCT06003153",
+        "NCT06555146",
+        "NCT06659679",
+        "NCT06269107",
+        "NCT06699329",
+        "NCT07336862",
+        "NCT06132477",
+        "NCT05746039",
+        "NCT06821919",
+        "NCT07056803",
+        "NCT06500429",
+        "NCT06292065",
+        "NCT06269120",
+        "NCT07092605",
+        "NCT06541509",
+        "NCT05702931",
+        "NCT06339086",
+        "NCT06410352",
+        "NCT06351748",
+        "NCT06387199",
+        "NCT06874751",
+        "NCT06534411",
+        "NCT07280403",
+        "NCT06426446",
+        "NCT06388187",
+        "NCT06571383",
+        "NCT06581120",
+        "NCT06584916",
+        "NCT06500143",
+        "NCT06173778",
+        "NCT06613854",
+        "NCT06779929",
+        "NCT06640972",
+        "NCT06487832",
+        "NCT06423599",
+        "NCT06323174",
+        "NCT06363487",
+        "NCT06380426",
+        "NCT06579105",
+        "NCT06986993",
+        "NCT06282458",
+        "NCT05424003",
+        "NCT06422624",
+        "NCT06057077",
+        "NCT06363747",
+        "NCT06161844",
+        "NCT06461377",
+        "NCT06616961",
+        "NCT06299098",
+        "NCT06717698",
+        "NCT07018544",
+        "NCT07092618",
+        "NCT06634927",
+        "NCT06959784",
+        "NCT06374875",
+        "NCT05892432",
+        "NCT06686134",
+        "NCT05202353",
+        "NCT06221969",
+        "NCT06492330",
+        "NCT06533527",
+        "NCT06468748",
+        "NCT06467604",
+        "NCT07325435",
+        "NCT06082063",
+        "NCT06361823",
+        "NCT06072963",
+        "NCT06260722",
+        "NCT06401746",
+        "NCT06633783",
+        "NCT05670379",
+        "NCT06263595",
+        "NCT05822609",
+        "NCT06323161",
+        "NCT06338553",
+        "NCT06507475",
+        "NCT06283667",
+        "NCT06184633",
+        "NCT06659744",
+        "NCT06648031",
+        "NCT06449235",
+        "NCT06642584",
+        "NCT06409130",
+        "NCT06604624",
+        "NCT06751589",
+        "NCT06605703",
+        "NCT06575738",
+        "NCT06478550",
+        "NCT06396416",
+        "NCT06577090",
+        "NCT06659718",
+        "NCT06149260",
+        "NCT07096063",
+        "NCT06234111",
+        "NCT06446531",
+        "NCT06207877",
+        "NCT06050577",
+        "NCT06649344",
+        "NCT06267092",
+        "NCT06716307",
+        "NCT06557811",
+        "NCT06289504",
+        "NCT06400615",
+        "NCT06287307",
+        "NCT06390501",
+        "NCT06403761",
+        "NCT06761703"
+      ],
+      "trials": [
+        {
+          "nct_id": "NCT06083675",
+          "title": "Research Study to Compare Semaglutide Tablets With Empagliflozin or Metformin Tablets in People With Type 2 Diabetes",
+          "url": "https://clinicaltrials.gov/study/NCT06083675",
+          "excerpt": "Start date: 2024-01-26"
+        },
+        {
+          "nct_id": "NCT06318442",
+          "title": "The GAPSID Study - How GLP-1 Analogues Prevent Steroid-Induced Diabetes",
+          "url": "https://clinicaltrials.gov/study/NCT06318442",
+          "excerpt": "Start date: 2024-05-15"
+        },
+        {
+          "nct_id": "NCT06243536",
+          "title": "The Effect of Semaglutide on Disordered Eating Behaviour in Type 2 Diabetic Patients",
+          "url": "https://clinicaltrials.gov/study/NCT06243536",
+          "excerpt": "Start date: 2024-02-01"
+        },
+        {
+          "nct_id": "NCT05780905",
+          "title": "Effects of Semaglutide on Intracranial Blood Flow and Brain-Barrier Permeability in Type-2 Diabetes",
+          "url": "https://clinicaltrials.gov/study/NCT05780905",
+          "excerpt": "Start date: 2024-01-11"
+        },
+        {
+          "nct_id": "NCT06411210",
+          "title": "Obesity Complicating Type 1 Diabetes: GLP-1 Analogue Anti-obesity Treatment",
+          "url": "https://clinicaltrials.gov/study/NCT06411210",
+          "excerpt": "Start date: 2024-07-16"
+        },
+        {
+          "nct_id": "NCT06449625",
+          "title": "Semaglutide in Auto-HSCT",
+          "url": "https://clinicaltrials.gov/study/NCT06449625",
+          "excerpt": "Start date: 2024-08-12"
+        },
+        {
+          "nct_id": "NCT06003153",
+          "title": "GLUCOSE-MGH: Genetic Links Understood Through Challenge With Oral Semaglutide Exposure at MGH",
+          "url": "https://clinicaltrials.gov/study/NCT06003153",
+          "excerpt": "Start date: 2024-03-12"
+        },
+        {
+          "nct_id": "NCT06555146",
+          "title": "Semaglutide's Effect on Renal Hemodynamics and Function in Patients With Type 2 Diabetes Mellitus and Nephropathy",
+          "url": "https://clinicaltrials.gov/study/NCT06555146",
+          "excerpt": "Start date: 2024-08"
+        },
+        {
+          "nct_id": "NCT06659679",
+          "title": "Emulating the PIONEER6 Diabetes Trial Using Healthcare Claims",
+          "url": "https://clinicaltrials.gov/study/NCT06659679",
+          "excerpt": "Start date: 2024-10-24"
+        },
+        {
+          "nct_id": "NCT06269107",
+          "title": "A Research Study to See How Well New Weekly Medicine IcoSema, Which is a Combination of Insulin Icodec and Semaglutide, Controls Blood Sugar Levels in People With Type 2 Diabetes (T2D), Compared to Daily Insulin Glargine (COMBINE 4)",
+          "url": "https://clinicaltrials.gov/study/NCT06269107",
+          "excerpt": "Start date: 2024-02-15"
+        },
+        {
+          "nct_id": "NCT06699329",
+          "title": "A Study of Enlicitide Decanoate (MK-0616) and Semaglutide in Healthy Adult Participants (MK-0616-023)",
+          "url": "https://clinicaltrials.gov/study/NCT06699329",
+          "excerpt": "Start date: 2024-01-22"
+        },
+        {
+          "nct_id": "NCT07336862",
+          "title": "Bariatric Surgery Combined With GLP-1 Receptor Agonists Study",
+          "url": "https://clinicaltrials.gov/study/NCT07336862",
+          "excerpt": "Start date: 2024-01-01"
+        },
+        {
+          "nct_id": "NCT06132477",
+          "title": "Impact GLP-1 Agonists Following Bariatric",
+          "url": "https://clinicaltrials.gov/study/NCT06132477",
+          "excerpt": "Start date: 2024-02-01"
+        },
+        {
+          "nct_id": "NCT05746039",
+          "title": "Feasibility of Semaglutide in Advanced Lung Disease",
+          "url": "https://clinicaltrials.gov/study/NCT05746039",
+          "excerpt": "Start date: 2024-01-29"
+        },
+        {
+          "nct_id": "NCT06821919",
+          "title": "Impact of Antiglycemic & Immunosuppressive Therapies on NETosis in Diabetes & Kidney Disease (NETs - Neutrophil Traps)",
+          "url": "https://clinicaltrials.gov/study/NCT06821919",
+          "excerpt": "Start date: 2024-05-13"
+        },
+        {
+          "nct_id": "NCT07056803",
+          "title": "Oral vs. Subcutaneous Semaglutide in Type 2 Diabetes Mellitus",
+          "url": "https://clinicaltrials.gov/study/NCT07056803",
+          "excerpt": "Start date: 2024-01-01"
+        },
+        {
+          "nct_id": "NCT06500429",
+          "title": "A Study to Evaluate the Safety and Efficacy of NG101 in Adult Participants Receiving a Glucagon-like Peptide-1 (GLP-1) Agonist",
+          "url": "https://clinicaltrials.gov/study/NCT06500429",
+          "excerpt": "Start date: 2024-06-24"
+        },
+        {
+          "nct_id": "NCT06292065",
+          "title": "Gastric Ultrasound To Assess Gastric Contents In Patients On Semaglutide Therapy",
+          "url": "https://clinicaltrials.gov/study/NCT06292065",
+          "excerpt": "Start date: 2024-04-16"
+        },
+        {
+          "nct_id": "NCT06269120",
+          "title": "SEMA-CardioDiab HUNGARY: A Research Study to Understand the Effects of Oral Semaglutide on Blood Sugar Levels, Weight, and Cardiovascular Risk in People With Type 2 Diabetes Patients in Hungary",
+          "url": "https://clinicaltrials.gov/study/NCT06269120",
+          "excerpt": "Start date: 2024-09-30"
+        },
+        {
+          "nct_id": "NCT07092605",
+          "title": "Effectiveness of Microdosed GLP-1 in Improving Health, Quality of Life, and Longevity Measures",
+          "url": "https://clinicaltrials.gov/study/NCT07092605",
+          "excerpt": "Start date: 2024-11-01"
+        },
+        {
+          "nct_id": "NCT06541509",
+          "title": "Mechanisms of Semaglutide Therapy in Heart Failure Patients",
+          "url": "https://clinicaltrials.gov/study/NCT06541509",
+          "excerpt": "Start date: 2024-07-10"
+        },
+        {
+          "nct_id": "NCT05702931",
+          "title": "Semaglutide Treatment for Hyperglycaemia After Renal Transplantation",
+          "url": "https://clinicaltrials.gov/study/NCT05702931",
+          "excerpt": "Start date: 2024-09-19"
+        },
+        {
+          "nct_id": "NCT06339086",
+          "title": "Efficacy and Safety of Semaglutide Injection in Subjects With Type 2 Diabetes",
+          "url": "https://clinicaltrials.gov/study/NCT06339086",
+          "excerpt": "Start date: 2024-04"
+        },
+        {
+          "nct_id": "NCT06410352",
+          "title": "Effectiveness of Weight Loss Methods on Lifespan for Metabolic Syndrome",
+          "url": "https://clinicaltrials.gov/study/NCT06410352",
+          "excerpt": "Start date: 2024-03-01"
+        },
+        {
+          "nct_id": "NCT06351748",
+          "title": "Real-world Study of CHina Ozempic cLinicAl pRactice in Patients With Type 2 Diabetes (SCHOLAR)",
+          "url": "https://clinicaltrials.gov/study/NCT06351748",
+          "excerpt": "Start date: 2024-01-02"
+        }
+      ]
+    },
+    {
+      "bucket": "metformin \u00b7 2025",
+      "value": 152.0,
+      "nct_ids": [
+        "NCT06961019",
+        "NCT06743698",
+        "NCT07333742",
+        "NCT06823856",
+        "NCT07336914",
+        "NCT06424860",
+        "NCT07289399",
+        "NCT03686657",
+        "NCT06937294",
+        "NCT06296836",
+        "NCT06882291",
+        "NCT07113756",
+        "NCT07120815",
+        "NCT07395960",
+        "NCT06792968",
+        "NCT07223671",
+        "NCT06804187",
+        "NCT07088523",
+        "NCT06845540",
+        "NCT06836128",
+        "NCT06871904",
+        "NCT07156539",
+        "NCT07216131",
+        "NCT06983223",
+        "NCT05910554",
+        "NCT07582471",
+        "NCT06932874",
+        "NCT07633015",
+        "NCT06687876",
+        "NCT06611501",
+        "NCT07034781",
+        "NCT07372118",
+        "NCT07297290",
+        "NCT07026968",
+        "NCT06762041",
+        "NCT07213895",
+        "NCT07179042",
+        "NCT06856369",
+        "NCT06860841",
+        "NCT07064486",
+        "NCT07244770",
+        "NCT07229534",
+        "NCT06775093",
+        "NCT05426044",
+        "NCT07066722",
+        "NCT06490874",
+        "NCT06589141",
+        "NCT06779253",
+        "NCT07374328",
+        "NCT07073157",
+        "NCT07108075",
+        "NCT07083401",
+        "NCT07541456",
+        "NCT06793943",
+        "NCT07633041",
+        "NCT06851962",
+        "NCT06862739",
+        "NCT07073768",
+        "NCT07033585",
+        "NCT06965868",
+        "NCT07293325",
+        "NCT06972732",
+        "NCT06948825",
+        "NCT05607316",
+        "NCT06806345",
+        "NCT07061496",
+        "NCT07323381",
+        "NCT06707012",
+        "NCT07044765",
+        "NCT06899061",
+        "NCT06995339",
+        "NCT07120828",
+        "NCT04662164",
+        "NCT07266766",
+        "NCT07442006",
+        "NCT06942390",
+        "NCT07188740",
+        "NCT07093476",
+        "NCT07323589",
+        "NCT06896981",
+        "NCT07241897",
+        "NCT04523363"
+      ],
+      "trials": [
+        {
+          "nct_id": "NCT06961019",
+          "title": "Clinical Study to Assess the Safety, Efficacy and In-Use Tolerability of Herbal-Based Sugar Support Effervescent Tablets in Type-2 Diabetes Mellitus Patients",
+          "url": "https://clinicaltrials.gov/study/NCT06961019",
+          "excerpt": "Start date: 2025-08-25"
+        },
+        {
+          "nct_id": "NCT06743698",
+          "title": "META Trial - a Mixed Methods Process Evaluation",
+          "url": "https://clinicaltrials.gov/study/NCT06743698",
+          "excerpt": "Start date: 2025-06-01"
+        },
+        {
+          "nct_id": "NCT07333742",
+          "title": "A Clinical Study to See How the Body Handles and How Safe a Combination Tablet of Gemigliptin, Dapagliflozin, and Metformin 50/10/1000mg is Compared to Taking Gemigliptin 50mg Separately With Dapagliflozin/Metformin 10/1000mg in Healthy Adults After a Meal",
+          "url": "https://clinicaltrials.gov/study/NCT07333742",
+          "excerpt": "Start date: 2025-09-29"
+        },
+        {
+          "nct_id": "NCT06823856",
+          "title": "Pharmacokinetics and Bioequivalence Study of Empagliflozin+Metformin Hydrochloride 12.5 mg/1000 mg Film-coated Tablets (Gedeon Richter Plc., Hungary) Versus Synjardy 12.5 mg/1000 mg Film-coated Tablets (Boehringer Ingelheim International GmbH, Germany)",
+          "url": "https://clinicaltrials.gov/study/NCT06823856",
+          "excerpt": "Start date: 2025-05-11"
+        },
+        {
+          "nct_id": "NCT07336914",
+          "title": "Effect of Conventional vs Intensive Management on Gestational Diabetes and Maternal Fetal Outcomes",
+          "url": "https://clinicaltrials.gov/study/NCT07336914",
+          "excerpt": "Start date: 2025-10-01"
+        },
+        {
+          "nct_id": "NCT06424860",
+          "title": "Fish Oil, Metformin and Heart Health in PCOS",
+          "url": "https://clinicaltrials.gov/study/NCT06424860",
+          "excerpt": "Start date: 2025-11-01"
+        },
+        {
+          "nct_id": "NCT07289399",
+          "title": "Is There a Benefit From Addition of Treadmill Walking to Diet Restriction in Psoriasis Women With PCOS?",
+          "url": "https://clinicaltrials.gov/study/NCT07289399",
+          "excerpt": "Start date: 2025-10-10"
+        },
+        {
+          "nct_id": "NCT03686657",
+          "title": "Evaluation of Superiority of Valsartan+Celecoxib+Metformin Over Metformin Alone in Type 2 Diabetes Patients",
+          "url": "https://clinicaltrials.gov/study/NCT03686657",
+          "excerpt": "Start date: 2025-10-10"
+        },
+        {
+          "nct_id": "NCT06937294",
+          "title": "Metformin in Post Chronic Pancreatitis Diabetes Mellitus",
+          "url": "https://clinicaltrials.gov/study/NCT06937294",
+          "excerpt": "Start date: 2025-04-28"
+        },
+        {
+          "nct_id": "NCT06296836",
+          "title": "Effect of Continuing Versus Holding Metformin During Hospitalizations.",
+          "url": "https://clinicaltrials.gov/study/NCT06296836",
+          "excerpt": "Start date: 2025-01-21"
+        },
+        {
+          "nct_id": "NCT06882291",
+          "title": "Intermittent Fasting Diet Versus Resistive Exercise Program on Insulin Resistance in Obese Women With P.C.O.S",
+          "url": "https://clinicaltrials.gov/study/NCT06882291",
+          "excerpt": "Start date: 2025-03-20"
+        },
+        {
+          "nct_id": "NCT07113756",
+          "title": "New Topical Treatment in Plaque Psoriasis",
+          "url": "https://clinicaltrials.gov/study/NCT07113756",
+          "excerpt": "Start date: 2025-09-01"
+        },
+        {
+          "nct_id": "NCT07120815",
+          "title": "Optimizing Metformin Use in Polycystic Ovary Syndrome",
+          "url": "https://clinicaltrials.gov/study/NCT07120815",
+          "excerpt": "Start date: 2025-09-01"
+        },
+        {
+          "nct_id": "NCT07395960",
+          "title": "The Efficacy and Safety of Metformin Intervention in Elderly Overweight or Obesity With Mild Cognitive Impairment",
+          "url": "https://clinicaltrials.gov/study/NCT07395960",
+          "excerpt": "Start date: 2025-09-01"
+        },
+        {
+          "nct_id": "NCT06792968",
+          "title": "Pharmacokinetics and Bioequivalence Study of Empagliflozin+Metformin Hydrochloride 5 mg/1000 mg Film-coated Tablets (Gedeon Richter Plc., Hungary) Versus Synjardy 5 mg/1000 mg Film-coated Tablets (Boehringer Ingelheim International GmbH, Germany)",
+          "url": "https://clinicaltrials.gov/study/NCT06792968",
+          "excerpt": "Start date: 2025-03-30"
+        },
+        {
+          "nct_id": "NCT07223671",
+          "title": "Study to Evaluate the Effect of Repotrectinib on the Drug Levels of Transporter and CYP P450 Probe Substrates in Healthy Adult Participants",
+          "url": "https://clinicaltrials.gov/study/NCT07223671",
+          "excerpt": "Start date: 2025-12-31"
+        },
+        {
+          "nct_id": "NCT06804187",
+          "title": "Sweet Sensing in Type 2 Diabetes",
+          "url": "https://clinicaltrials.gov/study/NCT06804187",
+          "excerpt": "Start date: 2025-02-01"
+        },
+        {
+          "nct_id": "NCT07088523",
+          "title": "Traditional Chinese Medicine Intervention for Ischemic Cardiovascular Disease Comorbid With Diabetes Mellitus: An Efficacy Comparative Study",
+          "url": "https://clinicaltrials.gov/study/NCT07088523",
+          "excerpt": "Start date: 2025-07-31"
+        },
+        {
+          "nct_id": "NCT06845540",
+          "title": "Oral Metformin for Treating Melasma in Latin American Women",
+          "url": "https://clinicaltrials.gov/study/NCT06845540",
+          "excerpt": "Start date: 2025-02-20"
+        },
+        {
+          "nct_id": "NCT06836128",
+          "title": "The Combined Effect of N-Acetyl Cysteine and Metformin in Polycystic Ovary Syndrome Patients",
+          "url": "https://clinicaltrials.gov/study/NCT06836128",
+          "excerpt": "Start date: 2025-03-01"
+        },
+        {
+          "nct_id": "NCT06871904",
+          "title": "Fibrosis-Modulating Effects of Metformin and Pirfenidone in Oral Submucous Fibrosis",
+          "url": "https://clinicaltrials.gov/study/NCT06871904",
+          "excerpt": "Start date: 2025-04-07"
+        },
+        {
+          "nct_id": "NCT07156539",
+          "title": "A Phase 3 Study of HS-20094 in Patients With T2DM",
+          "url": "https://clinicaltrials.gov/study/NCT07156539",
+          "excerpt": "Start date: 2025-09-30"
+        },
+        {
+          "nct_id": "NCT07216131",
+          "title": "A Study to Investigate the Effect of AZD0780 on Metformin Pharmacokinetics in Healthy Adult Volunteers Aged 18 to 55 Years",
+          "url": "https://clinicaltrials.gov/study/NCT07216131",
+          "excerpt": "Start date: 2025-11-10"
+        },
+        {
+          "nct_id": "NCT06983223",
+          "title": "Oral Sucrosomial\u00ae Vitamin B12 in the Management of B12 Deficiency Among Metformin-Treated Type 2 Diabetes Patients",
+          "url": "https://clinicaltrials.gov/study/NCT06983223",
+          "excerpt": "Start date: 2025-08-15"
+        },
+        {
+          "nct_id": "NCT05910554",
+          "title": "Investigation of the Efficacy of Metformin Therapy on Pulmonary Sarcoidosis",
+          "url": "https://clinicaltrials.gov/study/NCT05910554",
+          "excerpt": "Start date: 2025-12-10"
+        }
+      ]
+    },
+    {
+      "bucket": "semaglutide \u00b7 2025",
+      "value": 125.0,
+      "nct_ids": [
+        "NCT07281196",
+        "NCT07156331",
+        "NCT06989177",
+        "NCT07150975",
+        "NCT06914102",
+        "NCT05829460",
+        "NCT06897475",
+        "NCT07295223",
+        "NCT06914141",
+        "NCT07041983",
+        "NCT06619015",
+        "NCT06790160",
+        "NCT07251556",
+        "NCT07621419",
+        "NCT06972992",
+        "NCT06715514",
+        "NCT07112872",
+        "NCT07046273",
+        "NCT07169136",
+        "NCT06801015",
+        "NCT07017270",
+        "NCT07064486",
+        "NCT06745284",
+        "NCT07513168",
+        "NCT06608433",
+        "NCT07297589",
+        "NCT07171723",
+        "NCT07213323",
+        "NCT06706284",
+        "NCT07374328",
+        "NCT06639464",
+        "NCT07314684",
+        "NCT06982859",
+        "NCT06851962",
+        "NCT06754163",
+        "NCT07136714",
+        "NCT06548490",
+        "NCT06884293",
+        "NCT07139548",
+        "NCT06780449",
+        "NCT07280221",
+        "NCT07293325",
+        "NCT07042672",
+        "NCT07178145",
+        "NCT06885736",
+        "NCT07216651",
+        "NCT07065383",
+        "NCT06771115",
+        "NCT06987669",
+        "NCT06807970",
+        "NCT07284979",
+        "NCT07188545",
+        "NCT06983171",
+        "NCT06909006",
+        "NCT07225816",
+        "NCT06825793",
+        "NCT07096739",
+        "NCT06896981",
+        "NCT06734312",
+        "NCT07058155",
+        "NCT06792422",
+        "NCT07285902",
+        "NCT07254715",
+        "NCT06830343",
+        "NCT07184086",
+        "NCT06937060",
+        "NCT07035704",
+        "NCT07030621",
+        "NCT07091500",
+        "NCT07036172",
+        "NCT06980623",
+        "NCT06903923",
+        "NCT06762314",
+        "NCT07207148",
+        "NCT06803888",
+        "NCT07154238",
+        "NCT07190144",
+        "NCT07276763",
+        "NCT06852391",
+        "NCT07057310",
+        "NCT07087795",
+        "NCT07271251",
+        "NCT07319975",
+        "NCT06856928",
+        "NCT07073417",
+        "NCT06989203",
+        "NCT07011667",
+        "NCT06797869",
+        "NCT07141914",
+        "NCT07010432",
+        "NCT07156591",
+        "NCT07055607",
+        "NCT06499857",
+        "NCT06814938",
+        "NCT06691243",
+        "NCT07081178",
+        "NCT07115069",
+        "NCT06788626",
+        "NCT06804603",
+        "NCT06967389",
+        "NCT07163624",
+        "NCT06764056",
+        "NCT07254572",
+        "NCT07302802",
+        "NCT07610174",
+        "NCT06924697",
+        "NCT07275697",
+        "NCT07239570",
+        "NCT06894784",
+        "NCT06778967",
+        "NCT07220629",
+        "NCT05646199",
+        "NCT06946628",
+        "NCT06738979",
+        "NCT06908694",
+        "NCT07223242",
+        "NCT06856291",
+        "NCT06954090"
+      ],
+      "trials": [
+        {
+          "nct_id": "NCT07281196",
+          "title": "Semaglutide Effects on Sleep Apnea in Patients With Type 2 Diabetes/Obesity and Comorbid Obstructive Sleep Apnea",
+          "url": "https://clinicaltrials.gov/study/NCT07281196",
+          "excerpt": "Start date: 2025-01-01"
+        },
+        {
+          "nct_id": "NCT07156331",
+          "title": "Research on Effects of Drugs on Body Composition and Function With Imaging in Diabetes",
+          "url": "https://clinicaltrials.gov/study/NCT07156331",
+          "excerpt": "Start date: 2025-10-01"
+        },
+        {
+          "nct_id": "NCT06989177",
+          "title": "Probiotic Intervention on Body Weight",
+          "url": "https://clinicaltrials.gov/study/NCT06989177",
+          "excerpt": "Start date: 2025-06-10"
+        },
+        {
+          "nct_id": "NCT07150975",
+          "title": "Phase III Clinical Study Comparing the Efficacy and Safety of GZR18 Injection and Semaglutide (Wegovy\u00ae) in Adult Obese or Overweight Subjects",
+          "url": "https://clinicaltrials.gov/study/NCT07150975",
+          "excerpt": "Start date: 2025-09-23"
+        },
+        {
+          "nct_id": "NCT06914102",
+          "title": "Emulation of the STEP-HFpEF DM Heart Failure Trial in Healthcare Claims Data",
+          "url": "https://clinicaltrials.gov/study/NCT06914102",
+          "excerpt": "Start date: 2025-01-14"
+        },
+        {
+          "nct_id": "NCT05829460",
+          "title": "Primary Prevention and Uterine Preservation in Premenopausal Women With Obesity and Endometrial Hyperplasia",
+          "url": "https://clinicaltrials.gov/study/NCT05829460",
+          "excerpt": "Start date: 2025-03-12"
+        },
+        {
+          "nct_id": "NCT06897475",
+          "title": "A Study of LY3457263 Compared With Placebo in Participants With Type 2 Diabetes on a Stable Dose of Semaglutide or Tirzepatide",
+          "url": "https://clinicaltrials.gov/study/NCT06897475",
+          "excerpt": "Start date: 2025-03-28"
+        },
+        {
+          "nct_id": "NCT07295223",
+          "title": "Effect of Glp-1 and Antidiabetic sgLT2 Agents for myoCardial infarcTion and Ultrasensitive Inflammatory Surveillance (GALACTUS Trial)",
+          "url": "https://clinicaltrials.gov/study/NCT07295223",
+          "excerpt": "Start date: 2025-12-30"
+        },
+        {
+          "nct_id": "NCT06914141",
+          "title": "Comparative Effectiveness of Tirzepatide Versus Semaglutide in Individuals With Heart Failure With Preserved Ejection Fraction",
+          "url": "https://clinicaltrials.gov/study/NCT06914141",
+          "excerpt": "Start date: 2025-01-14"
+        },
+        {
+          "nct_id": "NCT07041983",
+          "title": "24-h Energy Expenditure and Anti-obesity Medication",
+          "url": "https://clinicaltrials.gov/study/NCT07041983",
+          "excerpt": "Start date: 2025-07-01"
+        },
+        {
+          "nct_id": "NCT06619015",
+          "title": "Tailoring Obesity Treatment Trial",
+          "url": "https://clinicaltrials.gov/study/NCT06619015",
+          "excerpt": "Start date: 2025-04-01"
+        },
+        {
+          "nct_id": "NCT06790160",
+          "title": "Study of Patients Being Treated With Anti-obesity Medication",
+          "url": "https://clinicaltrials.gov/study/NCT06790160",
+          "excerpt": "Start date: 2025-01-31"
+        },
+        {
+          "nct_id": "NCT07251556",
+          "title": "GLP-1 Receptor Agonists in Non-diabetic Patients With Psoriatic Arthritis",
+          "url": "https://clinicaltrials.gov/study/NCT07251556",
+          "excerpt": "Start date: 2025-12-01"
+        },
+        {
+          "nct_id": "NCT07621419",
+          "title": "Study of Adult Patients Residing in Argentina Diagnosed With Type 2 Diabetes Treated With a New Formulation of Semaglutide, Both Oral and Subcutaneous, in a Real-world Setting at 3 Months, 6 Months, and 1 Year of Follow-up, Quantifying the Reduction in Glycated Hemoglobin",
+          "url": "https://clinicaltrials.gov/study/NCT07621419",
+          "excerpt": "Start date: 2025-08-04"
+        },
+        {
+          "nct_id": "NCT06972992",
+          "title": "A Study to Evaluate Safety, Tolerability, Pharmacokinetics and Pharmacodynamics of ASC47 in Combination With Semaglutide",
+          "url": "https://clinicaltrials.gov/study/NCT06972992",
+          "excerpt": "Start date: 2025-04-18"
+        },
+        {
+          "nct_id": "NCT06715514",
+          "title": "Menopausal Hormone Therapy, GLP-1 Agonists, and Glucose and Energy Homeostasis in Postmenopausal Women With Diabetes",
+          "url": "https://clinicaltrials.gov/study/NCT06715514",
+          "excerpt": "Start date: 2025-02-18"
+        },
+        {
+          "nct_id": "NCT07112872",
+          "title": "A Study to Compare Different Doses of RO7795081 With a Placebo or Semaglutide in People With Type 2 Diabetes",
+          "url": "https://clinicaltrials.gov/study/NCT07112872",
+          "excerpt": "Start date: 2025-08-19"
+        },
+        {
+          "nct_id": "NCT07046273",
+          "title": "Phase III Clinical Study on the Efficacy and Safety of Semaglutide and Ozempic\u00ae in Patients With Type 2 Diabetes",
+          "url": "https://clinicaltrials.gov/study/NCT07046273",
+          "excerpt": "Start date: 2025-08-01"
+        },
+        {
+          "nct_id": "NCT07169136",
+          "title": "Effects of Glucagon-like Peptide-1 (GLP-1) Agonist in Neuro-reproductive Function in Obese Adolescent Females With Polycystic Ovary Syndrome (PCOS)",
+          "url": "https://clinicaltrials.gov/study/NCT07169136",
+          "excerpt": "Start date: 2025-09-11"
+        },
+        {
+          "nct_id": "NCT06801015",
+          "title": "Effects of Long-Acting GLP-1 (Glucagon-like Peptide-1) or Dual Incretin (GLP-1 and GIP [Glucose-dependent Insulinotropic Peptide]) Modulation on Gastric Motor Functions",
+          "url": "https://clinicaltrials.gov/study/NCT06801015",
+          "excerpt": "Start date: 2025-10-01"
+        },
+        {
+          "nct_id": "NCT07017270",
+          "title": "Glucagon-like-peptide-1 Receptor Agonists in Patients Receiving Maintenance Dialysis",
+          "url": "https://clinicaltrials.gov/study/NCT07017270",
+          "excerpt": "Start date: 2025-07"
+        },
+        {
+          "nct_id": "NCT07064486",
+          "title": "A Study of BGM0504 in Participants With Type 2 Diabetes in Indonesia",
+          "url": "https://clinicaltrials.gov/study/NCT07064486",
+          "excerpt": "Start date: 2025-07-04"
+        },
+        {
+          "nct_id": "NCT06745284",
+          "title": "A Study to Test Whether Survodutide Improves How the Body Uses Energy and Breaks Down Fat in People With Obesity",
+          "url": "https://clinicaltrials.gov/study/NCT06745284",
+          "excerpt": "Start date: 2025-03-26"
+        },
+        {
+          "nct_id": "NCT07513168",
+          "title": "Low-Dose Semaglutide for Weight Loss in Obese Non-Diabetic Pakistani Adults",
+          "url": "https://clinicaltrials.gov/study/NCT07513168",
+          "excerpt": "Start date: 2025-08-01"
+        },
+        {
+          "nct_id": "NCT06608433",
+          "title": "Glucagon-like Peptide-1 Receptor Agnoists for the Assessment of Adrenal Function",
+          "url": "https://clinicaltrials.gov/study/NCT06608433",
+          "excerpt": "Start date: 2025-01-16"
+        }
+      ]
+    },
+    {
+      "bucket": "metformin \u00b7 2026",
+      "value": 72.0,
+      "nct_ids": [
+        "NCT07604779",
+        "NCT07412015",
+        "NCT07570082",
+        "NCT07446400",
+        "NCT07342764",
+        "NCT07436182",
+        "NCT07588932",
+        "NCT07433062",
+        "NCT07502001",
+        "NCT07622290",
+        "NCT07568574",
+        "NCT07272109",
+        "NCT07226453",
+        "NCT07368569",
+        "NCT07141342",
+        "NCT07131384",
+        "NCT07659444",
+        "NCT07591246",
+        "NCT07300033",
+        "NCT07654179",
+        "NCT07129473",
+        "NCT07027969",
+        "NCT07415226",
+        "NCT07379333",
+        "NCT07417306",
+        "NCT07365358",
+        "NCT07653477",
+        "NCT07173712",
+        "NCT07441187",
+        "NCT07300059",
+        "NCT06560333",
+        "NCT07628985",
+        "NCT07300020",
+        "NCT07536620",
+        "NCT07291297",
+        "NCT07446985",
+        "NCT07589387",
+        "NCT07387900",
+        "NCT07666698"
+      ],
+      "trials": [
+        {
+          "nct_id": "NCT07604779",
+          "title": "Enhancing PCOS Management for Better Outcomes of Intracytoplasmic Sperm Injection",
+          "url": "https://clinicaltrials.gov/study/NCT07604779",
+          "excerpt": "Start date: 2026-05-17"
+        },
+        {
+          "nct_id": "NCT07412015",
+          "title": "Pilot Bioequivalence Study of Chiglitazar/Metformin Extended-Release Tablets",
+          "url": "https://clinicaltrials.gov/study/NCT07412015",
+          "excerpt": "Start date: 2026-05-27"
+        },
+        {
+          "nct_id": "NCT07570082",
+          "title": "Drug-Drug Interaction Study of Atumelnant in Healthy Participants",
+          "url": "https://clinicaltrials.gov/study/NCT07570082",
+          "excerpt": "Start date: 2026-05-06"
+        },
+        {
+          "nct_id": "NCT07446400",
+          "title": "A Trial to Examine the Interaction of Repinatrabit With Ethinyl Estradiol/Norethindrone, Metformin,Carbamazepine, Rosuvastatin, and Methotrexate When Administered Together",
+          "url": "https://clinicaltrials.gov/study/NCT07446400",
+          "excerpt": "Start date: 2026-03-31"
+        },
+        {
+          "nct_id": "NCT07342764",
+          "title": "Dapagliflozin Versus Metformin for the Management of Antipsychotic-Induced Weight Gain: A Pragmatic Pilot Randomized Controlled Trial",
+          "url": "https://clinicaltrials.gov/study/NCT07342764",
+          "excerpt": "Start date: 2026-09"
+        },
+        {
+          "nct_id": "NCT07436182",
+          "title": "Mitochondrial Redox Modulation in Newly Diagnosed Type 2 Diabetes: A Randomized Controlled Trial Comparing Imeglimin vs. Metformin Monotherapy",
+          "url": "https://clinicaltrials.gov/study/NCT07436182",
+          "excerpt": "Start date: 2026-03-01"
+        },
+        {
+          "nct_id": "NCT07588932",
+          "title": "Relying on Pharmacotherapy to Improve Motor Gains in Chronic Stroke Survivors",
+          "url": "https://clinicaltrials.gov/study/NCT07588932",
+          "excerpt": "Start date: 2026-05-18"
+        },
+        {
+          "nct_id": "NCT07433062",
+          "title": "A Study to Evaluate the Effect of AZD6793 on the Pharmacokinetics and Pharmacodynamics of Metformin in Participants With Type 2 Diabetes Mellitus",
+          "url": "https://clinicaltrials.gov/study/NCT07433062",
+          "excerpt": "Start date: 2026-01-14"
+        },
+        {
+          "nct_id": "NCT07502001",
+          "title": "Influence of HDM1005 on Gastric Emptying and Pharmacokinetics of Metformin, Atorvastatin, Warfarin, and Digoxin",
+          "url": "https://clinicaltrials.gov/study/NCT07502001",
+          "excerpt": "Start date: 2026-04-08"
+        },
+        {
+          "nct_id": "NCT07622290",
+          "title": "Metformin Treatment for Children With Obesity-associated Asthma",
+          "url": "https://clinicaltrials.gov/study/NCT07622290",
+          "excerpt": "Start date: 2026-06"
+        },
+        {
+          "nct_id": "NCT07568574",
+          "title": "Impact of Medically Supervised Performance-Enhancing Substances (PES) on Elite Athletes",
+          "url": "https://clinicaltrials.gov/study/NCT07568574",
+          "excerpt": "Start date: 2026-03-12"
+        },
+        {
+          "nct_id": "NCT07272109",
+          "title": "Active Anti-diabetic Treatment Plus Chemotherapy for Pancreatic Cancer Related Diabetes",
+          "url": "https://clinicaltrials.gov/study/NCT07272109",
+          "excerpt": "Start date: 2026-01-01"
+        },
+        {
+          "nct_id": "NCT07226453",
+          "title": "Target Validation and Efficacy of Metformin in Patients With Posterior Fossa Group A (PFA) Ependymoma",
+          "url": "https://clinicaltrials.gov/study/NCT07226453",
+          "excerpt": "Start date: 2026-05-05"
+        },
+        {
+          "nct_id": "NCT07368569",
+          "title": "A Study in Healthy People to Test Whether BI 764198 Influences the Amount of Metformin in the Body",
+          "url": "https://clinicaltrials.gov/study/NCT07368569",
+          "excerpt": "Start date: 2026-02-06"
+        },
+        {
+          "nct_id": "NCT07141342",
+          "title": "Fast In-Bed Tracking (FIT) System Lifestyle Intervention is a Clinical Trial of a Bed Scale Device. Overweight Wheelchair Users Will Participate in a Weight Loss Program, Half Will Receive Bed Scales, and Participants Who Receive the Bed Scales Are Expected to Have Increased Weight Loss.",
+          "url": "https://clinicaltrials.gov/study/NCT07141342",
+          "excerpt": "Start date: 2026-02-16"
+        },
+        {
+          "nct_id": "NCT07131384",
+          "title": "Interaction Between Inorganic Nitrate Supplementation and Metformin in Individuals With Prediabetes",
+          "url": "https://clinicaltrials.gov/study/NCT07131384",
+          "excerpt": "Start date: 2026-01-01"
+        },
+        {
+          "nct_id": "NCT07659444",
+          "title": "Metformin Withdrawal In Metabolic Syndrome",
+          "url": "https://clinicaltrials.gov/study/NCT07659444",
+          "excerpt": "Start date: 2026-04-05"
+        },
+        {
+          "nct_id": "NCT07591246",
+          "title": "Efficay of Physical Activity Program in PCOS Females With Fatty Pancrease and Thyroid Hypofunction",
+          "url": "https://clinicaltrials.gov/study/NCT07591246",
+          "excerpt": "Start date: 2026-03-07"
+        },
+        {
+          "nct_id": "NCT07300033",
+          "title": "Bioequivalence Study of Liquid Metformin (100 and 250 mg/mL) vs IR Tablets",
+          "url": "https://clinicaltrials.gov/study/NCT07300033",
+          "excerpt": "Start date: 2026-05-15"
+        },
+        {
+          "nct_id": "NCT07654179",
+          "title": "Metformin as Adjunct Therapy in Depression-Obesity Comorbidity: Clinical and Genetic Evaluation",
+          "url": "https://clinicaltrials.gov/study/NCT07654179",
+          "excerpt": "Start date: 2026-06-12"
+        },
+        {
+          "nct_id": "NCT07129473",
+          "title": "Hyperemesis Gravidarum Risk Reduction With Metformin",
+          "url": "https://clinicaltrials.gov/study/NCT07129473",
+          "excerpt": "Start date: 2026-01"
+        },
+        {
+          "nct_id": "NCT07027969",
+          "title": "Metabolic Surgery for Atrial Fibrillation Elimination",
+          "url": "https://clinicaltrials.gov/study/NCT07027969",
+          "excerpt": "Start date: 2026-11-01"
+        },
+        {
+          "nct_id": "NCT07415226",
+          "title": "Glucose-lowering Drugs as an Adjunct to Insulin Therapy in Chinese Patients With Type 1 Diabetes",
+          "url": "https://clinicaltrials.gov/study/NCT07415226",
+          "excerpt": "Start date: 2026-05-01"
+        },
+        {
+          "nct_id": "NCT07379333",
+          "title": "A Study to Evaluate Efficacy and Safety of HM11260C in Patients With Type 2 Diabetes Mellitus Inadequately Controlled With Metformin and Dapagliflozin",
+          "url": "https://clinicaltrials.gov/study/NCT07379333",
+          "excerpt": "Start date: 2026-04-13"
+        },
+        {
+          "nct_id": "NCT07417306",
+          "title": "A Study of HDM1005 in Participants With T2DM Not Controlled With Metformin Alone or in Combination With a Sodium-Glucose Cotransporter 2 (SGLT2) Inhibitor",
+          "url": "https://clinicaltrials.gov/study/NCT07417306",
+          "excerpt": "Start date: 2026-03-27"
+        }
+      ]
+    },
+    {
+      "bucket": "semaglutide \u00b7 2026",
+      "value": 105.0,
+      "nct_ids": [
+        "NCT07213466",
+        "NCT06934655",
+        "NCT07253285",
+        "NCT07423481",
+        "NCT07668388",
+        "NCT07554417",
+        "NCT07390110",
+        "NCT07297238",
+        "NCT07627191",
+        "NCT07323134",
+        "NCT07446998",
+        "NCT07415954",
+        "NCT07090343",
+        "NCT07040592",
+        "NCT07357740",
+        "NCT07282769",
+        "NCT07668765",
+        "NCT07617155",
+        "NCT06913023",
+        "NCT07592546",
+        "NCT07446439",
+        "NCT07589322",
+        "NCT06546384",
+        "NCT07218354",
+        "NCT07558863",
+        "NCT07135245",
+        "NCT07187856",
+        "NCT07523633",
+        "NCT07668414",
+        "NCT07417618",
+        "NCT07027969",
+        "NCT07227948",
+        "NCT07401992",
+        "NCT07317115",
+        "NCT07391267",
+        "NCT07483801",
+        "NCT07204249",
+        "NCT07613437",
+        "NCT07640139",
+        "NCT07581145",
+        "NCT07653477",
+        "NCT07179120",
+        "NCT07502508",
+        "NCT07628985",
+        "NCT07563699",
+        "NCT07511543",
+        "NCT07485062",
+        "NCT07505303",
+        "NCT07325500",
+        "NCT07021937",
+        "NCT07639021",
+        "NCT07249554",
+        "NCT06977438",
+        "NCT07588984",
+        "NCT07605572",
+        "NCT07662213",
+        "NCT07392151",
+        "NCT07221214",
+        "NCT07107334",
+        "NCT07599046",
+        "NCT07389941",
+        "NCT07428746",
+        "NCT07272837",
+        "NCT07059377",
+        "NCT06222437",
+        "NCT07466017",
+        "NCT07619495",
+        "NCT07444073",
+        "NCT07172867",
+        "NCT07187830",
+        "NCT07382388",
+        "NCT07653412",
+        "NCT07202247",
+        "NCT07430059",
+        "NCT07424430",
+        "NCT07564414",
+        "NCT07597018",
+        "NCT07539415",
+        "NCT06836284",
+        "NCT07621640",
+        "NCT07282613",
+        "NCT07223983",
+        "NCT07361874",
+        "NCT07527195",
+        "NCT07478653",
+        "NCT07411378",
+        "NCT07242534",
+        "NCT07456774",
+        "NCT05689372",
+        "NCT07294950",
+        "NCT07195994",
+        "NCT07642635",
+        "NCT07400107",
+        "NCT07651319",
+        "NCT07487103"
+      ],
+      "trials": [
+        {
+          "nct_id": "NCT07213466",
+          "title": "Individualized Pharmacological Approach to Obesity in Patients With Bipolar Disorder",
+          "url": "https://clinicaltrials.gov/study/NCT07213466",
+          "excerpt": "Start date: 2026-01-19"
+        },
+        {
+          "nct_id": "NCT06934655",
+          "title": "Early Re-Initiation of Semaglutide Post Sleeve Gastrectomy in Youth",
+          "url": "https://clinicaltrials.gov/study/NCT06934655",
+          "excerpt": "Start date: 2026-06-01"
+        },
+        {
+          "nct_id": "NCT07253285",
+          "title": "A Research Study on How Well Cagrilintide and CagriSema Work in Children and Adolescents With Excess Body Weight",
+          "url": "https://clinicaltrials.gov/study/NCT07253285",
+          "excerpt": "Start date: 2026-01-08"
+        },
+        {
+          "nct_id": "NCT07423481",
+          "title": "Weight Trajectories and Predictive Factors After Semaglutide in Patients With Grade 3 and Complicated Obesity",
+          "url": "https://clinicaltrials.gov/study/NCT07423481",
+          "excerpt": "Start date: 2026-06-01"
+        },
+        {
+          "nct_id": "NCT07668388",
+          "title": "A Research Study Comparing How Well Different Doses of the Medicine UBT251 Lower Blood Sugar in People With Type 2 Diabetes",
+          "url": "https://clinicaltrials.gov/study/NCT07668388",
+          "excerpt": "Start date: 2026-06-22"
+        },
+        {
+          "nct_id": "NCT07554417",
+          "title": "Combatting Muscle Loss in Obese Adult Patients on GLP-1 Medications Through Dietary Counseling and Exercise During Treatment Evaluates Whether a 12-week Exercise and Individualized Nutrition Program Can Reduce Muscle and Bone Loss and Improve Strength, Fitness, and Function in Obese Adults on GLP-1",
+          "url": "https://clinicaltrials.gov/study/NCT07554417",
+          "excerpt": "Start date: 2026-04-06"
+        },
+        {
+          "nct_id": "NCT07390110",
+          "title": "Comparative Effectiveness of Oral Semaglutide vs Sitagliptin Among Individuals With Heart Failure With Preserved Ejection Fraction (STEP-HFpEF DM ORAL)",
+          "url": "https://clinicaltrials.gov/study/NCT07390110",
+          "excerpt": "Start date: 2026-01-24"
+        },
+        {
+          "nct_id": "NCT07297238",
+          "title": "Effect of GLP-1 on Intestinal Barrier Function in SBS-IF Patients: A Preliminary Exploration.",
+          "url": "https://clinicaltrials.gov/study/NCT07297238",
+          "excerpt": "Start date: 2026-01-24"
+        },
+        {
+          "nct_id": "NCT07627191",
+          "title": "GLP-1 RA Plus SOC Treatment in First-line, Metastatic Pancreatic, Colorectal, or Hepatocellular Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT07627191",
+          "excerpt": "Start date: 2026-06-30"
+        },
+        {
+          "nct_id": "NCT07323134",
+          "title": "The Effect of Semaglutide on the Intestinal Flora in Obesity",
+          "url": "https://clinicaltrials.gov/study/NCT07323134",
+          "excerpt": "Start date: 2026-02-01"
+        },
+        {
+          "nct_id": "NCT07446998",
+          "title": "Proof-of-Concept Study Evaluating Total Body Weight, Physical Function & Safety of Enobosarm in Patients Treated With GLP-1 Receptor Agonist, for Weight Loss",
+          "url": "https://clinicaltrials.gov/study/NCT07446998",
+          "excerpt": "Start date: 2026-03-26"
+        },
+        {
+          "nct_id": "NCT07415954",
+          "title": "A Research Study Comparing How Well Different Doses of the Medicine NNC0662-0419 Lower Blood Sugar in People With Type 2 Diabetes",
+          "url": "https://clinicaltrials.gov/study/NCT07415954",
+          "excerpt": "Start date: 2026-04-17"
+        },
+        {
+          "nct_id": "NCT07090343",
+          "title": "Semaglutide in Patients Undergoing Transcatether Aortic Valve Replacement",
+          "url": "https://clinicaltrials.gov/study/NCT07090343",
+          "excerpt": "Start date: 2026-04-01"
+        },
+        {
+          "nct_id": "NCT07040592",
+          "title": "Off-Label Medications for Alcohol Use Disorder Among Patients With HIV: Pilot Study 3 Semaglutide",
+          "url": "https://clinicaltrials.gov/study/NCT07040592",
+          "excerpt": "Start date: 2026-01-15"
+        },
+        {
+          "nct_id": "NCT07357740",
+          "title": "A Research Study to Compare Two Different Versions of Injectable CagriSema in People With Type 2 Diabetes",
+          "url": "https://clinicaltrials.gov/study/NCT07357740",
+          "excerpt": "Start date: 2026-08-27"
+        },
+        {
+          "nct_id": "NCT07282769",
+          "title": "Semaglutide (Wegovy) Treatment for Trichotillomania",
+          "url": "https://clinicaltrials.gov/study/NCT07282769",
+          "excerpt": "Start date: 2026-06"
+        },
+        {
+          "nct_id": "NCT07668765",
+          "title": "GLP-1 Receptor Agonists and Early Proctologic Effects in Morbid Obesity",
+          "url": "https://clinicaltrials.gov/study/NCT07668765",
+          "excerpt": "Start date: 2026-08"
+        },
+        {
+          "nct_id": "NCT07617155",
+          "title": "GLP-1 Agonists for Prevention of Recurrent Hypertriglyceridemic Acute Pancreatitis",
+          "url": "https://clinicaltrials.gov/study/NCT07617155",
+          "excerpt": "Start date: 2026-09"
+        },
+        {
+          "nct_id": "NCT06913023",
+          "title": "Semaglutide for the Prevention Of Post-Transplant Diabetes Mellitus",
+          "url": "https://clinicaltrials.gov/study/NCT06913023",
+          "excerpt": "Start date: 2026-01-05"
+        },
+        {
+          "nct_id": "NCT07592546",
+          "title": "Translational Health Research Into Vascular and Neurocognitive Effects of Weight Loss",
+          "url": "https://clinicaltrials.gov/study/NCT07592546",
+          "excerpt": "Start date: 2026-08-01"
+        },
+        {
+          "nct_id": "NCT07446439",
+          "title": "A Study to Evaluate Tradipitant on Treating Nausea and Vomiting Induced by GLP-1R Agonist Use",
+          "url": "https://clinicaltrials.gov/study/NCT07446439",
+          "excerpt": "Start date: 2026-03-27"
+        },
+        {
+          "nct_id": "NCT07589322",
+          "title": "Comparative Observation of Metabolic and Pharmacologic Adipose Remodeling With Enhanced Incretin AgonisTs",
+          "url": "https://clinicaltrials.gov/study/NCT07589322",
+          "excerpt": "Start date: 2026-03-31"
+        },
+        {
+          "nct_id": "NCT06546384",
+          "title": "GLP-1 RA on Alcohol Consumption, Metabolism and Liver Parameters in Patients With Obesity and Fatty Liver Disease",
+          "url": "https://clinicaltrials.gov/study/NCT06546384",
+          "excerpt": "Start date: 2026-05-01"
+        },
+        {
+          "nct_id": "NCT07218354",
+          "title": "Cessation or Reduction of Alcohol Consumption in Veterans: A Randomized, Double-Blind, Placebo-Controlled Phase 3 Trial to Evaluate the Efficacy and Safety of a GLP-1 Receptor Agonist Semaglutide in U.S. Veterans With Alcohol Use Disorder",
+          "url": "https://clinicaltrials.gov/study/NCT07218354",
+          "excerpt": "Start date: 2026-07-01"
+        },
+        {
+          "nct_id": "NCT07558863",
+          "title": "Effect of GLP-1RA on Cardiac Autonomic Neuropathy in Type 2 Diabetes",
+          "url": "https://clinicaltrials.gov/study/NCT07558863",
+          "excerpt": "Start date: 2026-04-01"
+        }
+      ]
+    },
+    {
+      "bucket": "metformin \u00b7 2027",
+      "value": 0.0,
+      "nct_ids": [],
+      "trials": []
+    },
+    {
+      "bucket": "semaglutide \u00b7 2027",
+      "value": 3.0,
+      "nct_ids": [
+        "NCT07462663",
+        "NCT07430332",
+        "NCT07614412"
+      ],
+      "trials": [
+        {
+          "nct_id": "NCT07462663",
+          "title": "SHAPE-ENDO: Pilot Randomized Trial of Multimodal Pre-Surgical Optimization Versus Standard Surgery in Patients With Obesity and Early-Stage Endometrial Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT07462663",
+          "excerpt": "Start date: 2027-01"
+        },
+        {
+          "nct_id": "NCT07430332",
+          "title": "GLP-1 RA for Stage 1 Type 1 Diabetes",
+          "url": "https://clinicaltrials.gov/study/NCT07430332",
+          "excerpt": "Start date: 2027-09-01"
+        },
+        {
+          "nct_id": "NCT07614412",
+          "title": "SHIELD-T1D: Shingrix and GLP-1 Agonist for Beta-Cell Preservation in Recent-Onset Type 1 Diabetes.",
+          "url": "https://clinicaltrials.gov/study/NCT07614412",
+          "excerpt": "Start date: 2027-01-01"
+        }
+      ]
+    },
+    {
+      "bucket": "metformin \u00b7 2028",
+      "value": 0.0,
+      "nct_ids": [],
+      "trials": []
+    },
+    {
+      "bucket": "semaglutide \u00b7 2028",
+      "value": 1.0,
+      "nct_ids": [
+        "NCT07586150"
+      ],
+      "trials": [
+        {
+          "nct_id": "NCT07586150",
+          "title": "Personalized Pharmaco-Lifestyle Interventions for Severe Mental Illnesses (LIFETRAIN)",
+          "url": "https://clinicaltrials.gov/study/NCT07586150",
+          "excerpt": "Start date: 2028-10"
+        }
+      ]
+    }
+  ],
+  "summary": "The chart compares the number of clinical trials for metformin and semaglutide conducted each year since 2018. Notably, metformin trials consistently outnumber semaglutide trials, with the largest number occurring in 2024 at 154 trials, while semaglutide trials peaked in 2025 at 125 (NCT07281196, NCT07156331, NCT06989177, NCT07150975, NCT06914102, NCT05829460). In contrast, according to the data, semaglutide trials showed a projected decrease in 2024 with no trials currently expected that year, while ongoing trials for metformin in 2023 also reached a total of 138 (NCT05580523, NCT06128967, NCT05847244, NCT06252194, NCT05759897, NCT07003191). The trend over the years indicates fluctuating interest in both medications, with metformin sustaining a higher number of active trials.",
+  "trace_id": "7"
+}

@@ -1,0 +1,215 @@
+{
+  "info": {
+    "name": "QtoV — ClinicalTrials.gov Query-to-Visualization Agent",
+    "description": "Sample requests for the QtoV backend. Import into Insomnia (Import > File — Postman v2.1 is auto-detected) or Postman.\n\nSet the `baseUrl` variable (default http://localhost:8000). Run any query in the 'Queries' folder; the first one captures its `event_id` into a collection variable so the 'Get event (permalink)' request works.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    { "key": "baseUrl", "value": "http://localhost:8000", "type": "string" },
+    { "key": "eventId", "value": "", "type": "string" },
+    { "key": "queryId", "value": "1", "type": "string" }
+  ],
+  "item": [
+    {
+      "name": "Queries (POST /api/query)",
+      "item": [
+        {
+          "name": "1. Time trend (line)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "// Capture the event_id so the 'Get event (permalink)' request works.",
+                  "try {",
+                  "  const id = pm.response.json().event_id;",
+                  "  if (id) pm.collectionVariables.set('eventId', id);",
+                  "} catch (e) {}"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "url": { "raw": "{{baseUrl}}/api/query", "host": ["{{baseUrl}}"], "path": ["api", "query"] },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"query\": \"How has the number of trials for pembrolizumab changed per year since 2015?\"\n}"
+            },
+            "description": "query_type=time_trend -> line chart."
+          }
+        },
+        {
+          "name": "2. Distribution (bar) — full phase enum",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "url": { "raw": "{{baseUrl}}/api/query", "host": ["{{baseUrl}}"], "path": ["api", "query"] },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"query\": \"How are diabetes trials distributed across phases?\"\n}"
+            },
+            "description": "query_type=distribution -> bar. metadata.bucket_set_complete=true (the fixed phase enum is enumerated exactly). Run twice to see a cache.hit in the backend logs."
+          }
+        },
+        {
+          "name": "3. Comparison — phase breakdown (grouped_bar)",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "url": { "raw": "{{baseUrl}}/api/query", "host": ["{{baseUrl}}"], "path": ["api", "query"] },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"query\": \"Compare phases for trials involving metformin vs semaglutide.\"\n}"
+            },
+            "description": "query_type=comparison -> grouped_bar with one column per entity, broken down by phase."
+          }
+        },
+        {
+          "name": "4. Comparison — year breakdown (grouped_bar)",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "url": { "raw": "{{baseUrl}}/api/query", "host": ["{{baseUrl}}"], "path": ["api", "query"] },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"query\": \"Compare the number of metformin vs semaglutide trials per year since 2018.\"\n}"
+            },
+            "description": "The comparison breakdown axis is Year (not hardcoded to phase). x_label='Year'."
+          }
+        },
+        {
+          "name": "5. Geographic (bar) — sampled top-N",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "url": { "raw": "{{baseUrl}}/api/query", "host": ["{{baseUrl}}"], "path": ["api", "query"] },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"query\": \"Which countries have the most recruiting trials for breast cancer?\"\n}"
+            },
+            "description": "query_type=geographic -> bar. metadata.bucket_set_complete=false (open-ended top-N set is sample-derived; each shown count is still exact)."
+          }
+        },
+        {
+          "name": "6. Relationship (network)",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "url": { "raw": "{{baseUrl}}/api/query", "host": ["{{baseUrl}}"], "path": ["api", "query"] },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"query\": \"Show a network of sponsors and drugs for Alzheimer's trials.\"\n}"
+            },
+            "description": "query_type=relationship -> network. data = { nodes, links, categories }."
+          }
+        },
+        {
+          "name": "7. Correlation (scatter) — NEW",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "url": { "raw": "{{baseUrl}}/api/query", "host": ["{{baseUrl}}"], "path": ["api", "query"] },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"query\": \"Is there a relationship between enrollment size and trial duration for diabetes trials?\"\n}"
+            },
+            "description": "query_type=correlation -> scatter. One point per trial (x=enrollment, y=duration_months, color=phase). Each citation point carries an excerpt."
+          }
+        },
+        {
+          "name": "8. Structured filters (authoritative overrides)",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "url": { "raw": "{{baseUrl}}/api/query", "host": ["{{baseUrl}}"], "path": ["api", "query"] },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"query\": \"trends over time\",\n  \"drug_name\": \"pembrolizumab\",\n  \"condition\": \"melanoma\",\n  \"trial_phase\": \"Phase 3\",\n  \"study_type\": \"Interventional\",\n  \"country\": \"United States\",\n  \"start_year\": 2016,\n  \"end_year\": 2024\n}"
+            },
+            "description": "Every field except `query` is optional. When provided it overrides the LLM's inference. `drug_name`/`trial_phase` are aliases for `intervention`/`phase`."
+          }
+        },
+        {
+          "name": "9. Force a specific chart type",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "url": { "raw": "{{baseUrl}}/api/query", "host": ["{{baseUrl}}"], "path": ["api", "query"] },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"query\": \"metformin vs semaglutide trials\",\n  \"force_query_type\": \"comparison\"\n}"
+            },
+            "description": "Pin the query type (used by the UI when a user clicks an alternative-chart chip)."
+          }
+        },
+        {
+          "name": "10. Unsupported query (HTTP 422)",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "url": { "raw": "{{baseUrl}}/api/query", "host": ["{{baseUrl}}"], "path": ["api", "query"] },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"query\": \"What is the weather in Paris today?\"\n}"
+            },
+            "description": "Outside the closed taxonomy -> 422 with the supported_query_types catalog and a shareable event_id."
+          }
+        }
+      ]
+    },
+    {
+      "name": "Other endpoints",
+      "item": [
+        {
+          "name": "Health",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": { "raw": "{{baseUrl}}/api/health", "host": ["{{baseUrl}}"], "path": ["api", "health"] }
+          }
+        },
+        {
+          "name": "List query history",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/queries?limit=10",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "queries"],
+              "query": [{ "key": "limit", "value": "10" }]
+            }
+          }
+        },
+        {
+          "name": "Get one query by id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/queries/{{queryId}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "queries", "{{queryId}}"]
+            }
+          }
+        },
+        {
+          "name": "Get event (permalink)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/events/{{eventId}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "events", "{{eventId}}"]
+            },
+            "description": "Uses the eventId captured by request '1. Time trend'. Run one query first."
+          }
+        }
+      ]
+    }
+  ]
+}

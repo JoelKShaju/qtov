@@ -1,0 +1,2892 @@
+{
+  "event_id": "369182c16f6240c0aff3e140a91f23d8",
+  "query": "Which countries have the most recruiting trials for breast cancer?",
+  "interpretation": {
+    "query_type": "geographic",
+    "parameters": {
+      "condition": "breast cancer",
+      "intervention": null,
+      "intervention_type": null,
+      "study_type": null,
+      "sponsor": null,
+      "country": null,
+      "status": [
+        "RECRUITING"
+      ],
+      "start_year": null,
+      "end_year": null,
+      "group_by": "country",
+      "comparison_entities": null,
+      "comparison_dimension": null
+    },
+    "reasoning": "This query counts the number of recruiting trials for breast cancer by country.",
+    "confidence": 1.0,
+    "alternatives": []
+  },
+  "visualization": {
+    "type": "bar",
+    "title": "Countries with the Most Recruiting Trials for Breast Cancer",
+    "data": [
+      {
+        "x": "United States",
+        "y": 941
+      },
+      {
+        "x": "China",
+        "y": 652
+      },
+      {
+        "x": "Italy",
+        "y": 202
+      },
+      {
+        "x": "France",
+        "y": 199
+      },
+      {
+        "x": "Spain",
+        "y": 152
+      },
+      {
+        "x": "Canada",
+        "y": 140
+      },
+      {
+        "x": "South Korea",
+        "y": 123
+      },
+      {
+        "x": "Germany",
+        "y": 120
+      },
+      {
+        "x": "Australia",
+        "y": 104
+      },
+      {
+        "x": "United Kingdom",
+        "y": 101
+      },
+      {
+        "x": "Belgium",
+        "y": 81
+      },
+      {
+        "x": "Netherlands",
+        "y": 69
+      },
+      {
+        "x": "Taiwan",
+        "y": 64
+      },
+      {
+        "x": "Brazil",
+        "y": 57
+      },
+      {
+        "x": "Switzerland",
+        "y": 40
+      }
+    ],
+    "encoding": {
+      "x": {
+        "field": "x",
+        "type": "ordinal"
+      },
+      "y": {
+        "field": "y",
+        "type": "quantitative"
+      },
+      "color": null
+    },
+    "metadata": {
+      "total_records": 2478,
+      "sampled": 600,
+      "bucket_set_complete": false,
+      "data_caveat": null,
+      "filters_applied": "condition=breast cancer, status=RECRUITING",
+      "source": "ClinicalTrials.gov",
+      "timestamp": "2026-06-26T02:29:45.528511+00:00",
+      "chart_config": {
+        "x_label": "Country",
+        "y_label": "Number of trials",
+        "x_axis_rotation": 35,
+        "time_format": null
+      }
+    }
+  },
+  "citations": [
+    {
+      "bucket": "United States",
+      "value": 941.0,
+      "nct_ids": [
+        "NCT03804944",
+        "NCT07205822",
+        "NCT07546331",
+        "NCT05890677",
+        "NCT07447700",
+        "NCT04981119",
+        "NCT06721065",
+        "NCT04563507",
+        "NCT05612100",
+        "NCT06171607",
+        "NCT05570253",
+        "NCT04523857",
+        "NCT06959537",
+        "NCT00451022",
+        "NCT03451383",
+        "NCT04650256",
+        "NCT01102569",
+        "NCT04799535",
+        "NCT07310420",
+        "NCT07436078",
+        "NCT05183126",
+        "NCT05825482",
+        "NCT06094257",
+        "NCT06763328",
+        "NCT04521764",
+        "NCT06055881",
+        "NCT02732171",
+        "NCT06618287",
+        "NCT02772367",
+        "NCT04585750",
+        "NCT06409390",
+        "NCT05123482",
+        "NCT06960720",
+        "NCT04824027",
+        "NCT06728579",
+        "NCT04362826",
+        "NCT06736613",
+        "NCT01174121",
+        "NCT07646847",
+        "NCT07062965",
+        "NCT06238921",
+        "NCT05898399",
+        "NCT05095207",
+        "NCT04475640",
+        "NCT06488378",
+        "NCT02749474",
+        "NCT05683418",
+        "NCT07318805",
+        "NCT06949410",
+        "NCT07069595",
+        "NCT06022029",
+        "NCT07553572",
+        "NCT06545331",
+        "NCT05677802",
+        "NCT03137095",
+        "NCT06176261",
+        "NCT07166042",
+        "NCT07219277",
+        "NCT06625775",
+        "NCT04606030",
+        "NCT05269381",
+        "NCT06806930",
+        "NCT06966453",
+        "NCT00477100",
+        "NCT04923542",
+        "NCT07137468",
+        "NCT07044310",
+        "NCT06999187",
+        "NCT04641247",
+        "NCT06557057",
+        "NCT07209436",
+        "NCT07216495",
+        "NCT06828588",
+        "NCT06435351",
+        "NCT06764940",
+        "NCT05315700",
+        "NCT06758102",
+        "NCT06954831",
+        "NCT07524322",
+        "NCT07173751",
+        "NCT05438511",
+        "NCT07313306",
+        "NCT05754658",
+        "NCT06778863",
+        "NCT06086704",
+        "NCT05187832",
+        "NCT02743858",
+        "NCT05590949",
+        "NCT06657222",
+        "NCT04510129",
+        "NCT06795529",
+        "NCT06580002",
+        "NCT06533826",
+        "NCT06623396",
+        "NCT07426913",
+        "NCT06694181",
+        "NCT05472792",
+        "NCT05837455",
+        "NCT07158164",
+        "NCT06058377",
+        "NCT05559164",
+        "NCT05417867",
+        "NCT03954431",
+        "NCT04494945",
+        "NCT06783179",
+        "NCT04553770",
+        "NCT06966388",
+        "NCT07459673",
+        "NCT06910657",
+        "NCT05386719",
+        "NCT07109817",
+        "NCT00991094",
+        "NCT06028022",
+        "NCT05848141",
+        "NCT05298605",
+        "NCT04389281",
+        "NCT06405828",
+        "NCT05684367",
+        "NCT06864754",
+        "NCT05984888",
+        "NCT06562192",
+        "NCT05283330",
+        "NCT04174742",
+        "NCT07145255",
+        "NCT06058650",
+        "NCT07447050",
+        "NCT02918474",
+        "NCT06188520",
+        "NCT06522568",
+        "NCT05126290",
+        "NCT06324357",
+        "NCT07387445",
+        "NCT06907043",
+        "NCT05076760",
+        "NCT05458674",
+        "NCT03424005",
+        "NCT00898131",
+        "NCT06440005",
+        "NCT05000294",
+        "NCT06450873",
+        "NCT07186296",
+        "NCT07664579",
+        "NCT07454642",
+        "NCT05092373",
+        "NCT07071896",
+        "NCT07190469",
+        "NCT05483283",
+        "NCT07067788",
+        "NCT07192432",
+        "NCT05952557",
+        "NCT03448926",
+        "NCT05064098",
+        "NCT05218044",
+        "NCT06938581",
+        "NCT06586047",
+        "NCT01185132",
+        "NCT05178498",
+        "NCT06750484",
+        "NCT04368702",
+        "NCT05130801",
+        "NCT06875128",
+        "NCT05968157",
+        "NCT07308717",
+        "NCT05130606",
+        "NCT05115474",
+        "NCT07182149",
+        "NCT07262138",
+        "NCT06672497",
+        "NCT01441089",
+        "NCT03449238",
+        "NCT07478016",
+        "NCT06361940",
+        "NCT01793168",
+        "NCT06512350",
+        "NCT07054723",
+        "NCT06938555",
+        "NCT03096418",
+        "NCT06534125",
+        "NCT06534918",
+        "NCT05766891",
+        "NCT04852887",
+        "NCT02333604",
+        "NCT06127797",
+        "NCT07242118",
+        "NCT06217874",
+        "NCT04959474",
+        "NCT04890613",
+        "NCT04683679",
+        "NCT06388122",
+        "NCT07085767",
+        "NCT06272864",
+        "NCT07032545",
+        "NCT02422641",
+        "NCT06123286",
+        "NCT06518057",
+        "NCT07046923",
+        "NCT06184750",
+        "NCT07408089",
+        "NCT05484973",
+        "NCT05746325",
+        "NCT07327489",
+        "NCT06934239",
+        "NCT06008275",
+        "NCT04084730",
+        "NCT06799065",
+        "NCT06439693",
+        "NCT06666192",
+        "NCT07574671",
+        "NCT05035836",
+        "NCT06790693",
+        "NCT06336928",
+        "NCT05902507",
+        "NCT06525766",
+        "NCT06318507",
+        "NCT06120283",
+        "NCT03463954",
+        "NCT06673329",
+        "NCT05440929",
+        "NCT05369546",
+        "NCT07214883",
+        "NCT07211178",
+        "NCT07009093",
+        "NCT05386108"
+      ],
+      "trials": [
+        {
+          "nct_id": "NCT03804944",
+          "title": "Converting HR+ Breast Cancer Into an Individualized Vaccine",
+          "url": "https://clinicaltrials.gov/study/NCT03804944",
+          "excerpt": "Locations: United States"
+        },
+        {
+          "nct_id": "NCT07205822",
+          "title": "A Study of Dato-DXd in Inoperable or Metastatic Hormone Receptor-positive, HER2 IHC 0 Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT07205822",
+          "excerpt": "Locations: United States, China, France, Italy, South Korea, Spain"
+        },
+        {
+          "nct_id": "NCT07546331",
+          "title": "Novel Body Composition Measurements in Association With Outcomes of Breast Reconstruction Reconstruction",
+          "url": "https://clinicaltrials.gov/study/NCT07546331",
+          "excerpt": "Locations: United States"
+        },
+        {
+          "nct_id": "NCT05890677",
+          "title": "The LYMPH Trial - Microsurgical Versus Conservative Treatment of Chronic Breast Cancer Associated Lymphedema",
+          "url": "https://clinicaltrials.gov/study/NCT05890677",
+          "excerpt": "Locations: United States, Austria, Belgium, Brazil, Canada, Germany, Greece, Israel, Italy, Netherlands, Romania, Spain, Sweden, Switzerland, Taiwan"
+        },
+        {
+          "nct_id": "NCT07447700",
+          "title": "A Pilot Study to Evaluate the Effectiveness of Focused Massage on Pain, Mobility, and Quality of Life During Radiation Treatment for Patients With Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT07447700",
+          "excerpt": "Locations: United States"
+        },
+        {
+          "nct_id": "NCT04981119",
+          "title": "Solid Tumor Analysis for HLA Loss of Heterozygosity (LOH) and Apheresis for CAR T- Cell Manufacturing",
+          "url": "https://clinicaltrials.gov/study/NCT04981119",
+          "excerpt": "Locations: United States"
+        },
+        {
+          "nct_id": "NCT06721065",
+          "title": "A Study of Language Interpretation Solutions for People With Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT06721065",
+          "excerpt": "Locations: United States"
+        },
+        {
+          "nct_id": "NCT04563507",
+          "title": "Combined Immunotherapies in Metastatic ER+ Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT04563507",
+          "excerpt": "Locations: United States"
+        },
+        {
+          "nct_id": "NCT05612100",
+          "title": "Endocrine Therapy-Induced Alopecia in Postmenopausal and Premenopausal Female Breast Cancer Patients",
+          "url": "https://clinicaltrials.gov/study/NCT05612100",
+          "excerpt": "Locations: United States"
+        },
+        {
+          "nct_id": "NCT06171607",
+          "title": "Contrast Enhanced Ultrasound Medical Imaging for Identifying Breast Masses",
+          "url": "https://clinicaltrials.gov/study/NCT06171607",
+          "excerpt": "Locations: United States"
+        },
+        {
+          "nct_id": "NCT05570253",
+          "title": "A Study of SDX-7320 in Combination With Eribulin for People With Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT05570253",
+          "excerpt": "Locations: United States"
+        },
+        {
+          "nct_id": "NCT04523857",
+          "title": "ABemacicliB or Abemaciclib and HydroxYchloroquine to Target Minimal Residual Disease in Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT04523857",
+          "excerpt": "Locations: United States"
+        },
+        {
+          "nct_id": "NCT06959537",
+          "title": "A Phase Ib Study of Novel Combination (New) of Low Dose Oral CyclophoSphamide (s) to Potentiate Axatilimab (A) + Retifanlimab (R) in Treating Metastatic Triple Negative Breast Cancer (TNBC)",
+          "url": "https://clinicaltrials.gov/study/NCT06959537",
+          "excerpt": "Locations: United States"
+        },
+        {
+          "nct_id": "NCT00451022",
+          "title": "Follow-Up Study of Subjects Previously Enrolled in Poxviral Vector Gene Transfer Studies",
+          "url": "https://clinicaltrials.gov/study/NCT00451022",
+          "excerpt": "Locations: United States"
+        },
+        {
+          "nct_id": "NCT03451383",
+          "title": "Older Breast Cancer Patients: Risk for Cognitive Decline",
+          "url": "https://clinicaltrials.gov/study/NCT03451383",
+          "excerpt": "Locations: United States"
+        },
+        {
+          "nct_id": "NCT04650256",
+          "title": "Application of Chinese Herbal Complementary and Alternative Medicine (CAM) to Improve Human Health and to Further Botanical and Horticultural Sciences",
+          "url": "https://clinicaltrials.gov/study/NCT04650256",
+          "excerpt": "Locations: United States"
+        },
+        {
+          "nct_id": "NCT01102569",
+          "title": "Pancreatic Cancer Genetics",
+          "url": "https://clinicaltrials.gov/study/NCT01102569",
+          "excerpt": "Locations: United States"
+        },
+        {
+          "nct_id": "NCT04799535",
+          "title": "Quantitative Microvasculature Imaging for Breast Cancer Detection and Monitoring",
+          "url": "https://clinicaltrials.gov/study/NCT04799535",
+          "excerpt": "Locations: United States"
+        },
+        {
+          "nct_id": "NCT07310420",
+          "title": "A Trial to Evaluate Ovarian Suppression Following Subcutaneous ZOLADEX 10.8 mg in Premenopausal Women With HR+, HER2- Advanced Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT07310420",
+          "excerpt": "Locations: United States"
+        },
+        {
+          "nct_id": "NCT07436078",
+          "title": "Culturally Adapting an Intervention to Increase Genetic Testing in African American Cancer Survivors",
+          "url": "https://clinicaltrials.gov/study/NCT07436078",
+          "excerpt": "Locations: United States"
+        },
+        {
+          "nct_id": "NCT05183126",
+          "title": "Pharmacokinetic Study of Skeletal Muscle Area-based Paclitaxel Infusion in Patients With Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT05183126",
+          "excerpt": "Locations: United States"
+        },
+        {
+          "nct_id": "NCT05825482",
+          "title": "Breast Margin Study: Routine Cavity Shave Margins Vs. Selective Margins Using Savi Scout\u00ae",
+          "url": "https://clinicaltrials.gov/study/NCT05825482",
+          "excerpt": "Locations: United States"
+        },
+        {
+          "nct_id": "NCT06094257",
+          "title": "Prospective Study of Sensation and Satisfaction in Cancer and Transgender Mastectomy Patients",
+          "url": "https://clinicaltrials.gov/study/NCT06094257",
+          "excerpt": "Locations: United States"
+        },
+        {
+          "nct_id": "NCT06763328",
+          "title": "Metformin for the Treatment of Insulin Resistance in Women With Stage I-III Breast Cancer Completing Chemotherapy",
+          "url": "https://clinicaltrials.gov/study/NCT06763328",
+          "excerpt": "Locations: United States"
+        },
+        {
+          "nct_id": "NCT04521764",
+          "title": "A Vaccine (MV-s-NAP) for the Treatment of Patients With Invasive Metastatic Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT04521764",
+          "excerpt": "Locations: United States"
+        }
+      ]
+    },
+    {
+      "bucket": "China",
+      "value": 652.0,
+      "nct_ids": [
+        "NCT07283692",
+        "NCT07205822",
+        "NCT05228951",
+        "NCT05838001",
+        "NCT07622836",
+        "NCT05761470",
+        "NCT06817954",
+        "NCT07523529",
+        "NCT06705127",
+        "NCT07156253",
+        "NCT05860465",
+        "NCT06735131",
+        "NCT07401537",
+        "NCT06918262",
+        "NCT06496724",
+        "NCT05123482",
+        "NCT06498154",
+        "NCT06042894",
+        "NCT06202261",
+        "NCT06914440",
+        "NCT06878625",
+        "NCT05795335",
+        "NCT07062965",
+        "NCT05594095",
+        "NCT06529614",
+        "NCT07196774",
+        "NCT06000917",
+        "NCT04265937",
+        "NCT04282031",
+        "NCT07203729",
+        "NCT06286267",
+        "NCT06001528",
+        "NCT06685796",
+        "NCT06954961",
+        "NCT06385990",
+        "NCT06254690",
+        "NCT06725940",
+        "NCT06495736",
+        "NCT05744687",
+        "NCT06771609",
+        "NCT06955156",
+        "NCT05638594",
+        "NCT07349069",
+        "NCT07578064",
+        "NCT04052893",
+        "NCT05635487",
+        "NCT04072653",
+        "NCT07173751",
+        "NCT05856383",
+        "NCT06301438",
+        "NCT05628870",
+        "NCT06998108",
+        "NCT06649331",
+        "NCT07492394",
+        "NCT06908291",
+        "NCT06222879",
+        "NCT06686459",
+        "NCT07084519",
+        "NCT07638774",
+        "NCT07394218",
+        "NCT06024187",
+        "NCT06495034",
+        "NCT05813392",
+        "NCT07407439",
+        "NCT07471776",
+        "NCT06679036",
+        "NCT05241119",
+        "NCT07045311",
+        "NCT07574749",
+        "NCT05728268",
+        "NCT06471205",
+        "NCT07597629",
+        "NCT06500494",
+        "NCT06905561",
+        "NCT05797454",
+        "NCT05949541",
+        "NCT07365267",
+        "NCT04778839",
+        "NCT04353557",
+        "NCT06671262",
+        "NCT06658080",
+        "NCT05341141",
+        "NCT07616440",
+        "NCT06636591",
+        "NCT06966141",
+        "NCT07010939",
+        "NCT05831878",
+        "NCT06680921",
+        "NCT06516289",
+        "NCT06772935",
+        "NCT07520760",
+        "NCT06278870",
+        "NCT06700369",
+        "NCT06468566",
+        "NCT06781281",
+        "NCT07071402",
+        "NCT06324357",
+        "NCT05525767",
+        "NCT06121557",
+        "NCT06907043",
+        "NCT07046689",
+        "NCT04665882",
+        "NCT05692674",
+        "NCT07551050",
+        "NCT07251868",
+        "NCT07396454",
+        "NCT06642441",
+        "NCT06690645",
+        "NCT06916637",
+        "NCT06081959",
+        "NCT07135661",
+        "NCT05954442",
+        "NCT02389673",
+        "NCT07635342",
+        "NCT05952557",
+        "NCT04481932",
+        "NCT04383275",
+        "NCT07134153",
+        "NCT06682195",
+        "NCT07238894",
+        "NCT07043725",
+        "NCT06371274",
+        "NCT06596018",
+        "NCT07014410",
+        "NCT06692725",
+        "NCT07486089",
+        "NCT06404697",
+        "NCT07390838",
+        "NCT05461768",
+        "NCT05470348",
+        "NCT06810804",
+        "NCT06722599",
+        "NCT06817525",
+        "NCT04427449",
+        "NCT06693024",
+        "NCT06666270",
+        "NCT06568705",
+        "NCT04790305",
+        "NCT07616453",
+        "NCT06313983",
+        "NCT06734533",
+        "NCT06839547",
+        "NCT07647016",
+        "NCT06741540",
+        "NCT04960839",
+        "NCT04215003",
+        "NCT07046923",
+        "NCT06649565",
+        "NCT06543992",
+        "NCT06790693",
+        "NCT04138719",
+        "NCT03829553",
+        "NCT03755739",
+        "NCT06532812",
+        "NCT06722612",
+        "NCT06120283",
+        "NCT04159142",
+        "NCT05447702",
+        "NCT05749588",
+        "NCT06489158",
+        "NCT07389733",
+        "NCT07446452",
+        "NCT06149130",
+        "NCT06555068"
+      ],
+      "trials": [
+        {
+          "nct_id": "NCT07283692",
+          "title": "Neoadjuvant Serplulimab Plus Weekly Paclitaxel and Carboplatin in TNBC (Neo-SERPENT)",
+          "url": "https://clinicaltrials.gov/study/NCT07283692",
+          "excerpt": "Locations: China"
+        },
+        {
+          "nct_id": "NCT07205822",
+          "title": "A Study of Dato-DXd in Inoperable or Metastatic Hormone Receptor-positive, HER2 IHC 0 Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT07205822",
+          "excerpt": "Locations: United States, China, France, Italy, South Korea, Spain"
+        },
+        {
+          "nct_id": "NCT05228951",
+          "title": "Pyrotinib Maleate, Trastuzumab, SHR6390 and Letrozole in Combination for Stage II-III TPBC",
+          "url": "https://clinicaltrials.gov/study/NCT05228951",
+          "excerpt": "Locations: China"
+        },
+        {
+          "nct_id": "NCT05838001",
+          "title": "Efficacy and Accuracy of Combined Localization Versus Single Localization in Non-palpable Breast Cancer After Neoadjuvant Therapy",
+          "url": "https://clinicaltrials.gov/study/NCT05838001",
+          "excerpt": "Locations: China"
+        },
+        {
+          "nct_id": "NCT07622836",
+          "title": "A Prospective, Multicenter, Phase II Clinical Study of Postoperative Chemotherapy Combined With QL1706 for High-risk Triple-negative Breast Cancer.",
+          "url": "https://clinicaltrials.gov/study/NCT07622836",
+          "excerpt": "Locations: China"
+        },
+        {
+          "nct_id": "NCT05761470",
+          "title": "Neoadjuvant Camrelizumab and Fluzoparib and Nab-paclitaxel in Early Breast Cancer With HRR Gene Mutation",
+          "url": "https://clinicaltrials.gov/study/NCT05761470",
+          "excerpt": "Locations: China"
+        },
+        {
+          "nct_id": "NCT06817954",
+          "title": "To Evaluate the Effectiveness and Safety of Mastectomy Combined With Immediate Breast Reconstruction in Breast Cancer (NJMU-Reconstruction Cohort)",
+          "url": "https://clinicaltrials.gov/study/NCT06817954",
+          "excerpt": "Locations: China"
+        },
+        {
+          "nct_id": "NCT07523529",
+          "title": "Biomarker-Guided Dual-Target CAR-T Cells for Advanced Solid Tumors",
+          "url": "https://clinicaltrials.gov/study/NCT07523529",
+          "excerpt": "Locations: China"
+        },
+        {
+          "nct_id": "NCT06705127",
+          "title": "Radiotherapy Followed by Chemotherapy Combined With Toripalimab in Local Advanced HR-positive,HER2-negative BC.",
+          "url": "https://clinicaltrials.gov/study/NCT06705127",
+          "excerpt": "Locations: China"
+        },
+        {
+          "nct_id": "NCT07156253",
+          "title": "Study of SYN818 With Olaparib for the Treatment of Locally Advanced or Metastatic Solid Tumors",
+          "url": "https://clinicaltrials.gov/study/NCT07156253",
+          "excerpt": "Locations: China"
+        },
+        {
+          "nct_id": "NCT05860465",
+          "title": "Safety and Efficacy of SPH4336 in Combination With Endocrine Therapy in the Treatment of Locally Advanced or Metastatic Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT05860465",
+          "excerpt": "Locations: China"
+        },
+        {
+          "nct_id": "NCT06735131",
+          "title": "The Optimal Radioimmunotherapy Combinations for Advanced TNBC",
+          "url": "https://clinicaltrials.gov/study/NCT06735131",
+          "excerpt": "Locations: China"
+        },
+        {
+          "nct_id": "NCT07401537",
+          "title": "Efficacy and Safety of Extended-Dose Interval Immunotherapy Versus Standard-Dose Interval Immunotherapy for Advanced Triple-Negative Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT07401537",
+          "excerpt": "Locations: China"
+        },
+        {
+          "nct_id": "NCT06918262",
+          "title": "Observational Clinical Study on Role of MRD in Predicting Local Therapy in Oligometastatic Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT06918262",
+          "excerpt": "Locations: China"
+        },
+        {
+          "nct_id": "NCT06496724",
+          "title": "A Clinical Study of Albumin-bound Paclitaxel/Granulocyte-based Therapy for Recurrent/Metastatic Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT06496724",
+          "excerpt": "Locations: China"
+        },
+        {
+          "nct_id": "NCT05123482",
+          "title": "A Phase I/IIa Study of AZD8205 Given Alone or Combined, in Participants With Advanced/Metastatic Solid Malignancies",
+          "url": "https://clinicaltrials.gov/study/NCT05123482",
+          "excerpt": "Locations: United States, Australia, Belgium, Canada, China, Hungary, Italy, Japan, Netherlands, Poland, South Korea, Spain, Taiwan, Thailand, United Kingdom"
+        },
+        {
+          "nct_id": "NCT06498154",
+          "title": "Eliminating Breast Surgery for Breast Cancer Patients With Clinical Complete Response to Neoadjuvant Systemic Therapy",
+          "url": "https://clinicaltrials.gov/study/NCT06498154",
+          "excerpt": "Locations: China"
+        },
+        {
+          "nct_id": "NCT06042894",
+          "title": "A Study of SI-B003 or BL-B01D1+SI-B003 in Patients With Unresectable Locally Advanced or Recurrent Metastatic HER2 Negative Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT06042894",
+          "excerpt": "Locations: China"
+        },
+        {
+          "nct_id": "NCT06202261",
+          "title": "A Study of TQB2930 for Injection Monotherapy or Combination Therapy in Patients With Recurrent/Metastatic Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT06202261",
+          "excerpt": "Locations: China"
+        },
+        {
+          "nct_id": "NCT06914440",
+          "title": "Neoadjuvant SBRT Followed by Nab-Paclitaxel Combined With Toripalimab in HR+/HER2- Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT06914440",
+          "excerpt": "Locations: China"
+        },
+        {
+          "nct_id": "NCT06878625",
+          "title": "A Multicenter, Prospective, Cohort Study of Trop-2 ADC Combination Therapy for Advanced Triple-negative Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT06878625",
+          "excerpt": "Locations: China"
+        },
+        {
+          "nct_id": "NCT05795335",
+          "title": "CDK4/6 Inhibitors in Patients With Hormone Receptor-positive Advanced Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT05795335",
+          "excerpt": "Locations: China"
+        },
+        {
+          "nct_id": "NCT07062965",
+          "title": "A Study to Learn About the Study Medicine Called PF-07248144 in Combination With Fulvestrant in People With HR-positive, HER2-negative Advanced or Metastatic Breast Cancer Who Progressed After a Prior Line of Treatment.",
+          "url": "https://clinicaltrials.gov/study/NCT07062965",
+          "excerpt": "Locations: United States, Australia, Belgium, Brazil, Bulgaria, Canada, China, Czechia, Finland, France, Germany, Greece, Hungary, India, Israel, Italy, Japan, Mexico, Netherlands, Poland, Slovakia, South Korea, Spain, Sweden, Taiwan, Turkey (T\u00fcrkiye), United Kingdom"
+        },
+        {
+          "nct_id": "NCT05594095",
+          "title": "SNF Platform Study of HR+/ HER2-advanced Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT05594095",
+          "excerpt": "Locations: China"
+        },
+        {
+          "nct_id": "NCT06529614",
+          "title": "An In-situ Detection for MicroRNA",
+          "url": "https://clinicaltrials.gov/study/NCT06529614",
+          "excerpt": "Locations: China"
+        }
+      ]
+    },
+    {
+      "bucket": "Italy",
+      "value": 202.0,
+      "nct_ids": [
+        "NCT06706570",
+        "NCT07205822",
+        "NCT05890677",
+        "NCT07524829",
+        "NCT06618287",
+        "NCT04585750",
+        "NCT04679454",
+        "NCT05123482",
+        "NCT07021911",
+        "NCT07062965",
+        "NCT07397585",
+        "NCT07270679",
+        "NCT06281210",
+        "NCT06966453",
+        "NCT07646106",
+        "NCT07441733",
+        "NCT04641247",
+        "NCT06629896",
+        "NCT07173751",
+        "NCT06773533",
+        "NCT06813456",
+        "NCT06114589",
+        "NCT06723990",
+        "NCT06895291",
+        "NCT06236373",
+        "NCT06706557",
+        "NCT06500494",
+        "NCT05403554",
+        "NCT06328465",
+        "NCT07256769",
+        "NCT05689619",
+        "NCT06562192",
+        "NCT07579117",
+        "NCT06324357",
+        "NCT06928701",
+        "NCT05621837",
+        "NCT03971045",
+        "NCT04625023",
+        "NCT05952557",
+        "NCT05968677",
+        "NCT06875128",
+        "NCT06315868",
+        "NCT05772390",
+        "NCT07415499",
+        "NCT07507890",
+        "NCT06642142",
+        "NCT07085767",
+        "NCT06300125",
+        "NCT07299812",
+        "NCT05835739",
+        "NCT04767659",
+        "NCT06790693",
+        "NCT06703567",
+        "NCT06639178",
+        "NCT05386108"
+      ],
+      "trials": [
+        {
+          "nct_id": "NCT06706570",
+          "title": "PIK3CA Mutational Status Assessment",
+          "url": "https://clinicaltrials.gov/study/NCT06706570",
+          "excerpt": "Locations: Italy"
+        },
+        {
+          "nct_id": "NCT07205822",
+          "title": "A Study of Dato-DXd in Inoperable or Metastatic Hormone Receptor-positive, HER2 IHC 0 Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT07205822",
+          "excerpt": "Locations: United States, China, France, Italy, South Korea, Spain"
+        },
+        {
+          "nct_id": "NCT05890677",
+          "title": "The LYMPH Trial - Microsurgical Versus Conservative Treatment of Chronic Breast Cancer Associated Lymphedema",
+          "url": "https://clinicaltrials.gov/study/NCT05890677",
+          "excerpt": "Locations: United States, Austria, Belgium, Brazil, Canada, Germany, Greece, Israel, Italy, Netherlands, Romania, Spain, Sweden, Switzerland, Taiwan"
+        },
+        {
+          "nct_id": "NCT07524829",
+          "title": "Telenursing for the Early Detection and Management of Side Effects Associated With Cyclin-Dependent Kinase Inhibitors in Breast Cancer Patients",
+          "url": "https://clinicaltrials.gov/study/NCT07524829",
+          "excerpt": "Locations: Italy"
+        },
+        {
+          "nct_id": "NCT06618287",
+          "title": "A Study to Evaluate the Safety, Tolerability, Drug Levels, and Preliminary Efficacy of BMS-986507 Combinations in Adult Participants With Advanced Solid Tumors",
+          "url": "https://clinicaltrials.gov/study/NCT06618287",
+          "excerpt": "Locations: United States, Australia, Canada, Chile, France, Italy, Netherlands, Spain, United Kingdom"
+        },
+        {
+          "nct_id": "NCT04585750",
+          "title": "The Evaluation of PC14586 in Patients With Advanced Solid Tumors Harboring a TP53 Y220C Mutation (PYNNACLE)",
+          "url": "https://clinicaltrials.gov/study/NCT04585750",
+          "excerpt": "Locations: United States, Australia, France, Germany, Italy, Singapore, South Korea, Spain, United Kingdom"
+        },
+        {
+          "nct_id": "NCT04679454",
+          "title": "Single Fraction Preoperative Radiotherapy for Early Stage Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT04679454",
+          "excerpt": "Locations: Italy"
+        },
+        {
+          "nct_id": "NCT05123482",
+          "title": "A Phase I/IIa Study of AZD8205 Given Alone or Combined, in Participants With Advanced/Metastatic Solid Malignancies",
+          "url": "https://clinicaltrials.gov/study/NCT05123482",
+          "excerpt": "Locations: United States, Australia, Belgium, Canada, China, Hungary, Italy, Japan, Netherlands, Poland, South Korea, Spain, Taiwan, Thailand, United Kingdom"
+        },
+        {
+          "nct_id": "NCT07021911",
+          "title": "Concomitant Radiotherapy and New Drugs in Metastatic Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT07021911",
+          "excerpt": "Locations: Italy"
+        },
+        {
+          "nct_id": "NCT07062965",
+          "title": "A Study to Learn About the Study Medicine Called PF-07248144 in Combination With Fulvestrant in People With HR-positive, HER2-negative Advanced or Metastatic Breast Cancer Who Progressed After a Prior Line of Treatment.",
+          "url": "https://clinicaltrials.gov/study/NCT07062965",
+          "excerpt": "Locations: United States, Australia, Belgium, Brazil, Bulgaria, Canada, China, Czechia, Finland, France, Germany, Greece, Hungary, India, Israel, Italy, Japan, Mexico, Netherlands, Poland, Slovakia, South Korea, Spain, Sweden, Taiwan, Turkey (T\u00fcrkiye), United Kingdom"
+        },
+        {
+          "nct_id": "NCT07397585",
+          "title": "stereOtactic Body RadIothErapy for exTracranial oligomeTastAtic Breast Cancer: Multi Institutional Retrospective Database",
+          "url": "https://clinicaltrials.gov/study/NCT07397585",
+          "excerpt": "Locations: Italy"
+        },
+        {
+          "nct_id": "NCT07270679",
+          "title": "Genetic Markers of Susceptibility to Chemotherapy-induced Ovarian Damage in Cancer Patients Undergoing Ovarian Biopsy for Cryopreservation.",
+          "url": "https://clinicaltrials.gov/study/NCT07270679",
+          "excerpt": "Locations: Italy"
+        },
+        {
+          "nct_id": "NCT06281210",
+          "title": "Vabb After Neoadjuvant Therapy to Avoid Surgery-pCR to Avoid Breast Surgery",
+          "url": "https://clinicaltrials.gov/study/NCT06281210",
+          "excerpt": "Locations: Italy"
+        },
+        {
+          "nct_id": "NCT06966453",
+          "title": "A Study of Disitamab Vedotin in Adults With HER2 Expressing Advanced Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT06966453",
+          "excerpt": "Locations: United States, Australia, Brazil, Canada, Germany, Italy, Japan, Puerto Rico, Spain"
+        },
+        {
+          "nct_id": "NCT07646106",
+          "title": "THE-0504 in Patients With Solid Tumors",
+          "url": "https://clinicaltrials.gov/study/NCT07646106",
+          "excerpt": "Locations: Italy"
+        },
+        {
+          "nct_id": "NCT07441733",
+          "title": "Evaluate the Implementation of Using Indocyanine Green for Sentinel Lymph Node Mapping in Breast Cancer Patients",
+          "url": "https://clinicaltrials.gov/study/NCT07441733",
+          "excerpt": "Locations: Italy"
+        },
+        {
+          "nct_id": "NCT04641247",
+          "title": "A Long-term Treatment Extension Study of Niraparib in Participants Who Completed a Prior GlaxoSmithKline/TESARO-sponsored Niraparib Study",
+          "url": "https://clinicaltrials.gov/study/NCT04641247",
+          "excerpt": "Locations: United States, Austria, Canada, Denmark, France, Israel, Italy, Spain"
+        },
+        {
+          "nct_id": "NCT06629896",
+          "title": "Contrast Enhancement Mammography vs MRI for the Surveillance of Women at High Risk of Breast Cancer: Con-trust Randomized Controlled Trial",
+          "url": "https://clinicaltrials.gov/study/NCT06629896",
+          "excerpt": "Locations: Italy"
+        },
+        {
+          "nct_id": "NCT07173751",
+          "title": "ROSETTA Breast-01: The Effects and Safety of Pumitamig in Patients With Triple-Negative Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT07173751",
+          "excerpt": "Locations: United States, Australia, Belgium, Brazil, China, Czechia, Georgia, Germany, Italy, Japan, Poland, South Korea, Spain, United Kingdom"
+        },
+        {
+          "nct_id": "NCT06773533",
+          "title": "Registry of Adjuvant Hormone-blockade Breast Cancer Patients Evaluated for Bone Mineral Metabolism",
+          "url": "https://clinicaltrials.gov/study/NCT06773533",
+          "excerpt": "Locations: Italy"
+        },
+        {
+          "nct_id": "NCT06813456",
+          "title": "Implementation of Solid Digital PCR to Support Gold-standard Methods for Evaluation of HER2 Amplification Status: Focus on HER2-low Subtype",
+          "url": "https://clinicaltrials.gov/study/NCT06813456",
+          "excerpt": "Locations: Italy"
+        },
+        {
+          "nct_id": "NCT06114589",
+          "title": "A Study to Develop Molecular Integrated Predictive Models of Breast Radio-toxicity (Precise-RTox)",
+          "url": "https://clinicaltrials.gov/study/NCT06114589",
+          "excerpt": "Locations: Italy"
+        },
+        {
+          "nct_id": "NCT06723990",
+          "title": "Evaluation of HER2DX Assay on Treatment Decisions in Patients With Early Stage HER2+ Breast Cancer: the HER2BREASTDX",
+          "url": "https://clinicaltrials.gov/study/NCT06723990",
+          "excerpt": "Locations: Italy"
+        },
+        {
+          "nct_id": "NCT06895291",
+          "title": "Whole Body MRI in Oncology",
+          "url": "https://clinicaltrials.gov/study/NCT06895291",
+          "excerpt": "Locations: Italy"
+        },
+        {
+          "nct_id": "NCT06236373",
+          "title": "The Unmet Needs of Cancer Survivors in Ausl IRCCS Reggio Emilia",
+          "url": "https://clinicaltrials.gov/study/NCT06236373",
+          "excerpt": "Locations: Italy"
+        }
+      ]
+    },
+    {
+      "bucket": "France",
+      "value": 199.0,
+      "nct_ids": [
+        "NCT02869607",
+        "NCT07205822",
+        "NCT02869542",
+        "NCT05989776",
+        "NCT06907095",
+        "NCT06962163",
+        "NCT06618287",
+        "NCT04585750",
+        "NCT07062965",
+        "NCT06357130",
+        "NCT05955170",
+        "NCT02893761",
+        "NCT06904625",
+        "NCT06621459",
+        "NCT06625775",
+        "NCT05007379",
+        "NCT04562623",
+        "NCT06761196",
+        "NCT07357311",
+        "NCT04641247",
+        "NCT03787056",
+        "NCT07379918",
+        "NCT06195709",
+        "NCT07159451",
+        "NCT06299202",
+        "NCT06459791",
+        "NCT06781996",
+        "NCT04133077",
+        "NCT03667417",
+        "NCT05007834",
+        "NCT05677022",
+        "NCT05403554",
+        "NCT06562192",
+        "NCT05981326",
+        "NCT05297617",
+        "NCT04925856",
+        "NCT06324357",
+        "NCT03424005",
+        "NCT04666961",
+        "NCT05952557",
+        "NCT07187726",
+        "NCT06382818",
+        "NCT07085767",
+        "NCT07046923",
+        "NCT06790693",
+        "NCT03275311",
+        "NCT06120283",
+        "NCT05386108"
+      ],
+      "trials": [
+        {
+          "nct_id": "NCT02869607",
+          "title": "Institut Paoli Calmettes Breast Cancer Database",
+          "url": "https://clinicaltrials.gov/study/NCT02869607",
+          "excerpt": "Locations: France"
+        },
+        {
+          "nct_id": "NCT07205822",
+          "title": "A Study of Dato-DXd in Inoperable or Metastatic Hormone Receptor-positive, HER2 IHC 0 Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT07205822",
+          "excerpt": "Locations: United States, China, France, Italy, South Korea, Spain"
+        },
+        {
+          "nct_id": "NCT02869542",
+          "title": "Institut Paoli Calmettes Lymphoma Database",
+          "url": "https://clinicaltrials.gov/study/NCT02869542",
+          "excerpt": "Locations: France"
+        },
+        {
+          "nct_id": "NCT05989776",
+          "title": "Increasing Access to Fertility Preservation for Women with Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT05989776",
+          "excerpt": "Locations: France"
+        },
+        {
+          "nct_id": "NCT06907095",
+          "title": "Cohort Evaluation of Body Fluids Early Detection of Cancer in High-risk Individuals",
+          "url": "https://clinicaltrials.gov/study/NCT06907095",
+          "excerpt": "Locations: France"
+        },
+        {
+          "nct_id": "NCT06962163",
+          "title": "Assessement of Potential Interest of [68Ga]Ga-PentixaFor PET/CT in Metastatic Triple Negative Breast Cancer Patients",
+          "url": "https://clinicaltrials.gov/study/NCT06962163",
+          "excerpt": "Locations: France"
+        },
+        {
+          "nct_id": "NCT06618287",
+          "title": "A Study to Evaluate the Safety, Tolerability, Drug Levels, and Preliminary Efficacy of BMS-986507 Combinations in Adult Participants With Advanced Solid Tumors",
+          "url": "https://clinicaltrials.gov/study/NCT06618287",
+          "excerpt": "Locations: United States, Australia, Canada, Chile, France, Italy, Netherlands, Spain, United Kingdom"
+        },
+        {
+          "nct_id": "NCT04585750",
+          "title": "The Evaluation of PC14586 in Patients With Advanced Solid Tumors Harboring a TP53 Y220C Mutation (PYNNACLE)",
+          "url": "https://clinicaltrials.gov/study/NCT04585750",
+          "excerpt": "Locations: United States, Australia, France, Germany, Italy, Singapore, South Korea, Spain, United Kingdom"
+        },
+        {
+          "nct_id": "NCT07062965",
+          "title": "A Study to Learn About the Study Medicine Called PF-07248144 in Combination With Fulvestrant in People With HR-positive, HER2-negative Advanced or Metastatic Breast Cancer Who Progressed After a Prior Line of Treatment.",
+          "url": "https://clinicaltrials.gov/study/NCT07062965",
+          "excerpt": "Locations: United States, Australia, Belgium, Brazil, Bulgaria, Canada, China, Czechia, Finland, France, Germany, Greece, Hungary, India, Israel, Italy, Japan, Mexico, Netherlands, Poland, Slovakia, South Korea, Spain, Sweden, Taiwan, Turkey (T\u00fcrkiye), United Kingdom"
+        },
+        {
+          "nct_id": "NCT06357130",
+          "title": "Gynaecological Care for Transgender People in France in 2024.",
+          "url": "https://clinicaltrials.gov/study/NCT06357130",
+          "excerpt": "Locations: France"
+        },
+        {
+          "nct_id": "NCT05955170",
+          "title": "Tucatinib in Combination With Oral Etoposide andTrastuzumab in Patients With Metastatic HER2+ Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT05955170",
+          "excerpt": "Locations: France"
+        },
+        {
+          "nct_id": "NCT02893761",
+          "title": "Bergonie Institute Breast Cancer Database",
+          "url": "https://clinicaltrials.gov/study/NCT02893761",
+          "excerpt": "Locations: France"
+        },
+        {
+          "nct_id": "NCT06904625",
+          "title": "Comparison of Different Methods of CAPTure of Circulating Tumour Cells (CTC) in Patients With Metastatic Breast or Prostate Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT06904625",
+          "excerpt": "Locations: France"
+        },
+        {
+          "nct_id": "NCT06621459",
+          "title": "Retrospective Observational Study of the Safety and Toxicity Management of Abemaciclib in Combination with Adjuvant Hormone Therapy in Patients with RH+ ,HER2-nonoveramplified Breast Cancer, Real-life Data (MONARCHE29)",
+          "url": "https://clinicaltrials.gov/study/NCT06621459",
+          "excerpt": "Locations: France"
+        },
+        {
+          "nct_id": "NCT06625775",
+          "title": "Open-Label Study of BBO-10203 in Subjects With Advanced Solid Tumors",
+          "url": "https://clinicaltrials.gov/study/NCT06625775",
+          "excerpt": "Locations: United States, Australia, Brazil, France, Spain"
+        },
+        {
+          "nct_id": "NCT05007379",
+          "title": "Study to Determine the Antitumor Activity of New CAR-macrophages in Breast Cancer Patients' Derived Organoids",
+          "url": "https://clinicaltrials.gov/study/NCT05007379",
+          "excerpt": "Locations: France"
+        },
+        {
+          "nct_id": "NCT04562623",
+          "title": "Prospective Study of Immune Alterations in Operable Breast and Ovarian Carcinoma",
+          "url": "https://clinicaltrials.gov/study/NCT04562623",
+          "excerpt": "Locations: France"
+        },
+        {
+          "nct_id": "NCT06761196",
+          "title": "Quality of Life After Breast Cancer Surgery",
+          "url": "https://clinicaltrials.gov/study/NCT06761196",
+          "excerpt": "Locations: France"
+        },
+        {
+          "nct_id": "NCT07357311",
+          "title": "Screening and Care for Fear of Cancer Recurrence in Patients With Cancer at Institut Curie",
+          "url": "https://clinicaltrials.gov/study/NCT07357311",
+          "excerpt": "Locations: France"
+        },
+        {
+          "nct_id": "NCT04641247",
+          "title": "A Long-term Treatment Extension Study of Niraparib in Participants Who Completed a Prior GlaxoSmithKline/TESARO-sponsored Niraparib Study",
+          "url": "https://clinicaltrials.gov/study/NCT04641247",
+          "excerpt": "Locations: United States, Austria, Canada, Denmark, France, Israel, Italy, Spain"
+        },
+        {
+          "nct_id": "NCT03787056",
+          "title": "Predictive Value of Progastrin Titer at Diagnosis and of Progastrin Kinetics During Treatment in Cancer Patients",
+          "url": "https://clinicaltrials.gov/study/NCT03787056",
+          "excerpt": "Locations: France"
+        },
+        {
+          "nct_id": "NCT07379918",
+          "title": "Real-life Evaluation of Endopredict\u00ae in Early HR+/HER2- Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT07379918",
+          "excerpt": "Locations: France"
+        },
+        {
+          "nct_id": "NCT06195709",
+          "title": "ECLECTIC: EstroTEP and Circulating Biomarkers for ER-positive HER2-negative Metastatic Breast Cancer Patients",
+          "url": "https://clinicaltrials.gov/study/NCT06195709",
+          "excerpt": "Locations: France"
+        },
+        {
+          "nct_id": "NCT07159451",
+          "title": "A Short-term Preoperative, Evaluating Activity and Safety of Elacestrant Monotherapy as Compared to Elacestrant + Ovarian Function Suppression (LHRH Agonist) in Premenopausal Patients With Stage I-II ER+/HER2- Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT07159451",
+          "excerpt": "Locations: France"
+        },
+        {
+          "nct_id": "NCT06299202",
+          "title": "Contrast-enhanced Spectral Mammography (CESM) Early Quantitative Evaluation of Tumoral Response and Pathologic Complete Response Prediction for Localized Breast Cancer Treated by Neoadjuvant Chemotherapy",
+          "url": "https://clinicaltrials.gov/study/NCT06299202",
+          "excerpt": "Locations: France"
+        }
+      ]
+    },
+    {
+      "bucket": "Spain",
+      "value": 152.0,
+      "nct_ids": [
+        "NCT07205822",
+        "NCT05890677",
+        "NCT06618287",
+        "NCT04585750",
+        "NCT05123482",
+        "NCT05289258",
+        "NCT07062965",
+        "NCT06727487",
+        "NCT05898399",
+        "NCT05683418",
+        "NCT06625775",
+        "NCT06966453",
+        "NCT06378944",
+        "NCT04641247",
+        "NCT05315700",
+        "NCT07173751",
+        "NCT06657222",
+        "NCT07008339",
+        "NCT02819882",
+        "NCT06562192",
+        "NCT06188520",
+        "NCT06324357",
+        "NCT03424005",
+        "NCT07195227",
+        "NCT05952557",
+        "NCT07085767",
+        "NCT07046923",
+        "NCT06790693",
+        "NCT07467824",
+        "NCT05386108"
+      ],
+      "trials": [
+        {
+          "nct_id": "NCT07205822",
+          "title": "A Study of Dato-DXd in Inoperable or Metastatic Hormone Receptor-positive, HER2 IHC 0 Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT07205822",
+          "excerpt": "Locations: United States, China, France, Italy, South Korea, Spain"
+        },
+        {
+          "nct_id": "NCT05890677",
+          "title": "The LYMPH Trial - Microsurgical Versus Conservative Treatment of Chronic Breast Cancer Associated Lymphedema",
+          "url": "https://clinicaltrials.gov/study/NCT05890677",
+          "excerpt": "Locations: United States, Austria, Belgium, Brazil, Canada, Germany, Greece, Israel, Italy, Netherlands, Romania, Spain, Sweden, Switzerland, Taiwan"
+        },
+        {
+          "nct_id": "NCT06618287",
+          "title": "A Study to Evaluate the Safety, Tolerability, Drug Levels, and Preliminary Efficacy of BMS-986507 Combinations in Adult Participants With Advanced Solid Tumors",
+          "url": "https://clinicaltrials.gov/study/NCT06618287",
+          "excerpt": "Locations: United States, Australia, Canada, Chile, France, Italy, Netherlands, Spain, United Kingdom"
+        },
+        {
+          "nct_id": "NCT04585750",
+          "title": "The Evaluation of PC14586 in Patients With Advanced Solid Tumors Harboring a TP53 Y220C Mutation (PYNNACLE)",
+          "url": "https://clinicaltrials.gov/study/NCT04585750",
+          "excerpt": "Locations: United States, Australia, France, Germany, Italy, Singapore, South Korea, Spain, United Kingdom"
+        },
+        {
+          "nct_id": "NCT05123482",
+          "title": "A Phase I/IIa Study of AZD8205 Given Alone or Combined, in Participants With Advanced/Metastatic Solid Malignancies",
+          "url": "https://clinicaltrials.gov/study/NCT05123482",
+          "excerpt": "Locations: United States, Australia, Belgium, Canada, China, Hungary, Italy, Japan, Netherlands, Poland, South Korea, Spain, Taiwan, Thailand, United Kingdom"
+        },
+        {
+          "nct_id": "NCT05289258",
+          "title": "Unified Barlow Protocol (UP) in Cancer Survivors for Cognitive Impairments",
+          "url": "https://clinicaltrials.gov/study/NCT05289258",
+          "excerpt": "Locations: Spain"
+        },
+        {
+          "nct_id": "NCT07062965",
+          "title": "A Study to Learn About the Study Medicine Called PF-07248144 in Combination With Fulvestrant in People With HR-positive, HER2-negative Advanced or Metastatic Breast Cancer Who Progressed After a Prior Line of Treatment.",
+          "url": "https://clinicaltrials.gov/study/NCT07062965",
+          "excerpt": "Locations: United States, Australia, Belgium, Brazil, Bulgaria, Canada, China, Czechia, Finland, France, Germany, Greece, Hungary, India, Israel, Italy, Japan, Mexico, Netherlands, Poland, Slovakia, South Korea, Spain, Sweden, Taiwan, Turkey (T\u00fcrkiye), United Kingdom"
+        },
+        {
+          "nct_id": "NCT06727487",
+          "title": "OvS Breast: Ovarian Suppression in Breast Cancer Interventions",
+          "url": "https://clinicaltrials.gov/study/NCT06727487",
+          "excerpt": "Locations: Spain"
+        },
+        {
+          "nct_id": "NCT05898399",
+          "title": "Study of ART6043 in Advanced/Metastatic Solid Tumors Patients (POLKA)",
+          "url": "https://clinicaltrials.gov/study/NCT05898399",
+          "excerpt": "Locations: United States, Spain"
+        },
+        {
+          "nct_id": "NCT05683418",
+          "title": "A Study to Evaluate the Safety and Tolerability of TOS-358 in Women With HR+ HER2- Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT05683418",
+          "excerpt": "Locations: United States, Spain"
+        },
+        {
+          "nct_id": "NCT06625775",
+          "title": "Open-Label Study of BBO-10203 in Subjects With Advanced Solid Tumors",
+          "url": "https://clinicaltrials.gov/study/NCT06625775",
+          "excerpt": "Locations: United States, Australia, Brazil, France, Spain"
+        },
+        {
+          "nct_id": "NCT06966453",
+          "title": "A Study of Disitamab Vedotin in Adults With HER2 Expressing Advanced Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT06966453",
+          "excerpt": "Locations: United States, Australia, Brazil, Canada, Germany, Italy, Japan, Puerto Rico, Spain"
+        },
+        {
+          "nct_id": "NCT06378944",
+          "title": "Selective Sentinella Lymph Node Biopsy with Indocyanine Green in Patients with Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT06378944",
+          "excerpt": "Locations: Spain"
+        },
+        {
+          "nct_id": "NCT04641247",
+          "title": "A Long-term Treatment Extension Study of Niraparib in Participants Who Completed a Prior GlaxoSmithKline/TESARO-sponsored Niraparib Study",
+          "url": "https://clinicaltrials.gov/study/NCT04641247",
+          "excerpt": "Locations: United States, Austria, Canada, Denmark, France, Israel, Italy, Spain"
+        },
+        {
+          "nct_id": "NCT05315700",
+          "title": "Study of ORIC-114 in Patients With Advanced Solid Tumors Harboring an EGFR or HER2 Alteration",
+          "url": "https://clinicaltrials.gov/study/NCT05315700",
+          "excerpt": "Locations: United States, Australia, Canada, Hong Kong, Malaysia, Poland, South Korea, Spain, Taiwan, United Kingdom"
+        },
+        {
+          "nct_id": "NCT07173751",
+          "title": "ROSETTA Breast-01: The Effects and Safety of Pumitamig in Patients With Triple-Negative Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT07173751",
+          "excerpt": "Locations: United States, Australia, Belgium, Brazil, China, Czechia, Georgia, Germany, Italy, Japan, Poland, South Korea, Spain, United Kingdom"
+        },
+        {
+          "nct_id": "NCT06657222",
+          "title": "First in Human Study of TUB-030 in Patients With Advanced Solid Tumors",
+          "url": "https://clinicaltrials.gov/study/NCT06657222",
+          "excerpt": "Locations: United States, Canada, Romania, Spain"
+        },
+        {
+          "nct_id": "NCT07008339",
+          "title": "Impact of Nipple Reconstruction in Mastectomized Patients Using Cross-Linked Hyaluronic Acid Injection.",
+          "url": "https://clinicaltrials.gov/study/NCT07008339",
+          "excerpt": "Locations: Spain"
+        },
+        {
+          "nct_id": "NCT02819882",
+          "title": "A Prospective Registry Study in Patients With Unresectable Locally Advanced or Metastatic Breast Cancer (MBC)",
+          "url": "https://clinicaltrials.gov/study/NCT02819882",
+          "excerpt": "Locations: Spain"
+        },
+        {
+          "nct_id": "NCT06562192",
+          "title": "Phase I Study of [177Lu]Lu-NNS309 in Patients With Pancreatic, Lung, Breast and Colorectal Cancers",
+          "url": "https://clinicaltrials.gov/study/NCT06562192",
+          "excerpt": "Locations: United States, Belgium, Canada, France, Germany, Israel, Italy, Netherlands, Spain, Switzerland"
+        },
+        {
+          "nct_id": "NCT06188520",
+          "title": "A First-in-human Dose Escalation and Expansion Study to Evaluate the Safety, and Tolerability of AZD8421 Alone or in Combination in Participants With Selected Advanced or Metastatic Solid Tumors",
+          "url": "https://clinicaltrials.gov/study/NCT06188520",
+          "excerpt": "Locations: United States, Australia, South Korea, Spain, United Kingdom"
+        },
+        {
+          "nct_id": "NCT06324357",
+          "title": "Beamion BCGC-1: A Study to Find a Suitable Dose of Zongertinib Used Alone and in Combination With Other Treatments to Test Whether it Helps People With Different Types of HER2+ Cancer That Has Spread",
+          "url": "https://clinicaltrials.gov/study/NCT06324357",
+          "excerpt": "Locations: United States, Belgium, China, France, Germany, Italy, Japan, South Korea, Spain, United Kingdom"
+        },
+        {
+          "nct_id": "NCT03424005",
+          "title": "A Study Evaluating the Efficacy and Safety of Multiple Treatment Combinations in Patients With Metastatic or Locally Advanced Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT03424005",
+          "excerpt": "Locations: United States, Australia, France, Germany, Israel, South Korea, Spain, Taiwan, United Kingdom"
+        },
+        {
+          "nct_id": "NCT07195227",
+          "title": "Efficacy and Safety of Camizestrant Plus Ribociclib in Patients With Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT07195227",
+          "excerpt": "Locations: Germany, Spain"
+        },
+        {
+          "nct_id": "NCT05952557",
+          "title": "An Adjuvant Endocrine-based Therapy Study of Camizestrant (AZD9833) in ER+/HER2- Early Breast Cancer (CAMBRIA-2)",
+          "url": "https://clinicaltrials.gov/study/NCT05952557",
+          "excerpt": "Locations: United States, Argentina, Australia, Austria, Belgium, Brazil, Bulgaria, Canada, Chile, China, Colombia, Croatia, Czechia, Estonia, France, Georgia, Germany, Greece, Hungary, India, Ireland, Israel, Italy, Japan, Malaysia, Mexico, New Zealand, Peru, Philippines, Poland, Portugal, Puerto Rico, Romania, Saudi Arabia, Serbia, South Africa, South Korea, Spain, Switzerland, Taiwan, Thailand, Turkey (T\u00fcrkiye), United Arab Emirates, United Kingdom"
+        }
+      ]
+    },
+    {
+      "bucket": "Canada",
+      "value": 140.0,
+      "nct_ids": [
+        "NCT05890677",
+        "NCT05789901",
+        "NCT06618287",
+        "NCT05753618",
+        "NCT05123482",
+        "NCT06726642",
+        "NCT07062965",
+        "NCT06729814",
+        "NCT07219277",
+        "NCT06966453",
+        "NCT07188246",
+        "NCT06454864",
+        "NCT04641247",
+        "NCT05315700",
+        "NCT06657222",
+        "NCT04050423",
+        "NCT07104266",
+        "NCT06562192",
+        "NCT06595147",
+        "NCT05601440",
+        "NCT07190469",
+        "NCT05952557",
+        "NCT06817694",
+        "NCT05645510",
+        "NCT04852887",
+        "NCT05866458",
+        "NCT04890613",
+        "NCT07085767",
+        "NCT05989477",
+        "NCT06790693",
+        "NCT04273061"
+      ],
+      "trials": [
+        {
+          "nct_id": "NCT05890677",
+          "title": "The LYMPH Trial - Microsurgical Versus Conservative Treatment of Chronic Breast Cancer Associated Lymphedema",
+          "url": "https://clinicaltrials.gov/study/NCT05890677",
+          "excerpt": "Locations: United States, Austria, Belgium, Brazil, Canada, Germany, Greece, Israel, Italy, Netherlands, Romania, Spain, Sweden, Switzerland, Taiwan"
+        },
+        {
+          "nct_id": "NCT05789901",
+          "title": "The MARVIN Chatbots to Provide Information for Different Health Conditions",
+          "url": "https://clinicaltrials.gov/study/NCT05789901",
+          "excerpt": "Locations: Canada"
+        },
+        {
+          "nct_id": "NCT06618287",
+          "title": "A Study to Evaluate the Safety, Tolerability, Drug Levels, and Preliminary Efficacy of BMS-986507 Combinations in Adult Participants With Advanced Solid Tumors",
+          "url": "https://clinicaltrials.gov/study/NCT06618287",
+          "excerpt": "Locations: United States, Australia, Canada, Chile, France, Italy, Netherlands, Spain, United Kingdom"
+        },
+        {
+          "nct_id": "NCT05753618",
+          "title": "Evaluating Omission of Granulocyte Colony-stimulating Factors in Breast Cancer Patients Receiving Paclitaxel Portion of Dose-dense Adriamycin-cyclophosphamide and Paclitaxel Chemotherapy",
+          "url": "https://clinicaltrials.gov/study/NCT05753618",
+          "excerpt": "Locations: Canada"
+        },
+        {
+          "nct_id": "NCT05123482",
+          "title": "A Phase I/IIa Study of AZD8205 Given Alone or Combined, in Participants With Advanced/Metastatic Solid Malignancies",
+          "url": "https://clinicaltrials.gov/study/NCT05123482",
+          "excerpt": "Locations: United States, Australia, Belgium, Canada, China, Hungary, Italy, Japan, Netherlands, Poland, South Korea, Spain, Taiwan, Thailand, United Kingdom"
+        },
+        {
+          "nct_id": "NCT06726642",
+          "title": "CfDNA in Hereditary And High-risk Malignancies 2",
+          "url": "https://clinicaltrials.gov/study/NCT06726642",
+          "excerpt": "Locations: Canada"
+        },
+        {
+          "nct_id": "NCT07062965",
+          "title": "A Study to Learn About the Study Medicine Called PF-07248144 in Combination With Fulvestrant in People With HR-positive, HER2-negative Advanced or Metastatic Breast Cancer Who Progressed After a Prior Line of Treatment.",
+          "url": "https://clinicaltrials.gov/study/NCT07062965",
+          "excerpt": "Locations: United States, Australia, Belgium, Brazil, Bulgaria, Canada, China, Czechia, Finland, France, Germany, Greece, Hungary, India, Israel, Italy, Japan, Mexico, Netherlands, Poland, Slovakia, South Korea, Spain, Sweden, Taiwan, Turkey (T\u00fcrkiye), United Kingdom"
+        },
+        {
+          "nct_id": "NCT06729814",
+          "title": "Prospective Assessment of Acute Skin Toxicities in Breast Cancer Patients Undergoing Retreatment with 40 Gy in 15 Fractions Radiation Therapy",
+          "url": "https://clinicaltrials.gov/study/NCT06729814",
+          "excerpt": "Locations: Canada"
+        },
+        {
+          "nct_id": "NCT07219277",
+          "title": "Clinical Validation of Early Detection Blood Test for Universal Large-scale Breast Cancer Screening",
+          "url": "https://clinicaltrials.gov/study/NCT07219277",
+          "excerpt": "Locations: United States, Canada, United Kingdom"
+        },
+        {
+          "nct_id": "NCT06966453",
+          "title": "A Study of Disitamab Vedotin in Adults With HER2 Expressing Advanced Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT06966453",
+          "excerpt": "Locations: United States, Australia, Brazil, Canada, Germany, Italy, Japan, Puerto Rico, Spain"
+        },
+        {
+          "nct_id": "NCT07188246",
+          "title": "Neoadjuvant, SBRT With Intratumoural Pembrolizumab Followed by Neoadjuvant Chemotherapy in Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT07188246",
+          "excerpt": "Locations: Canada"
+        },
+        {
+          "nct_id": "NCT06454864",
+          "title": "Multiple Risk Factor Intervention Trial in Breast Cancer Survivors",
+          "url": "https://clinicaltrials.gov/study/NCT06454864",
+          "excerpt": "Locations: Canada"
+        },
+        {
+          "nct_id": "NCT04641247",
+          "title": "A Long-term Treatment Extension Study of Niraparib in Participants Who Completed a Prior GlaxoSmithKline/TESARO-sponsored Niraparib Study",
+          "url": "https://clinicaltrials.gov/study/NCT04641247",
+          "excerpt": "Locations: United States, Austria, Canada, Denmark, France, Israel, Italy, Spain"
+        },
+        {
+          "nct_id": "NCT05315700",
+          "title": "Study of ORIC-114 in Patients With Advanced Solid Tumors Harboring an EGFR or HER2 Alteration",
+          "url": "https://clinicaltrials.gov/study/NCT05315700",
+          "excerpt": "Locations: United States, Australia, Canada, Hong Kong, Malaysia, Poland, South Korea, Spain, Taiwan, United Kingdom"
+        },
+        {
+          "nct_id": "NCT06657222",
+          "title": "First in Human Study of TUB-030 in Patients With Advanced Solid Tumors",
+          "url": "https://clinicaltrials.gov/study/NCT06657222",
+          "excerpt": "Locations: United States, Canada, Romania, Spain"
+        },
+        {
+          "nct_id": "NCT04050423",
+          "title": "Investigation of Ultrasound Imaging and Spectroscopy for Characterizing Breast Masses",
+          "url": "https://clinicaltrials.gov/study/NCT04050423",
+          "excerpt": "Locations: Canada"
+        },
+        {
+          "nct_id": "NCT07104266",
+          "title": "Triple Negative Breast Cancer and Celecoxib. Pilot Study",
+          "url": "https://clinicaltrials.gov/study/NCT07104266",
+          "excerpt": "Locations: Canada"
+        },
+        {
+          "nct_id": "NCT06562192",
+          "title": "Phase I Study of [177Lu]Lu-NNS309 in Patients With Pancreatic, Lung, Breast and Colorectal Cancers",
+          "url": "https://clinicaltrials.gov/study/NCT06562192",
+          "excerpt": "Locations: United States, Belgium, Canada, France, Germany, Israel, Italy, Netherlands, Spain, Switzerland"
+        },
+        {
+          "nct_id": "NCT06595147",
+          "title": "Breast cancEr, FITness and ExeRcise for Heart Health: The BE-FITTER Study",
+          "url": "https://clinicaltrials.gov/study/NCT06595147",
+          "excerpt": "Locations: Canada"
+        },
+        {
+          "nct_id": "NCT05601440",
+          "title": "Liquid-biopsy Informed Platform Trial to Evaluate CDK4/6-inhibitor Resistant ER+/HER2- Metastatic Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT05601440",
+          "excerpt": "Locations: Canada"
+        },
+        {
+          "nct_id": "NCT07190469",
+          "title": "PQ203 in Advanced Malignant Tumors Including Triple Negative Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT07190469",
+          "excerpt": "Locations: United States, Canada"
+        },
+        {
+          "nct_id": "NCT05952557",
+          "title": "An Adjuvant Endocrine-based Therapy Study of Camizestrant (AZD9833) in ER+/HER2- Early Breast Cancer (CAMBRIA-2)",
+          "url": "https://clinicaltrials.gov/study/NCT05952557",
+          "excerpt": "Locations: United States, Argentina, Australia, Austria, Belgium, Brazil, Bulgaria, Canada, Chile, China, Colombia, Croatia, Czechia, Estonia, France, Georgia, Germany, Greece, Hungary, India, Ireland, Israel, Italy, Japan, Malaysia, Mexico, New Zealand, Peru, Philippines, Poland, Portugal, Puerto Rico, Romania, Saudi Arabia, Serbia, South Africa, South Korea, Spain, Switzerland, Taiwan, Thailand, Turkey (T\u00fcrkiye), United Arab Emirates, United Kingdom"
+        },
+        {
+          "nct_id": "NCT06817694",
+          "title": "Cognitive Behavioral Therapy for Fear of Cancer Recurrence in Women With BRCA1/2 Gene",
+          "url": "https://clinicaltrials.gov/study/NCT06817694",
+          "excerpt": "Locations: Canada"
+        },
+        {
+          "nct_id": "NCT05645510",
+          "title": "LIVInG With chrONic Cancer TrEatments (LONGEVITI) Study",
+          "url": "https://clinicaltrials.gov/study/NCT05645510",
+          "excerpt": "Locations: Canada"
+        },
+        {
+          "nct_id": "NCT04852887",
+          "title": "De-Escalation of Breast Radiation Trial for Hormone Sensitive, HER-2 Negative, Oncotype Recurrence Score Less Than or Equal to 18 Breast Cancer (DEBRA)",
+          "url": "https://clinicaltrials.gov/study/NCT04852887",
+          "excerpt": "Locations: United States, Canada, Hong Kong, Japan"
+        }
+      ]
+    },
+    {
+      "bucket": "South Korea",
+      "value": 123.0,
+      "nct_ids": [
+        "NCT07205822",
+        "NCT04585750",
+        "NCT05123482",
+        "NCT04817540",
+        "NCT07062965",
+        "NCT05315700",
+        "NCT05505357",
+        "NCT07173751",
+        "NCT07173868",
+        "NCT05896865",
+        "NCT05907681",
+        "NCT07327970",
+        "NCT06265025",
+        "NCT06188520",
+        "NCT06324357",
+        "NCT03424005",
+        "NCT07525869",
+        "NCT05952557",
+        "NCT05933733",
+        "NCT06927648",
+        "NCT07595718",
+        "NCT06780748",
+        "NCT07085767",
+        "NCT06505577",
+        "NCT06672302",
+        "NCT07046923",
+        "NCT06790693",
+        "NCT06704945",
+        "NCT06120283",
+        "NCT06421285",
+        "NCT05386108"
+      ],
+      "trials": [
+        {
+          "nct_id": "NCT07205822",
+          "title": "A Study of Dato-DXd in Inoperable or Metastatic Hormone Receptor-positive, HER2 IHC 0 Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT07205822",
+          "excerpt": "Locations: United States, China, France, Italy, South Korea, Spain"
+        },
+        {
+          "nct_id": "NCT04585750",
+          "title": "The Evaluation of PC14586 in Patients With Advanced Solid Tumors Harboring a TP53 Y220C Mutation (PYNNACLE)",
+          "url": "https://clinicaltrials.gov/study/NCT04585750",
+          "excerpt": "Locations: United States, Australia, France, Germany, Italy, Singapore, South Korea, Spain, United Kingdom"
+        },
+        {
+          "nct_id": "NCT05123482",
+          "title": "A Phase I/IIa Study of AZD8205 Given Alone or Combined, in Participants With Advanced/Metastatic Solid Malignancies",
+          "url": "https://clinicaltrials.gov/study/NCT05123482",
+          "excerpt": "Locations: United States, Australia, Belgium, Canada, China, Hungary, Italy, Japan, Netherlands, Poland, South Korea, Spain, Taiwan, Thailand, United Kingdom"
+        },
+        {
+          "nct_id": "NCT04817540",
+          "title": "Phase II Trial of Anti-HER2 Treatment in HER2-enriched Early Breast Cancer Identified by PAM50 (HER2E-PAM, PAMILIA Study)",
+          "url": "https://clinicaltrials.gov/study/NCT04817540",
+          "excerpt": "Locations: South Korea"
+        },
+        {
+          "nct_id": "NCT07062965",
+          "title": "A Study to Learn About the Study Medicine Called PF-07248144 in Combination With Fulvestrant in People With HR-positive, HER2-negative Advanced or Metastatic Breast Cancer Who Progressed After a Prior Line of Treatment.",
+          "url": "https://clinicaltrials.gov/study/NCT07062965",
+          "excerpt": "Locations: United States, Australia, Belgium, Brazil, Bulgaria, Canada, China, Czechia, Finland, France, Germany, Greece, Hungary, India, Israel, Italy, Japan, Mexico, Netherlands, Poland, Slovakia, South Korea, Spain, Sweden, Taiwan, Turkey (T\u00fcrkiye), United Kingdom"
+        },
+        {
+          "nct_id": "NCT05315700",
+          "title": "Study of ORIC-114 in Patients With Advanced Solid Tumors Harboring an EGFR or HER2 Alteration",
+          "url": "https://clinicaltrials.gov/study/NCT05315700",
+          "excerpt": "Locations: United States, Australia, Canada, Hong Kong, Malaysia, Poland, South Korea, Spain, Taiwan, United Kingdom"
+        },
+        {
+          "nct_id": "NCT05505357",
+          "title": "Omission of Breast Surgery for Breast Cancer Patients With pCR on MRI and Vacuum-assisted Biopsy After NST (OPTIMIST)",
+          "url": "https://clinicaltrials.gov/study/NCT05505357",
+          "excerpt": "Locations: South Korea"
+        },
+        {
+          "nct_id": "NCT07173751",
+          "title": "ROSETTA Breast-01: The Effects and Safety of Pumitamig in Patients With Triple-Negative Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT07173751",
+          "excerpt": "Locations: United States, Australia, Belgium, Brazil, China, Czechia, Georgia, Germany, Italy, Japan, Poland, South Korea, Spain, United Kingdom"
+        },
+        {
+          "nct_id": "NCT07173868",
+          "title": "FDG PET-CT in Advanced Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT07173868",
+          "excerpt": "Locations: South Korea"
+        },
+        {
+          "nct_id": "NCT05896865",
+          "title": "Radiotherapy Dose Adaptation Based on Tumor Biology in Patients With cN2b-N3 Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT05896865",
+          "excerpt": "Locations: South Korea"
+        },
+        {
+          "nct_id": "NCT05907681",
+          "title": "Prospective Observational Study on Outcome of High-precision Hypo-fractionated Radiotherapy in Metastatic Breast Cancer (PRECISE-M)",
+          "url": "https://clinicaltrials.gov/study/NCT05907681",
+          "excerpt": "Locations: South Korea"
+        },
+        {
+          "nct_id": "NCT07327970",
+          "title": "Prospective Validation of Ataraxis AI Test for Predicting Treatment Response in Neoadjuvant Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT07327970",
+          "excerpt": "Locations: South Korea"
+        },
+        {
+          "nct_id": "NCT06265025",
+          "title": "GM103 Intratumoral Injection in Patients With Locally Advanced, Unresectable, Refractory and/or Metastatic Solid Tumors",
+          "url": "https://clinicaltrials.gov/study/NCT06265025",
+          "excerpt": "Locations: South Korea"
+        },
+        {
+          "nct_id": "NCT06188520",
+          "title": "A First-in-human Dose Escalation and Expansion Study to Evaluate the Safety, and Tolerability of AZD8421 Alone or in Combination in Participants With Selected Advanced or Metastatic Solid Tumors",
+          "url": "https://clinicaltrials.gov/study/NCT06188520",
+          "excerpt": "Locations: United States, Australia, South Korea, Spain, United Kingdom"
+        },
+        {
+          "nct_id": "NCT06324357",
+          "title": "Beamion BCGC-1: A Study to Find a Suitable Dose of Zongertinib Used Alone and in Combination With Other Treatments to Test Whether it Helps People With Different Types of HER2+ Cancer That Has Spread",
+          "url": "https://clinicaltrials.gov/study/NCT06324357",
+          "excerpt": "Locations: United States, Belgium, China, France, Germany, Italy, Japan, South Korea, Spain, United Kingdom"
+        },
+        {
+          "nct_id": "NCT03424005",
+          "title": "A Study Evaluating the Efficacy and Safety of Multiple Treatment Combinations in Patients With Metastatic or Locally Advanced Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT03424005",
+          "excerpt": "Locations: United States, Australia, France, Germany, Israel, South Korea, Spain, Taiwan, United Kingdom"
+        },
+        {
+          "nct_id": "NCT07525869",
+          "title": "An Open-label Prospective Study to Evaluate the Efficacy and Safety of Pegfilgrastim in Triple-Negative Breast Cancer Patients Receiving AC Regimen Following Paclitaxel and Carboplatin as Neoadjuvant Therapy",
+          "url": "https://clinicaltrials.gov/study/NCT07525869",
+          "excerpt": "Locations: South Korea"
+        },
+        {
+          "nct_id": "NCT05952557",
+          "title": "An Adjuvant Endocrine-based Therapy Study of Camizestrant (AZD9833) in ER+/HER2- Early Breast Cancer (CAMBRIA-2)",
+          "url": "https://clinicaltrials.gov/study/NCT05952557",
+          "excerpt": "Locations: United States, Argentina, Australia, Austria, Belgium, Brazil, Bulgaria, Canada, Chile, China, Colombia, Croatia, Czechia, Estonia, France, Georgia, Germany, Greece, Hungary, India, Ireland, Israel, Italy, Japan, Malaysia, Mexico, New Zealand, Peru, Philippines, Poland, Portugal, Puerto Rico, Romania, Saudi Arabia, Serbia, South Africa, South Korea, Spain, Switzerland, Taiwan, Thailand, Turkey (T\u00fcrkiye), United Arab Emirates, United Kingdom"
+        },
+        {
+          "nct_id": "NCT05933733",
+          "title": "Oncologic Outcomes and Toxicities of Salvage Treatment in Patients With Locoregionally Recurrent Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT05933733",
+          "excerpt": "Locations: South Korea"
+        },
+        {
+          "nct_id": "NCT06927648",
+          "title": "CAPIVASERTIB REGULATORY POSTMARKETING SURVEILLANCE IN KOREA",
+          "url": "https://clinicaltrials.gov/study/NCT06927648",
+          "excerpt": "Locations: South Korea"
+        },
+        {
+          "nct_id": "NCT07595718",
+          "title": "AI-Based Phenome Data Analysis for Predicting the Onset of Major Diseases",
+          "url": "https://clinicaltrials.gov/study/NCT07595718",
+          "excerpt": "Locations: South Korea"
+        },
+        {
+          "nct_id": "NCT06780748",
+          "title": "Photo-medicine-Guided Dual Approach for Reoperation of Sentinel Lymph Nodes in Locally Recurrent Breast Cancer Patients",
+          "url": "https://clinicaltrials.gov/study/NCT06780748",
+          "excerpt": "Locations: South Korea"
+        },
+        {
+          "nct_id": "NCT07085767",
+          "title": "Palazestrant in Combination With Ribociclib for the First-line Treatment of ER+/HER2- Advanced Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT07085767",
+          "excerpt": "Locations: United States, Australia, Austria, Belgium, Canada, Czechia, France, Germany, Greece, Hong Kong, Hungary, Italy, Malaysia, Netherlands, Poland, Portugal, Romania, South Korea, Spain, Taiwan, Thailand, United Kingdom"
+        },
+        {
+          "nct_id": "NCT06505577",
+          "title": "Preoperative vs. Pathologic Size in Breast Cancer: A Prospective Study",
+          "url": "https://clinicaltrials.gov/study/NCT06505577",
+          "excerpt": "Locations: South Korea"
+        },
+        {
+          "nct_id": "NCT06672302",
+          "title": "A Prospective Study to Develop and Clinically Validate an in Vitro Diagnostic Medical Device That Uses Blood to Classify Patients at High Risk for Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT06672302",
+          "excerpt": "Locations: South Korea"
+        }
+      ]
+    },
+    {
+      "bucket": "Germany",
+      "value": 120.0,
+      "nct_ids": [
+        "NCT05890677",
+        "NCT04261244",
+        "NCT05999396",
+        "NCT04585750",
+        "NCT07062965",
+        "NCT06966453",
+        "NCT06631092",
+        "NCT07173751",
+        "NCT07242352",
+        "NCT06562192",
+        "NCT02338167",
+        "NCT04289935",
+        "NCT06324357",
+        "NCT03424005",
+        "NCT07195227",
+        "NCT05952557",
+        "NCT06865534",
+        "NCT06672120",
+        "NCT07085767",
+        "NCT04817566",
+        "NCT06962670",
+        "NCT06790693",
+        "NCT05914961",
+        "NCT03463954",
+        "NCT05332561",
+        "NCT05386108"
+      ],
+      "trials": [
+        {
+          "nct_id": "NCT05890677",
+          "title": "The LYMPH Trial - Microsurgical Versus Conservative Treatment of Chronic Breast Cancer Associated Lymphedema",
+          "url": "https://clinicaltrials.gov/study/NCT05890677",
+          "excerpt": "Locations: United States, Austria, Belgium, Brazil, Canada, Germany, Greece, Israel, Italy, Netherlands, Romania, Spain, Sweden, Switzerland, Taiwan"
+        },
+        {
+          "nct_id": "NCT04261244",
+          "title": "NeoRad Breast Cancer Study",
+          "url": "https://clinicaltrials.gov/study/NCT04261244",
+          "excerpt": "Locations: Germany"
+        },
+        {
+          "nct_id": "NCT05999396",
+          "title": "FIH, Bispecific CD276xCD3 Antibody CC-3 in Patients With Colorectal Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT05999396",
+          "excerpt": "Locations: Germany"
+        },
+        {
+          "nct_id": "NCT04585750",
+          "title": "The Evaluation of PC14586 in Patients With Advanced Solid Tumors Harboring a TP53 Y220C Mutation (PYNNACLE)",
+          "url": "https://clinicaltrials.gov/study/NCT04585750",
+          "excerpt": "Locations: United States, Australia, France, Germany, Italy, Singapore, South Korea, Spain, United Kingdom"
+        },
+        {
+          "nct_id": "NCT07062965",
+          "title": "A Study to Learn About the Study Medicine Called PF-07248144 in Combination With Fulvestrant in People With HR-positive, HER2-negative Advanced or Metastatic Breast Cancer Who Progressed After a Prior Line of Treatment.",
+          "url": "https://clinicaltrials.gov/study/NCT07062965",
+          "excerpt": "Locations: United States, Australia, Belgium, Brazil, Bulgaria, Canada, China, Czechia, Finland, France, Germany, Greece, Hungary, India, Israel, Italy, Japan, Mexico, Netherlands, Poland, Slovakia, South Korea, Spain, Sweden, Taiwan, Turkey (T\u00fcrkiye), United Kingdom"
+        },
+        {
+          "nct_id": "NCT06966453",
+          "title": "A Study of Disitamab Vedotin in Adults With HER2 Expressing Advanced Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT06966453",
+          "excerpt": "Locations: United States, Australia, Brazil, Canada, Germany, Italy, Japan, Puerto Rico, Spain"
+        },
+        {
+          "nct_id": "NCT06631092",
+          "title": "Personalised Neoantigen-targeting Cancer Vaccine NECVAX-NEO1 in Neoadjuvant Triple-negative Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT06631092",
+          "excerpt": "Locations: Germany"
+        },
+        {
+          "nct_id": "NCT07173751",
+          "title": "ROSETTA Breast-01: The Effects and Safety of Pumitamig in Patients With Triple-Negative Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT07173751",
+          "excerpt": "Locations: United States, Australia, Belgium, Brazil, China, Czechia, Georgia, Germany, Italy, Japan, Poland, South Korea, Spain, United Kingdom"
+        },
+        {
+          "nct_id": "NCT07242352",
+          "title": "Marker - Adjusted Therapy Comparing Adjuvant Elacestrant With Standard Endocrine Treatment in Genomically and/or Clinically High-risk ER+/HER2- eBC",
+          "url": "https://clinicaltrials.gov/study/NCT07242352",
+          "excerpt": "Locations: Germany"
+        },
+        {
+          "nct_id": "NCT06562192",
+          "title": "Phase I Study of [177Lu]Lu-NNS309 in Patients With Pancreatic, Lung, Breast and Colorectal Cancers",
+          "url": "https://clinicaltrials.gov/study/NCT06562192",
+          "excerpt": "Locations: United States, Belgium, Canada, France, Germany, Israel, Italy, Netherlands, Spain, Switzerland"
+        },
+        {
+          "nct_id": "NCT02338167",
+          "title": "Praegnant Breast Cancer: Early/Advanced/Metastatic",
+          "url": "https://clinicaltrials.gov/study/NCT02338167",
+          "excerpt": "Locations: Germany"
+        },
+        {
+          "nct_id": "NCT04289935",
+          "title": "Intelligent Vacuum Assisted Biopsy Immediately Before Surgery As an Intra- or Pre-Operative Surrogate for Patient Response to Neoadjuvant Chemotherapy for Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT04289935",
+          "excerpt": "Locations: Austria, Germany, Switzerland, United Arab Emirates"
+        },
+        {
+          "nct_id": "NCT06324357",
+          "title": "Beamion BCGC-1: A Study to Find a Suitable Dose of Zongertinib Used Alone and in Combination With Other Treatments to Test Whether it Helps People With Different Types of HER2+ Cancer That Has Spread",
+          "url": "https://clinicaltrials.gov/study/NCT06324357",
+          "excerpt": "Locations: United States, Belgium, China, France, Germany, Italy, Japan, South Korea, Spain, United Kingdom"
+        },
+        {
+          "nct_id": "NCT03424005",
+          "title": "A Study Evaluating the Efficacy and Safety of Multiple Treatment Combinations in Patients With Metastatic or Locally Advanced Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT03424005",
+          "excerpt": "Locations: United States, Australia, France, Germany, Israel, South Korea, Spain, Taiwan, United Kingdom"
+        },
+        {
+          "nct_id": "NCT07195227",
+          "title": "Efficacy and Safety of Camizestrant Plus Ribociclib in Patients With Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT07195227",
+          "excerpt": "Locations: Germany, Spain"
+        },
+        {
+          "nct_id": "NCT05952557",
+          "title": "An Adjuvant Endocrine-based Therapy Study of Camizestrant (AZD9833) in ER+/HER2- Early Breast Cancer (CAMBRIA-2)",
+          "url": "https://clinicaltrials.gov/study/NCT05952557",
+          "excerpt": "Locations: United States, Argentina, Australia, Austria, Belgium, Brazil, Bulgaria, Canada, Chile, China, Colombia, Croatia, Czechia, Estonia, France, Georgia, Germany, Greece, Hungary, India, Ireland, Israel, Italy, Japan, Malaysia, Mexico, New Zealand, Peru, Philippines, Poland, Portugal, Puerto Rico, Romania, Saudi Arabia, Serbia, South Africa, South Korea, Spain, Switzerland, Taiwan, Thailand, Turkey (T\u00fcrkiye), United Arab Emirates, United Kingdom"
+        },
+        {
+          "nct_id": "NCT06865534",
+          "title": "Large Language Models to Aid Gynecological Oncology Treatment",
+          "url": "https://clinicaltrials.gov/study/NCT06865534",
+          "excerpt": "Locations: Germany"
+        },
+        {
+          "nct_id": "NCT06672120",
+          "title": "Exercise in Triple- Negative Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT06672120",
+          "excerpt": "Locations: Germany"
+        },
+        {
+          "nct_id": "NCT07085767",
+          "title": "Palazestrant in Combination With Ribociclib for the First-line Treatment of ER+/HER2- Advanced Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT07085767",
+          "excerpt": "Locations: United States, Australia, Austria, Belgium, Canada, Czechia, France, Germany, Greece, Hong Kong, Hungary, Italy, Malaysia, Netherlands, Poland, Portugal, Romania, South Korea, Spain, Taiwan, Thailand, United Kingdom"
+        },
+        {
+          "nct_id": "NCT04817566",
+          "title": "Cognitive Training and Brain Stimulation in Women With Post-chemotherapy Cognitive Impairment",
+          "url": "https://clinicaltrials.gov/study/NCT04817566",
+          "excerpt": "Locations: Germany"
+        },
+        {
+          "nct_id": "NCT06962670",
+          "title": "Predicting Cancer Risk With Digital and Molecular Markers",
+          "url": "https://clinicaltrials.gov/study/NCT06962670",
+          "excerpt": "Locations: Germany"
+        },
+        {
+          "nct_id": "NCT06790693",
+          "title": "A Study Evaluating the Efficacy and Safety of Inavolisib Plus CDK4/6 Inhibitor and Letrozole vs Placebo + CDK4/6i and Letrozole in Participants With Endocrine-Sensitive PIK3CA-Mutated, Hormone Receptor-Positive, HER2-Negative Advanced Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT06790693",
+          "excerpt": "Locations: United States, Argentina, Australia, Brazil, Canada, China, France, Germany, Italy, Japan, Mexico, Poland, Puerto Rico, South Africa, South Korea, Spain, Switzerland, Taiwan, Turkey (T\u00fcrkiye), United Kingdom"
+        },
+        {
+          "nct_id": "NCT05914961",
+          "title": "Immunotherapy-related CRP Kinetics in Early and Metastatic Triple-negative Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT05914961",
+          "excerpt": "Locations: Germany"
+        },
+        {
+          "nct_id": "NCT03463954",
+          "title": "Confirmatory Clinical Evaluation of Novilase\u00ae Laser Therapy for Focal Destruction of Malignant Breast Tumors",
+          "url": "https://clinicaltrials.gov/study/NCT03463954",
+          "excerpt": "Locations: United States, Germany, Israel, Switzerland, United Kingdom"
+        },
+        {
+          "nct_id": "NCT05332561",
+          "title": "Genomics Guided Targeted Post-neoadjuvant Therapy in Patients With Early Breast Cancer (COGNITION-GUIDE)",
+          "url": "https://clinicaltrials.gov/study/NCT05332561",
+          "excerpt": "Locations: Germany"
+        }
+      ]
+    },
+    {
+      "bucket": "Australia",
+      "value": 104.0,
+      "nct_ids": [
+        "NCT06618287",
+        "NCT04585750",
+        "NCT05123482",
+        "NCT07062965",
+        "NCT06022029",
+        "NCT06625775",
+        "NCT06966453",
+        "NCT07339176",
+        "NCT06533332",
+        "NCT05315700",
+        "NCT07173751",
+        "NCT06910657",
+        "NCT06188520",
+        "NCT06907043",
+        "NCT05184582",
+        "NCT03424005",
+        "NCT05952557",
+        "NCT01793168",
+        "NCT05866458",
+        "NCT07085767",
+        "NCT06790693",
+        "NCT06120283",
+        "NCT05969041"
+      ],
+      "trials": [
+        {
+          "nct_id": "NCT06618287",
+          "title": "A Study to Evaluate the Safety, Tolerability, Drug Levels, and Preliminary Efficacy of BMS-986507 Combinations in Adult Participants With Advanced Solid Tumors",
+          "url": "https://clinicaltrials.gov/study/NCT06618287",
+          "excerpt": "Locations: United States, Australia, Canada, Chile, France, Italy, Netherlands, Spain, United Kingdom"
+        },
+        {
+          "nct_id": "NCT04585750",
+          "title": "The Evaluation of PC14586 in Patients With Advanced Solid Tumors Harboring a TP53 Y220C Mutation (PYNNACLE)",
+          "url": "https://clinicaltrials.gov/study/NCT04585750",
+          "excerpt": "Locations: United States, Australia, France, Germany, Italy, Singapore, South Korea, Spain, United Kingdom"
+        },
+        {
+          "nct_id": "NCT05123482",
+          "title": "A Phase I/IIa Study of AZD8205 Given Alone or Combined, in Participants With Advanced/Metastatic Solid Malignancies",
+          "url": "https://clinicaltrials.gov/study/NCT05123482",
+          "excerpt": "Locations: United States, Australia, Belgium, Canada, China, Hungary, Italy, Japan, Netherlands, Poland, South Korea, Spain, Taiwan, Thailand, United Kingdom"
+        },
+        {
+          "nct_id": "NCT07062965",
+          "title": "A Study to Learn About the Study Medicine Called PF-07248144 in Combination With Fulvestrant in People With HR-positive, HER2-negative Advanced or Metastatic Breast Cancer Who Progressed After a Prior Line of Treatment.",
+          "url": "https://clinicaltrials.gov/study/NCT07062965",
+          "excerpt": "Locations: United States, Australia, Belgium, Brazil, Bulgaria, Canada, China, Czechia, Finland, France, Germany, Greece, Hungary, India, Israel, Italy, Japan, Mexico, Netherlands, Poland, Slovakia, South Korea, Spain, Sweden, Taiwan, Turkey (T\u00fcrkiye), United Kingdom"
+        },
+        {
+          "nct_id": "NCT06022029",
+          "title": "A Dose Escalation and Dose Expansion Study of Intratumoral ONM-501 Alone and in Combination With Cemiplimab in Patients With Advanced Solid Tumors and Lymphomas.",
+          "url": "https://clinicaltrials.gov/study/NCT06022029",
+          "excerpt": "Locations: United States, Australia"
+        },
+        {
+          "nct_id": "NCT06625775",
+          "title": "Open-Label Study of BBO-10203 in Subjects With Advanced Solid Tumors",
+          "url": "https://clinicaltrials.gov/study/NCT06625775",
+          "excerpt": "Locations: United States, Australia, Brazil, France, Spain"
+        },
+        {
+          "nct_id": "NCT06966453",
+          "title": "A Study of Disitamab Vedotin in Adults With HER2 Expressing Advanced Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT06966453",
+          "excerpt": "Locations: United States, Australia, Brazil, Canada, Germany, Italy, Japan, Puerto Rico, Spain"
+        },
+        {
+          "nct_id": "NCT07339176",
+          "title": "Intratumoral N17350 in Advanced Solid Tumors",
+          "url": "https://clinicaltrials.gov/study/NCT07339176",
+          "excerpt": "Locations: Australia"
+        },
+        {
+          "nct_id": "NCT06533332",
+          "title": "A Phase 1 Trial of ERX-315 in Participants With Advanced Solid Tumors",
+          "url": "https://clinicaltrials.gov/study/NCT06533332",
+          "excerpt": "Locations: Australia"
+        },
+        {
+          "nct_id": "NCT05315700",
+          "title": "Study of ORIC-114 in Patients With Advanced Solid Tumors Harboring an EGFR or HER2 Alteration",
+          "url": "https://clinicaltrials.gov/study/NCT05315700",
+          "excerpt": "Locations: United States, Australia, Canada, Hong Kong, Malaysia, Poland, South Korea, Spain, Taiwan, United Kingdom"
+        },
+        {
+          "nct_id": "NCT07173751",
+          "title": "ROSETTA Breast-01: The Effects and Safety of Pumitamig in Patients With Triple-Negative Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT07173751",
+          "excerpt": "Locations: United States, Australia, Belgium, Brazil, China, Czechia, Georgia, Germany, Italy, Japan, Poland, South Korea, Spain, United Kingdom"
+        },
+        {
+          "nct_id": "NCT06910657",
+          "title": "IDOV-Immune for Advanced Solid Tumors",
+          "url": "https://clinicaltrials.gov/study/NCT06910657",
+          "excerpt": "Locations: United States, Australia"
+        },
+        {
+          "nct_id": "NCT06188520",
+          "title": "A First-in-human Dose Escalation and Expansion Study to Evaluate the Safety, and Tolerability of AZD8421 Alone or in Combination in Participants With Selected Advanced or Metastatic Solid Tumors",
+          "url": "https://clinicaltrials.gov/study/NCT06188520",
+          "excerpt": "Locations: United States, Australia, South Korea, Spain, United Kingdom"
+        },
+        {
+          "nct_id": "NCT06907043",
+          "title": "A Study of PARP1 Selective Inhibitor, EIK1004 (IMP1707) in Participants With Advanced Solid Tumors.",
+          "url": "https://clinicaltrials.gov/study/NCT06907043",
+          "excerpt": "Locations: United States, Australia, China"
+        },
+        {
+          "nct_id": "NCT05184582",
+          "title": "Physical Exercise During Preoperative Chemotherapy for Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT05184582",
+          "excerpt": "Locations: Australia, Finland, Sweden, United Kingdom"
+        },
+        {
+          "nct_id": "NCT03424005",
+          "title": "A Study Evaluating the Efficacy and Safety of Multiple Treatment Combinations in Patients With Metastatic or Locally Advanced Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT03424005",
+          "excerpt": "Locations: United States, Australia, France, Germany, Israel, South Korea, Spain, Taiwan, United Kingdom"
+        },
+        {
+          "nct_id": "NCT05952557",
+          "title": "An Adjuvant Endocrine-based Therapy Study of Camizestrant (AZD9833) in ER+/HER2- Early Breast Cancer (CAMBRIA-2)",
+          "url": "https://clinicaltrials.gov/study/NCT05952557",
+          "excerpt": "Locations: United States, Argentina, Australia, Austria, Belgium, Brazil, Bulgaria, Canada, Chile, China, Colombia, Croatia, Czechia, Estonia, France, Georgia, Germany, Greece, Hungary, India, Ireland, Israel, Italy, Japan, Malaysia, Mexico, New Zealand, Peru, Philippines, Poland, Portugal, Puerto Rico, Romania, Saudi Arabia, Serbia, South Africa, South Korea, Spain, Switzerland, Taiwan, Thailand, Turkey (T\u00fcrkiye), United Arab Emirates, United Kingdom"
+        },
+        {
+          "nct_id": "NCT01793168",
+          "title": "Rare Disease Patient Registry & Natural History Study - Coordination of Rare Diseases at Sanford",
+          "url": "https://clinicaltrials.gov/study/NCT01793168",
+          "excerpt": "Locations: United States, Australia"
+        },
+        {
+          "nct_id": "NCT05866458",
+          "title": "Radiation OmisSion in PAtients With CLinically Node Negative Breast Cancer Undergoing Lumpectomy",
+          "url": "https://clinicaltrials.gov/study/NCT05866458",
+          "excerpt": "Locations: Australia, Canada"
+        },
+        {
+          "nct_id": "NCT07085767",
+          "title": "Palazestrant in Combination With Ribociclib for the First-line Treatment of ER+/HER2- Advanced Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT07085767",
+          "excerpt": "Locations: United States, Australia, Austria, Belgium, Canada, Czechia, France, Germany, Greece, Hong Kong, Hungary, Italy, Malaysia, Netherlands, Poland, Portugal, Romania, South Korea, Spain, Taiwan, Thailand, United Kingdom"
+        },
+        {
+          "nct_id": "NCT06790693",
+          "title": "A Study Evaluating the Efficacy and Safety of Inavolisib Plus CDK4/6 Inhibitor and Letrozole vs Placebo + CDK4/6i and Letrozole in Participants With Endocrine-Sensitive PIK3CA-Mutated, Hormone Receptor-Positive, HER2-Negative Advanced Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT06790693",
+          "excerpt": "Locations: United States, Argentina, Australia, Brazil, Canada, China, France, Germany, Italy, Japan, Mexico, Poland, Puerto Rico, South Africa, South Korea, Spain, Switzerland, Taiwan, Turkey (T\u00fcrkiye), United Kingdom"
+        },
+        {
+          "nct_id": "NCT06120283",
+          "title": "BGB-43395 Alone or as Part of Combination Therapies in Participants With Breast Cancer and Other Advanced Solid Tumors",
+          "url": "https://clinicaltrials.gov/study/NCT06120283",
+          "excerpt": "Locations: United States, Australia, Brazil, China, France, Japan, Malaysia, Moldova, New Zealand, South Korea, Thailand"
+        },
+        {
+          "nct_id": "NCT05969041",
+          "title": "Study of MT-302 in Adults With Advanced or Metastatic Epithelial Tumors",
+          "url": "https://clinicaltrials.gov/study/NCT05969041",
+          "excerpt": "Locations: Australia"
+        }
+      ]
+    },
+    {
+      "bucket": "United Kingdom",
+      "value": 101.0,
+      "nct_ids": [
+        "NCT07206394",
+        "NCT06618287",
+        "NCT04585750",
+        "NCT05123482",
+        "NCT07116642",
+        "NCT07062965",
+        "NCT06545331",
+        "NCT06468124",
+        "NCT07219277",
+        "NCT05272709",
+        "NCT05315700",
+        "NCT07173751",
+        "NCT07243002",
+        "NCT03150576",
+        "NCT06188520",
+        "NCT06324357",
+        "NCT07070765",
+        "NCT05184582",
+        "NCT03424005",
+        "NCT06728527",
+        "NCT05952557",
+        "NCT03946202",
+        "NCT07085767",
+        "NCT06790693",
+        "NCT03463954",
+        "NCT06977698",
+        "NCT05386108"
+      ],
+      "trials": [
+        {
+          "nct_id": "NCT07206394",
+          "title": "Feasibility Trial of ScarWork for Post-breast Surgery Pain Syndrome.",
+          "url": "https://clinicaltrials.gov/study/NCT07206394",
+          "excerpt": "Locations: United Kingdom"
+        },
+        {
+          "nct_id": "NCT06618287",
+          "title": "A Study to Evaluate the Safety, Tolerability, Drug Levels, and Preliminary Efficacy of BMS-986507 Combinations in Adult Participants With Advanced Solid Tumors",
+          "url": "https://clinicaltrials.gov/study/NCT06618287",
+          "excerpt": "Locations: United States, Australia, Canada, Chile, France, Italy, Netherlands, Spain, United Kingdom"
+        },
+        {
+          "nct_id": "NCT04585750",
+          "title": "The Evaluation of PC14586 in Patients With Advanced Solid Tumors Harboring a TP53 Y220C Mutation (PYNNACLE)",
+          "url": "https://clinicaltrials.gov/study/NCT04585750",
+          "excerpt": "Locations: United States, Australia, France, Germany, Italy, Singapore, South Korea, Spain, United Kingdom"
+        },
+        {
+          "nct_id": "NCT05123482",
+          "title": "A Phase I/IIa Study of AZD8205 Given Alone or Combined, in Participants With Advanced/Metastatic Solid Malignancies",
+          "url": "https://clinicaltrials.gov/study/NCT05123482",
+          "excerpt": "Locations: United States, Australia, Belgium, Canada, China, Hungary, Italy, Japan, Netherlands, Poland, South Korea, Spain, Taiwan, Thailand, United Kingdom"
+        },
+        {
+          "nct_id": "NCT07116642",
+          "title": "Comparing Patient Reported Outcomes and Clinical Outcomes Based on Different Scar Placement in Patients Undergoing Standard Breast Conserving Surgery for Breast Cancer: The PROM-S Study.",
+          "url": "https://clinicaltrials.gov/study/NCT07116642",
+          "excerpt": "Locations: United Kingdom"
+        },
+        {
+          "nct_id": "NCT07062965",
+          "title": "A Study to Learn About the Study Medicine Called PF-07248144 in Combination With Fulvestrant in People With HR-positive, HER2-negative Advanced or Metastatic Breast Cancer Who Progressed After a Prior Line of Treatment.",
+          "url": "https://clinicaltrials.gov/study/NCT07062965",
+          "excerpt": "Locations: United States, Australia, Belgium, Brazil, Bulgaria, Canada, China, Czechia, Finland, France, Germany, Greece, Hungary, India, Israel, Italy, Japan, Mexico, Netherlands, Poland, Slovakia, South Korea, Spain, Sweden, Taiwan, Turkey (T\u00fcrkiye), United Kingdom"
+        },
+        {
+          "nct_id": "NCT06545331",
+          "title": "Study of XB010 in Subjects With Solid Tumors",
+          "url": "https://clinicaltrials.gov/study/NCT06545331",
+          "excerpt": "Locations: United States, United Kingdom"
+        },
+        {
+          "nct_id": "NCT06468124",
+          "title": "Sensitivity of Organoids to Predict Treatment Outcome in Breast Cancer Metastases",
+          "url": "https://clinicaltrials.gov/study/NCT06468124",
+          "excerpt": "Locations: United Kingdom"
+        },
+        {
+          "nct_id": "NCT07219277",
+          "title": "Clinical Validation of Early Detection Blood Test for Universal Large-scale Breast Cancer Screening",
+          "url": "https://clinicaltrials.gov/study/NCT07219277",
+          "excerpt": "Locations: United States, Canada, United Kingdom"
+        },
+        {
+          "nct_id": "NCT05272709",
+          "title": "TT-702 in Patients With Advanced Solid Tumours.",
+          "url": "https://clinicaltrials.gov/study/NCT05272709",
+          "excerpt": "Locations: United Kingdom"
+        },
+        {
+          "nct_id": "NCT05315700",
+          "title": "Study of ORIC-114 in Patients With Advanced Solid Tumors Harboring an EGFR or HER2 Alteration",
+          "url": "https://clinicaltrials.gov/study/NCT05315700",
+          "excerpt": "Locations: United States, Australia, Canada, Hong Kong, Malaysia, Poland, South Korea, Spain, Taiwan, United Kingdom"
+        },
+        {
+          "nct_id": "NCT07173751",
+          "title": "ROSETTA Breast-01: The Effects and Safety of Pumitamig in Patients With Triple-Negative Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT07173751",
+          "excerpt": "Locations: United States, Australia, Belgium, Brazil, China, Czechia, Georgia, Germany, Italy, Japan, Poland, South Korea, Spain, United Kingdom"
+        },
+        {
+          "nct_id": "NCT07243002",
+          "title": "Real-world Evaluation of Patient Outcomes and Experiences With Ribociclib Early Adopters.",
+          "url": "https://clinicaltrials.gov/study/NCT07243002",
+          "excerpt": "Locations: United Kingdom"
+        },
+        {
+          "nct_id": "NCT03150576",
+          "title": "Platinum and Polyadenosine 5'Diphosphoribose Polymerisation Inhibitor for Neoadjuvant Treatment of Triple Negative Breast Cancer and/or Germline BRCA Positive Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT03150576",
+          "excerpt": "Locations: United Kingdom"
+        },
+        {
+          "nct_id": "NCT06188520",
+          "title": "A First-in-human Dose Escalation and Expansion Study to Evaluate the Safety, and Tolerability of AZD8421 Alone or in Combination in Participants With Selected Advanced or Metastatic Solid Tumors",
+          "url": "https://clinicaltrials.gov/study/NCT06188520",
+          "excerpt": "Locations: United States, Australia, South Korea, Spain, United Kingdom"
+        },
+        {
+          "nct_id": "NCT06324357",
+          "title": "Beamion BCGC-1: A Study to Find a Suitable Dose of Zongertinib Used Alone and in Combination With Other Treatments to Test Whether it Helps People With Different Types of HER2+ Cancer That Has Spread",
+          "url": "https://clinicaltrials.gov/study/NCT06324357",
+          "excerpt": "Locations: United States, Belgium, China, France, Germany, Italy, Japan, South Korea, Spain, United Kingdom"
+        },
+        {
+          "nct_id": "NCT07070765",
+          "title": "Sodium-glucose Transporter Type 2 Inhibition in Anthracycline-related Cardiotoxicity",
+          "url": "https://clinicaltrials.gov/study/NCT07070765",
+          "excerpt": "Locations: United Kingdom"
+        },
+        {
+          "nct_id": "NCT05184582",
+          "title": "Physical Exercise During Preoperative Chemotherapy for Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT05184582",
+          "excerpt": "Locations: Australia, Finland, Sweden, United Kingdom"
+        },
+        {
+          "nct_id": "NCT03424005",
+          "title": "A Study Evaluating the Efficacy and Safety of Multiple Treatment Combinations in Patients With Metastatic or Locally Advanced Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT03424005",
+          "excerpt": "Locations: United States, Australia, France, Germany, Israel, South Korea, Spain, Taiwan, United Kingdom"
+        },
+        {
+          "nct_id": "NCT06728527",
+          "title": "PARTial BREast RECONstruction With Chest Wall Perforator Flap",
+          "url": "https://clinicaltrials.gov/study/NCT06728527",
+          "excerpt": "Locations: United Kingdom"
+        },
+        {
+          "nct_id": "NCT05952557",
+          "title": "An Adjuvant Endocrine-based Therapy Study of Camizestrant (AZD9833) in ER+/HER2- Early Breast Cancer (CAMBRIA-2)",
+          "url": "https://clinicaltrials.gov/study/NCT05952557",
+          "excerpt": "Locations: United States, Argentina, Australia, Austria, Belgium, Brazil, Bulgaria, Canada, Chile, China, Colombia, Croatia, Czechia, Estonia, France, Georgia, Germany, Greece, Hungary, India, Ireland, Israel, Italy, Japan, Malaysia, Mexico, New Zealand, Peru, Philippines, Poland, Portugal, Puerto Rico, Romania, Saudi Arabia, Serbia, South Africa, South Korea, Spain, Switzerland, Taiwan, Thailand, Turkey (T\u00fcrkiye), United Arab Emirates, United Kingdom"
+        },
+        {
+          "nct_id": "NCT03946202",
+          "title": "KORTUC Phase II - Intra-tumoural Radiation Sensitizer in Patients With Locally Advanced/Recurrent Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT03946202",
+          "excerpt": "Locations: India, United Kingdom"
+        },
+        {
+          "nct_id": "NCT07085767",
+          "title": "Palazestrant in Combination With Ribociclib for the First-line Treatment of ER+/HER2- Advanced Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT07085767",
+          "excerpt": "Locations: United States, Australia, Austria, Belgium, Canada, Czechia, France, Germany, Greece, Hong Kong, Hungary, Italy, Malaysia, Netherlands, Poland, Portugal, Romania, South Korea, Spain, Taiwan, Thailand, United Kingdom"
+        },
+        {
+          "nct_id": "NCT06790693",
+          "title": "A Study Evaluating the Efficacy and Safety of Inavolisib Plus CDK4/6 Inhibitor and Letrozole vs Placebo + CDK4/6i and Letrozole in Participants With Endocrine-Sensitive PIK3CA-Mutated, Hormone Receptor-Positive, HER2-Negative Advanced Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT06790693",
+          "excerpt": "Locations: United States, Argentina, Australia, Brazil, Canada, China, France, Germany, Italy, Japan, Mexico, Poland, Puerto Rico, South Africa, South Korea, Spain, Switzerland, Taiwan, Turkey (T\u00fcrkiye), United Kingdom"
+        },
+        {
+          "nct_id": "NCT03463954",
+          "title": "Confirmatory Clinical Evaluation of Novilase\u00ae Laser Therapy for Focal Destruction of Malignant Breast Tumors",
+          "url": "https://clinicaltrials.gov/study/NCT03463954",
+          "excerpt": "Locations: United States, Germany, Israel, Switzerland, United Kingdom"
+        }
+      ]
+    },
+    {
+      "bucket": "Belgium",
+      "value": 81.0,
+      "nct_ids": [
+        "NCT05890677",
+        "NCT06171360",
+        "NCT05123482",
+        "NCT07062965",
+        "NCT04690439",
+        "NCT07173751",
+        "NCT06324721",
+        "NCT04531696",
+        "NCT06180642",
+        "NCT06562192",
+        "NCT06907810",
+        "NCT05601037",
+        "NCT06324357",
+        "NCT06365788",
+        "NCT05952557",
+        "NCT06227338",
+        "NCT07085767",
+        "NCT07142096",
+        "NCT05386108"
+      ],
+      "trials": [
+        {
+          "nct_id": "NCT05890677",
+          "title": "The LYMPH Trial - Microsurgical Versus Conservative Treatment of Chronic Breast Cancer Associated Lymphedema",
+          "url": "https://clinicaltrials.gov/study/NCT05890677",
+          "excerpt": "Locations: United States, Austria, Belgium, Brazil, Canada, Germany, Greece, Israel, Italy, Netherlands, Romania, Spain, Sweden, Switzerland, Taiwan"
+        },
+        {
+          "nct_id": "NCT06171360",
+          "title": "A Study of the Gut Microbiome in Hormone Receptor-positive HER2-negative Breast Cancer Treated With CDK4/6 Inhibitors",
+          "url": "https://clinicaltrials.gov/study/NCT06171360",
+          "excerpt": "Locations: Belgium"
+        },
+        {
+          "nct_id": "NCT05123482",
+          "title": "A Phase I/IIa Study of AZD8205 Given Alone or Combined, in Participants With Advanced/Metastatic Solid Malignancies",
+          "url": "https://clinicaltrials.gov/study/NCT05123482",
+          "excerpt": "Locations: United States, Australia, Belgium, Canada, China, Hungary, Italy, Japan, Netherlands, Poland, South Korea, Spain, Taiwan, Thailand, United Kingdom"
+        },
+        {
+          "nct_id": "NCT07062965",
+          "title": "A Study to Learn About the Study Medicine Called PF-07248144 in Combination With Fulvestrant in People With HR-positive, HER2-negative Advanced or Metastatic Breast Cancer Who Progressed After a Prior Line of Treatment.",
+          "url": "https://clinicaltrials.gov/study/NCT07062965",
+          "excerpt": "Locations: United States, Australia, Belgium, Brazil, Bulgaria, Canada, China, Czechia, Finland, France, Germany, Greece, Hungary, India, Israel, Italy, Japan, Mexico, Netherlands, Poland, Slovakia, South Korea, Spain, Sweden, Taiwan, Turkey (T\u00fcrkiye), United Kingdom"
+        },
+        {
+          "nct_id": "NCT04690439",
+          "title": "Photobiomodulation Therapy for the Management of Breast Cancer-related Lymphedema",
+          "url": "https://clinicaltrials.gov/study/NCT04690439",
+          "excerpt": "Locations: Belgium"
+        },
+        {
+          "nct_id": "NCT07173751",
+          "title": "ROSETTA Breast-01: The Effects and Safety of Pumitamig in Patients With Triple-Negative Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT07173751",
+          "excerpt": "Locations: United States, Australia, Belgium, Brazil, China, Czechia, Georgia, Germany, Italy, Japan, Poland, South Korea, Spain, United Kingdom"
+        },
+        {
+          "nct_id": "NCT06324721",
+          "title": "Who and Why do Patients Report Lymphedema After Breast Cancer Treatment Without an Objective Measurable Swelling",
+          "url": "https://clinicaltrials.gov/study/NCT06324721",
+          "excerpt": "Locations: Belgium"
+        },
+        {
+          "nct_id": "NCT04531696",
+          "title": "UZ/KU Leuven Program for Post-mortem Tissue Donation to Enhance Research",
+          "url": "https://clinicaltrials.gov/study/NCT04531696",
+          "excerpt": "Locations: Belgium"
+        },
+        {
+          "nct_id": "NCT06180642",
+          "title": "Reliability and Validity of Ultrasound for the Assessment of Soft Tissue Properties After Breast Cancer Treatment",
+          "url": "https://clinicaltrials.gov/study/NCT06180642",
+          "excerpt": "Locations: Belgium"
+        },
+        {
+          "nct_id": "NCT06562192",
+          "title": "Phase I Study of [177Lu]Lu-NNS309 in Patients With Pancreatic, Lung, Breast and Colorectal Cancers",
+          "url": "https://clinicaltrials.gov/study/NCT06562192",
+          "excerpt": "Locations: United States, Belgium, Canada, France, Germany, Israel, Italy, Netherlands, Spain, Switzerland"
+        },
+        {
+          "nct_id": "NCT06907810",
+          "title": "Study of Lipid Mediators in Chronic Postoperative Pain - LICP",
+          "url": "https://clinicaltrials.gov/study/NCT06907810",
+          "excerpt": "Locations: Belgium"
+        },
+        {
+          "nct_id": "NCT05601037",
+          "title": "LymphoVenous Anastomosis to Prevent Breast Cancer Related Lymphedema",
+          "url": "https://clinicaltrials.gov/study/NCT05601037",
+          "excerpt": "Locations: Belgium"
+        },
+        {
+          "nct_id": "NCT06324357",
+          "title": "Beamion BCGC-1: A Study to Find a Suitable Dose of Zongertinib Used Alone and in Combination With Other Treatments to Test Whether it Helps People With Different Types of HER2+ Cancer That Has Spread",
+          "url": "https://clinicaltrials.gov/study/NCT06324357",
+          "excerpt": "Locations: United States, Belgium, China, France, Germany, Italy, Japan, South Korea, Spain, United Kingdom"
+        },
+        {
+          "nct_id": "NCT06365788",
+          "title": "Bicalutamide and Abemaciclib in Inoperable or Metastatic Androgen Receptor-positive Triple-negative Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT06365788",
+          "excerpt": "Locations: Belgium"
+        },
+        {
+          "nct_id": "NCT05952557",
+          "title": "An Adjuvant Endocrine-based Therapy Study of Camizestrant (AZD9833) in ER+/HER2- Early Breast Cancer (CAMBRIA-2)",
+          "url": "https://clinicaltrials.gov/study/NCT05952557",
+          "excerpt": "Locations: United States, Argentina, Australia, Austria, Belgium, Brazil, Bulgaria, Canada, Chile, China, Colombia, Croatia, Czechia, Estonia, France, Georgia, Germany, Greece, Hungary, India, Ireland, Israel, Italy, Japan, Malaysia, Mexico, New Zealand, Peru, Philippines, Poland, Portugal, Puerto Rico, Romania, Saudi Arabia, Serbia, South Africa, South Korea, Spain, Switzerland, Taiwan, Thailand, Turkey (T\u00fcrkiye), United Arab Emirates, United Kingdom"
+        },
+        {
+          "nct_id": "NCT06227338",
+          "title": "ICG-fluorescence Imaging for Intraoperative Breast Cancer Margins Evaluation: a Dose-timing Study",
+          "url": "https://clinicaltrials.gov/study/NCT06227338",
+          "excerpt": "Locations: Belgium"
+        },
+        {
+          "nct_id": "NCT07085767",
+          "title": "Palazestrant in Combination With Ribociclib for the First-line Treatment of ER+/HER2- Advanced Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT07085767",
+          "excerpt": "Locations: United States, Australia, Austria, Belgium, Canada, Czechia, France, Germany, Greece, Hong Kong, Hungary, Italy, Malaysia, Netherlands, Poland, Portugal, Romania, South Korea, Spain, Taiwan, Thailand, United Kingdom"
+        },
+        {
+          "nct_id": "NCT07142096",
+          "title": "WinQ : a Window of Opportunity Study With MitoQ in Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT07142096",
+          "excerpt": "Locations: Belgium"
+        },
+        {
+          "nct_id": "NCT05386108",
+          "title": "Study of Abemaciclib and Elacestrant in Participants With Brain Metastasis Due to ER+/HER-2- Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT05386108",
+          "excerpt": "Locations: United States, Belgium, France, Germany, Greece, Italy, South Korea, Spain, Turkey (T\u00fcrkiye), United Kingdom"
+        }
+      ]
+    },
+    {
+      "bucket": "Netherlands",
+      "value": 69.0,
+      "nct_ids": [
+        "NCT05890677",
+        "NCT05003635",
+        "NCT06618287",
+        "NCT05123482",
+        "NCT07062965",
+        "NCT07117214",
+        "NCT07258563",
+        "NCT05301881",
+        "NCT06476119",
+        "NCT05851053",
+        "NCT06562192",
+        "NCT06106529",
+        "NCT07187726",
+        "NCT03577197",
+        "NCT07085767"
+      ],
+      "trials": [
+        {
+          "nct_id": "NCT05890677",
+          "title": "The LYMPH Trial - Microsurgical Versus Conservative Treatment of Chronic Breast Cancer Associated Lymphedema",
+          "url": "https://clinicaltrials.gov/study/NCT05890677",
+          "excerpt": "Locations: United States, Austria, Belgium, Brazil, Canada, Germany, Greece, Israel, Italy, Netherlands, Romania, Spain, Sweden, Switzerland, Taiwan"
+        },
+        {
+          "nct_id": "NCT05003635",
+          "title": "External Vacuum Expansion: Evaluation in Breast Reconstructive Surgery Evaluation in Breast Reconstructive Surgery",
+          "url": "https://clinicaltrials.gov/study/NCT05003635",
+          "excerpt": "Locations: Netherlands"
+        },
+        {
+          "nct_id": "NCT06618287",
+          "title": "A Study to Evaluate the Safety, Tolerability, Drug Levels, and Preliminary Efficacy of BMS-986507 Combinations in Adult Participants With Advanced Solid Tumors",
+          "url": "https://clinicaltrials.gov/study/NCT06618287",
+          "excerpt": "Locations: United States, Australia, Canada, Chile, France, Italy, Netherlands, Spain, United Kingdom"
+        },
+        {
+          "nct_id": "NCT05123482",
+          "title": "A Phase I/IIa Study of AZD8205 Given Alone or Combined, in Participants With Advanced/Metastatic Solid Malignancies",
+          "url": "https://clinicaltrials.gov/study/NCT05123482",
+          "excerpt": "Locations: United States, Australia, Belgium, Canada, China, Hungary, Italy, Japan, Netherlands, Poland, South Korea, Spain, Taiwan, Thailand, United Kingdom"
+        },
+        {
+          "nct_id": "NCT07062965",
+          "title": "A Study to Learn About the Study Medicine Called PF-07248144 in Combination With Fulvestrant in People With HR-positive, HER2-negative Advanced or Metastatic Breast Cancer Who Progressed After a Prior Line of Treatment.",
+          "url": "https://clinicaltrials.gov/study/NCT07062965",
+          "excerpt": "Locations: United States, Australia, Belgium, Brazil, Bulgaria, Canada, China, Czechia, Finland, France, Germany, Greece, Hungary, India, Israel, Italy, Japan, Mexico, Netherlands, Poland, Slovakia, South Korea, Spain, Sweden, Taiwan, Turkey (T\u00fcrkiye), United Kingdom"
+        },
+        {
+          "nct_id": "NCT07117214",
+          "title": "A Phase I Study of [68Ga]Ga-DWJ155 in Patients With Breast and Lung Cancers",
+          "url": "https://clinicaltrials.gov/study/NCT07117214",
+          "excerpt": "Locations: Netherlands"
+        },
+        {
+          "nct_id": "NCT07258563",
+          "title": "The TASTY-steering Study",
+          "url": "https://clinicaltrials.gov/study/NCT07258563",
+          "excerpt": "Locations: Netherlands"
+        },
+        {
+          "nct_id": "NCT05301881",
+          "title": "COntinue the SaMe Systemic Therapy After Local Ablative Therapy for Oligo Progression in Metastatic Breast Cancer - the COSMO Study",
+          "url": "https://clinicaltrials.gov/study/NCT05301881",
+          "excerpt": "Locations: Netherlands"
+        },
+        {
+          "nct_id": "NCT06476119",
+          "title": "OPTImaL:Optimisation of Treatment for Patients With Low Stage Triple-negative Breast Cancer With High Stromal Tumor-infiltrating Lymphocytes",
+          "url": "https://clinicaltrials.gov/study/NCT06476119",
+          "excerpt": "Locations: Netherlands"
+        },
+        {
+          "nct_id": "NCT05851053",
+          "title": "Breast Cancer Long-term Outcomes on Cardiac Functioning: a Longitudinal Study",
+          "url": "https://clinicaltrials.gov/study/NCT05851053",
+          "excerpt": "Locations: Netherlands"
+        },
+        {
+          "nct_id": "NCT06562192",
+          "title": "Phase I Study of [177Lu]Lu-NNS309 in Patients With Pancreatic, Lung, Breast and Colorectal Cancers",
+          "url": "https://clinicaltrials.gov/study/NCT06562192",
+          "excerpt": "Locations: United States, Belgium, Canada, France, Germany, Israel, Italy, Netherlands, Spain, Switzerland"
+        },
+        {
+          "nct_id": "NCT06106529",
+          "title": "REDucing Hot FLASHes in Women Using Endocrine Therapy.",
+          "url": "https://clinicaltrials.gov/study/NCT06106529",
+          "excerpt": "Locations: Netherlands"
+        },
+        {
+          "nct_id": "NCT07187726",
+          "title": "Arm Swelling Occurence in Breast Cancer Patients With Nodal Radiotherapy: Impact of Informing Them of AI-predicted Risk",
+          "url": "https://clinicaltrials.gov/study/NCT07187726",
+          "excerpt": "Locations: France, Netherlands"
+        },
+        {
+          "nct_id": "NCT03577197",
+          "title": "Southeast Netherlands Advanced Metastatic Breast Cancer Registry",
+          "url": "https://clinicaltrials.gov/study/NCT03577197",
+          "excerpt": "Locations: Netherlands"
+        },
+        {
+          "nct_id": "NCT07085767",
+          "title": "Palazestrant in Combination With Ribociclib for the First-line Treatment of ER+/HER2- Advanced Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT07085767",
+          "excerpt": "Locations: United States, Australia, Austria, Belgium, Canada, Czechia, France, Germany, Greece, Hong Kong, Hungary, Italy, Malaysia, Netherlands, Poland, Portugal, Romania, South Korea, Spain, Taiwan, Thailand, United Kingdom"
+        }
+      ]
+    },
+    {
+      "bucket": "Taiwan",
+      "value": 64.0,
+      "nct_ids": [
+        "NCT05890677",
+        "NCT05766410",
+        "NCT05123482",
+        "NCT07062965",
+        "NCT05440227",
+        "NCT05315700",
+        "NCT06984250",
+        "NCT07605728",
+        "NCT06791603",
+        "NCT03424005",
+        "NCT05952557",
+        "NCT06663228",
+        "NCT07085767",
+        "NCT06790693",
+        "NCT07503496"
+      ],
+      "trials": [
+        {
+          "nct_id": "NCT05890677",
+          "title": "The LYMPH Trial - Microsurgical Versus Conservative Treatment of Chronic Breast Cancer Associated Lymphedema",
+          "url": "https://clinicaltrials.gov/study/NCT05890677",
+          "excerpt": "Locations: United States, Austria, Belgium, Brazil, Canada, Germany, Greece, Israel, Italy, Netherlands, Romania, Spain, Sweden, Switzerland, Taiwan"
+        },
+        {
+          "nct_id": "NCT05766410",
+          "title": "A Randomized Study Comparing the Immune Modulation Effect of Ribociclib, Palbociclib, and Abemaciclib in ER+/HER2- EBC",
+          "url": "https://clinicaltrials.gov/study/NCT05766410",
+          "excerpt": "Locations: Taiwan"
+        },
+        {
+          "nct_id": "NCT05123482",
+          "title": "A Phase I/IIa Study of AZD8205 Given Alone or Combined, in Participants With Advanced/Metastatic Solid Malignancies",
+          "url": "https://clinicaltrials.gov/study/NCT05123482",
+          "excerpt": "Locations: United States, Australia, Belgium, Canada, China, Hungary, Italy, Japan, Netherlands, Poland, South Korea, Spain, Taiwan, Thailand, United Kingdom"
+        },
+        {
+          "nct_id": "NCT07062965",
+          "title": "A Study to Learn About the Study Medicine Called PF-07248144 in Combination With Fulvestrant in People With HR-positive, HER2-negative Advanced or Metastatic Breast Cancer Who Progressed After a Prior Line of Treatment.",
+          "url": "https://clinicaltrials.gov/study/NCT07062965",
+          "excerpt": "Locations: United States, Australia, Belgium, Brazil, Bulgaria, Canada, China, Czechia, Finland, France, Germany, Greece, Hungary, India, Israel, Italy, Japan, Mexico, Netherlands, Poland, Slovakia, South Korea, Spain, Sweden, Taiwan, Turkey (T\u00fcrkiye), United Kingdom"
+        },
+        {
+          "nct_id": "NCT05440227",
+          "title": "PG2 Injection for the Treatment of moderate-to Severe Fatigue in Breast Cancer Patients",
+          "url": "https://clinicaltrials.gov/study/NCT05440227",
+          "excerpt": "Locations: Taiwan"
+        },
+        {
+          "nct_id": "NCT05315700",
+          "title": "Study of ORIC-114 in Patients With Advanced Solid Tumors Harboring an EGFR or HER2 Alteration",
+          "url": "https://clinicaltrials.gov/study/NCT05315700",
+          "excerpt": "Locations: United States, Australia, Canada, Hong Kong, Malaysia, Poland, South Korea, Spain, Taiwan, United Kingdom"
+        },
+        {
+          "nct_id": "NCT06984250",
+          "title": "Hypofractionated Radiotherapy With Concomitant Tumor Bed Boost for Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT06984250",
+          "excerpt": "Locations: Taiwan"
+        },
+        {
+          "nct_id": "NCT07605728",
+          "title": "Probiotics for Abemaciclib-Induced Abdominal Discomfort.",
+          "url": "https://clinicaltrials.gov/study/NCT07605728",
+          "excerpt": "Locations: Taiwan"
+        },
+        {
+          "nct_id": "NCT06791603",
+          "title": "The Impact of Social Media-delivered Chemotherapy Side Effects Education for Breast Cancer Patients Receiving Chemotherapy",
+          "url": "https://clinicaltrials.gov/study/NCT06791603",
+          "excerpt": "Locations: Taiwan"
+        },
+        {
+          "nct_id": "NCT03424005",
+          "title": "A Study Evaluating the Efficacy and Safety of Multiple Treatment Combinations in Patients With Metastatic or Locally Advanced Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT03424005",
+          "excerpt": "Locations: United States, Australia, France, Germany, Israel, South Korea, Spain, Taiwan, United Kingdom"
+        },
+        {
+          "nct_id": "NCT05952557",
+          "title": "An Adjuvant Endocrine-based Therapy Study of Camizestrant (AZD9833) in ER+/HER2- Early Breast Cancer (CAMBRIA-2)",
+          "url": "https://clinicaltrials.gov/study/NCT05952557",
+          "excerpt": "Locations: United States, Argentina, Australia, Austria, Belgium, Brazil, Bulgaria, Canada, Chile, China, Colombia, Croatia, Czechia, Estonia, France, Georgia, Germany, Greece, Hungary, India, Ireland, Israel, Italy, Japan, Malaysia, Mexico, New Zealand, Peru, Philippines, Poland, Portugal, Puerto Rico, Romania, Saudi Arabia, Serbia, South Africa, South Korea, Spain, Switzerland, Taiwan, Thailand, Turkey (T\u00fcrkiye), United Arab Emirates, United Kingdom"
+        },
+        {
+          "nct_id": "NCT06663228",
+          "title": "Rapid Histologic Assessment for Stereotactic Breast Biopsy: Enhancing Early Detection With Miniature Mass Spectrometry and AI",
+          "url": "https://clinicaltrials.gov/study/NCT06663228",
+          "excerpt": "Locations: Taiwan"
+        },
+        {
+          "nct_id": "NCT07085767",
+          "title": "Palazestrant in Combination With Ribociclib for the First-line Treatment of ER+/HER2- Advanced Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT07085767",
+          "excerpt": "Locations: United States, Australia, Austria, Belgium, Canada, Czechia, France, Germany, Greece, Hong Kong, Hungary, Italy, Malaysia, Netherlands, Poland, Portugal, Romania, South Korea, Spain, Taiwan, Thailand, United Kingdom"
+        },
+        {
+          "nct_id": "NCT06790693",
+          "title": "A Study Evaluating the Efficacy and Safety of Inavolisib Plus CDK4/6 Inhibitor and Letrozole vs Placebo + CDK4/6i and Letrozole in Participants With Endocrine-Sensitive PIK3CA-Mutated, Hormone Receptor-Positive, HER2-Negative Advanced Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT06790693",
+          "excerpt": "Locations: United States, Argentina, Australia, Brazil, Canada, China, France, Germany, Italy, Japan, Mexico, Poland, Puerto Rico, South Africa, South Korea, Spain, Switzerland, Taiwan, Turkey (T\u00fcrkiye), United Kingdom"
+        },
+        {
+          "nct_id": "NCT07503496",
+          "title": "Evaluation of the Efficacy of Biobran (Rice Bran Arabinoxylan) in Supporting Breast Cancer Chemotherapy",
+          "url": "https://clinicaltrials.gov/study/NCT07503496",
+          "excerpt": "Locations: Taiwan"
+        }
+      ]
+    },
+    {
+      "bucket": "Brazil",
+      "value": 57.0,
+      "nct_ids": [
+        "NCT05890677",
+        "NCT06547853",
+        "NCT07268846",
+        "NCT07062965",
+        "NCT06625775",
+        "NCT06966453",
+        "NCT07070128",
+        "NCT07173751",
+        "NCT06839001",
+        "NCT05952557",
+        "NCT06790693",
+        "NCT06120283"
+      ],
+      "trials": [
+        {
+          "nct_id": "NCT05890677",
+          "title": "The LYMPH Trial - Microsurgical Versus Conservative Treatment of Chronic Breast Cancer Associated Lymphedema",
+          "url": "https://clinicaltrials.gov/study/NCT05890677",
+          "excerpt": "Locations: United States, Austria, Belgium, Brazil, Canada, Germany, Greece, Israel, Italy, Netherlands, Romania, Spain, Sweden, Switzerland, Taiwan"
+        },
+        {
+          "nct_id": "NCT06547853",
+          "title": "Physical and Health Outcomes With ExeRcise in Cancer SURVIVORS",
+          "url": "https://clinicaltrials.gov/study/NCT06547853",
+          "excerpt": "Locations: Brazil"
+        },
+        {
+          "nct_id": "NCT07268846",
+          "title": "Use of Preoperative Postbiotic Supplementation in Colorectal Cancer Surgery",
+          "url": "https://clinicaltrials.gov/study/NCT07268846",
+          "excerpt": "Locations: Brazil"
+        },
+        {
+          "nct_id": "NCT07062965",
+          "title": "A Study to Learn About the Study Medicine Called PF-07248144 in Combination With Fulvestrant in People With HR-positive, HER2-negative Advanced or Metastatic Breast Cancer Who Progressed After a Prior Line of Treatment.",
+          "url": "https://clinicaltrials.gov/study/NCT07062965",
+          "excerpt": "Locations: United States, Australia, Belgium, Brazil, Bulgaria, Canada, China, Czechia, Finland, France, Germany, Greece, Hungary, India, Israel, Italy, Japan, Mexico, Netherlands, Poland, Slovakia, South Korea, Spain, Sweden, Taiwan, Turkey (T\u00fcrkiye), United Kingdom"
+        },
+        {
+          "nct_id": "NCT06625775",
+          "title": "Open-Label Study of BBO-10203 in Subjects With Advanced Solid Tumors",
+          "url": "https://clinicaltrials.gov/study/NCT06625775",
+          "excerpt": "Locations: United States, Australia, Brazil, France, Spain"
+        },
+        {
+          "nct_id": "NCT06966453",
+          "title": "A Study of Disitamab Vedotin in Adults With HER2 Expressing Advanced Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT06966453",
+          "excerpt": "Locations: United States, Australia, Brazil, Canada, Germany, Italy, Japan, Puerto Rico, Spain"
+        },
+        {
+          "nct_id": "NCT07070128",
+          "title": "Screening Tool Artificial Intelligence-based for Predicting the Genetic Risk of BREAST Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT07070128",
+          "excerpt": "Locations: Brazil"
+        },
+        {
+          "nct_id": "NCT07173751",
+          "title": "ROSETTA Breast-01: The Effects and Safety of Pumitamig in Patients With Triple-Negative Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT07173751",
+          "excerpt": "Locations: United States, Australia, Belgium, Brazil, China, Czechia, Georgia, Germany, Italy, Japan, Poland, South Korea, Spain, United Kingdom"
+        },
+        {
+          "nct_id": "NCT06839001",
+          "title": "CRYoablation for Small Tumors As Local Treatment - SIX Trial",
+          "url": "https://clinicaltrials.gov/study/NCT06839001",
+          "excerpt": "Locations: Brazil"
+        },
+        {
+          "nct_id": "NCT05952557",
+          "title": "An Adjuvant Endocrine-based Therapy Study of Camizestrant (AZD9833) in ER+/HER2- Early Breast Cancer (CAMBRIA-2)",
+          "url": "https://clinicaltrials.gov/study/NCT05952557",
+          "excerpt": "Locations: United States, Argentina, Australia, Austria, Belgium, Brazil, Bulgaria, Canada, Chile, China, Colombia, Croatia, Czechia, Estonia, France, Georgia, Germany, Greece, Hungary, India, Ireland, Israel, Italy, Japan, Malaysia, Mexico, New Zealand, Peru, Philippines, Poland, Portugal, Puerto Rico, Romania, Saudi Arabia, Serbia, South Africa, South Korea, Spain, Switzerland, Taiwan, Thailand, Turkey (T\u00fcrkiye), United Arab Emirates, United Kingdom"
+        },
+        {
+          "nct_id": "NCT06790693",
+          "title": "A Study Evaluating the Efficacy and Safety of Inavolisib Plus CDK4/6 Inhibitor and Letrozole vs Placebo + CDK4/6i and Letrozole in Participants With Endocrine-Sensitive PIK3CA-Mutated, Hormone Receptor-Positive, HER2-Negative Advanced Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT06790693",
+          "excerpt": "Locations: United States, Argentina, Australia, Brazil, Canada, China, France, Germany, Italy, Japan, Mexico, Poland, Puerto Rico, South Africa, South Korea, Spain, Switzerland, Taiwan, Turkey (T\u00fcrkiye), United Kingdom"
+        },
+        {
+          "nct_id": "NCT06120283",
+          "title": "BGB-43395 Alone or as Part of Combination Therapies in Participants With Breast Cancer and Other Advanced Solid Tumors",
+          "url": "https://clinicaltrials.gov/study/NCT06120283",
+          "excerpt": "Locations: United States, Australia, Brazil, China, France, Japan, Malaysia, Moldova, New Zealand, South Korea, Thailand"
+        }
+      ]
+    },
+    {
+      "bucket": "Switzerland",
+      "value": 40.0,
+      "nct_ids": [
+        "NCT05890677",
+        "NCT06489665",
+        "NCT06958991",
+        "NCT06562192",
+        "NCT04289935",
+        "NCT07398079",
+        "NCT05952557",
+        "NCT06930378",
+        "NCT07171658",
+        "NCT06790693",
+        "NCT03463954"
+      ],
+      "trials": [
+        {
+          "nct_id": "NCT05890677",
+          "title": "The LYMPH Trial - Microsurgical Versus Conservative Treatment of Chronic Breast Cancer Associated Lymphedema",
+          "url": "https://clinicaltrials.gov/study/NCT05890677",
+          "excerpt": "Locations: United States, Austria, Belgium, Brazil, Canada, Germany, Greece, Israel, Italy, Netherlands, Romania, Spain, Sweden, Switzerland, Taiwan"
+        },
+        {
+          "nct_id": "NCT06489665",
+          "title": "Imaging Quality and Potential Clinical Relevance of Phase Contrast Mammography In-vivo: a Single-center, Prospective Study",
+          "url": "https://clinicaltrials.gov/study/NCT06489665",
+          "excerpt": "Locations: Switzerland"
+        },
+        {
+          "nct_id": "NCT06958991",
+          "title": "Confocal Histolog Scanner in Routine Breast-Conserving Surgery (CHiB)",
+          "url": "https://clinicaltrials.gov/study/NCT06958991",
+          "excerpt": "Locations: Switzerland"
+        },
+        {
+          "nct_id": "NCT06562192",
+          "title": "Phase I Study of [177Lu]Lu-NNS309 in Patients With Pancreatic, Lung, Breast and Colorectal Cancers",
+          "url": "https://clinicaltrials.gov/study/NCT06562192",
+          "excerpt": "Locations: United States, Belgium, Canada, France, Germany, Israel, Italy, Netherlands, Spain, Switzerland"
+        },
+        {
+          "nct_id": "NCT04289935",
+          "title": "Intelligent Vacuum Assisted Biopsy Immediately Before Surgery As an Intra- or Pre-Operative Surrogate for Patient Response to Neoadjuvant Chemotherapy for Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT04289935",
+          "excerpt": "Locations: Austria, Germany, Switzerland, United Arab Emirates"
+        },
+        {
+          "nct_id": "NCT07398079",
+          "title": "Pilot Observational Study of an Integrative Cure Stay Program",
+          "url": "https://clinicaltrials.gov/study/NCT07398079",
+          "excerpt": "Locations: Switzerland"
+        },
+        {
+          "nct_id": "NCT05952557",
+          "title": "An Adjuvant Endocrine-based Therapy Study of Camizestrant (AZD9833) in ER+/HER2- Early Breast Cancer (CAMBRIA-2)",
+          "url": "https://clinicaltrials.gov/study/NCT05952557",
+          "excerpt": "Locations: United States, Argentina, Australia, Austria, Belgium, Brazil, Bulgaria, Canada, Chile, China, Colombia, Croatia, Czechia, Estonia, France, Georgia, Germany, Greece, Hungary, India, Ireland, Israel, Italy, Japan, Malaysia, Mexico, New Zealand, Peru, Philippines, Poland, Portugal, Puerto Rico, Romania, Saudi Arabia, Serbia, South Africa, South Korea, Spain, Switzerland, Taiwan, Thailand, Turkey (T\u00fcrkiye), United Arab Emirates, United Kingdom"
+        },
+        {
+          "nct_id": "NCT06930378",
+          "title": "Improvement in Breast Skin Sensibility After Breast Reconstruction: a Comparison of 3 Surgical Techniques",
+          "url": "https://clinicaltrials.gov/study/NCT06930378",
+          "excerpt": "Locations: Switzerland"
+        },
+        {
+          "nct_id": "NCT07171658",
+          "title": "Breast Cancer-Related Approach for Increasing Cervical Cancer Screening",
+          "url": "https://clinicaltrials.gov/study/NCT07171658",
+          "excerpt": "Locations: Switzerland"
+        },
+        {
+          "nct_id": "NCT06790693",
+          "title": "A Study Evaluating the Efficacy and Safety of Inavolisib Plus CDK4/6 Inhibitor and Letrozole vs Placebo + CDK4/6i and Letrozole in Participants With Endocrine-Sensitive PIK3CA-Mutated, Hormone Receptor-Positive, HER2-Negative Advanced Breast Cancer",
+          "url": "https://clinicaltrials.gov/study/NCT06790693",
+          "excerpt": "Locations: United States, Argentina, Australia, Brazil, Canada, China, France, Germany, Italy, Japan, Mexico, Poland, Puerto Rico, South Africa, South Korea, Spain, Switzerland, Taiwan, Turkey (T\u00fcrkiye), United Kingdom"
+        },
+        {
+          "nct_id": "NCT03463954",
+          "title": "Confirmatory Clinical Evaluation of Novilase\u00ae Laser Therapy for Focal Destruction of Malignant Breast Tumors",
+          "url": "https://clinicaltrials.gov/study/NCT03463954",
+          "excerpt": "Locations: United States, Germany, Israel, Switzerland, United Kingdom"
+        }
+      ]
+    }
+  ],
+  "summary": "The chart displays the number of recruiting clinical trials for breast cancer across various countries, highlighting that the United States leads with 941 trials, significantly higher than second-placed China, which has 652 trials. Other notable countries include Italy and France with 202 and 199 trials, respectively, showing a considerable gap from the top two. The data indicates a steep decline in the number of trials as it progresses down the list, with Switzerland having the fewest at 40 trials.",
+  "trace_id": "4"
+}

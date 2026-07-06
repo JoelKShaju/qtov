@@ -1,0 +1,1509 @@
+{
+  "event_id": "00fcbfc5d90d4201bd9145a97b65493f",
+  "query": "How are diabetes trials distributed across phases?",
+  "interpretation": {
+    "query_type": "distribution",
+    "parameters": {
+      "condition": "diabetes",
+      "intervention": null,
+      "intervention_type": null,
+      "study_type": null,
+      "sponsor": null,
+      "country": null,
+      "status": null,
+      "start_year": null,
+      "end_year": null,
+      "group_by": "phase",
+      "comparison_entities": null,
+      "comparison_dimension": null
+    },
+    "reasoning": "",
+    "confidence": 1.0,
+    "alternatives": []
+  },
+  "visualization": {
+    "type": "bar",
+    "title": "Clinical trials by phase",
+    "data": [
+      {
+        "x": "Early Phase 1",
+        "y": 210
+      },
+      {
+        "x": "Phase 1",
+        "y": 2217
+      },
+      {
+        "x": "Phase 2",
+        "y": 2587
+      },
+      {
+        "x": "Phase 3",
+        "y": 2455
+      },
+      {
+        "x": "Phase 4",
+        "y": 2209
+      },
+      {
+        "x": "Not Applicable",
+        "y": 9964
+      }
+    ],
+    "encoding": {
+      "x": {
+        "field": "x",
+        "type": "ordinal"
+      },
+      "y": {
+        "field": "y",
+        "type": "quantitative"
+      },
+      "color": null
+    },
+    "metadata": {
+      "total_records": 24004,
+      "sampled": 600,
+      "bucket_set_complete": true,
+      "data_caveat": null,
+      "filters_applied": "condition=diabetes",
+      "source": "ClinicalTrials.gov",
+      "timestamp": "2026-06-26T02:29:29.222662+00:00",
+      "chart_config": {
+        "x_label": "Phase",
+        "y_label": "Number of trials",
+        "x_axis_rotation": 0,
+        "time_format": null
+      }
+    }
+  },
+  "citations": [
+    {
+      "bucket": "Early Phase 1",
+      "value": 210.0,
+      "nct_ids": [
+        "NCT00417924",
+        "NCT07142161"
+      ],
+      "trials": [
+        {
+          "nct_id": "NCT00417924",
+          "title": "Eye on Diabetes: A Multidisciplinary Patient Education Intervention",
+          "url": "https://clinicaltrials.gov/study/NCT00417924",
+          "excerpt": "Phase: Early Phase 1"
+        },
+        {
+          "nct_id": "NCT07142161",
+          "title": "A Study on the Safety, Preliminary Efficacy, and Cellular Kinetics of Allo-CD7 CAR-T Cells in T1DM",
+          "url": "https://clinicaltrials.gov/study/NCT07142161",
+          "excerpt": "Phase: Early Phase 1"
+        }
+      ]
+    },
+    {
+      "bucket": "Phase 1",
+      "value": 2217.0,
+      "nct_ids": [
+        "NCT01077505",
+        "NCT06422039",
+        "NCT02691234",
+        "NCT03466567",
+        "NCT05692934",
+        "NCT02971202",
+        "NCT02353975",
+        "NCT02035371",
+        "NCT03444467",
+        "NCT04407234",
+        "NCT04050553",
+        "NCT02773381",
+        "NCT04744636",
+        "NCT01620437",
+        "NCT04155645",
+        "NCT01290575",
+        "NCT05719181",
+        "NCT02002130",
+        "NCT04552600",
+        "NCT01557907",
+        "NCT00501657",
+        "NCT01835730",
+        "NCT04857957",
+        "NCT01272973",
+        "NCT02008851",
+        "NCT01498939",
+        "NCT02223065",
+        "NCT02356224",
+        "NCT00609154",
+        "NCT01535677",
+        "NCT01956929",
+        "NCT00517283",
+        "NCT02089451",
+        "NCT02411929",
+        "NCT01535495",
+        "NCT04223895",
+        "NCT06333977",
+        "NCT05262595",
+        "NCT02147431",
+        "NCT07588503",
+        "NCT01545570",
+        "NCT02039245",
+        "NCT02864654",
+        "NCT01981031",
+        "NCT00607945",
+        "NCT02504658",
+        "NCT06942923",
+        "NCT02224118",
+        "NCT02932826",
+        "NCT01273558",
+        "NCT02500485",
+        "NCT04161976",
+        "NCT06731218",
+        "NCT05754424",
+        "NCT05497674",
+        "NCT02672839",
+        "NCT02472236",
+        "NCT00453375",
+        "NCT00448032",
+        "NCT01319734",
+        "NCT03037593",
+        "NCT04575181",
+        "NCT02344992",
+        "NCT00836407",
+        "NCT01085292",
+        "NCT02993809"
+      ],
+      "trials": [
+        {
+          "nct_id": "NCT01077505",
+          "title": "An Evaluation of the Pharmacokinetics of an Oral Contraceptive (Brevicon) When Co-administered With Albiglutide .",
+          "url": "https://clinicaltrials.gov/study/NCT01077505",
+          "excerpt": "Phase: Phase 1"
+        },
+        {
+          "nct_id": "NCT06422039",
+          "title": "Bioavailability and Food Effects of HRS-7535 Tablets With Different Formulating Processes in Healthy Subjects",
+          "url": "https://clinicaltrials.gov/study/NCT06422039",
+          "excerpt": "Phase: Phase 1"
+        },
+        {
+          "nct_id": "NCT02691234",
+          "title": "Safety and Efficacy of Low Intensity Shockwave Therapy in Treating Diabetic Foot Ulcers",
+          "url": "https://clinicaltrials.gov/study/NCT02691234",
+          "excerpt": "Phase: Phase 1, Phase 2"
+        },
+        {
+          "nct_id": "NCT03466567",
+          "title": "A Trial Investigating the Effect of Probenecid and Ciclosporin on the Concentrations of SNAC in Healthy Subjects",
+          "url": "https://clinicaltrials.gov/study/NCT03466567",
+          "excerpt": "Phase: Phase 1"
+        },
+        {
+          "nct_id": "NCT05692934",
+          "title": "A HR20031 FE Study on Healthy Subjects",
+          "url": "https://clinicaltrials.gov/study/NCT05692934",
+          "excerpt": "Phase: Phase 1"
+        },
+        {
+          "nct_id": "NCT02971202",
+          "title": "Contribution of Hyperinsulinemia vs. Hyperglycemia to Insulin Resistance in Type 1 Diabetes and Maturity Onset Diabetes of the Young, Type 2 (MODY2)",
+          "url": "https://clinicaltrials.gov/study/NCT02971202",
+          "excerpt": "Phase: Phase 1"
+        },
+        {
+          "nct_id": "NCT02353975",
+          "title": "Effect of a High-fat Meal on the Pharmacokinetics of SHR3824 and Mass Balance Study in Healthy Subjects",
+          "url": "https://clinicaltrials.gov/study/NCT02353975",
+          "excerpt": "Phase: Phase 1"
+        },
+        {
+          "nct_id": "NCT02035371",
+          "title": "A Trial Investigating the Pharmacokinetic Properties of FIAsp in Children, Adolescents and Adults With Type 1 Diabetes",
+          "url": "https://clinicaltrials.gov/study/NCT02035371",
+          "excerpt": "Phase: Phase 1"
+        },
+        {
+          "nct_id": "NCT03444467",
+          "title": "First Research Study to Compare a Possible New Medicine NNC9204-1513 to the Medicine Glucagon, in Healthy People.",
+          "url": "https://clinicaltrials.gov/study/NCT03444467",
+          "excerpt": "Phase: Phase 1"
+        },
+        {
+          "nct_id": "NCT04407234",
+          "title": "A Study to Measure Stomach Emptying in Overweight Non-diabetic and Diabetic Participants Using Tirzepatide",
+          "url": "https://clinicaltrials.gov/study/NCT04407234",
+          "excerpt": "Phase: Phase 1"
+        },
+        {
+          "nct_id": "NCT04050553",
+          "title": "A Study of Tirzepatide in Participants With Type 2 Diabetes Mellitus",
+          "url": "https://clinicaltrials.gov/study/NCT04050553",
+          "excerpt": "Phase: Phase 1"
+        },
+        {
+          "nct_id": "NCT02773381",
+          "title": "A Trial Investigating the Effect of Oral Semaglutide Compared With Placebo on Postprandial Glucose and Triglyceride Metabolism, Energy Intake, Appetite Sensations and Gastric Emptying in Subjects With Type 2 Diabetes",
+          "url": "https://clinicaltrials.gov/study/NCT02773381",
+          "excerpt": "Phase: Phase 1"
+        },
+        {
+          "nct_id": "NCT04744636",
+          "title": "Vascular Function and Biomarker Assessments in Healthy Volunteers and in Patients With Type 2 Diabetes Mellitus",
+          "url": "https://clinicaltrials.gov/study/NCT04744636",
+          "excerpt": "Phase: Phase 1"
+        },
+        {
+          "nct_id": "NCT01620437",
+          "title": "Bioequivalence of Two Formulations of Biphasic Insulin Aspart 50 in Japanese Subjects",
+          "url": "https://clinicaltrials.gov/study/NCT01620437",
+          "excerpt": "Phase: Phase 1"
+        },
+        {
+          "nct_id": "NCT04155645",
+          "title": "To Assess the Safety, Tolerability, Pharmacokinetics, and Pharmacodynamics of AZD8233 After Multiple Dose Administration in Subjects With Dyslipidemia",
+          "url": "https://clinicaltrials.gov/study/NCT04155645",
+          "excerpt": "Phase: Phase 1"
+        },
+        {
+          "nct_id": "NCT01290575",
+          "title": "Multiple Ascending Dose Study of BMS-820132 in Patients With Type 2 Diabetes",
+          "url": "https://clinicaltrials.gov/study/NCT01290575",
+          "excerpt": "Phase: Phase 1"
+        },
+        {
+          "nct_id": "NCT05719181",
+          "title": "Effect of Recombinant Human Bone Morphogenetic Protein-2 With an Absorbable Collagen Sponge on Stability of Dental Implant: (Split Mouth Randomized Clinical Trial Study.",
+          "url": "https://clinicaltrials.gov/study/NCT05719181",
+          "excerpt": "Phase: Phase 1"
+        },
+        {
+          "nct_id": "NCT02002130",
+          "title": "The Use of Glutamic Acid Decarboxylase (GAD) and Gamma-Amino Butyric Acid (GABA) in the Treatment of Type I Diabetes",
+          "url": "https://clinicaltrials.gov/study/NCT02002130",
+          "excerpt": "Phase: Phase 1"
+        },
+        {
+          "nct_id": "NCT04552600",
+          "title": "Study to Evaluate Clinical Efficacy and Safety of Nuvastatic\u2122 - C5OSEW5050ESA in Diabetic Retinopathy.",
+          "url": "https://clinicaltrials.gov/study/NCT04552600",
+          "excerpt": "Phase: Phase 1, Phase 2"
+        },
+        {
+          "nct_id": "NCT01557907",
+          "title": "Multi-day (3) In-patient Evaluation of Intradermal Versus Subcutaneous Basal and Bolus Insulin Infusion",
+          "url": "https://clinicaltrials.gov/study/NCT01557907",
+          "excerpt": "Phase: Phase 1, Phase 2"
+        },
+        {
+          "nct_id": "NCT00501657",
+          "title": "Effects of Sitagliptin on Gastric Emptying in Healthy Subjects",
+          "url": "https://clinicaltrials.gov/study/NCT00501657",
+          "excerpt": "Phase: Phase 1"
+        },
+        {
+          "nct_id": "NCT01835730",
+          "title": "Phase 1 Multicenter, Single Ascending Dose Study to Assess the Safety, Tolerability, Pharmacokinetic and Pharmacodynamic Response of PE0139 Injection in Adult Subjects With Type 2 Diabetes Mellitus",
+          "url": "https://clinicaltrials.gov/study/NCT01835730",
+          "excerpt": "Phase: Phase 1"
+        },
+        {
+          "nct_id": "NCT04857957",
+          "title": "Safety, Tolerability & Pharmacokinetics Study of CNTX-6016 in Healthy Subjects and Subjects With PDN",
+          "url": "https://clinicaltrials.gov/study/NCT04857957",
+          "excerpt": "Phase: Phase 1"
+        },
+        {
+          "nct_id": "NCT01272973",
+          "title": "Investigation on Safety, Tolerability, Pharmacokinetics and Pharmacodynamics of NN9924 in Healthy Male Subjects",
+          "url": "https://clinicaltrials.gov/study/NCT01272973",
+          "excerpt": "Phase: Phase 1"
+        },
+        {
+          "nct_id": "NCT02008851",
+          "title": "A Phase 1, Open-label Safety Study of NKA in Patients With Type 2 Diabetes",
+          "url": "https://clinicaltrials.gov/study/NCT02008851",
+          "excerpt": "Phase: Phase 1"
+        }
+      ]
+    },
+    {
+      "bucket": "Phase 2",
+      "value": 2587.0,
+      "nct_ids": [
+        "NCT02317796",
+        "NCT06186102",
+        "NCT02691234",
+        "NCT03008057",
+        "NCT04335656",
+        "NCT00511719",
+        "NCT03848793",
+        "NCT00042601",
+        "NCT07585630",
+        "NCT02415556",
+        "NCT05063253",
+        "NCT02293837",
+        "NCT02191644",
+        "NCT04552600",
+        "NCT01557907",
+        "NCT00452777",
+        "NCT02554877",
+        "NCT00685594",
+        "NCT04371653",
+        "NCT01664637",
+        "NCT03567824",
+        "NCT00231023",
+        "NCT03149770",
+        "NCT00609154",
+        "NCT00929539",
+        "NCT05930561",
+        "NCT03826472",
+        "NCT05153070",
+        "NCT03137966",
+        "NCT02018627",
+        "NCT01158131",
+        "NCT00287651",
+        "NCT01029795",
+        "NCT00768651",
+        "NCT00388388",
+        "NCT06111183",
+        "NCT02864654",
+        "NCT07131501",
+        "NCT02932826",
+        "NCT00642174",
+        "NCT02023918",
+        "NCT03499223",
+        "NCT02324491",
+        "NCT06254274",
+        "NCT01480297",
+        "NCT00754624",
+        "NCT00653185",
+        "NCT02535715",
+        "NCT01496820",
+        "NCT01034319",
+        "NCT02511067",
+        "NCT01113671",
+        "NCT04689971",
+        "NCT02372253",
+        "NCT04678895",
+        "NCT06897475",
+        "NCT06474598",
+        "NCT03037593",
+        "NCT02053272",
+        "NCT07502495",
+        "NCT03667300",
+        "NCT05258630",
+        "NCT01085292",
+        "NCT00537498",
+        "NCT01933529",
+        "NCT01046422"
+      ],
+      "trials": [
+        {
+          "nct_id": "NCT02317796",
+          "title": "Adult Subjects With Uncontrolled Type 2 Diabetes",
+          "url": "https://clinicaltrials.gov/study/NCT02317796",
+          "excerpt": "Phase: Phase 2"
+        },
+        {
+          "nct_id": "NCT06186102",
+          "title": "Polyamine Treatment in Elderly Patients With Coronary Artery Disease",
+          "url": "https://clinicaltrials.gov/study/NCT06186102",
+          "excerpt": "Phase: Phase 2"
+        },
+        {
+          "nct_id": "NCT02691234",
+          "title": "Safety and Efficacy of Low Intensity Shockwave Therapy in Treating Diabetic Foot Ulcers",
+          "url": "https://clinicaltrials.gov/study/NCT02691234",
+          "excerpt": "Phase: Phase 1, Phase 2"
+        },
+        {
+          "nct_id": "NCT03008057",
+          "title": "The Assessment of the Effect of Vitamin D Supplementation on Inflammatory and Endothelial Factors in the Patients With Type 2 Diabetes .",
+          "url": "https://clinicaltrials.gov/study/NCT03008057",
+          "excerpt": "Phase: Phase 2, Phase 3"
+        },
+        {
+          "nct_id": "NCT04335656",
+          "title": "Reducing Innate Inflammation in New Onset Type 1 Diabetes",
+          "url": "https://clinicaltrials.gov/study/NCT04335656",
+          "excerpt": "Phase: Phase 2"
+        },
+        {
+          "nct_id": "NCT00511719",
+          "title": "Bioavailability of Technosphere\u00ae Insulin Versus Subcutaneous Regular Human Insulin in Type 2 Diabetes",
+          "url": "https://clinicaltrials.gov/study/NCT00511719",
+          "excerpt": "Phase: Phase 2"
+        },
+        {
+          "nct_id": "NCT03848793",
+          "title": "A Phase 2 Study to Evaluate the Efficacy and Safety of HS-20004 in Type 2 Diabetes Subjects.",
+          "url": "https://clinicaltrials.gov/study/NCT03848793",
+          "excerpt": "Phase: Phase 2"
+        },
+        {
+          "nct_id": "NCT00042601",
+          "title": "Evaluation of the Effect of Pramlintide on Satiety and Food Intake",
+          "url": "https://clinicaltrials.gov/study/NCT00042601",
+          "excerpt": "Phase: Phase 2"
+        },
+        {
+          "nct_id": "NCT07585630",
+          "title": "A1Cantus vs. Placebo",
+          "url": "https://clinicaltrials.gov/study/NCT07585630",
+          "excerpt": "Phase: Phase 2"
+        },
+        {
+          "nct_id": "NCT02415556",
+          "title": "Memory Aid by Intranasal Insulin in Diabetes (MemAID)",
+          "url": "https://clinicaltrials.gov/study/NCT02415556",
+          "excerpt": "Phase: Phase 2"
+        },
+        {
+          "nct_id": "NCT05063253",
+          "title": "A Study of TG103 Injection in Overweight/Obese Subjects With Type 2 Diabetes",
+          "url": "https://clinicaltrials.gov/study/NCT05063253",
+          "excerpt": "Phase: Phase 2"
+        },
+        {
+          "nct_id": "NCT02293837",
+          "title": "Tocilizumab (TCZ) in New-onset Type 1 Diabetes",
+          "url": "https://clinicaltrials.gov/study/NCT02293837",
+          "excerpt": "Phase: Phase 2"
+        },
+        {
+          "nct_id": "NCT02191644",
+          "title": "Dietary Intervention Replacing Carbohydrate With Protein and Fat Has Greater Effect on Peripheral Blood Mononuclear Cell Metabolites Than on Plasma Metabolites in Patients With Prediabetes or Type-2 Diabetes",
+          "url": "https://clinicaltrials.gov/study/NCT02191644",
+          "excerpt": "Phase: Phase 2"
+        },
+        {
+          "nct_id": "NCT04552600",
+          "title": "Study to Evaluate Clinical Efficacy and Safety of Nuvastatic\u2122 - C5OSEW5050ESA in Diabetic Retinopathy.",
+          "url": "https://clinicaltrials.gov/study/NCT04552600",
+          "excerpt": "Phase: Phase 1, Phase 2"
+        },
+        {
+          "nct_id": "NCT01557907",
+          "title": "Multi-day (3) In-patient Evaluation of Intradermal Versus Subcutaneous Basal and Bolus Insulin Infusion",
+          "url": "https://clinicaltrials.gov/study/NCT01557907",
+          "excerpt": "Phase: Phase 1, Phase 2"
+        },
+        {
+          "nct_id": "NCT00452777",
+          "title": "Efficacy and Tolerability of Novel A2A Agonist in Treatment of Diabetic Neuropathic Pain",
+          "url": "https://clinicaltrials.gov/study/NCT00452777",
+          "excerpt": "Phase: Phase 2"
+        },
+        {
+          "nct_id": "NCT02554877",
+          "title": "A 12-week Study To Evaluate PF-06291874 Once a Day in Adults With T2DM Inadequately Controlled On Metformin",
+          "url": "https://clinicaltrials.gov/study/NCT02554877",
+          "excerpt": "Phase: Phase 2"
+        },
+        {
+          "nct_id": "NCT00685594",
+          "title": "Vitamin D for the Prevention of Diabetes Type 2",
+          "url": "https://clinicaltrials.gov/study/NCT00685594",
+          "excerpt": "Phase: Phase 2, Phase 3"
+        },
+        {
+          "nct_id": "NCT04371653",
+          "title": "A Prospective, Randomized, Placebo-Controlled Pilot Study to Characterize the Intestinal Microbiome and to Evaluate the Safety and Fecal Microbiome Changes Following Administration of Lyophilized PRIM-DJ2727 or Placebo Given Orally in Subjects With Nonalcoholic Fatty Liver Disease",
+          "url": "https://clinicaltrials.gov/study/NCT04371653",
+          "excerpt": "Phase: Phase 2"
+        },
+        {
+          "nct_id": "NCT01664637",
+          "title": "Diabetic Gastroparesis Efficacy/Safety Study of TZP-102",
+          "url": "https://clinicaltrials.gov/study/NCT01664637",
+          "excerpt": "Phase: Phase 2"
+        },
+        {
+          "nct_id": "NCT03567824",
+          "title": "MLD10 for the Treatment of Hypomagnesemic Patients With Type 2 Diabetes Mellitus",
+          "url": "https://clinicaltrials.gov/study/NCT03567824",
+          "excerpt": "Phase: Phase 2"
+        },
+        {
+          "nct_id": "NCT00231023",
+          "title": "Triamcinolone Acetonide Injections to Treat Diabetic Macular Edema",
+          "url": "https://clinicaltrials.gov/study/NCT00231023",
+          "excerpt": "Phase: Phase 2"
+        },
+        {
+          "nct_id": "NCT03149770",
+          "title": "Naloxone, Hypoglycemia and Exercise",
+          "url": "https://clinicaltrials.gov/study/NCT03149770",
+          "excerpt": "Phase: Phase 2"
+        },
+        {
+          "nct_id": "NCT00609154",
+          "title": "Effect of GLP-1 on Insulin Biosynthesis and Turnover Rates",
+          "url": "https://clinicaltrials.gov/study/NCT00609154",
+          "excerpt": "Phase: Phase 1, Phase 2"
+        },
+        {
+          "nct_id": "NCT00929539",
+          "title": "Safety and Efficacy Study of JTT-130 in Obese Type 2 Diabetic Patients",
+          "url": "https://clinicaltrials.gov/study/NCT00929539",
+          "excerpt": "Phase: Phase 2"
+        }
+      ]
+    },
+    {
+      "bucket": "Phase 3",
+      "value": 2455.0,
+      "nct_ids": [
+        "NCT01817959",
+        "NCT04885712",
+        "NCT03008057",
+        "NCT00099866",
+        "NCT00236639",
+        "NCT04686201",
+        "NCT01381900",
+        "NCT01871428",
+        "NCT03345901",
+        "NCT01582230",
+        "NCT05286853",
+        "NCT04373967",
+        "NCT01089556",
+        "NCT02568501",
+        "NCT00552175",
+        "NCT00102466",
+        "NCT00214565",
+        "NCT01135992",
+        "NCT04634500",
+        "NCT01785771",
+        "NCT06083675",
+        "NCT00685594",
+        "NCT00604656",
+        "NCT06739122",
+        "NCT00627445",
+        "NCT04848480",
+        "NCT07667803",
+        "NCT05138029",
+        "NCT02018627",
+        "NCT01087242",
+        "NCT00300105",
+        "NCT00287651",
+        "NCT06914895",
+        "NCT07279194",
+        "NCT04039503",
+        "NCT00798161",
+        "NCT00291590",
+        "NCT02738879",
+        "NCT00110435",
+        "NCT00826774",
+        "NCT00595374",
+        "NCT01465620",
+        "NCT03798080",
+        "NCT06825182",
+        "NCT02122874",
+        "NCT00290979",
+        "NCT00468117",
+        "NCT02068443",
+        "NCT00854035",
+        "NCT01496820",
+        "NCT01243424",
+        "NCT00959595",
+        "NCT00282971",
+        "NCT01113671",
+        "NCT04689971",
+        "NCT01051011",
+        "NCT06246799",
+        "NCT02849899",
+        "NCT01029392",
+        "NCT01584232",
+        "NCT06021119",
+        "NCT00226330",
+        "NCT00929812",
+        "NCT01217463"
+      ],
+      "trials": [
+        {
+          "nct_id": "NCT01817959",
+          "title": "Study to Assess Efficacy & Safety of Reparixin in Pancreatic Islet Transplantation",
+          "url": "https://clinicaltrials.gov/study/NCT01817959",
+          "excerpt": "Phase: Phase 3"
+        },
+        {
+          "nct_id": "NCT04885712",
+          "title": "A Study to Evaluate the Efficacy and Safety of Pioglitazone 15mg or 30mg Add-on in Patients With Type 2 Diabetes Mellitus Inadequately Controlled With Metformin and Dapagliflozin",
+          "url": "https://clinicaltrials.gov/study/NCT04885712",
+          "excerpt": "Phase: Phase 3"
+        },
+        {
+          "nct_id": "NCT03008057",
+          "title": "The Assessment of the Effect of Vitamin D Supplementation on Inflammatory and Endothelial Factors in the Patients With Type 2 Diabetes .",
+          "url": "https://clinicaltrials.gov/study/NCT03008057",
+          "excerpt": "Phase: Phase 2, Phase 3"
+        },
+        {
+          "nct_id": "NCT00099866",
+          "title": "Efficacy and Safety of Vildagliptin Compared to Metformin in Drug Naive Patients With Type 2 Diabetes",
+          "url": "https://clinicaltrials.gov/study/NCT00099866",
+          "excerpt": "Phase: Phase 3"
+        },
+        {
+          "nct_id": "NCT00236639",
+          "title": "A Study on Efficacy and Safety of Topiramate in the Treatment of Patients With Obesity",
+          "url": "https://clinicaltrials.gov/study/NCT00236639",
+          "excerpt": "Phase: Phase 3"
+        },
+        {
+          "nct_id": "NCT04686201",
+          "title": "Development of Diabetes Mobile Application",
+          "url": "https://clinicaltrials.gov/study/NCT04686201",
+          "excerpt": "Phase: Phase 3"
+        },
+        {
+          "nct_id": "NCT01381900",
+          "title": "A Efficacy, Safety, and Tolerability Study of Canagliflozin in Patients With Type 2 Diabetes Mellitus With Inadequate Glycemic Control on Metformin Alone or in Combination With a Sulphonylurea",
+          "url": "https://clinicaltrials.gov/study/NCT01381900",
+          "excerpt": "Phase: Phase 3"
+        },
+        {
+          "nct_id": "NCT01871428",
+          "title": "A Study of Aleglitazar in Monotherapy in Patients With Type 2 Diabetes Mellitus Who Are Drug-Na\u00efve to Anti-Hyperglycemic Therapy",
+          "url": "https://clinicaltrials.gov/study/NCT01871428",
+          "excerpt": "Phase: Phase 3"
+        },
+        {
+          "nct_id": "NCT03345901",
+          "title": "PROMINENT-Eye Ancillary Study (Protocol AD)",
+          "url": "https://clinicaltrials.gov/study/NCT03345901",
+          "excerpt": "Phase: Phase 3"
+        },
+        {
+          "nct_id": "NCT01582230",
+          "title": "Efficacy and Safety of Vildagliptin 50mg Bid as an add-on Therapy to Insulin With or Without Metformin, in Patients With Type 2 Diabetes Mellitus",
+          "url": "https://clinicaltrials.gov/study/NCT01582230",
+          "excerpt": "Phase: Phase 3"
+        },
+        {
+          "nct_id": "NCT05286853",
+          "title": "A Study of Renal Autologous Cell Therapy (REACT) in Participants With Type 2 Diabetes and Chronic Kidney Disease",
+          "url": "https://clinicaltrials.gov/study/NCT05286853",
+          "excerpt": "Phase: Phase 3"
+        },
+        {
+          "nct_id": "NCT04373967",
+          "title": "Study to Assess the Efficacy and Safety of Liraglutide in the Treatment of Type 2 Diabetes",
+          "url": "https://clinicaltrials.gov/study/NCT04373967",
+          "excerpt": "Phase: Phase 3"
+        },
+        {
+          "nct_id": "NCT01089556",
+          "title": "A Study in Painful Diabetic Neuropathy",
+          "url": "https://clinicaltrials.gov/study/NCT01089556",
+          "excerpt": "Phase: Phase 3"
+        },
+        {
+          "nct_id": "NCT02568501",
+          "title": "Behavioral Economic Incentives to Improve Glycemic Control Among Adolescents and Young Adults",
+          "url": "https://clinicaltrials.gov/study/NCT02568501",
+          "excerpt": "Phase: Phase 3"
+        },
+        {
+          "nct_id": "NCT00552175",
+          "title": "A Study for the Treatment of Diabetic Peripheral Neuropathic Pain",
+          "url": "https://clinicaltrials.gov/study/NCT00552175",
+          "excerpt": "Phase: Phase 3"
+        },
+        {
+          "nct_id": "NCT00102466",
+          "title": "Vildagliptin Compared to Gliclazide in Combination With Metformin in Patients With Type 2 Diabetes",
+          "url": "https://clinicaltrials.gov/study/NCT00102466",
+          "excerpt": "Phase: Phase 3"
+        },
+        {
+          "nct_id": "NCT00214565",
+          "title": "GALLANT 6 Tesaglitazar vs. Pioglitazone",
+          "url": "https://clinicaltrials.gov/study/NCT00214565",
+          "excerpt": "Phase: Phase 3"
+        },
+        {
+          "nct_id": "NCT01135992",
+          "title": "Switching From Insulin Glargine to Insulin Degludec in Subjects With Type 2 Diabetes Mellitus (BEGIN\u2122)",
+          "url": "https://clinicaltrials.gov/study/NCT01135992",
+          "excerpt": "Phase: Phase 3"
+        },
+        {
+          "nct_id": "NCT04634500",
+          "title": "The Efficacy and Safety of DWP16001 in Combination With Metformin in Patients With Type 2 Diabetes.",
+          "url": "https://clinicaltrials.gov/study/NCT04634500",
+          "excerpt": "Phase: Phase 3"
+        },
+        {
+          "nct_id": "NCT01785771",
+          "title": "A Study to Evaluate ITCA 650 for the Treatment of Type 2 Diabetes in Patients With High Baseline HbA1c",
+          "url": "https://clinicaltrials.gov/study/NCT01785771",
+          "excerpt": "Phase: Phase 3"
+        },
+        {
+          "nct_id": "NCT06083675",
+          "title": "Research Study to Compare Semaglutide Tablets With Empagliflozin or Metformin Tablets in People With Type 2 Diabetes",
+          "url": "https://clinicaltrials.gov/study/NCT06083675",
+          "excerpt": "Phase: Phase 3"
+        },
+        {
+          "nct_id": "NCT00685594",
+          "title": "Vitamin D for the Prevention of Diabetes Type 2",
+          "url": "https://clinicaltrials.gov/study/NCT00685594",
+          "excerpt": "Phase: Phase 2, Phase 3"
+        },
+        {
+          "nct_id": "NCT00604656",
+          "title": "Comparison of Insulin Aspart Produced by the NN2000 Process to the Current Process in Type 1 Diabetes",
+          "url": "https://clinicaltrials.gov/study/NCT00604656",
+          "excerpt": "Phase: Phase 3"
+        },
+        {
+          "nct_id": "NCT06739122",
+          "title": "A Study of Dulaglutide (LY2189265) 3.0 mg and 4.5 mg in Pediatric Participants With Type 2 Diabetes Mellitus (AWARD-PEDS PLUS)",
+          "url": "https://clinicaltrials.gov/study/NCT06739122",
+          "excerpt": "Phase: Phase 3"
+        },
+        {
+          "nct_id": "NCT00627445",
+          "title": "Effect of Biphasic Insulin Aspart 50 on Blood Glucose Control in Subjects With Type 2 Diabetes",
+          "url": "https://clinicaltrials.gov/study/NCT00627445",
+          "excerpt": "Phase: Phase 3"
+        }
+      ]
+    },
+    {
+      "bucket": "Phase 4",
+      "value": 2209.0,
+      "nct_ids": [
+        "NCT01186107",
+        "NCT00953186",
+        "NCT00437970",
+        "NCT00921570",
+        "NCT01758471",
+        "NCT00272077",
+        "NCT03912909",
+        "NCT01907854",
+        "NCT05624853",
+        "NCT01181830",
+        "NCT02508844",
+        "NCT02842554",
+        "NCT01040819",
+        "NCT02769377",
+        "NCT02027753",
+        "NCT02754739",
+        "NCT00766857",
+        "NCT00877123",
+        "NCT05119179",
+        "NCT00320879",
+        "NCT02285205",
+        "NCT01649466",
+        "NCT02024477",
+        "NCT01258075",
+        "NCT02056366",
+        "NCT05835037",
+        "NCT00619983",
+        "NCT01813929",
+        "NCT06903546",
+        "NCT03815305",
+        "NCT01426737",
+        "NCT07108985",
+        "NCT01293396",
+        "NCT00708578",
+        "NCT02007278",
+        "NCT01122979",
+        "NCT06989723",
+        "NCT06046560",
+        "NCT00645424",
+        "NCT04473274",
+        "NCT00278057",
+        "NCT05886192",
+        "NCT06243536",
+        "NCT00870402",
+        "NCT00951899",
+        "NCT00284232",
+        "NCT05579119",
+        "NCT01588470"
+      ],
+      "trials": [
+        {
+          "nct_id": "NCT01186107",
+          "title": "Comparison of Zotarolimus-Eluting Stent vs Sirolimus-Eluting Stent for Diabetic Patients",
+          "url": "https://clinicaltrials.gov/study/NCT01186107",
+          "excerpt": "Phase: Phase 4"
+        },
+        {
+          "nct_id": "NCT00953186",
+          "title": "Hyperbaric Oxygen Therapy as Adjunctive Treatment of Chronic Diabetic Foot Ulcers",
+          "url": "https://clinicaltrials.gov/study/NCT00953186",
+          "excerpt": "Phase: Phase 4"
+        },
+        {
+          "nct_id": "NCT00437970",
+          "title": "Medication in Early Diabetes (MED) Study",
+          "url": "https://clinicaltrials.gov/study/NCT00437970",
+          "excerpt": "Phase: Phase 4"
+        },
+        {
+          "nct_id": "NCT00921570",
+          "title": "The Effects of Renin Angiotensin System Blockage (RAS), Calcium Channel Blocker and Combined Drugs on TWEAK, PTX3 and FMD Levels in Diabetic Proteinuric Patients With Hypertension",
+          "url": "https://clinicaltrials.gov/study/NCT00921570",
+          "excerpt": "Phase: Phase 4"
+        },
+        {
+          "nct_id": "NCT01758471",
+          "title": "Efficacy of Acarbose on Intestinal Microbiome and Incretins of Type 2 Diabetes",
+          "url": "https://clinicaltrials.gov/study/NCT01758471",
+          "excerpt": "Phase: Phase 4"
+        },
+        {
+          "nct_id": "NCT00272077",
+          "title": "Insulin Glargine in Type 2 Diabetes Mellitus",
+          "url": "https://clinicaltrials.gov/study/NCT00272077",
+          "excerpt": "Phase: Phase 4"
+        },
+        {
+          "nct_id": "NCT03912909",
+          "title": "Effects of Sodium-glucose Co-transporter-2( SGLT-2 ) Inhibition on Sympathetic Nervous System Activity in Humans",
+          "url": "https://clinicaltrials.gov/study/NCT03912909",
+          "excerpt": "Phase: Phase 4"
+        },
+        {
+          "nct_id": "NCT01907854",
+          "title": "Efficacy and Safety of Switching From Sitagliptin to Liraglutide in Subjects With Type 2 Diabetes Not Achieving Adequate Glycaemic Control on Sitagliptin and Metformin",
+          "url": "https://clinicaltrials.gov/study/NCT01907854",
+          "excerpt": "Phase: Phase 4"
+        },
+        {
+          "nct_id": "NCT05624853",
+          "title": "A Randomized, Active-controlled, Parallel, Open-label, Multicenter, Phase 4 Study to Compare the Efficacy and Safety of Pregabalin Sustained Release Tablet and Pregabalin Immediate Release Capsule in Type II Diabetic Patients With Peripheral Neuropathic Pain",
+          "url": "https://clinicaltrials.gov/study/NCT05624853",
+          "excerpt": "Phase: Phase 4"
+        },
+        {
+          "nct_id": "NCT01181830",
+          "title": "Effect of Magnesium Administration in Subjects With Family History of Diabetes or Metabolic Syndrome",
+          "url": "https://clinicaltrials.gov/study/NCT01181830",
+          "excerpt": "Phase: Phase 4"
+        },
+        {
+          "nct_id": "NCT02508844",
+          "title": "Effect of Probiotics (Vivomixx\u00ae) on Weight, Microbiota and Glucose Tolerance in Obese Pregnant Women and Their Newborn",
+          "url": "https://clinicaltrials.gov/study/NCT02508844",
+          "excerpt": "Phase: Phase 4"
+        },
+        {
+          "nct_id": "NCT02842554",
+          "title": "Training \"Pain Connoisseurs\" for Efficient Analgesic Proof-of-Concept Studies",
+          "url": "https://clinicaltrials.gov/study/NCT02842554",
+          "excerpt": "Phase: Phase 4"
+        },
+        {
+          "nct_id": "NCT01040819",
+          "title": "Does Pioglitazone Increase the Production of 15-EPI-Lipoxin A4?",
+          "url": "https://clinicaltrials.gov/study/NCT01040819",
+          "excerpt": "Phase: Phase 4"
+        },
+        {
+          "nct_id": "NCT02769377",
+          "title": "Glucometer and Mobile-phone Based Data Transfer System in Diabetes",
+          "url": "https://clinicaltrials.gov/study/NCT02769377",
+          "excerpt": "Phase: Phase 4"
+        },
+        {
+          "nct_id": "NCT02027753",
+          "title": "Efficacy and Safety of Insulin Glargine in Patients With Type 2 Diabetes With Inadequate Control on DPP-4 Inhibitor Therapy",
+          "url": "https://clinicaltrials.gov/study/NCT02027753",
+          "excerpt": "Phase: Phase 4"
+        },
+        {
+          "nct_id": "NCT02754739",
+          "title": "Effect of Pravastatin in the Subjects With Prediabetes or Early Diabetes",
+          "url": "https://clinicaltrials.gov/study/NCT02754739",
+          "excerpt": "Phase: Phase 4"
+        },
+        {
+          "nct_id": "NCT00766857",
+          "title": "Effects of Exenatide in Type 2 Diabetic Patients With Congestive Heart Failure",
+          "url": "https://clinicaltrials.gov/study/NCT00766857",
+          "excerpt": "Phase: Phase 4"
+        },
+        {
+          "nct_id": "NCT00877123",
+          "title": "Effect of Vitamin D Supplementation on Fasting Glucose and Interleukin-10 (IL-10) in Arab Women With Impaired Fasting Glucose",
+          "url": "https://clinicaltrials.gov/study/NCT00877123",
+          "excerpt": "Phase: Phase 4"
+        },
+        {
+          "nct_id": "NCT05119179",
+          "title": "Pharmacogenetics of the Response to GLP-1 in Mexican-Americans With Prediabetes",
+          "url": "https://clinicaltrials.gov/study/NCT05119179",
+          "excerpt": "Phase: Phase 4"
+        },
+        {
+          "nct_id": "NCT00320879",
+          "title": "Optimal Dose of Irbesartan for Renoprotection in Type 2 Diabetic Patients With Persistent Microalbuminuria",
+          "url": "https://clinicaltrials.gov/study/NCT00320879",
+          "excerpt": "Phase: Phase 4"
+        },
+        {
+          "nct_id": "NCT02285205",
+          "title": "A 24 Week, Multicenter, Prospective, Open-labeled, Single-arm, Exploratory Phase 4 Clinical Trial to Evaluate the Safety and Efficacy of Lobeglitazone in Decreasing Intrahepatic Fat Contents in Type 2 Diabetes With NAFLD",
+          "url": "https://clinicaltrials.gov/study/NCT02285205",
+          "excerpt": "Phase: Phase 4"
+        },
+        {
+          "nct_id": "NCT01649466",
+          "title": "Safety and Efficacy of Vildagliptin Versus NPH Insulin add-on to Glimepiride in Type 2 Diabetes Mellitus Patients.",
+          "url": "https://clinicaltrials.gov/study/NCT01649466",
+          "excerpt": "Phase: Phase 4"
+        },
+        {
+          "nct_id": "NCT02024477",
+          "title": "Effect of Saxagliptin on EPCs as a Cellular Biomarker for Evaluating Endothelial Dysfunction in Early T2DM Patients",
+          "url": "https://clinicaltrials.gov/study/NCT02024477",
+          "excerpt": "Phase: Phase 4"
+        },
+        {
+          "nct_id": "NCT01258075",
+          "title": "Colesevelam for Children With Type 2 Diabetes",
+          "url": "https://clinicaltrials.gov/study/NCT01258075",
+          "excerpt": "Phase: Phase 4"
+        },
+        {
+          "nct_id": "NCT02056366",
+          "title": "The Effect of \u03b1-lipoic Acid Treatment in Patient With Cardiac Autonomic Neuropathy",
+          "url": "https://clinicaltrials.gov/study/NCT02056366",
+          "excerpt": "Phase: Phase 4"
+        }
+      ]
+    },
+    {
+      "bucket": "Not Applicable",
+      "value": 9964.0,
+      "nct_ids": [
+        "NCT06376890",
+        "NCT04755660",
+        "NCT03028220",
+        "NCT05092620",
+        "NCT07281196",
+        "NCT05498688",
+        "NCT03650088",
+        "NCT01533688",
+        "NCT07513961",
+        "NCT03309254",
+        "NCT06436456",
+        "NCT05788731",
+        "NCT05378295",
+        "NCT04682977",
+        "NCT07214857",
+        "NCT00005365",
+        "NCT04894344",
+        "NCT06468371",
+        "NCT03077386",
+        "NCT06440486",
+        "NCT05778370",
+        "NCT02696070",
+        "NCT01766570",
+        "NCT05151770",
+        "NCT05431686",
+        "NCT05272670",
+        "NCT05188573",
+        "NCT05902156",
+        "NCT00326222",
+        "NCT06253351",
+        "NCT05852639",
+        "NCT04517201",
+        "NCT02165228",
+        "NCT05888454",
+        "NCT06011356",
+        "NCT07155902",
+        "NCT03196895",
+        "NCT02973412",
+        "NCT00676767",
+        "NCT06250192",
+        "NCT04776811",
+        "NCT05696964",
+        "NCT07156331",
+        "NCT02034045",
+        "NCT05767372",
+        "NCT01298375",
+        "NCT02370719",
+        "NCT04011228",
+        "NCT03506711",
+        "NCT01455064",
+        "NCT02637154",
+        "NCT01961622",
+        "NCT04481737",
+        "NCT04002557",
+        "NCT06961019",
+        "NCT02885428",
+        "NCT05939271",
+        "NCT04016012",
+        "NCT00960765",
+        "NCT03141892",
+        "NCT05325892",
+        "NCT00566592",
+        "NCT06743698",
+        "NCT03835312",
+        "NCT01997281",
+        "NCT04439630",
+        "NCT02812030",
+        "NCT04754464",
+        "NCT06099509",
+        "NCT03767699",
+        "NCT03412253",
+        "NCT02637245",
+        "NCT06918977",
+        "NCT00439101",
+        "NCT04706481",
+        "NCT07584330",
+        "NCT05035966",
+        "NCT01339637",
+        "NCT06879639",
+        "NCT07209930",
+        "NCT03178019",
+        "NCT01879228",
+        "NCT01908530",
+        "NCT05989867",
+        "NCT06914102",
+        "NCT07136402",
+        "NCT07389772",
+        "NCT02007577",
+        "NCT01026675",
+        "NCT01879501",
+        "NCT03599401",
+        "NCT07661381",
+        "NCT01566981",
+        "NCT05459519",
+        "NCT01512030",
+        "NCT01041365",
+        "NCT01547156",
+        "NCT04064437",
+        "NCT05766657",
+        "NCT05324930",
+        "NCT01514292",
+        "NCT03889236",
+        "NCT06364644",
+        "NCT05339841",
+        "NCT00527254",
+        "NCT01747356",
+        "NCT03904056",
+        "NCT05649553",
+        "NCT02683902",
+        "NCT05173675",
+        "NCT00259701",
+        "NCT01965665",
+        "NCT03422965",
+        "NCT03369067",
+        "NCT02092051",
+        "NCT03464045",
+        "NCT05515939",
+        "NCT07414277",
+        "NCT06697977",
+        "NCT02532101",
+        "NCT05566912",
+        "NCT00225628",
+        "NCT05564728",
+        "NCT07390292",
+        "NCT05223556",
+        "NCT03682445",
+        "NCT06007157",
+        "NCT01022619",
+        "NCT05859165",
+        "NCT01887067",
+        "NCT01390636",
+        "NCT02409511",
+        "NCT04279444",
+        "NCT04618354",
+        "NCT02451722",
+        "NCT03058029",
+        "NCT01042301",
+        "NCT05342012",
+        "NCT04421001",
+        "NCT00364312",
+        "NCT06275412",
+        "NCT02661165",
+        "NCT00412165",
+        "NCT07325461",
+        "NCT06318442",
+        "NCT05904769",
+        "NCT06800794",
+        "NCT00279266",
+        "NCT04295031",
+        "NCT03489031",
+        "NCT07109102",
+        "NCT01364337",
+        "NCT03441919",
+        "NCT03436628",
+        "NCT03885869",
+        "NCT01371266",
+        "NCT05333822",
+        "NCT02874612",
+        "NCT03027219",
+        "NCT04631965",
+        "NCT00915707",
+        "NCT03656341",
+        "NCT03112005",
+        "NCT04578431",
+        "NCT05256875",
+        "NCT07333313",
+        "NCT05565924",
+        "NCT03076424",
+        "NCT01178723",
+        "NCT06127823",
+        "NCT03426423",
+        "NCT05426096",
+        "NCT06235762",
+        "NCT03522870",
+        "NCT01912170",
+        "NCT01877603",
+        "NCT03017703",
+        "NCT01413542",
+        "NCT02940873",
+        "NCT01045954",
+        "NCT07084805",
+        "NCT00441077",
+        "NCT00593424",
+        "NCT04905823",
+        "NCT07144696",
+        "NCT03956173",
+        "NCT05398783",
+        "NCT02109094",
+        "NCT07379931",
+        "NCT00818142",
+        "NCT03509454",
+        "NCT04945551",
+        "NCT01167231",
+        "NCT01289145",
+        "NCT02950272",
+        "NCT04285554",
+        "NCT03372005",
+        "NCT06153537",
+        "NCT02439177",
+        "NCT06222775",
+        "NCT01955746",
+        "NCT01213888",
+        "NCT06302127",
+        "NCT04529473",
+        "NCT03260673",
+        "NCT04014569",
+        "NCT03773731",
+        "NCT05403853",
+        "NCT01121172",
+        "NCT03625856",
+        "NCT07392853",
+        "NCT05118945",
+        "NCT04039945",
+        "NCT03741972",
+        "NCT03794739",
+        "NCT02513875",
+        "NCT04007003",
+        "NCT04117269",
+        "NCT01626053",
+        "NCT05315037",
+        "NCT01043770",
+        "NCT05963594",
+        "NCT04518566",
+        "NCT04031222",
+        "NCT05799222",
+        "NCT04217902",
+        "NCT05918653",
+        "NCT04089462",
+        "NCT03640286",
+        "NCT05124405",
+        "NCT07135531",
+        "NCT06791837",
+        "NCT00704795",
+        "NCT00696995",
+        "NCT04726657",
+        "NCT02539355",
+        "NCT04689685",
+        "NCT02070835",
+        "NCT05908708",
+        "NCT02821117",
+        "NCT01307917",
+        "NCT03118050",
+        "NCT04831697",
+        "NCT06495424",
+        "NCT02573662",
+        "NCT05797285",
+        "NCT06958640",
+        "NCT07216118",
+        "NCT07165990",
+        "NCT05922280",
+        "NCT04098679",
+        "NCT00699179",
+        "NCT02908555",
+        "NCT06015685",
+        "NCT07412015",
+        "NCT07497815",
+        "NCT04097691",
+        "NCT06705010",
+        "NCT06936280",
+        "NCT03367455",
+        "NCT06436326",
+        "NCT00194558",
+        "NCT04007926",
+        "NCT06067685",
+        "NCT07550608",
+        "NCT00867425",
+        "NCT03078491",
+        "NCT01578382",
+        "NCT07017985",
+        "NCT01172743",
+        "NCT06578325",
+        "NCT01542476",
+        "NCT03356340",
+        "NCT04666818",
+        "NCT04948918",
+        "NCT02266758",
+        "NCT02938026",
+        "NCT00631774",
+        "NCT07645313",
+        "NCT01516320",
+        "NCT03788915",
+        "NCT05401708",
+        "NCT02763150",
+        "NCT06683391",
+        "NCT00179374",
+        "NCT02304718",
+        "NCT01017718",
+        "NCT02776397",
+        "NCT07201779",
+        "NCT03254979",
+        "NCT03541096",
+        "NCT04288362",
+        "NCT01424046",
+        "NCT03602846",
+        "NCT00222885",
+        "NCT03743285",
+        "NCT03117543",
+        "NCT03804125",
+        "NCT04337723",
+        "NCT01006915",
+        "NCT06343974",
+        "NCT02463097",
+        "NCT01564797",
+        "NCT05957224",
+        "NCT05716724",
+        "NCT02651480",
+        "NCT02868788",
+        "NCT02233088",
+        "NCT01103648",
+        "NCT05230615",
+        "NCT05631535",
+        "NCT06933108",
+        "NCT00634608",
+        "NCT07590817",
+        "NCT02871089",
+        "NCT06081413",
+        "NCT05636007",
+        "NCT04267367",
+        "NCT05567692",
+        "NCT05457192",
+        "NCT07066371",
+        "NCT02800044",
+        "NCT05274009",
+        "NCT05759637",
+        "NCT03222245",
+        "NCT01517919",
+        "NCT06998511",
+        "NCT06313164",
+        "NCT05730998",
+        "NCT05736263",
+        "NCT03237975",
+        "NCT00842075",
+        "NCT04564911",
+        "NCT06160934",
+        "NCT06739993",
+        "NCT05501093",
+        "NCT06879834",
+        "NCT02693964",
+        "NCT06044064",
+        "NCT06028399",
+        "NCT06298799",
+        "NCT01115257",
+        "NCT05668819",
+        "NCT03094819",
+        "NCT03345667",
+        "NCT06613711",
+        "NCT05092399",
+        "NCT01895712",
+        "NCT03734107",
+        "NCT00659711",
+        "NCT07188571",
+        "NCT05984771",
+        "NCT01348672",
+        "NCT00995995",
+        "NCT06876207",
+        "NCT03340311",
+        "NCT05372471",
+        "NCT00398944",
+        "NCT04007809",
+        "NCT03512665",
+        "NCT01877200",
+        "NCT05422807",
+        "NCT02014207",
+        "NCT07149064",
+        "NCT02010541",
+        "NCT04869605",
+        "NCT01088451",
+        "NCT01631929",
+        "NCT02133729"
+      ],
+      "trials": [
+        {
+          "nct_id": "NCT06376890",
+          "title": "Effects of Chili Pepper on Inflammation and Glycemic Control in Southern New Mexico",
+          "url": "https://clinicaltrials.gov/study/NCT06376890",
+          "excerpt": "Phase: Not Applicable"
+        },
+        {
+          "nct_id": "NCT04755660",
+          "title": "Home-based Resistance Training to Patients With Type 2 Diabetes",
+          "url": "https://clinicaltrials.gov/study/NCT04755660",
+          "excerpt": "Phase: Not Applicable"
+        },
+        {
+          "nct_id": "NCT03028220",
+          "title": "Impact on Hypoglycaemia Awareness of Real Time CGM and Intermittent Continuous Glucose Data",
+          "url": "https://clinicaltrials.gov/study/NCT03028220",
+          "excerpt": "Phase: Not Applicable"
+        },
+        {
+          "nct_id": "NCT05092620",
+          "title": "Adjunct Collection of Additional Biorepository Data From Patients Enrolled in Diabetic Foot Consortium (DFC) Trials",
+          "url": "https://clinicaltrials.gov/study/NCT05092620",
+          "excerpt": "Phase: Not Applicable"
+        },
+        {
+          "nct_id": "NCT07281196",
+          "title": "Semaglutide Effects on Sleep Apnea in Patients With Type 2 Diabetes/Obesity and Comorbid Obstructive Sleep Apnea",
+          "url": "https://clinicaltrials.gov/study/NCT07281196",
+          "excerpt": "Phase: Not Applicable"
+        },
+        {
+          "nct_id": "NCT05498688",
+          "title": "The Acute Effect of Low-carb Diet on the Plasma Fatty Acid Composition in Type 2 Diabetes",
+          "url": "https://clinicaltrials.gov/study/NCT05498688",
+          "excerpt": "Phase: Not Applicable"
+        },
+        {
+          "nct_id": "NCT03650088",
+          "title": "Adaptation of a Digital Weight Loss Intervention Promoting Self-regulation for Use in Type 2 Diabetes",
+          "url": "https://clinicaltrials.gov/study/NCT03650088",
+          "excerpt": "Phase: Not Applicable"
+        },
+        {
+          "nct_id": "NCT01533688",
+          "title": "Study of Efficacy and Tolerability of Various Bowel Preps in Diabetic Patients",
+          "url": "https://clinicaltrials.gov/study/NCT01533688",
+          "excerpt": "Phase: Not Applicable"
+        },
+        {
+          "nct_id": "NCT07513961",
+          "title": "Technology-Based Education and Follow-Up in Type 2 Diabetes Management",
+          "url": "https://clinicaltrials.gov/study/NCT07513961",
+          "excerpt": "Phase: Not Applicable"
+        },
+        {
+          "nct_id": "NCT03309254",
+          "title": "Role of Glycaemic Index and High Protein Meal in Response of Blood Biomarkers for Pre-diabetes",
+          "url": "https://clinicaltrials.gov/study/NCT03309254",
+          "excerpt": "Phase: Not Applicable"
+        },
+        {
+          "nct_id": "NCT06436456",
+          "title": "Use of an Online Intervention for the Treatment of Diabetes Distress in Patients With Type 1-Diabetes",
+          "url": "https://clinicaltrials.gov/study/NCT06436456",
+          "excerpt": "Phase: Not Applicable"
+        },
+        {
+          "nct_id": "NCT05788731",
+          "title": "Become of Patients From the Permanent Access to Care (PASS) in Cayenne, French Guyana, Suffering From a Chronic Disease (High Blood Pressure - Diabetes) in the Common Law Schemes",
+          "url": "https://clinicaltrials.gov/study/NCT05788731",
+          "excerpt": "Phase: Not Applicable"
+        },
+        {
+          "nct_id": "NCT05378295",
+          "title": "Personalized Fiber and Insulin Sensitivity",
+          "url": "https://clinicaltrials.gov/study/NCT05378295",
+          "excerpt": "Phase: Not Applicable"
+        },
+        {
+          "nct_id": "NCT04682977",
+          "title": "Piloting the IPROACTIF Program to Preserve Functioning and Prevent Cognitive Decline",
+          "url": "https://clinicaltrials.gov/study/NCT04682977",
+          "excerpt": "Phase: Not Applicable"
+        },
+        {
+          "nct_id": "NCT07214857",
+          "title": "Potential Eligibility and Estimated Preventable Cardiovascular Disease Events From Inclisiran Treatment in the United States",
+          "url": "https://clinicaltrials.gov/study/NCT07214857",
+          "excerpt": "Phase: Not Applicable"
+        },
+        {
+          "nct_id": "NCT00005365",
+          "title": "Central Obesity and Disease Risk in Japanese Americans",
+          "url": "https://clinicaltrials.gov/study/NCT00005365",
+          "excerpt": "Phase: Not Applicable"
+        },
+        {
+          "nct_id": "NCT04894344",
+          "title": "Education to Decrease in Sodium Intake Evaluated With 24 Hour Urinary Sodium Excretion (RCT)",
+          "url": "https://clinicaltrials.gov/study/NCT04894344",
+          "excerpt": "Phase: Not Applicable"
+        },
+        {
+          "nct_id": "NCT06468371",
+          "title": "Exercise Training Versus Ropinirole in Treating Restless Legs Syndrome Among Hemodialysis Patients",
+          "url": "https://clinicaltrials.gov/study/NCT06468371",
+          "excerpt": "Phase: Not Applicable"
+        },
+        {
+          "nct_id": "NCT03077386",
+          "title": "Enhancing Community Health Through Patient Navigation, Advocacy and Social Support",
+          "url": "https://clinicaltrials.gov/study/NCT03077386",
+          "excerpt": "Phase: Not Applicable"
+        },
+        {
+          "nct_id": "NCT06440486",
+          "title": "Assessment of Probiotics on Inflammation and Metabolism in Type 2 Diabetes.",
+          "url": "https://clinicaltrials.gov/study/NCT06440486",
+          "excerpt": "Phase: Not Applicable"
+        },
+        {
+          "nct_id": "NCT05778370",
+          "title": "Correlation Between HBA1c Level and Thickness of Both Macula and Choroid in Patients With Type 2 Diabetes Mellitus",
+          "url": "https://clinicaltrials.gov/study/NCT05778370",
+          "excerpt": "Phase: Not Applicable"
+        },
+        {
+          "nct_id": "NCT02696070",
+          "title": "Nociceptive Pain Fiber Response",
+          "url": "https://clinicaltrials.gov/study/NCT02696070",
+          "excerpt": "Phase: Not Applicable"
+        },
+        {
+          "nct_id": "NCT01766570",
+          "title": "Beneficial Effects of a Polyphenol Enriched Beverage on Type 2 Diabetes Prevention and on Cardiovascular Risk Profile of Men and Women With Insulin Resistance.",
+          "url": "https://clinicaltrials.gov/study/NCT01766570",
+          "excerpt": "Phase: Not Applicable"
+        },
+        {
+          "nct_id": "NCT05151770",
+          "title": "Type 1 Diabetic Post Prandial Glycemia Evaluation Using an Algorithm",
+          "url": "https://clinicaltrials.gov/study/NCT05151770",
+          "excerpt": "Phase: Not Applicable"
+        },
+        {
+          "nct_id": "NCT05431686",
+          "title": "Group Visits for High Risk Type 1 Diabetes (T1D)",
+          "url": "https://clinicaltrials.gov/study/NCT05431686",
+          "excerpt": "Phase: Not Applicable"
+        }
+      ]
+    }
+  ],
+  "summary": "The chart titled \"Clinical trials by phase\" illustrates the distribution of diabetes trials across various development phases, showing a total of 24,004 records. The most notable point is that the \"Not Applicable\" category dominates the distribution, with 9,964 trials, highlighting a significant portion of trials not classified by phase. In terms of complete phases, \"Phase 2\" has the highest number with 2,587 trials, followed closely by \"Phase 1\" at 2,217, while \"Early Phase 1\" represents the smallest group with only 210 trials. The \"Phase 3\" category includes 2,455 trials, and \"Phase 4\" contains 2,209, which indicates a balanced distribution among these phases without significant gaps.",
+  "trace_id": "2"
+}

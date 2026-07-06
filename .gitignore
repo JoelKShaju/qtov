@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+
+# Node
+node_modules/
+dist/
+frontend/.vite/
+
+# Env / secrets
+.env
+backend/.env
+frontend/.env
+
+# Take-home materials (assignment brief, JD, screenshots, plan)
+context/
+
+# OS
+.DS_Store
